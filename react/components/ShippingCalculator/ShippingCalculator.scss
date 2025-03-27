@@ -1,0 +1,231 @@
+.subContainerLogisticInfos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 15px;
+  border: 2px solid #001D7E;;
+}
+
+.containerTitleLogisticInfos{
+  width: 100%;
+  text-align: center;
+  color: #001D7E;
+  background: #fff;
+  max-height: 40px;
+}
+.containerTitleLogisticInfos:hover{
+  cursor: pointer;
+}
+
+.subContainerLogisticInfos .tabActive{
+  background: #001D7E !important;
+  color: #fff;
+}
+
+.titleLogisticInfos p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 11px 0px;
+}
+
+.containerLogisticItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 20px 0px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.addressTitle{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  color: #515151;
+}
+
+.logisticItemName{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #4F4F4F;
+}
+
+.logisticItemName::before{
+  content: " ";
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjggMy4xNjY2N0MxNC43MjUgMi43ODMzMyAxNC4zODMzIDIuNSAxMy45ODMzIDIuNUgyLjAxNjY3QzEuNjE2NjcgMi41IDEuMjc1IDIuNzgzMzMgMS4yIDMuMTY2NjdMMC41IDYuNjY2NjdWNy41QzAuNSA3Ljk1ODMzIDAuODc1IDguMzMzMzMgMS4zMzMzMyA4LjMzMzMzVjEyLjVDMS4zMzMzMyAxMi45NTgzIDEuNzA4MzMgMTMuMzMzMyAyLjE2NjY3IDEzLjMzMzNIOC44MzMzM0M5LjI5MTY3IDEzLjMzMzMgOS42NjY2NyAxMi45NTgzIDkuNjY2NjcgMTIuNVY4LjMzMzMzSDEzVjEyLjVDMTMgMTIuOTU4MyAxMy4zNzUgMTMuMzMzMyAxMy44MzMzIDEzLjMzMzNDMTQuMjkxNyAxMy4zMzMzIDE0LjY2NjcgMTIuOTU4MyAxNC42NjY3IDEyLjVWOC4zMzMzM0MxNS4xMjUgOC4zMzMzMyAxNS41IDcuOTU4MzMgMTUuNSA3LjVWNi42NjY2N0wxNC44IDMuMTY2NjdaTTggMTEuNjY2N0gzVjguMzMzMzNIOFYxMS42NjY3Wk0yLjE2NjY3IDEuNjY2NjdIMTMuODMzM0MxNC4yOTE3IDEuNjY2NjcgMTQuNjY2NyAxLjI5MTY3IDE0LjY2NjcgMC44MzMzMzNDMTQuNjY2NyAwLjM3NSAxNC4yOTE3IDAgMTMuODMzMyAwSDIuMTY2NjdDMS43MDgzMyAwIDEuMzMzMzMgMC4zNzUgMS4zMzMzMyAwLjgzMzMzM0MxLjMzMzMzIDEuMjkxNjcgMS43MDgzMyAxLjY2NjY3IDIuMTY2NjcgMS42NjY2N1oiIGZpbGw9IiM0RjRGNEYiLz4KPC9zdmc+Cg==); 
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 14px;
+  display: flex;
+}
+
+.logisticItemShippingEstimate{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  color: #4F4F4F;
+}
+.logisticItemShippingEstimate::before{
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='19' height='20' viewBox='0 0 19 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.925 10.8001H12.275V13.3381L14.471 14.6071L13.796 15.7771L10.925 14.1211V10.8001ZM14.525 6.30006H1.925V16.2001H6.128C5.741 15.3811 5.525 14.4631 5.525 13.5001C5.525 11.8292 6.18875 10.2268 7.37023 9.04529C8.55171 7.86381 10.1541 7.20006 11.825 7.20006C12.788 7.20006 13.706 7.41606 14.525 7.80306V6.30006ZM1.925 18.0001C1.44761 18.0001 0.989773 17.8104 0.652208 17.4729C0.314642 17.1353 0.125 16.6775 0.125 16.2001V3.60006C0.125 2.60106 0.926 1.80006 1.925 1.80006H2.825V6.10352e-05H4.625V1.80006H11.825V6.10352e-05H13.625V1.80006H14.525C15.0024 1.80006 15.4602 1.9897 15.7978 2.32727C16.1354 2.66483 16.325 3.12267 16.325 3.60006V9.09006C17.441 10.2241 18.125 11.7811 18.125 13.5001C18.125 15.1709 17.4613 16.7734 16.2798 17.9548C15.0983 19.1363 13.4959 19.8001 11.825 19.8001C10.106 19.8001 8.549 19.1161 7.415 18.0001H1.925ZM11.825 9.13506C10.6673 9.13506 9.55707 9.59494 8.73848 10.4135C7.91988 11.2321 7.46 12.3424 7.46 13.5001C7.46 15.9121 9.413 17.8651 11.825 17.8651C12.3982 17.8651 12.9658 17.7522 13.4954 17.5328C14.025 17.3134 14.5062 16.9919 14.9115 16.5866C15.3168 16.1813 15.6384 15.7001 15.8577 15.1705C16.0771 14.6409 16.19 14.0733 16.19 13.5001C16.19 11.0881 14.237 9.13506 11.825 9.13506Z' fill='%234F4F4F'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.logisticItemShippingEstimate p {
+
+  font-weight: 700;
+  margin: 2px 0px;
+ 
+}
+
+.logisticItemPriceZero{
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #001D7E;
+}
+
+.informationTitle{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  color: #515151;
+}
+.containerInputsShippingCalculator{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputShippingCalculator{
+  border: 2px solid #BDBDBD;
+  border-radius: 3px;
+  height: 50px;
+  padding-left: 50px;
+}
+
+.containerInputsShippingCalculator::before{
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='27' viewBox='0 0 22 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.7936 6.10352e-05C8.00312 0.00316267 5.3278 1.09065 3.35461 3.02395C1.38141 4.95724 0.271476 7.57847 0.268311 10.3126C0.268311 19.1368 9.83679 25.8047 10.2435 26.086C10.4064 26.1923 10.5978 26.249 10.7936 26.249C10.9894 26.249 11.1809 26.1923 11.3438 26.086C11.7505 25.8047 21.319 19.1368 21.319 10.3126C21.3158 7.57847 20.2059 4.95724 18.2327 3.02395C16.2595 1.09065 13.5842 0.00316267 10.7936 6.10352e-05ZM10.7936 6.56256C11.5506 6.56256 12.2906 6.78249 12.92 7.19455C13.5494 7.6066 14.04 8.19227 14.3297 8.8775C14.6194 9.56272 14.6952 10.3167 14.5475 11.0441C14.3998 11.7716 14.0353 12.4398 13.5 12.9642C12.9647 13.4887 12.2828 13.8458 11.5403 13.9905C10.7979 14.1352 10.0283 14.0609 9.32896 13.7771C8.6296 13.4933 8.03184 13.0126 7.61128 12.3959C7.19072 11.7793 6.96625 11.0542 6.96625 10.3126C6.96625 9.318 7.36949 8.36417 8.08726 7.66091C8.80504 6.95765 9.77855 6.56256 10.7936 6.56256Z' fill='%23001D7E'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 26px;
+  display: flex;
+  position: absolute;
+  margin-left: 12px;
+}
+.buttonShippingCalculator{
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #001D7E;
+  border-radius: 3px;
+  padding: 16px;
+  height: 50px;
+  appearance: none;
+  border: none;
+}
+
+.buttonShippingCalculator:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.linkShippingCalculator{
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  color: #515151;
+
+}
+
+.containerlogisticItemPickup{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.containerImagelogisticItemPickup{
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='14' viewBox='0 0 13 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.8033 3.69544C11.7433 3.33283 11.4699 3.06481 11.1499 3.06481H1.57661C1.25661 3.06481 0.983281 3.33283 0.923281 3.69544L0.363281 7.00624V7.79453C0.363281 8.22809 0.663281 8.58282 1.02995 8.58282V12.5242C1.02995 12.9578 1.32995 13.3125 1.69661 13.3125H7.02995C7.39662 13.3125 7.69661 12.9578 7.69661 12.5242V8.58282H10.3633V12.5242C10.3633 12.9578 10.6633 13.3125 11.0299 13.3125C11.3966 13.3125 11.6966 12.9578 11.6966 12.5242V8.58282C12.0633 8.58282 12.3633 8.22809 12.3633 7.79453V7.00624L11.8033 3.69544ZM6.36328 11.736H2.36328V8.58282H6.36328V11.736ZM1.69661 2.27652H11.0299C11.3966 2.27652 11.6966 1.9218 11.6966 1.48824C11.6966 1.05468 11.3966 0.699951 11.0299 0.699951H1.69661C1.32995 0.699951 1.02995 1.05468 1.02995 1.48824C1.02995 1.9218 1.32995 2.27652 1.69661 2.27652Z' fill='%234F4F4F'/%3E%3C/svg%3E%0A");
+  background-repeat:  no-repeat;
+  width: 15px;
+  height: 15px;
+  display: flex;
+}
+
+.logisticItemNamePickup{
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #4F4F4F;
+}
+
+.logisticItemAddressPickup{
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #4F4F4F;
+}
+
+.logisticItemShippingEstimatePickup{
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #9D9D9D;
+}
+
+.inputShippingCalculatorError{
+  font-weight: 400;
+  font-size: 15px;
+  color: #BF0811;
+}
+
+
+@media(max-width:768px){
+  .inputShippingCalculator{
+    max-width: 190px;
+  }
+  
+  .logisticItemShippingEstimatePickup,
+  .logisticItemAddressPickup,
+  .logisticItemNamePickup,
+  .titleLogisticInfos p,
+  .logisticItemShippingEstimate,
+  .logisticItemPrice,
+  .logisticItemPriceZero,
+  .logisticItemName,
+  .linkShippingCalculator{
+    font-size: 12px;
+  }
+}

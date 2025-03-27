@@ -1,0 +1,39 @@
+{
+    "flex-layout.row#box-content-requinte":{
+        "children":[
+            "image#box-content-requinte",
+            "just-a-div#box-text"
+        ],
+        "props": {
+            "blockClass": "box-content-requinte"
+        }
+    },
+    "image#box-content-requinte": {
+        "props": {
+            "src": "https://tfcvih.vteximg.com.br/arquivos/requinte-zenir.png"
+        }
+    },
+    "just-a-div#box-text":{
+        "children":[
+            "rich-text#title-requinte",
+            "rich-text#text-requinte"
+        ]
+    },
+    "rich-text#title-requinte": {
+        "title":"Title de Conteúdo",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "A mais alta qualidade está aqui",
+            "blockClass": "title-requinte"
+        }
+    },
+    "rich-text#text-requinte": {
+        "title":"Texto de Conteúdo",
+        "props": {
+            "textAlignment": "left",
+            "textPosition": "CENTER",
+            "text": " Apresentamos a vocês a linha premium da Zenir: Requinte Z. Seja no site, nas lojas ou em nossas redes, o espaço será dedicado a mostrar um pouco dos itens que são destaque em design, qualidade e tecnologia. Afinal, o melhor está aqui."
+        }
+    }
+}

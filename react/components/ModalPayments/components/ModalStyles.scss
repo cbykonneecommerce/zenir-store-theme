@@ -1,0 +1,67 @@
+.modalPaymentsOverlay{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.376);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+}
+
+.modalPaymentsContainer{
+  position: relative;
+  max-width: 650px;
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  top: 57%;
+  transform: translateY(-50%);
+  border-radius: 0px;
+  background: rgb(255, 255, 255);
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.infosPayments{
+  overflow-y: auto;
+  height: 92%;
+}
+
+.btnCloseModalPayments{
+  position: absolute;
+  top: 22px;
+  right: 17px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.titleModalPayments{
+  margin: 0 0 35px 0;
+  font-weight: 400;
+  font-size: 20px;
+  color: #515151;
+}
+
+.openModalPayments{
+  font-family: 'Futura Bk BT', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration-line: underline;
+  color: #4F4F4F;
+  background: transparent;
+  border: none;
+}
+
+.openModalPayments:hover{
+  cursor: pointer;
+}
+
+
+@media(max-width:767px){
+  .openModalPayments{
+    font-size: 17px;
+    line-height: 20px;
+    padding: 0;
+  }
+}

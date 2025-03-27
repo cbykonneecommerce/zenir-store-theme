@@ -1,0 +1,31 @@
+{
+    "flex-layout.col#sac": {
+        "children": [
+            "rich-text#sac-footer",
+            "rich-text#sac-footer-whatsap"
+        ],
+        "props": {
+            "blockClass": [
+                "sac-footer-container"
+            ]
+        }
+    },
+    "rich-text#sac-footer": {
+        "props": {
+            "blockClass": [
+                "sac-footer",
+                "sac"
+            ],
+            "text": "SAC \n **(99) 9999-9999**"
+        }
+    },
+    "rich-text#sac-footer-whatsap": {
+        "props": {
+            "blockClass": [
+                "sac-footer",
+                "sac"
+            ],
+            "text": "FALE PELO WHATSAPP \n **(99) 9999-9999**"
+        }
+    }
+}

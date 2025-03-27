@@ -1,0 +1,12 @@
+{
+  profile(customFields: "stFortaleza,stCeara,stFerroviaria") {
+    firstName
+    lastName
+    email
+    customFields {
+      cacheId
+      key
+      value
+    }
+  }
+}

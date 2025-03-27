@@ -1,0 +1,45 @@
+.cama-mesa-banho {
+  background: #CECDCA;
+}
+
+.infoCardContainer--first-info-card,
+.infoCardContainer--second-info-card,
+.infoCardContainer--third-info-card {
+  background: #CECDCA;
+  max-width: 1300px;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .infoCardContainer--first-info-card,
+  .infoCardContainer--second-info-card,
+  .infoCardContainer--third-info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.infoCardHeadline--first-info-card,
+.infoCardHeadline--second-info-card,
+.infoCardHeadline--third-info-card {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000000;
+  text-align: left;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .infoCardHeadline--first-info-card,
+  .infoCardHeadline--second-info-card,
+  .infoCardHeadline--third-info-card {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+:global(.vtex-store-components-3-x-imageElement--imagem-banner-unico) {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,12 @@
+{
+    "flex-layout.row#banner-slider-requinte":{
+        "children":[
+            "list-context.image-list#carousel"
+        ],
+        "props":{
+            "blockClass":[
+                "full-container"
+            ]
+        }
+    }
+}

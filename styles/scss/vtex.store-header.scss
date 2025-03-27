@@ -1,0 +1,61 @@
+:global(.vtex-toast) {
+  background-color: #001D7E;
+  color: #fff;
+  font-family: "Futura Medium", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+:global(.vtex-toast-success) {
+  background-color: #068f24 !important;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-container) {
+  max-width: unset;
+  padding: 0px;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-reviewCommentsContainer),
+:global(.vtex-reviews-and-ratings-3-x-reviewsHeading) {
+  border: none;
+  font-family: "Futura Medium", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-reviewsHeading)::after {
+  content: "dos clientes";
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-loginLink) {
+  color: #bf0811;
+  padding: 1rem 0px;
+}
+
+@media screen and (max-width: 767px) {
+  :global(.vtex-reviews-and-ratings-3-x-reviewsHeading) {
+    font-size: 20px;
+  }
+
+  .reviewsHeading {
+    margin-left: 0px;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--header-row-container) {
+  position: relative;
+}
+:global(.vtex-flex-layout-0-x-flexCol--nav-colRight) {
+  position: relative;
+}
+
+:global(.vtex-mega-menu-2-x-goBackContainer) {
+  padding-right: 1rem;
+}

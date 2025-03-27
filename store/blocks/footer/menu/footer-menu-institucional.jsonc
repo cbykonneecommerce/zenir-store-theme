@@ -1,0 +1,91 @@
+{
+  "menu-item#institucional-accordion-mobile": {
+    "props": {
+      "id": "menu-item-institucional-acorddion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      },
+      "blockClass": ["menu-accordion--container-mobile"]
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#institucional"]
+  },
+  "vtex.menu@2.x:submenu.accordion#institucional": {
+    "props": {
+      "blockClass": ["menu-accordion--mobile"]
+    },
+    "children": ["vtex.menu@2.x:menu#institucional-menu-footer"]
+  },
+  "flex-layout.col#isntitucional-menu-footer": {
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": false,
+      "blockClass": ["menu-institucional--footer"]
+    },
+    "children": [
+      "rich-text#menu-footer-institucional-title",
+      "vtex.menu@2.x:menu#institucional-menu-footer",
+      "rich-text#institucional-info"
+    ]
+  },
+  "rich-text#menu-footer-institucional-title": {
+    "props": {
+      "blockClass": ["menu-institucional--footer"],
+      "text": "Institucional"
+    }
+  },
+  "vtex.menu@2.x:menu#institucional-menu-footer": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["menu-institucional-footer"],
+      "items": [
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/quem-somos",
+            "noFollow": false,
+            "tagTitle": "Quem somos",
+            "text": "Quem somos"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/nossas-lojas",
+            "noFollow": false,
+            "tagTitle": "Nossas Lojas",
+            "text": "Nossas Lojas"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional",
+            "noFollow": false,
+            "tagTitle": "Trabalhe Conosco",
+            "text": "Trabalhe Conosco"
+          }
+        }
+      ]
+    }
+  },
+  "rich-text#institucional-info": {
+    "props": {
+      "blockClass": ["menu-institucional--footer"],
+      "text": "Segunda a sexta: 08:00h às 23:00h\nSábados e feriados 08:00h às 21:00h\nDomingos 09:00h às 20:00h"
+    }
+  }
+}

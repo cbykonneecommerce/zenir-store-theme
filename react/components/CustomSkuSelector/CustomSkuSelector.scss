@@ -1,0 +1,30 @@
+.CustomSkuSelector {
+  margin-bottom: 1rem;
+
+  span {
+    color: #344054;
+  }
+
+  .CustomSkuSelectorDiv {
+    display: flex;
+    gap: .5rem;
+  }
+
+  .CustomSkuSelectorImage {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .325rem;
+    object-fit: contain;
+    margin-top: 0.5rem;
+    transition: 0.2s;
+    border: 2px solid var(--Azul-Azul-800, #001D7E);
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+:global(.tfcvih-weonne-zenir-io-4-x-slideChildrenContainer) {
+  justify-content: normal;
+}

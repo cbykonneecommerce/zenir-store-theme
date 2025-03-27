@@ -1,0 +1,74 @@
+{
+  "store.custom#basic-lp": {
+    "blocks": [
+      "responsive-layout.desktop#lp",
+      "responsive-layout.mobile#lp",
+      "just-a-div#container"
+    ]
+  },
+  "just-a-div#container": {
+    "props": {
+      "blockClass": "container"
+    },
+    "children": [
+      "flex-layout.row#shelf",
+      "just-a-div#banner",
+      "flex-layout.row#section-content-1",
+      "just-a-div#banner-middle",
+      "flex-layout.row#section-content-2",
+      "just-a-div#banner-last"
+    ]
+  },
+  //banner-tv
+  "responsive-layout.desktop#lp":{
+    "children":[
+      "just-a-div#banner-tv"
+    ]
+  },
+  "responsive-layout.mobile#lp":{
+    "children":[
+      "just-a-div#banner-tv"
+    ]
+  },
+  "just-a-div#banner-tv": {
+    "props": {
+      "blockClass": "lp-banner-tv"
+    },
+    "children": [
+      "image#banner-tv",
+      "rich-text#banner-tv"
+    ]
+  },
+  "image#banner-tv": {
+    "props": {
+      "src": "https://tfcvih.vteximg.com.br/arquivos/carousel.png"
+    }
+  },
+  "rich-text#banner-tv": {
+    "props": {
+      "blockClass": "lp-banner-text",
+      "text": "Visit our [help](https://developers.vtex.com/vtex-developer-docs/docs/welcome) section.\n**Be Bold!**\n*This is italic*"
+    }
+  },
+  "just-a-div#banner":{
+    "children":["image#banner-tv"]
+  },
+  "just-a-div#banner-middle":{
+    "children":["image#banner-tv"]
+  },
+  "just-a-div#banner-last":{
+    "children":["image#banner-tv"],
+    "props": {
+      "blockClass": "lp-banner-last"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "props": {
+      "blockClass": "lp-shelf"
+    },
+    "children": [
+      "list-context.product-list#shelf-mobile-1",
+      "image#banner-tv"
+    ]
+  }
+}

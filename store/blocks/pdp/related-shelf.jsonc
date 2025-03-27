@@ -1,0 +1,22 @@
+{
+    "shelf.relatedProducts#pdp": {
+        "props": {
+            "blockClass": [
+                "related-shelf"
+            ],
+            "recommendation": "view",
+            "hideOutOfStockItems": false,
+            "productList": {
+                "maxItems": 8,
+                "arrows": false,
+                "titleText": "QUEM VIU, VIU TAMBÉM",
+                "minItemsPerPage": 2,
+                "itemsPerPage": 4,
+                "showTitle": true
+            }
+        },
+        "blocks": [
+            "product-summary.shelf"
+        ]
+    }
+}

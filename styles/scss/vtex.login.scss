@@ -1,0 +1,316 @@
+:global(.vtex-flex-layout-0-x-flexRow--nav-searchLoginMinicart)
+  :global(.vtex-flex-layout-0-x-flexRowContent--nav-searchLoginMinicart)
+  .container
+  :global(.vtex-button):hover {
+  background-color: tranparent !important;
+}
+
+.container :global(.vtex-button) :global(.vtex-button__label):hover {
+  background-color: tranparent !important;
+}
+
+.formTitle {
+  text-align: left;
+  font-family: "Futura Md BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4f4f4f;
+}
+
+.button :global(.vtex-button) {
+  font-family: "Futura Md BT", sans-serif;
+  background-color: #fff;
+  border: 1px solid #001d7e;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: initial;
+  transition: 0.3s;
+}
+
+.contentInitialScreen::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: -2;
+  opacity: 0.4;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.label {
+  font-size: 0;
+}
+
+.label::before,
+.profile::before {
+  content: "";
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='33' viewBox='0 0 27 33' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.3159 7.37145C20.3159 11.2676 17.1504 14.4451 13.2688 14.4451C9.3872 14.4451 6.22168 11.2676 6.22168 7.37145C6.22168 3.4753 9.3872 0.297852 13.2688 0.297852C17.1504 0.297852 20.3159 3.4753 20.3159 7.37145Z' fill='%23001D7E'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M26.383 29.3868C26.383 33.5477 0.154297 33.5477 0.154297 29.3868C0.154297 23.1453 6.03314 18.417 13.2686 18.417C20.5418 18.417 26.383 23.1453 26.383 29.3868Z' fill='%23001D7E'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.profile {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #8d8c8c;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-family: "Futura Hv BT", sans-serif;
+  text-transform: initial;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  color: #8d8c8c;
+  margin-left: 5px;
+  max-width: 150px;
+  display: block;
+  text-align: left;
+}
+
+.label {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  padding: 0;
+  align-items: center;
+}
+
+.container :global(.vtex-button) {
+  background: transparent !important;
+  border: none !important;
+  // background: #C00903;
+}
+
+.container :global(.vtex-button):hover {
+  opacity: 0.9;
+}
+
+.oauthProvider {
+  font-weight: normal;
+}
+
+.buttonSocial {
+  position: relative;
+}
+
+.oauthLabel {
+  color: #fff;
+  text-transform: initial;
+}
+.facebookOptionBtn :global(svg) {
+  margin-right: 20px;
+}
+.facebookOptionBtn :global(svg path) {
+  fill: #fff;
+}
+.facebookOptionBtn :global(.vtex-button) {
+  background-color: #2249c8;
+  border-color: #2249c8;
+}
+.facebookOptionBtn :global(.vtex-button):hover {
+  background-color: #2249c8;
+  border-color: #2249c8;
+}
+.googleOptionBtn :global(.vtex-button) {
+  background-color: #dc4e41;
+  border-color: #dc4e41;
+}
+.googleOptionBtn :global(.vtex-button):hover {
+  background-color: #dc4e41;
+  border-color: #dc4e41;
+}
+/* .googleOptionBtn :global(.vtex-login-2-x-oauthLabel){
+    background-color: #fff;
+    border-color: #DC4E41;
+    color: #DC4E41;
+} */
+.googleOptionBtn :global(svg) {
+  display: none;
+}
+.googleOptionBtn :global(.vtex-login-2-x-oauthLabel)::before {
+  content: "";
+  width: 34px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAzNiAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS40NTQ1IDkuODE4MThWMTMuNzQ1NUgxNy45MTgyQzE3LjY3MjcgMTUuNDYzNiAxNS45NTQ1IDE4LjY1NDUgMTEuNDU0NSAxOC42NTQ1QzcuNTI3MjcgMTguNjU0NSA0LjMzNjM2IDE1LjM4MTggNC4zMzYzNiAxMS40NTQ1QzQuMzM2MzYgNy41MjcyNyA3LjUyNzI3IDQuMjU0NTUgMTEuNDU0NSA0LjI1NDU1QzEzLjY2MzYgNC4yNTQ1NSAxNS4xMzY0IDUuMjM2MzYgMTYuMDM2NCA2LjA1NDU0TDE5LjE0NTUgMy4wMjcyN0MxNy4xIDEuMTQ1NDUgMTQuNTYzNiAwIDExLjQ1NDUgMEM1LjE1NDU1IDAgMCA1LjE1NDU0IDAgMTEuNDU0NUMwIDE3Ljc1NDUgNS4xNTQ1NSAyMi45MDkxIDExLjQ1NDUgMjIuOTA5MUMxOC4wODE4IDIyLjkwOTEgMjIuNDE4MiAxOC4yNDU1IDIyLjQxODIgMTEuN0MyMi40MTgyIDEwLjk2MzYgMjIuMzM2NCAxMC4zOTA5IDIyLjI1NDUgOS44MTgxOEgxMS40NTQ1Wk0zNiA5LjgxODE4SDMyLjcyNzNWNi41NDU0NUgyOS40NTQ1VjkuODE4MThIMjYuMTgxOFYxMy4wOTA5SDI5LjQ1NDVWMTYuMzYzNkgzMi43MjczVjEzLjA5MDlIMzZWOS44MTgxOFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+/* redesign do login */
+
+.inputContainer :global(.vtex-input-prefix__group) {
+  background: #f8f8f8;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+}
+
+.forgotPasswordLink {
+  font-family: "Futura Md BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #001d7e;
+}
+
+.inputContainerPassword :global(.vtex-input__suffix) {
+  display: none;
+}
+
+.emailAndPasswordForm .formLinkContainer .dontHaveAccount {
+  display: none;
+}
+
+.button :global(.vtex-button:hover) {
+  background-color: #001d7e;
+  color: #fff;
+}
+
+.contentInitialScreen {
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.formFooter {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.formFooter {
+  border-top: none;
+  margin-top: 0px;
+  padding-top: 0.5rem;
+}
+
+.formFooter :global(.vtex-button) {
+  width: 100%;
+}
+
+.sendButton {
+  width: 100%;
+}
+
+.inputContainer :global(.vtex-styleguide-9-x-input),
+.inputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+  font-family: "Futura Bk BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #515151;
+}
+
+.backButton {
+  margin-top: 30px;
+}
+
+.loginOptionsContainer {
+  padding-right: 1.5rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  width: 50%;
+  box-sizing: content-box;
+}
+
+.contentForm {
+  padding-left: 1.5rem;
+  padding-right: 0px;
+  width: 50%;
+}
+
+.sendButton :global(.vtex-button) {
+  padding: 0.5rem;
+  font-family: "Futura Md BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.sendButton :global(.vtex-button):hover {
+  opacity: 0.9;
+}
+
+.backButton :global(.vtex-button) {
+  color: #bdbdbd;
+  background: transparent !important;
+
+  transition: all 0.3s ease-in;
+}
+
+.backButton :global(.vtex-button):hover {
+  color: #000;
+}
+
+.label::after {
+  content: "Olá, faça o login ou cadastre-se!";
+  font-family: "Futura Hv BT", sans-serif;
+  text-transform: none;
+  font-size: 0.675rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #434343;
+  // color: #ffffff;
+  margin-left: 1.1rem;
+  max-width: 150px;
+  display: block;
+  text-align: left;
+}
+
+.label {
+  font-size: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .loginOptionsContainer,
+  .contentForm {
+    width: 100%;
+    padding: 0px;
+    border: none;
+  }
+
+  .contentAlwaysWithOptions .formTitle {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .loginOptionsContainer .formTitle {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "store.custom#institucional": {
+    "path": "/institucional"
+  },
+  "store.custom#quem-somos": {
+    "path": "/institucional/quem-somos"
+  },
+  "store.custom#fale-conosco": {
+    "path": "/fale-conosco"
+  },
+  "store.custom#politica-de-trocas": {
+    "path": "/institucional/politica-de-trocas"
+  },
+  "store.custom#politica-de-privacidade": {
+    "path": "/institucional/privacidade"
+  },
+  "store.custom#nossas-lojas": {
+    "path": "/stores"
+  },
+  "store.custom#active-store": {
+    "path": "/active"
+  },
+  "store.custom#basic-lp": {
+    "path": "/notebook-positivo"
+  },
+  "store.custom#register": {
+    "path": "/cadastre-se"
+  },
+  "store.custom#custom-lps-times": {
+    "path": "/pagina-do-leao"
+  },
+  "store.custom#requinte-z": {
+    "path": "/requinte-z"
+  },
+  "store.custom#cama-mesa-banho": {
+    "path": "/cama-mesa-banho"
+  },
+  "store.custom#lancamento-aplicativo": {
+    "path": "/lancamento-aplicativo"
+  }
+}

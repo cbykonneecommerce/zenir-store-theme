@@ -1,0 +1,53 @@
+{
+    "flex-layout.row#banners-promocoes": {
+        "props": {
+            "blockClass": [
+                "container",
+                "banners-middle"
+            ]
+        },
+        "children": [
+            "list-context.image-list#banners"
+        ]
+    },
+    "list-context.image-list#banners": {
+        "children": [
+            "slider-layout#banners-images"
+        ],
+        "props": {
+            "preload": false,
+            "images": [
+                {
+                    "image": "https://tfcvih.vteximg.com.br/arquivos/promocao1.png",
+                    "mobileImage": "https://tfcvih.vteximg.com.br/arquivos/promocao1.png"
+                },
+                {
+                    "image": "https://tfcvih.vteximg.com.br/arquivos/promocao2.png",
+                    "mobileImage": "https://tfcvih.vteximg.com.br/arquivos/promocao2.png",
+                    "props": {
+                        "blockClass": [
+                            "test"
+                        ]
+                    }
+                },
+                {
+                    "image": "https://tfcvih.vteximg.com.br/arquivos/promocao3.png",
+                    "mobileImage": "https://tfcvih.vteximg.com.br/arquivos/promocao3.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#banners-images": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 3,
+                "phone": 1
+            },
+            "showPaginationDots": "mobileOnly",
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "blockClass": "banners"
+        }
+    }
+}

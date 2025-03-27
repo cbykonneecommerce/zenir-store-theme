@@ -1,0 +1,33 @@
+{
+    "flex-layout.row#newsletter-requinte":{
+        "children":[
+            "image#newsletter-requinte",
+            "flex-layout.col#form-requinte"
+        ],
+        "props": {
+            "blockClass": "newsletter-requinte",
+            "horizontalAlign": "center",
+            "fullWidth": true
+        }
+    },
+    "image#newsletter-requinte": {
+        "props": {
+            "src": "https://tfcvih.vteximg.com.br/arquivos/img-newsletter-requinte.png"
+        }
+    },
+    "flex-layout.col#form-requinte":{
+        "children":[
+            "rich-text#newsletter-title",
+            "custom-newsletter"
+        ]
+    },
+    "rich-text#newsletter-title": {
+        "title":"Titulo da newsletter",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Não perca os melhores produtos:",
+            "blockClass": "newsletter-requinte-title"
+        }
+    }
+}

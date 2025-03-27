@@ -1,0 +1,10 @@
+{
+    "store.custom#custom-lps-times-outro": {
+        "blocks": [
+            "custom-lp-times"
+        ],
+        "props": {
+            "blockClass": "ceara"
+        }
+    }
+}

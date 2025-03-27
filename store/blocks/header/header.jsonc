@@ -1,0 +1,244 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "custom-send-code-seller",
+      "custom-smart-banner-mobile",
+      "custom-head",
+      "flex-layout.row#nav-desktop-top",
+      "sticky-layout#desktop",
+      "flex-layout.row#mega-menu"
+    ],
+    "props": {
+      "blockClass": "header-layout-desktop"
+    }
+  },
+  "image#mascote-zenir": {
+    "props": {
+      "src": "https://tfcvih.vteximg.com.br/arquivos/mascote-zenir.svg",
+      "maxWidth": 164,
+      "blockClass": ["mascote-zenir"]
+    }
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header-desktop"
+    },
+    "children": ["flex-layout.row#desktopContainer"]
+  },
+  "flex-layout.row#desktopContainer": {
+    "props": {
+      "blockClass": ["header-row", "header-row-container", "container"]
+    },
+    "children": [
+      // "image#mascote-zenir",
+      "logo",
+      "search-bar",
+      "just-a-div#login-cart-wishlist"
+    ]
+  },
+  "flex-layout.col#desktopContainer": {
+    "props": {
+      "blockClass": [
+        "contianer",
+        "header-row",
+        "header-row-desktop",
+        "header-row-container"
+      ]
+    },
+    "children": [
+      "image#mascote-zenir",
+      "logo",
+      "search-bar",
+      "just-a-div#login-cart-wishlist"
+    ]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "header-row"
+    },
+    "children": ["flex-layout.col#logo-desktop", "flex-layout.col#nav-desktop"]
+  },
+  "flex-layout.col#nav-desktop": {
+    "children": [
+      // "flex-layout.row#nav-desktop-top",
+      "flex-layout.row#nav-desktop-bottom"
+    ],
+    "props": {
+      "blockClass": "nav-colRight"
+    }
+  },
+  "flex-layout.row#nav-desktop-top": {
+    "children": ["link#encontre-uma-loja", "link#sac", "link#compre-super-zao"],
+    "props": {
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": [
+        "container"
+        // "nav-linksUteis"
+      ]
+    }
+  },
+  "flex-layout.row#nav-desktop-bottom": {
+    "children": ["search-bar", "just-a-div#login-cart-wishlist"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": ["nav-searchLoginMinicart"]
+    }
+  },
+  "just-a-div#login-cart-wishlist": {
+    "children": ["login", "link#wishlist", "minicart.v2"],
+    "props": {
+      "blockClass": "login-cart-wishlist"
+    }
+  },
+  "link#wishlist": {
+    "props": {
+      "href": "/wishlist",
+      "label": "FAVORITOS",
+      "blockClass": "wishlist-btn-header",
+      "target": "_blank"
+    }
+  },
+  "link#encontre-uma-loja": {
+    "props": {
+      "href": "/stores",
+      "label": "Encontre uma loja",
+      "blockClass": "link-header-top",
+      "target": "_blank"
+    }
+  },
+  "link#sac": {
+    "props": {
+      "href": "/",
+      "label": "SAC",
+      "blockClass": "link-header-top",
+      "target": "_blank"
+    }
+  },
+  "link#compre-super-zao": {
+    "props": {
+      "href": "/",
+      "label": "Compre pelo Super Zap",
+      "blockClass": "link-header-top",
+      "target": "_blank"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "nav-colLeft"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://tfcvih.vteximg.com.br/arquivos/logo.svg"
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "custom-send-code-seller", 
+      "custom-smart-banner-mobile", 
+      "custom-head", 
+      "sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "props": {
+      "blockClass": ["header-mobile"]
+    },
+    "children": ["flex-layout.row#mobile-top", "flex-layout.row#mobile-bottom"]
+  },
+  "flex-layout.row#mobile-top": {
+    "children": ["mega-menu-trigger-btn", "logo", "minicart.v2"],
+    "props": {
+      "blockClass": ["main-header-mobile-top"],
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#mobile-bottom": {
+    "children": ["search-bar"],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "iconClasses": "icon-default",
+      "placeholder": "O que você está buscando?",
+      "maxWidth": 579,
+      "displayMode": "search-and-clear-buttons",
+      "autocompleteAlignment": "left",
+      "openAutocompleteOnFocus": true,
+      "hideUnavailableItems": true
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "maxSuggestedProducts": 3,
+      "hideUnavailableItems": true
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "login": {
+    "props": {
+      "iconLabel": "",
+      "accessCodeTitle": "Receber código de acesso por e-mail",
+      "emailPlaceholder": "exemplo@email.com",
+      "passwordPlaceholder": "Digite sua senha",
+      "showPasswordVerificationIntoTooltip": true,
+      "emailAndPasswordTitle": "Entrar com e-mail e senha",
+      "optionsTitle": "Para ver seus pedidos e ter uma experiência personalizada, acesse sua conta :)",
+      "logInButtonBehavior": "link",
+      "accountOptionLinks": [
+        {
+          "label": "Dados Pessoais",
+          "path": "/account#/profile"
+        },
+        {
+          "label": "Meus pedidos",
+          "path": "/account#/orders"
+        },
+        {
+          "label": "Meus Cartões",
+          "path": "/account#/cards"
+        },
+        {
+          "label": "Meus endereços",
+          "path": "/account#/addresses"
+        },
+        {
+          "label": "Alterar senha",
+          "path": "/account#/authentication"
+        }
+      ]
+    }
+  }
+}

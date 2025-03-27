@@ -1,0 +1,81 @@
+{
+    "store.custom#register": {
+        "blocks": [], 
+        "parent": {
+            // irá remover o header e footer default da loja
+            "challenge": "flex-layout.row#challenge-custom-register"
+        }
+    },
+    "flex-layout.row#challenge-custom-register": {
+        "title": "Register",
+        "props": {
+            "fullWidth": true,
+            "blockClass": [
+                "register-container"
+            ]
+        },
+        "children": [
+            "flex-layout.col#register-container"
+        ]
+    },
+    "flex-layout.col#register-container": {
+        "props": {
+            "fullWidth": true,
+            "blockClass": [
+                "register-container--col"
+            ]
+        },
+        "title": "Register Coluna",
+        "children": [
+            "flex-layout.row#header-register",
+            "flex-layout.row#register-container"
+        ]
+    },
+    "flex-layout.row#header-register": {
+        "title": "Header",
+        "props": {
+            "preventHorizontalStretch": true,
+            "fullWidth": true,
+            "blockClass": [
+                "register-header",
+                "container"
+            ]
+        },
+        "children": [
+            "custom-head",
+            "logo#register",
+            "rich-text#register-header"
+        ]
+    },
+    "logo#register": {
+        "title": "Logo",
+        "props": {
+            "blockClass": [
+                "logo-register"
+            ],
+            "title": "Logo",
+            "href": "/",
+            "url": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/7016740a-6e94-4107-8140-015a1c99ef45___befb6e53399feb0b8c69da8c4a207dd3.png"
+        }
+    },
+    "rich-text#register-header": {
+        "title": "Register header - texto esquerdo",
+        "props": {
+            "blockClass": [
+                "register-header--text"
+            ],
+            "text": "Olá, faça o login \n ou cadastre-se!"
+        }
+    },
+    "flex-layout.row#register-container": {
+        "title": "Registro",
+        "props": {
+            "blockClass": [
+                "register-container--form"
+            ]
+        },
+        "children": [
+            "custom-register-form"
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+.container{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.link {
+  color: #515151;
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+.term{
+    color: #001D7E;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.homeLink::before {
+  content: 'Você está em:';
+  font-family: 'Futura Md BT', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #515151;
+}
+
+.homeIcon {
+  display: none;
+}

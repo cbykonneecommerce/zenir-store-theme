@@ -1,0 +1,24 @@
+.modal--torcedor {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.paper--torcedor {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container--torcedor {
+    margin: 0px;
+  }
+
+  .paper--torcedor {
+    max-height: unset !important;
+    height: 100%;
+    margin: 0px !important;
+    border-radius: 0px !important;
+  }
+}
+
+/* .modal--torcedor {
+  z-index: 999999999;
+} */

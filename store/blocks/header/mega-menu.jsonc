@@ -1,0 +1,246 @@
+{
+    "flex-layout.row#mega-menu": {
+        "title": "Mega menu",
+        "children": [
+            "menu-item#categorias",
+            "vtex.menu@2.x:menu#websites"
+        ],
+        "props": {
+            "blockClass": [
+                "container",
+                "mega-menu-row"
+            ]
+        }
+    },
+    "category-menu#menu-categorias": {
+        "title": "Menu de categorias - header",
+        "props": {
+            "showAllDepartments": true,
+            "showSubcategories": true,
+            "departments": [],
+            "sortSubcategories": "name"
+        }
+    },
+    "menu-item#categorias": {
+        "props": {
+          "id": "menu-item-categorias",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "Todas as Categorias",
+            "text": "Todas as Categorias"
+          },
+          "blockClass": [
+            "menu-item", "all-categories"
+          ]
+        },
+        "blocks": [
+          "vtex.menu@2.x:submenu#submenu-categorias"
+        ]
+      },
+    "drawer#mega-menu": {
+        "title": "Slide Mega menu",
+        "children": [
+            "link#account",
+            "responsive-layout.mobile#favorites",
+            "aside-menu",
+            "image#menu-lateral",
+            "image#menu-lateral-2",
+            "rich-text#mega-menu-devider",
+            "link#atendimento",
+            "link#regulamentos",
+            "link#politicas-privacidade",
+            "link#telefone",
+            "rich-text#horario-de-atendimento"
+        ],
+        "props": {
+            "blockClass": [
+                "mega-menu"
+            ]
+        },
+        "blocks": [
+            "drawer-header#my-drawer"
+        ]
+    },
+    "rich-text#mega-menu-header": {
+        "title": "Header mega menu - titulo",
+        "props": {
+            "blockClass": [
+                "mega-menu"
+            ],
+            "text": "Todas as Categorias"
+        }
+    },
+    "link#account": {
+        "title": "Link my account - Menu lateral",
+        "props": {
+            "blockClass": [
+                "link-drawer",
+                "link-account"
+            ],
+            "label": "Minha Conta",
+            "href": "/account"
+        }
+    },
+    "responsive-layout.mobile#favorites": {
+        "children": ["link#wishlist-mobile"]
+    },
+    "link#wishlist-mobile": {
+        "title": "Link my account - Menu lateral",
+        "props": {
+            "blockClass": [
+                "link-drawer",
+                "link-favorites"
+                
+            ],
+            "label": "Favoritos",
+            "href": "/wishlist"
+        }
+    },
+    "link#atendimento": {
+        "title": "Menu lateral - central de atendimentos",
+        "props": {
+            "blockClass": [
+                "link-megamenu-bottom"
+            ],
+            "label": "Central de Atendimentos",
+            "href": "#"
+        }
+    },
+    "link#regulamentos": {
+        "title": "Menu lateral - regulamentos",
+        "props": {
+            "blockClass": [
+                "link-megamenu-bottom"
+            ],
+            "label": "Regulamentos",
+            "href": "#"
+        }
+    },
+    "link#politicas-privacidade": {
+        "title": "Menu lateral - Politicas de Privacidade",
+        "props": {
+            "blockClass": [
+                "link-megamenu-bottom"
+            ],
+            "label": "Políticas de Privacidade",
+            "href": "#"
+        }
+    },
+    "link#telefone": {
+        "title": "Menu lateral - Telefone",
+        "props": {
+            "blockClass": [
+                "link-megamenu-bottom",
+                "link-telefone"
+            ],
+            "label": "0800-2755700",
+            "href": "#"
+        }
+    },
+    "flex-layout.col#trigger-mega-menu": {
+        "title": "Menu lateral",
+        "props": {
+            "blockClass": [
+                "todos-departamentos"
+            ],
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "mega-menu-trigger-btn"
+        ]
+    },
+    "mega-menu#default": {
+        "title": "Menu lateral",
+        "props": {
+            "orientation": "vertical",
+            "openOnly": "vertical"
+        }
+    },
+    "mega-menu-trigger-btn": {
+        "title": "Menu lateral - Drawer- btn",
+        "props": {
+            "Drawer": "drawer#mega-menu"
+        }
+    },
+    "drawer-header#my-drawer": {
+        "title": "Menu lateral - Drawer",
+        "children": [
+            "flex-layout.row#drawer-header"
+        ]
+    },
+    "flex-layout.row#drawer-header": {
+        "title": "Menu lateral - conteudo",
+        "children": [
+            "flex-layout.col#mega-menu-go-back-btn",
+            "rich-text#mega-menu-header",
+            "flex-layout.col#drawer-close-button"
+        ],
+        "props": {
+            "blockClass": "drawer-header",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "image#menu-lateral": {
+        "title": "Banner menu lateral 1",
+        "props": {
+            "blockClass": [
+                "mega-menu"
+            ],
+            "src": "/arquivos/Group 195.png"
+        }
+    },
+    "image#menu-lateral-2": {
+        "title": "Banner menu lateral 2",
+        "props": {
+            "blockClass": [
+                "mega-menu"
+            ],
+            "src": "/arquivos/Group 870.png"
+        }
+    },
+    "flex-layout.col#drawer-close-button": {
+        "title": "Mega menu fechar bth",
+        "children": [
+            "drawer-close-button"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "horizontalAlign": "right"
+        }
+    },
+    "flex-layout.col#mega-menu-go-back-btn": {
+        "title": "Mega menu voltar btn",
+        "children": [
+            "mega-menu-go-back-btn"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "horizontalAlign": "left",
+            "paddingLeft": 4
+        }
+    },
+    "rich-text#horario-de-atendimento": {
+        "title": "Menu lateral - Horario de atendimento",
+        "props": {
+            "text": "de 8:00hr às 17:00hr \n Shopping até às 22:00hr",
+            "blockClass": [
+                "central-atendimentos-megamenu"
+            ]
+        }
+    },
+    "rich-text#mega-menu-devider": {
+        "props": {
+            "blockClass": [
+                "mega-menu-devider"
+            ]
+        }
+    }
+}

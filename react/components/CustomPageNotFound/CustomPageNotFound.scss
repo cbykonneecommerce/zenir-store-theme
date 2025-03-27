@@ -1,0 +1,176 @@
+.notFoundContentGeneral {
+  background: #1018281A;
+}
+
+.notFoundContent {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  max-width: 1400px;
+}
+
+.notFoundIconAndInfo {
+  margin-top: 3rem;
+}
+
+.notFoundIconSearch {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.notFoundTextTitleLink h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  color: #2E3192;
+  width: 85%;
+}
+
+.notFoundTextTitleLink p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #344054;
+  width: 65%;
+}
+
+.notFoundLinkStores {
+  color: #000;
+  font-weight: 700;
+}
+
+.notFoundLinkBackToHome {
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+  width: 16.875rem;
+  height: 3.25rem;
+  text-decoration: none;
+  background: #2E3192;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 2rem 0 6rem;
+}
+
+.notFoundLinkBackToHome img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.notFoundTextInfo {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: -2rem;
+}
+
+.notFoundTextInfo img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.notFoundTextInfo p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  width: 55%;
+  line-height: 1.5rem;
+}
+
+.notFoundContentImages {
+  margin-top: 10rem;
+  margin-bottom: -2rem;
+}
+
+.notFoundContentImages img {
+  width: 45rem;
+}
+
+@media screen and (max-width: 768px) {
+  .notFoundContent {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .notFoundIconAndInfo {
+    margin: 1.5rem;
+  }
+
+  .notFoundIconSearch {
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .notFoundTextTitleLink h1 {
+    font-size: 1.6rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 2.2rem;
+    width: 100%;
+  }
+
+  .notFoundTextTitleLink p {
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .notFoundLinkBackToHome {
+    font-size: 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .notFoundTextInfo {
+    gap: 0.2rem;
+    width: 98%;
+    height: 6rem;
+    padding: 0 .3rem;
+    flex-shrink: 0;
+    border-radius: .5rem;
+    border: 1px solid #D0D5DD;
+    background: #fff;
+    position: absolute;
+    left: 1%;
+    right: 0;
+    top: 56rem;
+    z-index: 99;
+  }
+
+  .notFoundTextInfo img {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .notFoundTextInfo p {
+    width: 84%;
+    font-size: 0.825rem;
+  }
+
+  .notFoundContentImages {
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}

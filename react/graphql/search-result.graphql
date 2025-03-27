@@ -1,0 +1,51 @@
+query productSearch($collectionId: String) {
+  products(
+    collection: $collectionId
+    hideUnavailableItems: true
+    simulationBehavior: async
+  ) @context(provider: "vtex.search-graphql") {
+    productName
+    productId
+    brand
+    description
+    link
+    categoryId
+    categoryTree {
+      id
+    }
+    priceRange {
+      sellingPrice {
+        highPrice
+        lowPrice
+      }
+      listPrice {
+        highPrice
+        lowPrice
+      }
+    }
+    items {
+      itemId
+      measurementUnit
+      unitMultiplier
+      name
+      images {
+        imageUrl
+      }
+      sellers {
+        sellerId
+        commertialOffer {
+          Price
+          ListPrice
+          spotPrice
+          discountHighlights {
+            name
+          }
+          PriceWithoutDiscount
+          teasers {
+            name
+          }
+        }
+      }
+    }
+  }
+}

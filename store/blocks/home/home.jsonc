@@ -1,0 +1,20 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#carousel",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#beneficios",
+      "flex-layout.row#shelf-oferta-do-dia",
+      "__fold__",
+      "flex-layout.row#category-badges",
+      "flex-layout.row#banner-mosaic",
+      "flex-layout.row#banners-promocoes",
+      "flex-layout.row#shelf-bottom-1",
+      "custom-newsletter",
+      "flex-layout.row#mosaic-square",
+      "flex-layout.row#shelf-bottom-2",
+      "flex-layout.row#brands-badges",
+      "flex-layout.row#shelf-bottom-3"
+    ]
+  }
+}

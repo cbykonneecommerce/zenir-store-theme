@@ -1,0 +1,57 @@
+:global(.vtex-flex-layout-0-x-flexRow--shelf-first),
+:global(.vtex-flex-layout-0-x-flexRow--shelf-second),
+:global(.vtex-flex-layout-0-x-flexRow--shelf-third)  {
+  background: #CECDCA;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shelf-first) 
+:global(.vtex-store-components-3-x-container),
+:global(.vtex-flex-layout-0-x-flexRow--shelf-second) 
+:global(.vtex-store-components-3-x-container),
+:global(.vtex-flex-layout-0-x-flexRow--shelf-third) 
+:global(.vtex-store-components-3-x-container) {
+  max-width: 1300px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--section-banner-duplo) {
+  background: #CECDCA;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--section-banner-duplo) {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1300px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--section-banner-duplo) 
+:global(.vtex-store-components-3-x-imageElement) {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--container-info-card) {
+  background: #CECDCA;
+  margin-top: -1rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--container-banner-unico) {
+  background: #CECDCA;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--container-banner-unico) {
+  max-width: 1300px;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 968px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--section-banner-duplo) {
+    flex-direction: column;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--section-banner-duplo) {
+    gap: 0;
+  }
+}

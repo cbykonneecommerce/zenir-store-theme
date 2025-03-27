@@ -1,0 +1,41 @@
+.flexRowContent--ofertas-app {
+  padding: 0 3rem;
+}
+
+.flexCol--ofertas-app-shelf {
+  background: linear-gradient(90.3deg, #0B45DF 0%, #008BC0 100%);
+  width: 13.5rem;
+  height: 15.625rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  align-items: center;
+}
+
+.flexRowContent--ofertas-app {
+  align-items: center;
+}
+
+.flexRowContent--options-offers-app {
+  gap: .8rem;
+}
+
+.flexColChild--ofertas-app-shelf :global(.vtex-store-components-3-x-imageElement) {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .flexCol--ofertas-app-shelf {
+    width: 10.25rem !important;
+    height: 10.75rem;
+    align-items: baseline;
+    padding: 0 1rem;
+  }
+
+  .flexColChild--ofertas-app-shelf :global(.vtex-store-components-3-x-imageElement) {
+    margin-top: 1rem;
+  }
+
+  .flexRowContent--options-offers-app {
+    gap: .5rem;
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "vtex.menu@2.x:menu#institucional-menu": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["menu-institucional"],
+      "items": [
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/quem-somos",
+            "noFollow": false,
+            "tagTitle": "Quem somos",
+            "text": "Quem somos"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/stores",
+            "noFollow": false,
+            "tagTitle": "Nossas Lojas",
+            "text": "Nossas Lojas"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/politica-de-trocas",
+            "noFollow": false,
+            "tagTitle": "Trocas e devoluções",
+            "text": "Trocas e devoluções"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/privacidade",
+            "noFollow": false,
+            "tagTitle": "Política de Privacidade",
+            "text": "Política de Privacidade"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/pagamentos",
+            "noFollow": false,
+            "tagTitle": "Política de Pagamentos",
+            "text": "Política de Pagamentos"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/entrega-e-montagem",
+            "noFollow": false,
+            "tagTitle": "Entrega e Montagem",
+            "text": "Entrega e Montagem"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/perguntas-frequentes",
+            "noFollow": false,
+            "tagTitle": "Perguntas Frequentes",
+            "text": "Perguntas Frequentes"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,409 @@
+.menu-container {
+  width: 100%;
+  background: linear-gradient(to right, #001d7e 50%, #f5f5f5 50%);
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+@media (max-width: 1199.98px) {
+  .menu-container {
+      background-color: #fff;
+      max-width: 50px;
+      width: unset;
+  }
+  .tfcvih-weonne-zenir-io-3-x-openIconContainer img {
+      display: none;
+  }
+  .menu-custom {
+      max-width: 50px; 
+  }
+  .tfcvih-weonne-zenir-io-3-x-openIconContainer {
+      max-width: 50px; 
+      padding: 0!important;
+      
+  }
+}
+
+.menu-container .menu-custom {
+  max-width: 1360px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-container .menu-custom a {
+  font-family: 'Futura Md BT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #757575;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5 50%;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0px 1rem;
+}
+
+.menu-container .menu-custom a:hover {
+  color: #001d7e;
+  background-color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tfcvih-weonne-zenir-io-3-x-childrenContainer  ul {
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tfcvih-weonne-zenir-io-3-x-childrenContainer  ul li span{
+  font-family: 'Futura Hv BT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0672px;
+  line-height: 23px;
+  color: #434343;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tfcvih-weonne-zenir-io-3-x-childrenContainer  ul li a {
+  font-family: 'Futura Md BT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #434343;
+  text-decoration: none;
+  padding: 0 36px;
+  height: 40px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-transform: capitalize;
+}
+@media (max-width: 768px){
+  .tfcvih-weonne-zenir-io-3-x-childrenContainer ul li span{
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 768px){
+  .tfcvih-weonne-zenir-io-3-x-childrenContainer ul li a{
+    font-size: 10px;
+  }
+}
+.tfcvih-weonne-zenir-io-3-x-childrenContainer  ul li a:hover {
+  background-color: #eaeded; 
+}
+
+.tfcvih-weonne-zenir-io-3-x-trigger {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 42px 0 36px;    
+  border: none;
+  justify-content: space-between;
+  cursor:pointer;
+}
+
+.login-mobile .vtex-button__label::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='31' viewBox='0 0 26 31' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.1299 6.91251C20.1299 10.6339 17.1064 13.6688 13.3989 13.6688C9.69148 13.6688 6.66797 10.6339 6.66797 6.91251C6.66797 3.19115 9.69148 0.15625 13.3989 0.15625C17.1064 0.15625 20.1299 3.19115 20.1299 6.91251Z' fill='%23001D7E'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.925 27.9401C25.925 31.9143 0.873047 31.9143 0.873047 27.9401C0.873047 21.9786 6.48815 17.4624 13.399 17.4624C20.3459 17.4624 25.925 21.9786 25.925 27.9401Z' fill='%23001D7E'/%3E%3C/svg%3E");
+  height: 31px;
+  width: 26px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.login-mobile .vtex-button__label::after {
+  content: 'Entrar';
+  font-family: "Futura Bold",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #8D8C8C;
+  
+}
+
+.login-mobile .vtex-login-3-x-container {
+  height: 100%;
+}
+
+.tfcvih-weonne-zenir-io-3-x-drawerHeader {
+  background: #001D7E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title-menu h2 {
+  font-family: 'Futura Hv BT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.tfcvih-weonne-zenir-io-3-x-closeIcon {
+  display: none;
+}
+
+.tfcvih-weonne-zenir-io-3-x-closeIconButton::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='25' viewBox='0 0 22 25' fill='none'%3E%3Cpath d='M2 2.45166L20 23.3549' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M2 23.355L20 2.45176' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+  height: 13px;
+  width: 22px;
+  display: inline-block;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title-menuvtex h2 {
+  color: #FFFFFF;
+  font-family: 'Futura Md BT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.8893px;
+  line-height: 19px;
+}
+
+@media (max-width: 768px){
+  .title-menuvtex h2{
+      font-size: 17.25px; 
+  }
+}
+
+.links-menu-drawer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 44px 50px;
+  background: #F0F0F0;
+  margin-top: 20px;
+}
+
+.central-de-atendimento, .regulamentos, .politicas-de-privacidade {
+  background: #5870C0;
+  border-radius: 10.5646px;
+  cursor: pointer;
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px;
+  margin-bottom: 9px;
+}
+
+.telefone-drawer{
+  background: #EC404D;
+  border-radius: 10.5646px;
+  cursor: pointer;
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px;
+  margin-bottom: 9px;
+}
+
+.banner-menu-2 {
+  margin-bottom: 44px;
+}
+
+.horario-de-atendimento {
+  margin: 22px 0;
+  text-align: center;
+}
+
+.tfcvih-weonne-zenir-io-3-x-openIconContainer::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='14' viewBox='0 0 18 14' fill='none'%3E%3Cpath d='M16.3606 5.95703H1.61711C0.974258 5.95703 0.453125 6.47816 0.453125 7.12101C0.453125 7.76386 0.974257 8.285 1.61711 8.285H16.3606C17.0034 8.285 17.5245 7.76386 17.5245 7.12101C17.5245 6.47816 17.0034 5.95703 16.3606 5.95703Z' fill='white'/%3E%3Cpath d='M16.3606 0.71875H1.61711C0.974258 0.71875 0.453125 1.23988 0.453125 1.88273C0.453125 2.52558 0.974257 3.04671 1.61711 3.04671H16.3606C17.0034 3.04671 17.5245 2.52558 17.5245 1.88273C17.5245 1.23988 17.0034 0.71875 16.3606 0.71875Z' fill='white'/%3E%3Cpath d='M16.3606 11.1938H1.61711C0.974258 11.1938 0.453125 11.715 0.453125 12.3578C0.453125 13.0007 0.974257 13.5218 1.61711 13.5218H16.3606C17.0034 13.5218 17.5245 13.0007 17.5245 12.3578C17.5245 11.715 17.0034 11.1938 16.3606 11.1938Z' fill='white'/%3E%3C/svg%3E");
+  height: 14px;
+  width: 18px;
+  display: inline-block;
+  margin-left: 7px;
+}
+
+@media (max-width: 1199.98px) { 
+  .tfcvih-weonne-zenir-io-3-x-openIconContainer::after {
+      margin-left: 15px;
+    
+  }
+}
+
+.tfcvih-weonne-zenir-io-3-x-openIconContainer {
+  background: #001D7E;
+  height: 100%;
+  width: 189.56px;
+  padding: 0 11px;
+  display: flex;
+  align-items: center;
+}
+
+.tfcvih-weonne-zenir-io-3-x-openIconContainer .ver-mais {
+  font-family: 'Futura Md BT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.7796px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.tfcvih-weonne-zenir-io-3-x-drawerHeader {
+  position: relative;
+  max-height: 39.72px;
+  padding-left: 35px;
+}
+
+.tfcvih-weonne-zenir-io-3-x-closeIconButton {
+  position: absolute;
+  right: -56px;
+  background: #434343;
+  border-radius: 3.17787px;
+  top: 9px;
+}
+
+@media (max-width: 768px){
+  .tfcvih-weonne-zenir-io-3-x-closeIconButton{
+      right: 40px;
+      height: 38px;
+      
+  }
+}
+
+.tfcvih-weonne-zenir-io-3-x-opened .tfcvih-weonne-zenir-io-3-x-drawerContent {
+  overflow-y: unset!important;
+}
+
+.tfcvih-weonne-zenir-io-3-x-closed .tfcvih-weonne-zenir-io-3-x-drawerContent {
+  overflow-y: auto!important;
+}
+
+.tfcvih-weonne-zenir-io-3-x-childrenContainer {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contain-header-menu {
+  display: flex;
+  background: #F0F0F0;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-around;
+  padding: 10px 0 10px 35px;
+}
+
+.contain-header-menu-home, .contain-header-menu-minha-conta {
+  text-decoration: none;
+  font-family: 'Futura Md BT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0672px;
+  line-height: 23px;
+  color: #434343;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.contain-header-menu-home::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='26' viewBox='0 0 29 26' fill='none'%3E%3Cpath d='M23.5999 14.2205C23.1356 14.2205 22.7593 14.5968 22.7593 15.0611V23.5918H5.69758V15.0611C5.69758 14.5968 5.32131 14.2205 4.85694 14.2205C4.39257 14.2205 4.0163 14.5968 4.0163 15.0611V24.4324C4.0163 24.8967 4.39257 25.2731 4.85694 25.2731H23.5999C24.0643 25.2731 24.4406 24.8967 24.4406 24.4324V15.0611C24.4406 14.5968 24.0642 14.2205 23.5999 14.2205Z' fill='black'/%3E%3Cpath d='M28.0752 14.4669L14.8215 1.21469C14.4933 0.886389 13.961 0.886501 13.6327 1.21469L0.380623 14.4669C0.052325 14.7952 0.052325 15.3275 0.380623 15.6556C0.544828 15.8197 0.760031 15.9019 0.975123 15.9019C1.19033 15.9019 1.40542 15.8198 1.56962 15.6556L14.2273 2.99785L26.8865 15.6556C27.2147 15.9839 27.747 15.9838 28.0754 15.6555C28.4035 15.3273 28.4035 14.795 28.0752 14.4669Z' fill='black'/%3E%3C/svg%3E");
+  width: 29px;
+  height: 26px;
+  display: inline-block;
+  margin-right: 29px;
+}
+
+.contain-header-menu-minha-conta::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='24' viewBox='0 0 20 24' fill='none'%3E%3Cpath d='M14.6237 5.61154C14.6237 7.98095 12.6973 9.91031 10.3441 9.91031C7.99076 9.91031 6.06436 7.98095 6.06436 5.61154C6.06436 3.24213 7.99076 1.31278 10.3441 1.31278C12.6973 1.31278 14.6237 3.24213 14.6237 5.61154Z' stroke='black' stroke-width='1.58893'/%3E%3Cpath d='M10.3439 14.3589C15.2796 14.3589 18.9783 17.5295 18.9922 21.4409C18.9773 21.4698 18.9036 21.5807 18.5956 21.7482C18.1783 21.9752 17.5274 22.19 16.6714 22.3711C14.9737 22.7302 12.6725 22.9156 10.3439 22.9156C8.01541 22.9156 5.71423 22.7302 4.01646 22.3711C3.1605 22.19 2.50961 21.9752 2.09227 21.7482C1.7843 21.5807 1.71055 21.4698 1.69569 21.4409C1.70969 17.5308 5.43382 14.3589 10.3439 14.3589Z' stroke='black' stroke-width='1.58893'/%3E%3C/svg%3E");
+  width: 20px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 35px;
+  margin-left: 4px;
+}
+
+.tfcvih-weonne-zenir-io-3-x-trigger--hidden .menu-item::after, .tfcvih-weonne-zenir-io-3-x-trigger--hidden .menu-item-first::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='14' viewBox='0 0 9 14' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.39599 7.25208L0.933619 1.43442L1.9089 0.473473L8.3181 7.25208L1.9089 13.7568L0.933621 12.7959L6.39599 7.25208Z' fill='%23434343'/%3E%3C/svg%3E");
+  width: 9px;
+  height: 14px;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.tfcvih-weonne-zenir-io-3-x-trigger--visible .menu-item::after, .tfcvih-weonne-zenir-io-3-x-trigger--visible .menu-item-first::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='14' viewBox='0 0 9 14' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.39599 7.25208L0.933619 1.43442L1.9089 0.473473L8.3181 7.25208L1.9089 13.7568L0.933621 12.7959L6.39599 7.25208Z' fill='%23434343'/%3E%3C/svg%3E");
+  width: 9px;
+  height: 14px;
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+}
+
+.tfcvih-weonne-zenir-io-3-x-drawer {
+  max-width: 364.66px!important;
+}
+
+.menu-container .menu-custom a {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 1380px) {
+  .menu-container .menu-custom a {
+    font-size: 12px;
+  }
+}
+

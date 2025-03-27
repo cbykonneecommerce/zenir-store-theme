@@ -1,0 +1,57 @@
+{
+	"vtex.menu@2.x:submenu#submenu-bicicleta": {
+		"props": {
+			"blockClass": "submenu-header"
+		},
+		"children": [
+			"flex-layout.row#submenu-bicicleta"
+		]
+	},
+	"flex-layout.row#submenu-bicicleta": {
+		"children": [
+			"vtex.menu@2.x:menu#menu-bicicleta"
+		],
+    "props": {
+      "blockClass": "submenu-header"
+    }
+	},
+	"vtex.menu@2.x:menu#menu-bicicleta": {
+		"props": {
+			"orientation": "vertical",
+      "blockClass": "menu-header"
+		},
+		"children": [
+			"flex-layout.row#menu-bicicleta"
+		]
+	},
+	"flex-layout.row#menu-bicicleta": {
+    "children": [
+      "flex-layout.col#menu-menu-imagem"
+    ],
+    "props": {
+      "blockClass": ["menu-header", "imagem-menu"]
+    }
+  },
+  "flex-layout.col#menu-menu-imagem": {
+    "children": [
+      "toggle-layout#imagem-do-menu"
+    ],
+    "props": {
+      "blockClass": "menu-header-imagem"
+    }
+  },
+  "toggle-layout#imagem-do-menu": {
+    "title": "Imagem do menu bicicleta",
+    "children": [
+      "image#menu-bicicleta-imagem"
+    ]
+  },
+  "image#menu-bicicleta-imagem": {
+		"props": {
+			"src": "/arquivos/menu-iphone.png",
+			"blockClass": "menu-imagem",
+      "width": 300,
+      "height": 376
+		}
+	}
+}

@@ -1,0 +1,279 @@
+{
+	"vtex.menu@2.x:submenu#submenu-categorias": {
+		"props": {
+			"blockClass": "submenu-categorias"
+	},
+		"children": [
+			"flex-layout.row#submenu-categorias"
+		]
+	},
+	"flex-layout.row#submenu-categorias": {
+		"children": [
+			"vtex.menu@2.x:menu#menu-categorias"
+		]
+	},
+	"vtex.menu@2.x:menu#menu-categorias": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+			"menu-item#tvs-audio-categorias",
+			"menu-item#celulares-smartphones-categorias",
+			"menu-item#moveis-categorias",
+			"menu-item#eletrodomesticos-categorias",
+			"menu-item#eletroportateis-categorias",
+			"menu-item#bicicletas-categorias",
+			"menu-item#informatica-categorias",
+			"menu-item#utilidade-lar-categorias",
+			"menu-item#cama-mesa-categorias",
+			"menu-item#banho-categorias",
+			"menu-item#decoracao-categorias",
+			"menu-item#telefone-categorias",
+			"menu-item#atendimento-categorias"
+		]
+	},
+	"menu-item#tvs-audio-categorias": {
+		"props": {
+			"id": "menu-item-tvs",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/tv-s-e-audio",
+				"noFollow": true,
+				"tagTitle": "Tv's e Áudio",
+				"text": "Tv's e Áudio"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Audio"]
+		},
+		"blocks": [
+		  "vtex.menu@2.x:submenu#submenu-tv-audio"
+		]
+	},
+	"menu-item#celulares-smartphones-categorias": {
+		"props": {
+			"id": "menu-item-celulares-smartphones",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/celulares-e-smartphones",
+				"noFollow": true,
+				"tagTitle": "Smartphones",
+				"text": "Smartphones"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Celulares"]
+		},
+    "blocks": [
+      "vtex.menu@2.x:submenu#submenu-smartphones"
+    ]
+	},
+	"menu-item#moveis-categorias": {
+		"props": {
+			"id": "menu-item-moveis",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/moveis",
+				"noFollow": true,
+				"tagTitle": "Móveis",
+				"text": "Móveis"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Moveis"]
+		},
+		"blocks": [
+		"vtex.menu@2.x:submenu#submenu-moveis"
+		]
+	},
+	"menu-item#eletrodomesticos-categorias": {
+		"props": {
+			"id": "menu-item-eletrodomesticos",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/eletrodomesticos",
+				"noFollow": true,
+				"tagTitle": "Eletromésticos",
+				"text": "Eletromésticos"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Eletrodomesticos"]
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu#submenu-eletrodomesticos"
+		]
+	},
+	"menu-item#eletroportateis-categorias": {
+		"props": {
+			"id": "menu-item-eletroportateis",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/eletroportateis",
+				"noFollow": true,
+				"tagTitle": "Eletroportáteis",
+				"text": "Eletroportáteis"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Eletroportateis"]
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu#submenu-eletroportateis"
+		]
+	},
+	"menu-item#bicicletas-categorias": {
+		"props": {
+			"id": "menu-item-bicicletas",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/bicicletas",
+				"noFollow": true,
+				"tagTitle": "Bicicletas",
+				"text": "Bicicletas"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Bicicletas"]
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu#submenu-bicicleta"
+		]
+	},
+	"menu-item#informatica-categorias": {
+		"props": {
+			"id": "menu-item-informatica",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/informatica",
+				"noFollow": true,
+				"tagTitle": "Informática",
+				"text": "Informática"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Informatica"]
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu#submenu-informatica"
+		]
+	},
+	"menu-item#utilidade-lar-categorias": {
+		"props": {
+			"id": "menu-item-utilidade-lar",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/utilidade-do-lar",
+				"noFollow": true,
+				"tagTitle": "Utilidade do Lar",
+				"text": "Utilidade do Lar"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Utilidade"]
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu#submenu-utilidades"
+		]
+	},
+  "menu-item#cama-mesa-categorias": {
+		"props": {
+			"id": "menu-item-cama-mesa",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/cama-e-mesa",
+				"noFollow": true,
+				"tagTitle": "Cama e Mesa",
+				"text": "Cama e Mesa"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Cama"]
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu#submenu-cama-mesa"
+		]
+	},
+  "menu-item#banho-categorias": {
+		"props": {
+			"id": "menu-item-banho",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/banho",
+				"noFollow": true,
+				"tagTitle": "Banho",
+				"text": "Banho"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Banho"]
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu#submenu-banho"
+		]
+	},
+  "menu-item#decoracao-categorias": {
+		"props": {
+			"id": "menu-item-decoracao",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/decoracao",
+				"noFollow": true,
+				"tagTitle": "Decoração",
+				"text": "Decoração"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "Decoracao"]
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu#submenu-decoracao"
+		]
+	},
+	"menu-item#telefone-categorias": {
+		"props": {
+			"id": "menu-item-telefone",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/telefone",
+				"noFollow": true,
+				"tagTitle": "Telefone",
+				"text": "Telefone"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "telefone"]
+		}
+	},
+	"menu-item#atendimento-categorias": {
+		"props": {
+			"id": "menu-item-atendimento",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": true,
+				"tagTitle": "Atendimento",
+				"text": "Atendimento"
+			},
+			"blockClass": ["submenu-categorias", "icon-seta", "atendimento"]
+		},
+		"blocks": [
+			"vtex.menu@2.x:submenu#submenu-atendimento"
+		]
+	}
+}

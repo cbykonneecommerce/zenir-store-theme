@@ -1,0 +1,98 @@
+{
+    "flex-layout.row#campeoes-de-venda": {
+        "title": "Campeoes de venda",
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "container",
+                "campeoes-de-venda"
+            ]
+        },
+        "children": [
+            "flex-layout.row#campeoes-de-venda-left",
+            "flex-layout.row#campeoes-de-venda-right"
+        ]
+    },
+    "flex-layout.row#campeoes-de-venda-left": {
+        "title": "Campeoes de esquerda",
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "campeoes-de-veda-left"
+            ]
+        },
+        "children": [
+            "image#zenir-boneco",
+            "rich-text#campeoes-de-venda"
+        ]
+    },
+    "rich-text#campeoes-de-venda": {
+        "title": "Campeoes de venda - Texto",
+        "props": {
+            "blockClass": [
+                "campeoes-de-venda"
+            ],
+            "text": "CAMPEÕES DE \n **VENDA**"
+        }
+    },
+    "image#zenir-boneco": {
+        "title": "Campeoes de venda - icone",
+        "props": {
+            "blockClass": [
+                "campeoes-de-venda-icone"
+            ],
+            "src": "https://tfcvih.vteximg.com.br/arquivos/zenir-boneco.svg"
+        }
+    },
+    "flex-layout.row#campeoes-de-venda-right": {
+        "title": "Campeoes de venda - direita",
+        "props": {
+            "blockClass": [
+                "campeoes-de-venda-right"
+            ]
+        },
+        "children": [
+            "list-context.product-list#ofertas-do-dia-campeoes-de-venda"
+        ]
+    },
+    "list-context-renderer#oferta-campeoes-de-venda": {
+        "title": "Campeoes de venda - lista de produtos",
+        "props": {
+            "blockClass": [
+                "oferta-do-dia-campeoes-de-venda"
+            ],
+            "listElement": "ul",
+            "itemElement": "li"
+        }
+    },
+    "list-context.product-list#ofertas-do-dia-campeoes-de-venda": {
+        "title": "Campeoes de venda - lista de produtos",
+        "blocks": [
+            "product-summary.shelf#oferta-campeoes-de-venda"
+        ],
+        "children": [
+            "list-context-renderer#oferta-campeoes-de-venda"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC",
+            "maxItemsPerPage": 3,
+            "maxItems": 3
+        }
+    },
+    "product-summary.shelf#oferta-campeoes-de-venda": {
+        "title": "Campeoes de venda - Card de produto",
+        "props": {
+            "blockClass": [
+                "campeoes-de-venda"
+            ]
+        },
+        "children": [
+            "product-summary-image",
+            "product-summary-name"
+        ]
+    }
+}

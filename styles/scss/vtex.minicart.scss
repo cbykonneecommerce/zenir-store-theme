@@ -1,0 +1,103 @@
+.minicartIconContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.openIconContainer :global(.vtex-button__label) {
+  margin: 0;
+  padding: 0;
+}
+
+.minicartIconContainer::before {
+  content: "";
+  background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/9ae68450-8d8e-48ae-968c-0ae7ca498f9b___16f69fbacf07625507b85fb820fee75c.svg");
+  // background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/6bb946aa-b7dc-4fb6-b9d2-6bd15b7cd7a9___fc78fb00bf99c5aca3060d9ef9ed027f.svg");
+  background-position: center center;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+.minicartQuantityBadgeDefault {
+  top: -10px;
+  right: -10px;
+}
+.minicartContainer {
+  padding: 0;
+}
+
+.openIconContainer :global(.vtex-button) {
+  border: none;
+  background: transparent;
+}
+
+.openIconContainer {
+  padding: 0px;
+  padding-left: 0.75rem;
+}
+
+.minicartProductListContainer :global(.vtex-product-list-0-x-productName) {
+  height: 50px;
+  overflow: hidden;
+}
+:global(.vtex-product-list-0-x-quantitySelectorContainer) {
+  display: none;
+}
+:global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
+  display: none;
+}
+
+:global(.vtex-checkout-summary-0-x-price) {
+  font-family: "Futura Regular", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #001d7e;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  background: #001d7e;
+  border-radius: 5px;
+  border: none;
+  font-family: Futura Md BT, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.opened {
+  z-index: 999999999;
+}
+
+.minicartProductListContainer :global(.vtex-product-list-0-x-deleteIcon) {
+  overflow: visible !important;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label) {
+  font-size: 0px;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label)::before {
+  content: "Finalizar compra";
+  font-family: Futura Md BT, sans-serif;
+  font-size: 20px;
+}
+
+.cartIcon {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .openIconContainer {
+    padding-left: 0;
+  }
+
+  .cartIcon {
+    top: -5px;
+  }
+}

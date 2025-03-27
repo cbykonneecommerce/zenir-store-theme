@@ -1,0 +1,259 @@
+.containerNormal {
+  position: relative;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  padding: 40px 19px 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.clearLink {
+  height: auto;
+  display: flex;
+}
+
+.brandName--summary {
+  text-align: left;
+  font-family: 'Futura Md BT', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #515151;
+}
+
+@media screen and (max-width: 767px) {
+  .brandName--summary {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+.element {
+  padding: 0;
+  height: auto;
+}
+
+.nameWrapper--summary {
+  overflow: hidden;
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.element--default-related {
+  border: 1px solid #c4c4c4;
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+}
+
+.priceContainer--summary {
+  padding: 0px;
+  align-items: flex-start;
+}
+
+.priceContainer--summary {
+  margin-right: 0.5rem;
+}
+
+.nameContainer--summary {
+  padding: 0px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+
+
+.imageNormal {
+  max-height: 15rem;
+  min-height: 15rem;
+}
+
+.sellingPrice--summary {
+  padding: 0px;
+}
+
+.element--principal-summary {
+  padding: 0px 50px;
+}
+
+/* .price_sellingPrice--summary {
+  font-family: "Futura Bold", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #515151;
+} */
+
+.nameWrapper--principal,
+.brandName--principal {
+  font-family: 'Futura Md BT', sans-serif;
+  font-size: 40px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.containerNormal--campeoes-de-venda {
+  border: none;
+  padding: 0px;
+}
+
+.imageWrapper--principal :global(.vtex-store-components-3-x-discountInsideContainer) {
+  background-color: #bf0811;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  font-family: "Futura Medium", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 17px;
+  color: #ffffff;
+  right: -20%;
+  min-width: 200px;
+}
+
+/* oferta principal */
+
+.containerNormal--principal-summary {
+  max-width: unset !important;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  ;
+}
+
+.containerNormal--principal-summary :global(.vtex-product-price-1-x-installments--summary) {
+  font-size: 23px;
+  display: block;
+  margin-top: 30px;
+}
+
+
+.containerNormal--campeoes-de-venda .imageNormal {
+  min-height: unset !important;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.containerNormal--campeoes-de-venda .discountInsideContainer {
+  display: none;
+}
+
+.containerNormal--campeoes-de-venda .imageWrapper {
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  border: 3px solid #bf0811;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.containerNormal--campeoes-de-venda .nameContainer {
+  padding: 0px;
+  max-width: 80%;
+  margin: 10px auto 0px;
+}
+
+.containerNormal--campeoes-de-venda .productNameContainer {
+  color: #fff;
+  height: 60px;
+}
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .containerNormal{
+    margin: 0 15px;
+  }
+  .imageNormal{
+    max-height: 198px !important;
+    min-height: initial !important;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .containerNormal{
+    max-width: initial !important;
+  }
+}
+
+
+/* mobile */
+@media screen and (max-width: 1024px) {
+
+  .containerNormal--campeoes-de-venda .imageNormal {
+    max-width: 90%;
+  }
+  .containerNormal--campeoes-de-venda .nameContainer {
+    padding: 0px;
+    margin: 5px auto 0px;
+  }
+  .containerNormal--campeoes-de-venda .productNameContainer {
+    height: 70px;
+  }
+  .element{
+    padding-top: 10px;
+  }
+  .imageNormal {
+    min-height: 7rem;
+  }
+
+  .containerNormal--principal-summary {
+    border-radius: 10px;
+  }
+
+  .element--default-related {
+    padding: 1rem;
+  }
+
+  .clearLink--default-related {
+    height: auto;
+  }
+
+  .containerNormal--campeoes-de-venda .imageWrapper {
+    max-width: 160px;
+    max-height: 160px;
+    padding: 5px;
+  }
+
+  .element--principal-summary {
+    padding: 0px;
+  }
+
+  .imageWrapper--principal :global(.vtex-store-components-3-x-discountInsideContainer) {
+    right: 0px !important;
+  }
+
+  .image--principal {
+    height: 300px !important;
+  }
+
+  .containerNormal {
+    padding: 8px;
+  }
+
+  .nameWrapper--summary {
+    height: 54px;
+  }
+  .nameContainer--summary{
+    margin-bottom: 10px;
+  }
+
+  .nameWrapper--principal,
+  .brandName--principal {
+    font-size: 35px;
+  }
+  .containerNormal--principal-summary :global(.vtex-product-price-1-x-installments--summary) {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+}

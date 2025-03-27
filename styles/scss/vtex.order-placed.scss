@@ -1,0 +1,75 @@
+.orderPlacedWrapper {
+  background: #f4f4f4;
+}
+
+.confirmationMessage {
+  font-family: 'Futura Bk BT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #4f4f4f;
+}
+
+.confirmationTitle {
+  font-size: 0px;
+}
+
+.confirmationIconWrapper {
+  display: none;
+}
+
+.noticesList {
+  background-color: #fff;
+}
+
+.noticeListItem {
+  font-family: 'Futura Bk BT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  width: 100%;
+  color: #4f4f4f;
+}
+
+.cancelOrderButton :global(.vtex-button) {
+  background: tomato;
+  color: #fff;
+  border-radius: 0px;
+}
+
+.myOrdersButton :global(.vtex-button) {
+  background-color: #ffb71c;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+}
+
+.updateOrderButton :global(.vtex-button) {
+  background-color: #001d7e;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+}
+
+.customerInfoListPhone,
+.customerInfoListDocument,
+.customerInfoListEmail {
+  font-family: 'Futura Md BT', sans-serif;
+}
+
+.confirmationTitle::before {
+  content: 'Pedido confirmado com sucesso!';
+  font-family: 'Futura Md BT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4f4f4f;
+}

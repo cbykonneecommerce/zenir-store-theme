@@ -1,0 +1,166 @@
+{
+    "flex-layout.row#beneficios": {
+        "title": "Faixa de beneficios",
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "container",
+                "beneficios-container"
+            ]
+        },
+        "children": [
+            "flex-layout.row#beneficio1",
+            "flex-layout.row#beneficio2",
+            "flex-layout.row#beneficio3",
+            "flex-layout.row#beneficio4"
+        ]
+    },
+    "flex-layout.row#beneficio1": {
+        "title": "Beneficios Item 1",
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "beneficios-item"
+            ]
+        },
+        "children": [
+            "image#beneficio-11",
+            "rich-text#beneficio-11"
+        ]
+    },
+    "rich-text#beneficio-11": {
+        "title": "Beneficios Item 1 - texto",
+        "props": {
+            "text": "Frete Grátis <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'> consulte o regulamento </a>",
+            "href": "/tv-s-e-audio",
+            "blockClass": [
+                "beneficios-text"
+            ]
+            
+        }
+    },
+    "image#beneficio-11": {
+        "title": "Beneficios Item 1 - imagem",
+        "props": {
+            "src": "/arquivos/trucker-benefits.png",
+            "blockClass": [
+                "beneficios-imagem"
+            ]
+        }
+    },
+    "flex-layout.row#beneficio2": {
+        "title": "Beneficios Item 2",
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "beneficios-item"
+            ]
+        },
+        "children": [
+            "image#beneficio-2",
+            "rich-text#beneficio-2"
+        ]
+    },
+    "rich-text#beneficio-2": {
+        "title": "Beneficios Item 2 - texto",
+        "props": {
+            "text": "Montagem Grátis <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'> Consultar o Regulamento </a>",
+            "blockClass": [
+                "beneficios-text"
+            ]
+        }
+    },
+    "image#beneficio-2": {
+        "title": "Beneficios Item 3 - imagem",
+        "props": {
+            "src": "/arquivos/hammer-benefits.png",
+            "blockClass": [
+                "beneficios-imagem"
+            ]
+        }
+    },
+    "link#beneficio-2-link":{
+        "title": "Link Beneficios Item 1 - texto",
+        "props": {
+            "label": "Consultar o regulamento",
+            "href": "/tv-s-e-audio",
+            "blockClass": [
+                "beneficios-link"
+            ]
+            
+        }
+    },
+    "flex-layout.row#beneficio3": {
+        "title": "Beneficios Item 3",
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "beneficios-item"
+            ]
+        },
+        "children": [
+            "image#beneficio-3",
+            "rich-text#beneficio-66"
+        ]
+    },
+    "rich-text#beneficio-66": {
+        "title": "Beneficios Item 3 - texto",
+        "props": {
+            "text": "10x sem juros <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'> No cartão de crédito</a>   ",
+            "blockClass": [
+                "beneficios-text"
+            ]
+        }
+    },
+    "image#beneficio-3": {
+        "title": "Beneficios Item 2 - imagem",
+        "props": {
+            "src": "/arquivos/icon-card.png",
+            "blockClass": [
+                "beneficios-imagem"
+            ]
+        }
+    },
+
+    "flex-layout.row#beneficio4": {
+        "title": "Beneficios Item 4",
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "beneficios-item"
+            ]
+        },
+        "children": [
+            "image#beneficio-44",
+            "rich-text#beneficio-44"
+        ]
+    },
+    "rich-text#beneficio-44": {
+        "title": "Beneficios Item 4 - texto",
+        "props": {
+            "text": "Parcele em até 12x <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'> No cartão de crédito</a>",
+            "blockClass": [
+                "beneficios-text"
+            ]
+        }
+    },
+    "image#beneficio-44": {
+        "title": "Beneficios Item 2 - imagem",
+        "props": {
+            "src": "/arquivos/icon-card.png",
+            "blockClass": [
+                "beneficios-imagem"
+            ]
+        }
+    }
+}

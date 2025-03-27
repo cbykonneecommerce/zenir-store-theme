@@ -1,0 +1,287 @@
+:global(.render-route-store-home)
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+:global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+  bottom: -18px !important;
+  // background: linear-gradient(90deg, #00348C 0%, #000A62 100%);
+  background: line;
+  height: 1.5rem;
+  align-items: center;
+}
+
+// :global(.render-route-store-custom-cama-mesa-banho) 
+// :global(.vtex-sticky-layout-0-x-container--sticky-header-desktop) {
+//   background: #EDD0B8;
+// }
+
+// :global(.render-route-store-custom-cama-mesa-banho) 
+// :global(.vtex-flex-layout-0-x-flexRow--mega-menu-row) {
+//   background: #C29E7F;
+//   border: none;
+// }
+
+// :global(.render-route-store-custom-cama-mesa-banho) 
+// :global(.vtex-category-menu-2-x-container) {
+//   background: #C29E7F;
+//   border: none;
+// }
+
+// :global(.render-route-store-custom-cama-mesa-banho)
+// :global(.vtex-sticky-layout-0-x-container--header-mobile) {
+//   background: #EDD0B8;
+// }
+
+:global(.render-route-store-custom-cama-mesa-banho) iframe {
+  display: none !important;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho) 
+:global(.newsletterSection) {
+  display: none !important;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho) 
+:global(.vtex-store-footer-2-x-footerLayout) {
+  background: #C29E7F;
+  border-top: 4px solid #513C2B;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho) 
+:global(.vtex-rich-text-0-x-wrapper--sac) {
+  background: #513C2B;
+  border: none;
+  color: #FFFFFF;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho) 
+:global(.vtex-rich-text-0-x-wrapper--sac) p {
+  color: #FFFFFF;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho) 
+:global(.vtex-rich-text-0-x-paragraph--menu-institucional--footer) {
+  background: #C29E7F;
+  color: #fff;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho)
+:global(.vtex-menu-2-x-menuContainerNav--menu-institucional-footer) {
+  background: #C29E7F;
+  color: #fff;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho)
+:global(.vtex-menu-2-x-styledLinkContent--menu-institucional-footer) {
+  background: #C29E7F;
+  color: #fff;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho)
+:global(.vtex-flex-layout-0-x-flexRow--blank-spacer) {
+  background: #C29E7F;
+  color: #fff;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho)
+:global(.vtex-menu-2-x-menuItem--menu-accordion--container-mobile) {
+  background: #513C2B;
+  width: 90%;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho)
+:global(.vtex-menu-2-x-styledLinkContent--menu-accordion--container-mobile) {
+  color: #fff;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho)
+:global(.vtex-menu-2-x-menuItem--menu-accordion--container-mobile) {
+  padding: 1.5rem 0;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho)
+:global(.vtex-rich-text-0-x-paragraph--footer-message-text) {
+  color: #fff;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho)
+:global(.vtex-rich-text-0-x-paragraph--footer-bottom-text) {
+  color: #fff;
+}
+
+:global(.render-route-store-custom-cama-mesa-banho)
+:global(.vtex-rich-text-0-x-paragraph--formas-pagamento-title) {
+  color: #fff;
+}
+
+@media screen and (max-width: 414px) and (min-width: 391px) {
+  :global(.render-route-store-home)
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+    bottom: -10px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  :global(.render-route-store-home)
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+    bottom: -7px !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  :global(.render-route-store-home)
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+    bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  :global(.render-route-store-home)
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel) {
+    height: 360px;
+  }
+
+  :global(.render-route-store-home)
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+    bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  :global(.render-route-store-home)
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel) {
+    height: 350px;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--imagem-menu) {
+  position: absolute;
+  right: 3%;
+}
+
+
+:global(#menu-item-tvs)::before {
+  content: "";
+  background: url(/arquivos/icone-tv.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-celulares-smartphones)::before {
+  content: "";
+  background: url(/arquivos/icone-celular.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-moveis)::before {
+  content: "";
+  background: url(/arquivos/icone-moveis.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-eletrodomesticos)::before {
+  content: "";
+  background: url(/arquivos/icone-eletro.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-eletroportateis)::before {
+  content: "";
+  background: url(/arquivos/icone-eletroportateis.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-bicicletas)::before {
+  content: "";
+  background: url(/arquivos/icone-bicicleta.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-informatica)::before {
+  content: "";
+  background: url(/arquivos/icone-informatica.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-utilidade-lar)::before {
+  content: "";
+  background: url(/arquivos/icone-utilidade.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-cama-mesa)::before {
+  content: "";
+  background: url(/arquivos/icone-cama.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-banho)::before {
+  content: "";
+  background: url(/arquivos/icone-banho.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-decoracao)::before {
+  content: "";
+  background: url(/arquivos/icone-decoracao.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(#menu-item-telefone)::before {
+  content: "";
+  background: url(/arquivos/icon-telefone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}

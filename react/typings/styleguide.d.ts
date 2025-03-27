@@ -1,0 +1,19 @@
+declare module "vtex.styleguide" {
+  export const withToast: any;
+  export const Spinner: any;
+  export const Layout: any;
+  export const PageBlock: any;
+  export const PageHeader: any;
+  export const Table: any;
+  export const Alert: any;
+  export const Checkbox: any;
+  export const Button: any;
+  export const InputSearch: any;
+  export const Select: any;
+  export const EXPERIMENTAL_Select: any;
+  export const ToastProvider: any;
+  export const InputCurrency: any;
+  export const Input: any;
+  export const ModalDialog: any;
+  export const ToastContext: any;
+}

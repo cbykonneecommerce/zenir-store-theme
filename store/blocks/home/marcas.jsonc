@@ -1,0 +1,127 @@
+{
+    "flex-layout.row#brands-badges": {
+        "title":"Seção de marcas",
+        "props": {
+            "blockClass": [
+                "container",
+                "brand-badges",
+                "section-home"
+            ],
+            "title": "box de marcas"
+        },
+        "children": [
+            "flex-layout.col#brands-badges"
+        ]
+    },
+    "flex-layout.col#brands-badges": {
+        "props": {},
+        "children": [
+            "rich-text#brands-badges-title",
+            "flex-layout.row#brands"
+        ]
+    },
+    "rich-text#brands-badges-title": {
+        "props": {
+            "blockClass": [
+                "shelf-title"
+            ],
+            "text": "Navegue por marcas"
+        }
+    },
+    "flex-layout.row#brands": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-list"
+            ]
+        },
+        "children": [
+            "flex-layout.col#brands-1",
+            "flex-layout.col#brands-2",
+            "flex-layout.col#brands-3",
+            "flex-layout.col#brands-4",
+            "flex-layout.col#brands-5",
+            "flex-layout.col#brands-6"
+        ]
+    },
+    "flex-layout.col#brands-1": {
+        "props": {
+            "blockClass": [
+                "brand-badges-item-first",
+                "brand-badges-item",
+                "brand-badges-item-zeflex"
+            ]
+        },
+        "children": [
+            "image#brands-badge"
+            
+        ]
+    },
+    "flex-layout.col#brands-2": {
+        "props": {
+            "blockClass": [
+                "brand-badges-item",
+                "brand-badges-item-consul"
+            ]
+        },
+        "children": [
+            "image#brands-badge"
+            
+        ]
+    },
+    "flex-layout.col#brands-3": {
+        "props": {
+            "blockClass": [
+                "brand-badges-item",
+                "brand-badges-item-brastemp"
+            ]
+        },
+        "children": [
+            "image#brands-badge"
+            
+        ]
+    },
+    "flex-layout.col#brands-4": {
+        "props": {
+            "blockClass": [
+                "brand-badges-item",
+                "brand-badges-item-tramontina"  
+            ]
+        },
+        "children": [
+            "image#brands-badge"
+            
+        ]
+    },
+    "flex-layout.col#brands-5": {
+        "props": {
+            "blockClass": [
+                "brand-badges-item",
+                "brand-badges-item-mondial"
+            ]
+        },
+        "children": [
+            "image#brands-badge"
+            
+        ]
+    },
+    "flex-layout.col#brands-6": {
+        "props": {
+            "blockClass": [
+                "brand-badges-item",
+                "brand-badges-item-lg"
+            ]
+        },
+        "children": [
+            "image#brands-badge"
+            
+        ]
+    },
+    "image#brands-badge": {
+        "props": {
+            "src": "https://tfcvih.vteximg.com.br/arquivos/badge-mondial.png",
+            "link": "/",
+            "title": "titulo da imagem",
+            "alt": "texto alternativo "
+        }
+    }
+}

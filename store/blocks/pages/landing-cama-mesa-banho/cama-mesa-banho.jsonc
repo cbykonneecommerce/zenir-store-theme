@@ -1,0 +1,174 @@
+{
+  "store.custom#cama-mesa-banho": {
+    "children": [
+      "responsive-layout.desktop#banner-principal-desktop",
+      "responsive-layout.mobile#banner-principal-mobile",
+      "flex-layout.row#section-info-card-travesseiro",
+      "flex-layout.row#shelf-first",
+      "flex-layout.row#section-banner-duplo",
+      "flex-layout.row#section-info-card-mesa",
+      "flex-layout.row#shelf-second",
+      "responsive-layout.desktop#banner-unico-desktop",
+      "responsive-layout.mobile#banner-unico-mobile",
+      "flex-layout.row#section-info-card-toalha",
+      "flex-layout.row#shelf-third"
+    ],
+    "props": {
+      "blockClass": "cama-mesa-banho"
+    }
+  },
+  "responsive-layout.desktop#banner-principal-desktop": {
+    "title": "Banner principal desktop",
+    "children": ["image#banner-principal-desktop"]
+  },
+  "responsive-layout.mobile#banner-principal-mobile": {
+    "title": "Banner principal mobile",
+    "children": ["image#banner-principal-mobile"]
+  },
+  "image#banner-principal-desktop": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "width": "100%",
+      "blockClass": "banner-principal"
+    }
+  },
+  "image#banner-principal-mobile": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "width": "100%",
+      "blockClass": "banner-principal"
+    }
+  },
+  "flex-layout.row#section-info-card-travesseiro": {
+    "title": "primeiro info card travesseiro",
+    "children": ["info-card#travesseiro"],
+    "props": {
+      "blockClass": "container-info-card"
+    }
+  },
+  "info-card#travesseiro": {
+    "title": "box travesseiro",
+    "props": {
+      "id": "first-info-card",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Nossa seção de camas é cuidadosamente projetada para proporcionar um ambiente perfeito para você descansar, recarregar as energias e acordar revigorado todas as manhãs. Encontre o paraíso do sono com a nossa variedade de camas e colchões, cada um deles especialmente selecionado para garantir o suporte ideal ao seu corpo e aconchego inigualável.",
+      "blockClass": "first-info-card",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#section-banner-duplo": {
+    "title": "seção banner duplo",
+    "children": [
+      "image#banner-duplicate-first",
+      "image#banner-duplicate-second"
+    ],
+    "props": {
+      "blockClass": "section-banner-duplo",
+      "preventHorizontalStretch": true
+    }
+  }, 
+  "image#banner-duplicate-first": {
+    "props": {
+      "props": {
+        "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+        "alt": "banner duplo",
+        "width": "100%",
+        "height": "auto",
+        "link": "#",
+        "blockClass": "imagem-banner-duplo"
+      }
+    }
+  },
+  "image#banner-duplicate-second": {
+    "props": {
+      "props": {
+        "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+        "alt": "banner duplo",
+        "width": "50%",
+        "height": "auto",
+        "link": "#",
+        "blockClass": "imagem-banner-duplo"
+      }
+    }
+  },
+  "flex-layout.row#section-info-card-mesa": {
+    "title": "segundo info card mesa",
+    "children": ["info-card#mesa"],
+    "props": {
+      "blockClass": "container-info-card"
+    }
+  },
+  "info-card#mesa": {
+    "title": "box mesa",
+    "props": {
+      "id": "second-info-card",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Para quem busca criar memórias afetivas em torno das refeições, nossa coleção de mesas de jantar é um deleite para os olhos e o paladar. Desde mesas extensíveis, ideais para receber amigos e familiares em ocasiões especiais, até opções mais compactas, perfeitas para aconchegantes jantares a dois, temos a mesa perfeita para tornar cada refeição uma experiência única.",
+      "blockClass": "second-info-card",
+      "textAlignment": "center"
+    }
+  },
+  "responsive-layout.desktop#banner-unico-desktop": {
+    "title": "Banner unico desktop",
+    "children": ["flex-layout.row#banner-unico-pequeno-desktop"]
+  },
+  "responsive-layout.mobile#banner-unico-mobile": {
+    "title": "Banner unico mobile",
+    "children": ["flex-layout.row#banner-unico-pequeno-mobile"]
+  },
+  "flex-layout.row#banner-unico-pequeno-desktop": {
+    "children": ["image#banner-unico-pequeno-desktop"],
+    "props": {
+      "blockClass": "container-banner-unico"
+    }
+  },
+  "flex-layout.row#banner-unico-pequeno-mobile": {
+    "children": ["image#banner-unico-pequeno-mobile"],
+    "props": {
+      "blockClass": "container-banner-unico"
+    }
+  },
+  "image#banner-unico-pequeno-desktop": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "alt": "banner unico",
+      "width": "1300px",
+      "height": "400px",
+      "link": "#",
+      "blockClass": "imagem-banner-unico"
+    }
+  },
+  "image#banner-unico-pequeno-mobile": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "alt": "banner unico",
+      "width": "auto",
+      "height": "auto",
+      "link": "#",
+      "blockClass": "imagem-banner-unico"
+    }
+  },
+  "flex-layout.row#section-info-card-toalha": {
+    "title": "terceiro info card mesa",
+    "children": ["info-card#toalha"],
+    "props": {
+      "blockClass": "container-info-card"
+    }
+  },
+  "info-card#toalha": {
+    "title": "box toalha",
+    "props": {
+      "id": "third-info-card",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "A Zenir convida você a mergulhar em um universo de bem-estar e luxo na nossa seção de banho. Aqui, cada detalhe é cuidadosamente selecionado para proporcionar uma experiência revigorante e rejuvenescedora, transformando seu momento de banho em um verdadeiro ritual de prazer e conforto. Nossa coleção de produtos para banho abrange desde elegantes jogos de toalhas até irresistíveis acessórios, todos projetados para superar suas expectativas e elevar a sua rotina diária.",
+      "blockClass": "third-info-card",
+      "textAlignment": "center"
+    }
+  }
+}

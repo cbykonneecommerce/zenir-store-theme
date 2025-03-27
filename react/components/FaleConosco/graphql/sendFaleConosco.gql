@@ -1,0 +1,5 @@
+mutation SendFaleConosco($input: DocumentInput) {
+  createDocument(acronym: "FC", document: $input) {
+    id
+  }
+}

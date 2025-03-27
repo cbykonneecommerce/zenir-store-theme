@@ -1,0 +1,57 @@
+.itemContainer--category {
+    z-index: 9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0;
+}
+
+.section--category {
+    padding: 0 !important;
+}
+
+.firstLevelList {
+    padding: 0;
+}
+
+.itemContainer--department{
+    position: unset;
+}
+
+.firstLevelLink {
+    color: #434343;
+}
+.firstLevelLink:hover {
+    background: #E8E8E8;
+
+}
+
+.submenuList {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: left;
+}
+
+.secondLevelLinkContainer {
+    display: none;
+}
+
+.container {
+    background-color: #001d7e;
+}
+
+.departmentList {
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: initial;
+}
+
+.section--department {
+    padding: 0 !important;
+
+}
+
+.departmentLink {
+    color: #fff;
+    margin: 0 .4rem;
+}

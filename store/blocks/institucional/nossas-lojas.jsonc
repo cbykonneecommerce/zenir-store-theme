@@ -1,0 +1,124 @@
+{
+    "store.custom#nossas-lojas": {
+        "blocks": [
+            "store.storelocator"
+        ]
+    },
+    "store.storelocator": {
+        "blocks": [
+            "flex-layout.row#title",
+            "flex-layout.row#container"
+        ],
+        "props": {
+            "blockClass": "page-store-locator"
+        }
+    },
+    "flex-layout.row#title": {
+        "children": [
+            "flex-layout.col#title"
+        ],
+        "props": {
+            "blockClass": "title-store-locator"
+        }
+    },
+    "flex-layout.row#container": {
+        "children": [
+            "store-list"
+        ],
+        "props": {
+            "blockClass": "container-store-locator"
+        }
+    },
+    "flex-layout.col#title": {
+        "children": [
+            "rich-text#title"
+        ],
+        "props": {
+            "blockClass": "title",
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#title": {
+        "props": {
+            "text": "## Nossas Lojas"
+        }
+    },
+    "store.storedetail": {
+        "blocks": [
+            
+            "store-group"
+        ],
+        "props": {
+            "blockClass": "store-detail-zenir"
+        }
+    },
+    "store-group": {
+        "children": [
+            "flex-layout.row#containerStore"
+        ],
+        "props": {
+            "title": "{storeName} Store"
+        }
+    },
+    "flex-layout.row#titleStore": {
+        "children": [
+            "flex-layout.col#titleStore"
+        ]
+    },
+    "flex-layout.row#containerStore": {
+        "children": [
+            
+            "flex-layout.col#detail",
+            "flex-layout.col#store"
+        ],
+        "props": {
+            "blockClass": "store-detail-zenir-container"
+        }
+    },
+
+    "rich-text#titleStore": {
+        "props": {
+            "text": "Detalhes da loja",
+            "blockClass": "title-details"
+        }
+    },
+    "flex-layout.col#detail": {
+        "children": [
+            "rich-text#titleStore",
+            "store-back-link",
+            "store-map",
+            "store-address",
+            "store-hours",
+            "store-instructions"
+        ],
+        "props": {
+            "width": "30%",
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.col#store": {
+        "children": [
+            "store-name"
+        ],
+        "props": {
+            "width": "70%"
+        }
+    },
+    "store-hours": {
+        "props": {
+            "label": "Horário comercial:",
+            "format": "24h",
+            "blockClass": "store-address-container"
+        }
+    },
+    "store-back-link": {
+        "props": {
+            "label": "Voltar"
+        }
+    },
+    "store-instructions": {
+        "props": {
+            "label": ""
+        }
+    }
+}

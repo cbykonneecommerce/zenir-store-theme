@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
+
+.modalCookiesContainer {
+  position: fixed;
+  bottom: -100%;
+  right: 1rem;
+  background: #001d7e;
+  box-shadow: 6px -3px 4px rgba(0, 0, 0, 0.25);
+  padding: 16px 33px 26px;
+  z-index: 9999;
+}
+
+.modalCookiesContainerWrapper h4 {
+  margin-top: 0px;
+  font-family: "Futura Md BT", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.6953px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.modalCookiesContainerWrapper p {
+  margin-top: 0px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18.0658px;
+  line-height: 17px;
+
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.modalCookiesContainer a {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18.0658px;
+  line-height: 17px;
+  text-decoration-line: underline;
+
+  color: #ffffff;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.modalCookiesCloseButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modalCookiesContainerWrapperButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalCookiesContainerWrapperButtons button {
+  border-radius: 11px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: none;
+  color: #000000;
+  background: #a4a4a4;
+  padding: 0.25rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.modalCookiesContainerWrapperButtons button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.modalCookiesContainer--active {
+  bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .modalCookiesContainer {
+    left: 1rem;
+  }
+
+  .modalCookiesContainerWrapperButtons button {
+    font-size: 10px;
+  }
+
+  .modalCookiesContainer a,
+  .modalCookiesContainerWrapper h4,
+  .modalCookiesContainerWrapper p {
+    font-size: 14px;
+  }
+}

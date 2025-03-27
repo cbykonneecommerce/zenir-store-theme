@@ -1,0 +1,199 @@
+.modalPaymentsTabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+  border-bottom: 2px solid #bdbdbd;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.modalPaymentsTabsList:hover {
+  cursor: pointer;
+}
+
+.modalPaymentsTabHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.labelModalPayments p,
+.labelModalPayments {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #bdbdbd;
+  font-family: "Futura Bk BT", sans-serif;
+}
+
+.containerCreditCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 15px;
+}
+.containerCreditCardItem:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.containerCreditCardItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.containerNumberOfInstallments {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.numberOfInstallmentsItem {
+  font-weight: 400;
+  font-size: 18px;
+  color: #4f4f4f;
+  margin: 10px 0px;
+  font-family: "Futura Bk BT", sans-serif;
+}
+
+.interestRateItem {
+  font-weight: 400;
+  font-size: 14px;
+  color: #808080;
+}
+
+.totalValuePlusInterestRate {
+  font-weight: 400;
+  font-size: 18px;
+  color: #4f4f4f;
+  font-family: "Futura Bk BT", sans-serif;
+}
+
+.modalPaymentsTabHead .tabActiveCard p {
+  color: #001d7e;
+  display: flex;
+  justify-content: center;
+  font-family: "Futura Bk BT", sans-serif;
+}
+.modalPaymentsTabHead .tabActiveCard p::after {
+  content: " ";
+  width: 140px;
+  height: 2px;
+  background-color: #001d7e;
+  display: block;
+  position: absolute;
+  bottom: -2px;
+}
+.modalPaymentsTabHead .tabActivePix p {
+  color: #001d7e;
+  display: flex;
+  justify-content: center;
+}
+.modalPaymentsTabHead .tabActivePix p::after {
+  content: " ";
+  width: 140px;
+  height: 2px;
+  background-color: #001d7e;
+  display: block;
+  position: absolute;
+  bottom: -2px;
+}
+.modalPaymentsTabHead .tabActiveCaixa p {
+  color: #001d7e;
+  display: flex;
+  justify-content: center;
+}
+
+.modalPaymentsTabHead .tabActiveCaixa p::after {
+  content: " ";
+  width: 140px;
+  height: 2px;
+  background-color: #001d7e;
+  display: block;
+  position: absolute;
+  right: 65px;
+  margin-top: 22px;
+}
+
+.containerPix {
+  margin-top: 25px;
+}
+.pixPrice {
+  font-weight: 400;
+  font-size: 18px;
+  color: #4f4f4f;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pixPriceText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
+}
+
+.textContentPix {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4f4f4f;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.containerCaixaTem {
+  margin-top: 25px;
+}
+.caixaTemPrice {
+  font-weight: 400;
+  font-size: 18px;
+  color: #4f4f4f;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.caixaTemPriceText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #808080;
+}
+
+.textContentCaixaTem {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4f4f4f;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .totalValuePlusInterestRate,
+  .interestRateItem,
+  .numberOfInstallmentsItem {
+    font-size: 12px;
+    min-width: 95px;
+  }
+
+  .modalPaymentsTabs {
+    gap: 80px;
+  }
+  .modalPaymentsTabHead .tabActiveCaixa p::after,
+  .modalPaymentsTabHead .tabActiveCard p::after,
+  .modalPaymentsTabHead .tabActivePix p::after {
+    width: 80px;
+    left: unset;
+    right: unset;
+  }
+  .textContentCaixaTem,
+  .textContentPix {
+    font-size: 12px;
+  }
+}

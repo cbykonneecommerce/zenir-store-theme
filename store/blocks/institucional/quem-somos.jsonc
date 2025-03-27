@@ -1,0 +1,51 @@
+{
+    "store.custom#quem-somos": {
+        "blocks": [
+            "flex-layout.row#instituciona-ttile",
+            "flex-layout.row#quem-somos-template"
+        ]
+    },
+    "flex-layout.row#instituciona-ttile": {
+        "props": {
+            "blockClass": [
+                "container"
+            ]
+        },
+        "children": [
+            "rich-text#quem-somos-title"
+        ]
+    },
+    "flex-layout.row#quem-somos-template": {
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "quem-somos-template",
+                "institucional-template",
+                "container"
+            ]
+        },
+        "children": [
+            "flex-layout.col#institucional-menu",
+            "rich-text#quem-somos-content"
+        ]
+    },
+    "rich-text#quem-somos-content": {
+        "props": {
+            "blockClass": [
+                "quem-somos-conteudo",
+                "institucional-conteudo"
+            ],
+            "text": "### QUEM SOMOS? \n Uma empresa do tamanho de sua paixão pelo que faz. \n Já são mais de 56 Lojas e Quase 2 mil colaboradores. Quem diria que um garoto natural de Jucás, que desde cedo trabalhou com os pais na lavoura, um dia comandaria uma das maiores empresas de móveis e eletroeletrônicos do Ceará? José Alves de Oliveira, o Zenir, teve sua iniciação no comércio aos 14 anos, quando foi trabalhar na loja de móveis de um tio. Inteligente e trabalhador, foi promovido a gerente. Profissional de destaque, teve sua atuação percebida e valorizada pelos fornecedores, que viabilizaram o fornecimento de produtos para a abertura de sua primeira loja. A empresa nasceu no ano de 1992, na cidade de Iguatu, situada a 380 km de Fortaleza-CE, para logo iniciar seu processo de expansão com a abertura de novas lojas no interior e na capital. \n De lá para cá, o Zenir continuou a um homem simples, porém capaz de grandes feitos, que colocou seu negócio na trilha de um desenvolvimento responsável consistente. \n ### AS BASES CREDIBILIDADE ZENIR. \n #### Missão \n Oferecer aos nossos clientes externos a melhor experiência em atendimento e compras, superando suas expectativas. Aos clientes internos, um ambiente de trabalho motivador e de confiança, garantindo o crescimento e a perpetuação da empresa. \n #### Visão \n Ser a melhor e mais admirada empresa do segmento do mercado que atua, sendo reconhecida por nossos clientes, parceiros e fornecedores. \n  #### Nossos Valores \n - Ética \n - Responsabilidade Social \n - Respeito \n - Integridade \n - Comprometimento \n - Humildade"
+        }
+    },
+    "rich-text#quem-somos-title": {
+        "props": {
+            "blockClass": [
+                "quem-somos-title",
+                "institucional-title"
+            ],
+            "text": "Quem somos"
+        }
+    }
+}

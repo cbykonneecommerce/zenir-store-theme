@@ -1,0 +1,33 @@
+{
+    "menu-item#institucional-accordion-mobile-seguranca": {
+        "props": {
+            "id": "menu-item-institucional-acorddion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "SEGURANÇA",
+                "text": "SEGURANÇA"
+            },
+            "blockClass": [
+                "menu-accordion--container-mobile"
+            ]
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#institucional-seguranca"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#institucional-seguranca": {
+        "props": {
+            "blockClass": [
+                "menu-accordion--mobile"
+            ]
+        },
+        "children": [
+            "flex-layout.row#seguranca-images"
+        ]
+    }
+}

@@ -1,0 +1,130 @@
+{
+  "custom-fale-conosco": {
+    "component": "FaleConosco",
+    "render": "lazy"
+  },
+  "custom-menu": {
+    "component": "Menu",
+    "render": "client"
+  },
+  "aside-menu": {
+    "component": "AsideMenu",
+    "render": "client"
+  },
+  "custom-email-placeholder": {
+    "component": "CustomNewsLetterPlaceholder",
+    "render": "lazy"
+  },
+  "custom-modal-cookies": {
+    "component": "ModalCookies",
+    "render": "lazy"
+  },
+  "custom-parent-active-store": {
+    "component": "ActiveStore",
+    "render": "lazy"
+  },
+  "custom-newsletter": {
+    "component": "Newsletter",
+    "render": "lazy"
+  },
+
+  "custom-product-installment": {
+    "component": "CustomProductInstallments",
+    "render": "lazy"
+  },
+  "product-timer": {
+    "component": "ProductTimer",
+    "render": "lazy"
+  },
+  "custom-head": {
+    "component": "Head",
+    "render": "lazy"
+  },
+  "custom-order-placed-path": {
+    "component": "CustomPlaceorderPath",
+    "render": "lazy"
+  },
+  "shipping-calculator": {
+    "component": "ShippingCalculator",
+    "render": "lazy"
+  },
+  "modal-payments": {
+    "component": "ModalPayments",
+    "render": "lazy"
+  },
+  "fake-flex-layout": {
+    "component": "FakeFlexLayout",
+    "composition": "children"
+  },
+  "social-sharing": {
+    "component": "SocialSharing",
+    "render": "lazy"
+  },
+
+  "custom-lp-times": {
+   "component": "CustomLp",
+   "render": "client"
+  },
+  "iframe-light-widget": {
+    "component": "IframeLightWidget",
+    "render": "lazy"
+  },
+  "socio-torcedor-provider": {
+    "component": "CustomSocioTorcedorProvider",
+    "render": "lazy"
+  },
+  "socio-form": {
+    "component": "SocioForm",
+    "composition": "blocks",
+    "required": ["login-content"]
+  },
+  "socio-torcedor-condition-children": {
+    "component": "SocioProfileConditionChildren",
+    "composition": "children"
+  },
+  "socio-name": {
+    "component": "SocioName",
+    "render": "lazy"
+  },
+  "reclame-aqui": {
+    "component": "StampButton"
+  },
+  "div-content-external": {
+    "component": "DivContentExternal"
+  },
+  "custom-product-promotion": {
+    "component": "ProductPromotion",
+    "render": "lazy"
+  },
+  "custom-send-event-syndigo": {
+    "component": "EventSyndigoButtonBuy"
+  },
+  "custom-script-tramontina": {
+    "component": "ScriptTramontina",
+    "render": "lazy"
+  },
+  "custom-smart-banner-mobile": {
+    "component": "SmartBanner"
+  },
+  "custom-page-not-found": {
+    "component": "CustomPageNotFound"
+  },
+  "custom-button-to-link-app": {
+    "component": "ButtonToLinkApp"
+  },
+  "custom-send-code-seller": {
+    "component": "SendCodeSeller"
+  },
+  "custom-code-ref-id-product": {
+    "component": "CodeRefIdProduct"
+  },
+  "custom-sku-selector": {
+    "component": "CustomSkuSelector"
+  },
+  "custom-flag-product": {
+    "component": "CustomFlagProduct"
+  },
+  "flag-for-page-product": {
+    "component": "FlagForPageProduct"
+  }
+}

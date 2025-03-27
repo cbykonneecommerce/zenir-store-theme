@@ -1,0 +1,131 @@
+{
+    "menu-item#institucional-accordion-mobile-duvidas": {
+        "props": {
+            "id": "menu-item-institucional-acorddion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "DÚVIDAS",
+                "text": "DÚVIDAS"
+            },
+            "blockClass": [
+                "menu-accordion--container-mobile"
+            ]
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#institucional-duvidas"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#institucional-duvidas": {
+        "props": {
+            "blockClass": [
+                "menu-accordion--mobile"
+            ]
+        },
+        "children": [
+            "vtex.menu@2.x:menu#institucional-menu-footer-duvidas"
+        ]
+    },
+    "flex-layout.col#isntitucional-menu-footer-duvidas": {
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "menu-institucional--footer"
+            ]
+        },
+        "children": [
+            "rich-text#menu-footer-institucional-duvidas-title",
+            "vtex.menu@2.x:menu#institucional-menu-footer-duvidas"
+        ]
+    },
+    "rich-text#menu-footer-institucional-duvidas-title": {
+        "props": {
+            "blockClass": [
+                "menu-institucional--footer"
+            ],
+            "text": "DÚVIDAS"
+        }
+    },
+    "vtex.menu@2.x:menu#institucional-menu-footer-duvidas": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": [
+                "menu-institucional-footer"
+            ],
+            "items": [
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/institucional/politica-de-trocas",
+                        "noFollow": false,
+                        "tagTitle": "Política de Trocas",
+                        "text": "Política de Trocas"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/institucional/privacidade",
+                        "noFollow": false,
+                        "tagTitle": "Política de Privacidade",
+                        "text": "Política de Privacidade"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/institucional",
+                        "noFollow": false,
+                        "tagTitle": "Política de Política de Pagamento",
+                        "text": "Política de Política de Pagamento"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/institucional",
+                        "noFollow": false,
+                        "tagTitle": "Garantia Estendida",
+                        "text": "Garantia Estendida"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/institucional",
+                        "noFollow": false,
+                        "tagTitle": "Entrega e Montagem",
+                        "text": "Entrega e Montagem"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/institucional",
+                        "noFollow": false,
+                        "tagTitle": "Perguntas Frequentes",
+                        "text": "Perguntas Frequentes"
+                    }
+                }
+            ]
+        }
+    }
+}

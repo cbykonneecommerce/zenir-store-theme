@@ -1,0 +1,57 @@
+{
+	"vtex.menu@2.x:submenu#submenu-smartphones": {
+		"props": {
+			"blockClass": "submenu-header"
+		},
+		"children": [
+			"flex-layout.row#submenu-smartphones"
+		]
+	},
+	"flex-layout.row#submenu-smartphones": {
+		"children": [
+			"vtex.menu@2.x:menu#menu-smartphones"
+		],
+    "props": {
+      "blockClass": "submenu-header"
+    }
+	},
+	"vtex.menu@2.x:menu#menu-smartphones": {
+		"props": {
+			"orientation": "vertical",
+      "blockClass": "menu-header"
+		},
+		"children": [
+			"flex-layout.row#menu-smartphones"
+		]
+	},
+	"flex-layout.row#menu-smartphones": {
+    "children": [
+      "flex-layout.col#menu-menu-imagem"
+    ],
+    "props": {
+      "blockClass": ["menu-header", "imagem-menu"]
+    }
+  },
+  "flex-layout.col#menu-menu-imagem": {
+    "children": [
+      "toggle-layout#imagem-do-menu"
+    ],
+    "props": {
+      "blockClass": "menu-header-imagem"
+    }
+  },
+  "toggle-layout#imagem-do-menu": {
+    "title": "Imagem do menu smartphones",
+    "children": [
+      "image#menu-smartphones-imagem"
+    ]
+  },
+  "image#menu-smartphones-imagem": {
+		"props": {
+			"src": "/arquivos/menu-iphone.png",
+			"blockClass": "menu-imagem",
+      "width": 300,
+      "height": 376
+		}
+	}
+}

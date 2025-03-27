@@ -1,0 +1,46 @@
+.container {
+    margin-bottom: 123px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--store-detail-zenir-container) .storeName {
+    font-family: 'Futura Hv BT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.9944px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #515151;
+}
+
+@media (max-width: 1199.98px) { 
+    .container {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    :global(.vtex-flex-layout-0-x-flexRowContent--container-store-locator) {
+        display: flex;
+        flex-direction: column;
+    }
+    .storesListCol {
+        display: flex;
+        width: 100%!important;
+    }
+    .storesList {
+        max-height: 400px;
+    }
+    .storesMapCol {
+        min-height: 300px;
+        width: 100%!important;
+        margin-top: 50px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--store-detail-zenir-container) .storeName {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+:global(.vtex-store-locator-0-x-addressContainer) {
+    display: grid;
+}

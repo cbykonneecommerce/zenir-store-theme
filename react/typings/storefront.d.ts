@@ -1,0 +1,16 @@
+// eslint-disable-next-line no-unused-vars
+import { FunctionComponent } from "react";
+
+declare global {
+
+  interface StorefrontFunctionComponent<P = {}> extends FunctionComponent<P> {
+    [x: string]: any;
+    getSchema?(props: P): object;
+    schema?: object;
+  }
+
+  interface StorefrontComponent<P = {}, S = {}> extends Component<P, S> {
+    getSchema?(props: P): object;
+    schema: object;
+  }
+}

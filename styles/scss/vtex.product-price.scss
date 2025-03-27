@@ -1,0 +1,154 @@
+.sellingPrice--pdp {
+  font-family:  'Futura-Bold',sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #001D7E;
+  padding-bottom: 5px;
+}
+
+.installments--pdp {
+  font-family: "Futura Bk BT", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #515151;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.priceContainer--summary {
+  padding: 0px;
+}
+
+.installments--summary {
+  color: #001D7E;
+  text-align: left;
+  font-family: 'Futura Bk BT', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  
+}
+
+.currencyLiteral{
+  font-size: 5px;
+  opacity: 0;
+}
+
+
+
+.sellingPriceValue--principal {
+  font-family: "Futura Medium",sans-serif;
+  color: #001d7e;
+  font-size: 60px;
+  display: block;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.listPriceValue--principal  {
+  font-size: 20px;
+}
+
+.installmentValue--principal {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .sellingPriceValue--principal {
+    font-size: 45px;
+  }
+
+  .installments--summary {
+    color: #001D7E;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .sellingPrice--pdp{
+    font-size: 25px;
+    line-height: 29px;
+    padding-bottom: 0;
+  }
+}
+
+.listPrice--summary {
+  font-family: 'Futura Lt BT';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #BF0811;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 19px;
+}
+.sellingPrice--summary {
+  font-family: 'Futura Md BT', sans-serif;
+  color: #001D7E;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.listPriceValue--pdp{
+  font-family: 'Futura Lt BT', sans-serif;
+  color: #BF0811;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.savings--hightlight-discount{
+  font-family: 'Futura-Bold';
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.savingsPercentage--hightlight-discount{
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+}
+.savingsPercentage--hightlight-discount::before{
+  content: '-';
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+
+@media screen and (max-width: 767px){
+  .sellingPrice--summary {
+    line-height: 25px;
+    font-size: 20px;
+  }
+  .listPrice--summary{
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .listPriceValue--pdp{
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .savings--hightlight-discount{
+    font-size: 8px;
+    line-height: 9px;
+  }
+  
+  .savingsPercentage--hightlight-discount{
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .savingsPercentage--hightlight-discount::before{
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+

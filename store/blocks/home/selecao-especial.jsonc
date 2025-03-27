@@ -1,0 +1,63 @@
+{
+    "flex-layout.row#selecao-especial": {
+        "title": "Selecao especial",
+        "props": {
+            "blockClass": [
+                "container",
+                "selecao-especial-middle"
+            ]
+        },
+        "children": [
+            "flex-layout.col#selecao-especial"
+        ]
+    },
+    "flex-layout.col#selecao-especial": {
+        "title": "Selecao especial col",
+        "props": {},
+        "children": [
+            "list-context.image-list#selecao-especial"
+        ]
+    },
+    "rich-text#selecao-especial-title": {
+        "title": "Selecao especial title",
+        "props": {
+            "blockClass": [
+                "shelf-title"
+            ],
+            "text": "NAVEGUE POR selecao-especial"
+        }
+    },
+    "list-context.image-list#selecao-especial": {
+        "title": "Selecao especial Lista",
+        "children": [
+            "slider-layout#selecao-especial-images"
+        ],
+        "props": {
+            "preload": false,
+            "images": [
+                {
+                    "image": "https://tfcvih.vteximg.com.br/arquivos/selecao1.png",
+                    "mobileImage": "https://tfcvih.vteximg.com.br/arquivos/selecao1.png"
+                },
+                {
+                    "image": "https://tfcvih.vteximg.com.br/arquivos/selecao2.png",
+                    "mobileImage": "https://tfcvih.vteximg.com.br/arquivos/selecao2.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#selecao-especial-images": {
+        "title": "Selecao especial Lista - slider",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 2,
+                "tablet": 2,
+                "phone": 1
+            },
+            "showPaginationDots": "mobileOnly",
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "blockClass": "selecao-especial"
+        }
+    }
+}

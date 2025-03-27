@@ -1,0 +1,290 @@
+.container {
+  max-width: 1278px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.container > section {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.header-lp-custom {
+  max-height: 115px;
+  height: 100%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-lp-custom > div {
+  max-width: 96rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile-name svg {
+  height: 30px;
+  width: 30px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.profile-name {
+  background: #e12026;
+  border-radius: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 150px;
+  padding: 0.2rem;
+
+  font-family: "Qanelas";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.profile-name span:last-child {
+  margin-left: 0.5rem;
+  display: block;
+}
+
+.product {
+  max-width: 296px;
+  height: 450px;
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 17px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 94px;
+  }
+}
+
+.products-container img {
+  max-width: 191px;
+}
+
+.products-container .product-name {
+  font-family: "Qanelas";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 118.4%;
+  padding: 0 30px;
+  margin-top: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.products-container .product-description {
+  font-family: "Qanelas";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 118.4%;
+  padding: 0 30px;
+  min-height: 50px;
+}
+
+.product-img {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  height: 205px;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.product-img img {
+  max-width: 166px;
+  margin: 0 auto;
+  max-height: 166px;
+}
+
+.products {
+  padding: 129px 0;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.product-price {
+  display: flex;
+  color: #fff;
+}
+
+.product-price .one,
+.product-price .tree {
+  font-family: "Qanelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.product-price .one {
+  align-items: center;
+  display: flex;
+  margin-top: 14px;
+  margin-right: 5px;
+}
+
+.product-price .tree {
+  align-items: center;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.product-price .two {
+  font-family: "Qanelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.product-price .tree::before {
+  content: ",";
+  font-family: "Qanelas";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.tfcvih-weonne-zenir-io-4-x-paginationDotsContainer {
+  bottom: -4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tfcvih-weonne-zenir-io-4-x-paginationDotsContainer::before {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: #dedede;
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.tfcvih-weonne-zenir-io-4-x-paginationDotsContainer::after {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: #dedede;
+  max-width: 100px;
+  margin-left: 10px;
+}
+
+.logo-container img {
+  max-width: 70%;
+}
+
+@media screen and (max-width: 1550px) {
+  .header-lp-custom > div {
+    padding: 0px 1.5rem;
+  }
+}
+
+.icon-profile-header-lp {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: ce;
+}
+
+.container > section img {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.container > section .tfcvih-weonne-zenir-io-4-x-paginationDot {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-name {
+    min-width: 110px;
+  }
+
+  .logo-container img {
+    max-width: 200px;
+  }
+
+  .profile-name span:last-child {
+    font-size: 14px;
+  }
+
+  .product-name svg {
+    height: 30px;
+  }
+
+  .header-lp-custom {
+    padding: 0px 15px;
+  }
+
+  .header-lp-custom > div {
+    gap: 1rem;
+  }
+
+  .product {
+    max-width: unset !important;
+    width: 100%;
+  }
+
+  .products-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .container :global(.tfcvih-weonne-zenir-io-4-x-slide) {
+    margin: 0px !important;
+  }
+
+  .container > section {
+    max-width: 70%;
+  }
+
+  .header-lp-custom > div {
+    padding: 0px;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+}

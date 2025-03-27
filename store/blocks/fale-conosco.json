@@ -1,0 +1,50 @@
+{
+    "store.custom#fale-conosco": {
+        "blocks": [
+            "flex-layout.row#fale-conosco"
+        ]
+    },
+    "flex-layout.row#fale-conosco": {
+        "title": "Fale conosco Row",
+        "props": {
+            "blockClass": [
+                "fale-conosco",
+                "container"
+            ]
+        },
+        "children": [
+            "flex-layout.col#fale-conosco"
+        ]
+    },
+    "flex-layout.col#fale-conosco": {
+        "title": "Fale conosco Col",
+        "props": {
+            "blockClass": [
+                "fale-conosco"
+            ]
+        },
+        "children": [
+            "rich-text#fale-conosco-title",
+            "rich-text#fale-conosco-text-information",
+            "custom-fale-conosco"
+        ]
+    },
+    "rich-text#fale-conosco-title": {
+        "title": "Fale conosco - titulo",
+        "props": {
+            "text": "Estamos aqui para ajudar",
+            "blockClass": [
+                "fale-conosco-title"
+            ]
+        }
+    },
+    "rich-text#fale-conosco-text-information": {
+        "title": "Fale conosco - titulo",
+        "props": {
+            "text": "Ficou com alguma dúvida ou tem alguma sugestão para nós? Deixe sua mensagem abaixo e ficaremos felizes em te ouvir. Valorizamos sua opinião e estamos prontos para ajudar no que for preciso. Aguardamos ansiosamente por suas perguntas e ideias. Vamos lá, compartilhe conosco!",
+            "blockClass": [
+                "fale-conosco-text-informartion"
+            ]
+        }
+    }
+}

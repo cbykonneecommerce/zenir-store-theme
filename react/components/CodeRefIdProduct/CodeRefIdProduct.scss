@@ -1,0 +1,18 @@
+.codeRefIdProduct {
+  display: inline-flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 2px;
+  border-radius: 4px;
+  background: #E4E7EC;
+  margin-bottom: 1rem;
+
+  .codeRefIdProductText {
+    font-size: 14px;
+    font-family: Roboto, 'sans-serif';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px; 
+    color: #344054;
+  }
+}

@@ -1,0 +1,31 @@
+.specificationName {
+    font-family: 'Futura Md BT', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #515151;
+    display: flex;
+    align-items: center;
+  }
+
+  .specificationName::after {
+    content: ":";
+    display: block;
+  }
+
+  .specificationValue {
+    font-family: 'Futura Lt BT';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+    color: #515151;
+  }
+
+  @media screen and (max-width: 768px) {
+    .specificationValue,
+    .specificationName {
+      font-size: 16px;
+    }
+  }

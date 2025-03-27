@@ -1,0 +1,188 @@
+{
+    "flex-layout.row#product-cards-list": {
+        "title": "Produtos em destaque",
+        "children": [
+            "flex-layout.col#product-card-1",
+            "flex-layout.col#product-card-2",
+            "flex-layout.col#product-card-3"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "paddingBottom": 8,
+            "blockClass":["product-cards-list"]
+        }
+    },
+    "flex-layout.col#product-card-1": {
+        "title": "product-card-1",
+        "children": [
+            "image#product-1",
+            "just-a-div#product-sumary-requinte-1"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "blockClass": [
+                "product-card-requinte"
+            ]
+        }
+    },
+    "flex-layout.col#product-card-2": {
+        "title": "product-card-2",
+        "children": [
+            "image#product-2",
+            "just-a-div#product-sumary-requinte-2"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "blockClass": [
+                "product-card-requinte",
+                "product-card-middle"
+            ]
+        }
+    },
+    "flex-layout.col#product-card-3": {
+        "title": "product-card-3",
+        "children": [
+            "image#product-3",
+            "just-a-div#product-sumary-requinte-3"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "blockClass": [
+                "product-card-requinte",
+                "product-card-last"
+            ]
+        }
+    },
+    "just-a-div#product-sumary-requinte-1": {
+        "children": [
+            "rich-text#product-name-requinte-1",
+            "rich-text#product-price-requinte-1",
+            "rich-text#product-instalments-requinte-1"
+        ],
+        "props": {
+            "blockClass": [
+                "sumary-requinte"
+            ]
+        }
+    },
+    "just-a-div#product-sumary-requinte-2": {
+        "children": [
+            "rich-text#product-name-requinte-2",
+            "rich-text#product-price-requinte-2",
+            "rich-text#product-instalments-requinte-2"
+        ],
+        "props": {
+            "blockClass": [
+                "sumary-requinte"
+            ]
+        }
+    },
+    "just-a-div#product-sumary-requinte-3": {
+        "children": [
+            "rich-text#product-name-requinte-3",
+            "rich-text#product-price-requinte-3",
+            "rich-text#product-instalments-requinte-3"
+        ],
+        "props": {
+            "blockClass": [
+                "sumary-requinte"
+            ]
+        }
+    },
+    "image#product-1": {
+        "props": {
+            "src": "https://tfcvih.vteximg.com.br/arquivos/cel-requinte.png"
+        }
+    },
+    "image#product-2": {
+        "props": {
+            "src": "https://tfcvih.vteximg.com.br/arquivos/tv-requinte.png"
+        }
+    },
+    "image#product-3": {
+        "props": {
+            "src": "https://tfcvih.vteximg.com.br/arquivos/maquina-de-lavar-requinte.png"
+        }
+    },
+    "rich-text#product-name-requinte-1": {
+        "title": "Nome produto 1",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Galaxy A22  Samsung"
+        }
+    },
+    "rich-text#product-name-requinte-2": {
+        "title": "Nome produto 2",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Smart TV 55            LG"
+        }
+    },
+    "rich-text#product-name-requinte-3": {
+        "title": "Nome produto 3",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Lava e Seca 11 Kg LG"
+        }
+    },
+    "rich-text#product-price-requinte-1": {
+        "title": "Preço do produto 1",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "R$ 3.199,00",
+            "blockClass":"price-requinte"
+        }
+    },
+    "rich-text#product-price-requinte-2": {
+        "title": "Preço do produto 2",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "R$ 3.199,00",
+            "blockClass":"price-requinte"
+        }
+    },
+    "rich-text#product-price-requinte-3": {
+        "title": "Preço do produto 3",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "R$ 3.199,00",
+            "blockClass":"price-requinte"
+        }
+    },
+    "rich-text#product-instalments-requinte-1": {
+        "title": "Parcelamento do produto 1",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "ou em 10x de R$ 139,90 no cartão",
+            "blockClass": "instalments-requinte"
+        }
+    },
+    "rich-text#product-instalments-requinte-2": {
+        "title": "Parcelamento do produto 2",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "ou em 10x de R$ 139,90 no cartão",
+            "blockClass": "instalments-requinte"
+        }
+    },
+    "rich-text#product-instalments-requinte-3": {
+        "title": "Parcelamento do produto 3",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "ou em 10x de R$ 139,90 no cartão",
+            "blockClass": "instalments-requinte"
+        }
+    }
+}

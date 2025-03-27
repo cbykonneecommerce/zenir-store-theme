@@ -1,0 +1,169 @@
+{
+    "vtex.menu@2.x:menu#websites": {
+        "props": {
+            "experimentalOptimizeRendering": true
+        },
+        "children": [
+            "menu-item#moveis",
+            "menu-item#eletrodomesticos",
+            "menu-item#tv-audio",
+            "menu-item#smartphones",
+            "menu-item#eletroportateis",
+            "menu-item#informatica",
+            "menu-item#bicicleta",
+            "menu-item#cama-mesa",
+            "menu-item#banho",
+            "menu-item#utilidades"
+        ]
+    },
+    "menu-item#moveis": {
+        "props": {
+            "id": "menu-item-moveis",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Móveis",
+                "text": "Móveis"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-moveis"]
+    },
+    "menu-item#eletrodomesticos": {
+        "props": {
+            "id": "menu-item-eletrodomesticos",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Eletrodomésticos",
+                "text": "Eletrodomésticos"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-eletrodomesticos"]
+    },
+    "menu-item#tv-audio": {
+        "props": {
+            "id": "menu-item-tv-audio",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "TV's e Áudio",
+                "text": "TV's e Áudio"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-tv-audio"]
+    },
+    "menu-item#smartphones": {
+        "props": {
+            "id": "menu-item-tv-audio",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Smartphones",
+                "text": "Smartphones"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-smartphones"]
+    },
+    "menu-item#eletroportateis": {
+        "props": {
+            "id": "menu-item-eletroportateis",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Eletroportáteis",
+                "text": "Eletroportáteis"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-eletroportateis"]
+    },
+    "menu-item#informatica": {
+        "props": {
+            "id": "menu-item-informatica",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Informática",
+                "text": "Informática"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-informatica"]
+    },
+    "menu-item#bicicleta": {
+        "props": {
+            "id": "menu-item-bicicleta",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Bicicletas",
+                "text": "Bicicletas"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-bicicleta"]
+    },
+    "menu-item#cama-mesa": {
+        "props": {
+            "id": "menu-item-cama-mesa",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Cama, Mesa",
+                "text": "Cama, Mesa"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-cama-mesa"]
+    },
+    "menu-item#banho": {
+        "props": {
+            "id": "menu-item-banho",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Banho",
+                "text": "Banho"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-banho"]
+    },
+    "menu-item#utilidades": {
+        "props": {
+            "id": "utilidades",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Utilidades",
+                "text": "Utilidades"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-utilidades"]
+    }
+}

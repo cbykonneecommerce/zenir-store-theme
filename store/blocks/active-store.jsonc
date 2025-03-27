@@ -1,0 +1,10 @@
+{
+    "store.custom#active-store": {
+        "blocks": [
+            "flex-layout.row"
+        ],
+        "parent": {
+            "challenge": "custom-parent-active-store"
+        }
+    }
+}

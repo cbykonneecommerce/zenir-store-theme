@@ -1,0 +1,40 @@
+.paragraph--shelf-title-ofertas-app {
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: 'Proxima Nova', sans-serif;
+  color: #2E3192;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.paragraph--texto-da-shelf-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: 'Proxima Nova', sans-serif;
+  color: #FFFFFF;
+}
+
+.paragraph--texto-da-shelf-texto {
+  font-size: .9rem;
+  font-weight: 700;
+  font-family: 'Proxima Nova', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .paragraph--texto-da-shelf-title {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .paragraph--texto-da-shelf-texto {
+    font-size: .725rem;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,73 @@
+
+
+{
+    "flex-layout.row#mosaic-square": {
+        "title":"Seção mosaico de banners quadrados",
+        "props": {
+            "blockClass": [
+                "container",
+                "section-home",
+                "mosaic-square"
+            ],
+            "title": "box de categorias"
+        },
+        "children": [
+            "flex-layout.row#mosaic-square-box-1",
+            "flex-layout.row#mosaic-square-box-2"
+        ]
+    },
+    "flex-layout.row#mosaic-square-box-1": {
+        "props": {
+            "blockClass": [
+                "mosaic-square-list",
+                "mosaic-square-list-first"
+            ]
+        },
+        "children": [
+            "flex-layout.col#banner-square-1",
+            "flex-layout.col#banner-square-2"
+        ]
+    },
+    "flex-layout.row#mosaic-square-box-2": {
+        "props": {
+            "blockClass": [
+                "mosaic-square-list",
+                "mosaic-square-list-second"
+            ]
+        },
+        "children": [
+            "flex-layout.col#banner-square-1",
+            "flex-layout.col#banner-square-2"
+        ]
+    },
+    "flex-layout.col#banner-square-1": {
+        "props": {
+            "blockClass": [
+                "mosaic-square-item",
+                "mosaic-square-item-left"
+            ]
+        },
+        "children": [
+            "image#mosaic-square-img"
+        ]
+    },
+    "flex-layout.col#banner-square-2": {
+        "props": {
+            "blockClass": [
+                "mosaic-square-item",
+                "mosaic-square-item-right"
+            ]
+        },
+        "children": [
+            "image#mosaic-square-img"
+        ]
+    },
+    "image#mosaic-square-img": {
+        "props": {
+            "src": "https://tfcvih.vteximg.com.br/arquivos/banner-square.png",
+            "link": "/",
+            "title": "titulo da imagem",
+            "alt": "texto alternativo "
+        }
+    }
+}

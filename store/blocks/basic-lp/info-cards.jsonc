@@ -1,0 +1,68 @@
+{
+  "flex-layout.row#section-content-1": {
+    "title": "Box de conteúdo",
+    "children": [
+      "info-card#box-content-1",
+      "info-card#box-content-2",
+      "info-card#box-content-3"
+    ],
+    "props": {
+      "blockClass": "categories-list"
+    }
+  },
+  "flex-layout.row#section-content-2": {
+    "title": "Box de conteúdo",
+    "children": [
+      "info-card#box-content-1",
+      "info-card#box-content-2",
+      "info-card#box-content-3"
+    ],
+    "props": {
+      "blockClass": "categories-list"
+    }
+  },
+  "info-card#box-content-1": {
+    "title": "box content 01",
+    "props": {
+      "id": "box-content",
+      // "isFullModeStyle":true,
+      "imageUrl": "https://tfcvih.vteximg.com.br/arquivos/placeholder-image-300x225.png",
+      "mobileImageUrl": "https://tfcvih.vteximg.com.br/arquivos/placeholder-image-300x225.png",
+      "blockClass": [
+        "box-content",
+        "box-content--first"
+      ],
+      "headline": "Water Filtration System",
+      "subhead": "Never replace your water filter again"
+    }
+  },
+  "info-card#box-content-2": {
+    "title": "box content 02",
+    "props": {
+      "id": "box-content",
+      // "isFullModeStyle":true,
+      "imageUrl": "https://tfcvih.vteximg.com.br/arquivos/placeholder-image-300x225.png",
+      "mobileImageUrl": "https://tfcvih.vteximg.com.br/arquivos/placeholder-image-300x225.png",
+      "blockClass": [
+        "box-content",
+        "box-content--middle"
+      ],
+      "headline": "Water Filtration System",
+      "subhead": "Never replace your water filter again"
+    }
+  },
+  "info-card#box-content-3": {
+    "title": "box content 03",
+    "props": {
+      "id": "box-content",
+      // "isFullModeStyle":true,
+      "imageUrl": "https://tfcvih.vteximg.com.br/arquivos/placeholder-image-300x225.png",
+      "mobileImageUrl": "https://tfcvih.vteximg.com.br/arquivos/placeholder-image-300x225.png",
+      "blockClass": [
+        "box-content","box-content--last"
+      ],
+      "headline": "Water Filtration System",
+      "subhead": "Never replace your water filter again"
+    }
+  }
+}

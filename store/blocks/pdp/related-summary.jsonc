@@ -1,0 +1,44 @@
+{
+    "product-summary.shelf#related": {
+        "props": {
+            "blockClass": [
+                "default-related"
+            ]
+        },
+        "children": [
+            "product-summary-image",
+            "product-summary-name#summary",
+            "product-list-price#summary",
+            "flex-layout.row#summaty-price"
+        ]
+    },
+    "product-summary-name#summary": {
+        "props": {
+            "blockClass": [
+                "summary"
+            ]
+        }
+    },
+    "flex-layout.row#summaty-price": {
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "summary--price-container"
+            ]
+        },
+        "children": [
+            "product-summary-price#summary",
+            "custom-product-installment#pdp",
+            "product-timer"
+        ]
+    },
+    "product-summary-price#summary": {
+        "props": {
+            "blockClass": [
+                "summary"
+            ]
+        }
+    }
+}

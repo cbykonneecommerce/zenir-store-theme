@@ -1,0 +1,126 @@
+{
+    "product-summary.shelf#oferta-principal": {
+        "props": {
+            "blockClass": [
+                "principal-summary"
+            ]
+        },
+        "children": [
+            "product-summary-image#shelf-principal",
+            "product-summary-name#summary-principal",
+            "flex-layout.row#price-principal",
+            "custom-product-installment#pdp",
+            "product-timer"
+        ]
+    },
+    "product-summary-name#summary-principal": {
+        "props": {
+            "blockClass": [
+                "principal"
+            ]
+        }
+    },
+    "stack-layout#prodsum-principal": {
+        "props": {
+            "blockClass": [
+                "summary-highlights",
+                "principal"
+            ]
+        },
+        "children": [
+            "vtex.product-highlights@2.x:product-highlights#collection-principal"
+        ]
+    },
+    "product-summary-image#shelf-principal": {
+        "props": {
+            "blockClass": [
+                "principal"
+            ],
+            "width": 360,
+            "height": 440,
+            "showBadge": true,
+            "badgeText": "DE DESCONTO",
+            "aspectRatio": "3:4"
+        }
+    },
+    "vtex.product-highlights@2.x:product-highlights#collection-principal": {
+        "props": {
+            "type": "collection"
+        },
+        "children": [
+            "product-highlight-wrapper#principal"
+        ]
+    },
+    "product-highlight-wrapper#principal": {
+        "props": {
+            "blockClass": [
+                "collection",
+                "principal"
+            ]
+        },
+        "children": [
+            "product-highlight-text#principal"
+        ]
+    },
+    "product-highlight-text#principal": {
+        "props": {
+            "blockClass": [
+                "principal"
+            ],
+            "message": "{highlightName}"
+        }
+    },
+    "product-list-price#summary-principal": {
+        "props": {
+            "blockClass": [
+                "summary",
+                "principal"
+            ]
+        }
+    },
+    "flex-layout.row#price-principal": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "blockClass": [
+                "princiapal-price"
+            ]
+        },
+        "children": [
+            "product-list-price#summary-principal",
+            "product-selling-price#summary-principal"
+        ]
+    },
+    "flex-layout.row#selling-price-savings-principal": {
+        "props": {
+            "colGap": 2,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "marginBottom": 4
+        },
+        "children": [
+            "product-selling-price#summary-principal",
+            "product-price-savings#summary-principal"
+        ]
+    },
+    "product-selling-price#summary-principal": {
+        "props": {
+            "blockClass": [
+                "summary",
+                "principal"
+            ]
+        }
+    },
+    
+    "product-price-savings#summary-principal": {
+        "props": {
+            "markers": [
+                "discount"
+            ],
+            "blockClass": [
+                "summary",
+                "principal"
+            ]
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+	"vtex.menu@2.x:submenu#submenu-atendimento": {
+		"props": {
+			"blockClass": "submenu-header"
+		},
+		"children": [
+			"flex-layout.col#atendimento"
+		]
+	},
+  "flex-layout.col#atendimento": {
+    "children": [
+      "vtex.menu@2.x:menu#menu-atendimento"
+    ],
+    "props": {
+      "blockClass": "atendimento-content"
+    }
+  },
+  "vtex.menu@2.x:menu#menu-atendimento": {
+    "title": "Slide Mega menu",
+    "children": [
+        "link#atendimento",
+        "link#regulamentos",
+        "link#politicas-privacidade",
+        "link#telefone",
+        "rich-text#horario-de-atendimento"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{ 
+    "flex-layout.row#pdp-tab-layout": {
+        "title": "Tab layout PDP",
+        "props": {
+            "blockClass": [
+                "tab-layout-pdp"
+            ]
+        },
+        "children": [
+            "flex-layout.col#pdp-tab-layout"
+        ]
+    },
+    "flex-layout.col#pdp-tab-layout": {
+        "props": {
+            "blockClass": [
+                "description-dpd-container"
+            ]
+        },
+        "children": [
+            "tab-layout#product-description"
+        ]
+    },
+    "tab-layout#product-description": {
+        "title": "Tab layout PDP: Descrição | Especificação do produto",
+        "props": {
+            "blockClass": [
+                "pdp"
+            ]
+        },
+        "children": [
+            "tab-list#product-info",
+            "tab-content#product-info",
+            "tab-content#especification"
+        ]
+    },
+    "tab-list#product-info": {
+        "title": "Tab list",
+        "props": {
+            "blockClass": "list-info"
+        },
+        "children": [
+            "tab-list.item#description",
+            "tab-list.item#especification"
+        ]
+    },
+    "tab-list.item#description": {
+        "title": "Tab item descrição",
+        "props": {
+            "blockClass": [
+                "tab-pdp"
+            ],
+            "tabId": "description",
+            "label": "Descrição",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#especification": {
+        "title": "Tab item especificação",
+        "props": {
+            "blockClass": [
+                "tab-pdp"
+            ],
+            "tabId": "especification",
+            "label": "Especificações"
+        }
+    },
+    "tab-content#product-info": {
+        "title": "Tab content",
+        "props": {
+            "blockClass": "content-info"
+        },
+        "children": [
+            "tab-content.item#description"
+        ]
+    },
+    "tab-content#especification": {
+        "title": "Tab content",
+        "props": {
+            "blockClass": "content-info"
+        },
+        "children": [
+            "tab-content.item#especification"
+        ]
+    },
+    "tab-content.item#description": {
+        "props": {
+            "blockClass": [
+                "tab-pdp"
+            ],
+            "tabId": "description"
+        },
+        "children": [
+            "product-description#default"
+        ]
+    },
+    "product-description#default": {
+        "props": {
+            "collapseContent": false
+        }
+    },
+    "tab-content.item#especification": {
+        "props": {
+            "blockClass": [
+                "tab-pdp"
+            ],
+            "tabId": "especification"
+        },
+        "children": [
+            "product-specification-group#table"
+        ]
+    }
+}

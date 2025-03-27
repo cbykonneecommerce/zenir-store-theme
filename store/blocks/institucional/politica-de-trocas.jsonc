@@ -1,0 +1,67 @@
+{
+    "store.custom#politica-de-trocas": {
+        "blocks": [
+            "flex-layout.row#instituciona-ttile-trocas",
+            "flex-layout.row#institucional-trocas-template"
+        ]
+    },
+    "flex-layout.row#instituciona-ttile-trocas": {
+        "props": {
+            "blockClass": [
+                "container"
+            ]
+        },
+        "children": [
+            "rich-text#institucional-trocas-title"
+        ]
+    },
+    "flex-layout.row#institucional-trocas-template": {
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "blockClass": [
+                "institucional-trocas-template",
+                "institucional-template",
+                "container"
+            ]
+        },
+        "children": [
+            "flex-layout.col#institucional-menu",
+            "flex-layout.col#institucional-content-troca-dev"
+        ]
+    },
+    "flex-layout.col#institucional-content-troca-dev": {
+        "props": {},
+        "children": [
+            "rich-text#institucional-trocas-content",
+            "rich-text#institucional-trocas-content-2"
+        ]
+    },
+    "rich-text#institucional-trocas-content-2": {
+        "props": {
+            "text": "J. ALVES E OLIVEIRA LTDA- CNPJ- 41.426.966/0001-72 \n Av Santos Dumont, 2456, salas 1406 a 1410, Bairro Aldeota - CEP 60.150-161- Fortaleza –CE \n PABX (88)3510-1500- www.zenirmoveis.com.br \n",
+            "blockClass": [
+                "institucional-trocas-conteudo-2",
+                "institucional-conteudo"
+            ]
+        }
+    },
+    "rich-text#institucional-trocas-content": {
+        "props": {
+            "blockClass": [
+                "institucional-trocas-conteudo",
+                "institucional-conteudo"
+            ],
+            "text": "### 1.ARREPENDIMENTO OU DESISTÊNCIA \n O prazo para troca ou desistência da compra é de 07 (sete) dias corridos a contar do dia seguinte do recebimento do produto, (final de semana e feriado também contam) , conforme estipula o Código de Defesa do Consumidor em seu artigo 49. \n A troca ou cancelamento somente será realizado caso o produto esteja em sua embalagem original, sem indícios de mau uso, sem violação do lacre original do fabricante, acompanhado de nota fiscal, manual e todos os seus acessórios. \n Os produtos de categorias como Eletrônicos, Informática, telefonia/celular, devem estar com a etiqueta interna (lacre de garantia) original do fabricante intacta. \n Os produtos da linha de Móveis não poderão estar montados para solicitar a troca ou devolução. \n Para que a troca ou cancelamento seja realizado, o produto passará por análise técnica dentro de até 05 (cinco) dias úteis, contando a partir do recebimento do produto em nosso centro de distribuição. Caso o produto atenda às exigências acima, será possível a realização da troca ou cancelamento. Se após a análise, seu produto não estiver de acordo com as regras para troca, faremos a devolução do produto no mesmo modal de compra, você será comunicado através do ecommerce@grupozenir.com.br \n No caso de cancelamento da compra por arrependimento, o valor pago pelo cliente será integralmente devolvido conforme descrito no item 'Ressarcimento de valores'Ï \n ### 2.AVARIA No ato do recebimento, certifique-se das condições do produto. \n Caso detecte a avaria no ato da entrega, recuse o recebimento do produto, faça uma pequena anotação no verso da nota fiscal ou no comprovante de entrega explicando a recusa e especificando a avaria detectada, e notifique imediatamente nossa Central de Atendimento. \n Porém se a avaria for detectada após a entrega do produto, e estiver dentro do prazo de 7 (sete) dias corridos após a entrega, realizaremos a troca ou cancelamento, contudo será necessário que o produto esteja em sua embalagem original, indícios de uso, sem violação do lacre original do fabricante, acompanhado de nota fiscal, manual e todos os seus acessórios para que seja feita a substituição por outro produto. Você deverá solicitar a análise através da nossa Central de Atendimento. \n ### 3.PRODUTO COM DEFEITO DENTRO E FORA DO PRAZO \n Produtos com defeito podem ser trocados ou devolvidos em até 07 dias corridos após a entrega. Você deverá solicitar a análise através da nossa Central de Atendimento. \n Caso o seu produto apresente defeito após 7 (sete) dias do recebimento, é necessário entrar em contato com o fabricante, você pode consultar o manual do produto para identificar a assistência técnica autorizada mais próxima da sua região ou entra em contato com o fornecedor para que ele informe a rede de atendimento credenciada. \n Caso o seu produto seja da linha de móveis, verificar as regras para troca no tópico de móveis. \n ### 4.TROCA DE MÓVEIS \n No ato do recebimento, certifique-se das condições do produto, verifique se o volume, cor e modelo correspondem as informações da Nota Fiscal Caso não esteja de acordo com o seu pedido, recuse no momento da entrega o recebimento do produto, faça uma pequena anotação no verso da nota fiscal ou no comprovante de entrega explicando a recusa e especificando a avaria detectada, e notifique imediatamente nossa Central de Atendimento. \n ### 5.PRODUTO EM DESACORDO COM A ENTREGA \n No ato do recebimento do produto, recuse o recebimento e entre em contato com o Serviço de Atendimento ao Cliente, caso constate que o produto que você recebeu está diferente do pedido, orientamos que seja feita a recusa no ato da entrega e seja feita uma anotação com o motivo da devolução atrás da nota fiscal ou do comprovante da entrega. Caso você perceba isso só depois, não tem problema. Entre em contato com a nossa Central de Atendimento. \n ### 6.COLETA/ENVIO DO PRODUTO \n A coleta do produto será realizada no mesmo endereço onde foi feita a entrega. \n A devolução do produto pode ser efetuada por portagem nos correios, coletado pela Zenir Móveis. \n Caso o produto tenha sido retirado em uma de nossas lojas, deverá entregar o produto na filial, após autorização da central de atendimento. \n Para a devolução do produto, a embalagem é de responsabilidade do cliente, sendo obrigatório para a linha de celular. \n Devolvendo o produto por postagem nos Correios. A Zenir Móveis te manda um código de postagem gratuito por e-mail, \n Ao coletar o produto, o transportador vai entregar um comprovante de que o produto foi coletado. Sempre peça esse comprovante, caso o transportador não o tenha não entregue o produto. \n ### 7.REEMBOLSO \n Se você resolveu cancelar a sua compra, a restituição do valor pago será feita conforme a opção de pagamento utilizado no momento da compra. \n Cartão de Crédito : Assim que o cancelamento for finalizado, vamos comunicar a administradora, o estorno das parcelas pagas poderá ocorrer em até 02 (duas) faturas subsequentes, pois dependendo da data do vencimento da fatura, o estorno poderá ocorrer no mês seguinte à solicitação de cancelamento. Lembramos que esse procedimento é de responsabilidade da administradora do cartão \n Boleto Bancário : Se você realizou suas compras por meio do boleto, após finalizarmos o cancelamento, o valor será restituído em até 20 dias úteis na sua conta bancária. \n Importante: não realizamos a restituição em conta salário e é necessário que a O CPF do titular da conta corrente tem que ser o mesmo que consta lá no pedido, \n Se quem comprou não tiver uma conta corrente com esses requisitos, vai ser gerada, também em até 20 dias úteis, uma Ordem de Pagamento no valor do produto em nome de quem fez a compra. Ela vai poder ser resgatada em qualquer agência do Banco Itaú só precisando apresentar documento de identidade e CPF. \n Importante : esse valor fica disponível até 60 dias corrido, então cuidado para não perder o prazo, tá? \n PIX = Se você realizou suas compras por meio do PIX, após finalizarmos o cancelamento, o valor será restituído em até 20 dias úteis por meio do PIX ou na sua conta bancária. \n Importante: não realizamos a restituição em conta salário e é necessário que a o CPF do titular da conta corrente ou PIX tem que ser o mesmo que consta lá no pedido. \n ### 8.VALE COMPRA \n Caso você tenha optado pela troca do produto por outro diferente, o produto será coletado/devolvido, para nosso estoque e após análise de 05 (cinco) dias úteis, o vale compra será liberado. \n O vale e nominal e intransferível e tem validade de 01 ano. \n Obs. Cancelamento de compras realizadas com vale, o valor será revertido novamente em vale, \n Caso a nova compra seja de valor superior, você poderá pagar a diferença por cartão de crédito, boleto e ou PIX. \n Caso a nova compra seja de valor inferior ao do Vale Compra, você poderá utilizar o saldo restante em outras compras no site, no prazo acima estipulado. \n"
+        }
+    },
+    "rich-text#institucional-trocas-title": {
+        "props": {
+            "blockClass": [
+                "institucional-trocas-title",
+                "institucional-title"
+            ],
+            "text": "Política de trocas"
+        }
+    }
+}

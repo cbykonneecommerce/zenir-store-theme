@@ -1,0 +1,96 @@
+{
+    "flex-layout.row#shelf-oferta-do-dia": {
+        "title": "Ofertas do dia",
+        "props": {
+            "blockClass": [
+                "container",
+                "shelf-default",
+                "section-home",
+                "ofertas-do-dia"
+            ]
+        },
+        "children": [
+            "responsive-layout.desktop#shelf-ofertas-mobile",
+            "responsive-layout.phone#shelf-ofertas-mobile"
+        ]
+    },
+    "responsive-layout.desktop#shelf-ofertas-mobile":{
+        "children": [
+            "flex-layout.col#shelf-ofertas-do-dia"
+        ]
+    },
+    "flex-layout.col#shelf-ofertas-do-dia": {
+        "props": {
+            "blockClass": [
+                "shelf-ofeta-do-dia"
+            ]
+        },
+        "children": [
+            "rich-text#ofertas-do-dia-title",
+            "list-context.product-list#outras-ofertas-do-dia"
+        ]
+    },
+    "rich-text#ofertas-do-dia-title": {
+        "props": {
+            "blockClass": [
+                "shelf-title",
+                "shelf-title-ofertas"
+            ],
+            "text": "Aproveite a Black do Papoco"
+        }
+    },
+    "flex-layout.row#shelf-oferta": {
+        "title": "Ofertas do dia - Lista de produtos",
+        "props": {
+            "blockClass": [
+                "ofertas-do-dia-content"
+            ]
+        },
+        "children": [
+            
+        ]
+    },
+    "list-context.product-list#outras-ofertas-do-dia": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#outras-ofertas"
+        ]
+    },
+    "slider-layout#outras-ofertas": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 2,
+                "phone": 2.5
+            },
+            "infinite": false,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "always",
+            "blockClass": "shelf-default",
+            "scroll":"ONE_BY_ONE"
+        }
+    },
+    "responsive-layout.phone#shelf-ofertas-mobile": {
+        "props": {
+            "blockClass": "shelf-ofertas-mobile"
+        },
+        "children": [
+            "rich-text#ofertas-do-dia-title",
+            "list-context.product-list#outras-ofertas-mobile"
+        ]
+    },
+    "list-context.product-list#outras-ofertas-mobile": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "props": {
+            "blockClass": "shelf-ofertas-mobile"
+        },
+        "children": [
+            "list-context.product-list#shelf-mobile"
+        ]
+    }
+
+}

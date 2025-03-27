@@ -1,0 +1,174 @@
+{
+    "flex-layout.row#category-badges": {
+        "title":"Seção de Categorias",
+        "props": {
+            "blockClass": [
+                "container",
+                "categorie-badges",
+                "section-home"
+            ],
+            "title": "box de categorias"
+        },
+        "children": [
+            "flex-layout.col#category-badges"
+        ]
+    },
+    "flex-layout.col#category-badges": {
+        "props": {},
+        "children": [
+            "rich-text#category-badges-title",
+            "flex-layout.row#categories"
+        ]
+    },
+    "rich-text#category-badges-title": {
+        "props": {
+            "blockClass": [
+                "shelf-title"
+            ],
+            "text": "Navegue por categorias"
+        }
+    },
+    "flex-layout.row#categories": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-list"
+            ]
+        },
+        "children": [
+            "flex-layout.col#category-1",
+            "flex-layout.col#category-2",
+            "flex-layout.col#category-3",
+            "flex-layout.col#category-4",
+            "flex-layout.col#category-5",
+            "flex-layout.col#category-6",
+            "flex-layout.col#category-7",
+            "flex-layout.col#category-8",
+            "flex-layout.col#category-9"
+        ]
+    },
+    "flex-layout.col#category-1": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-item",
+                "categorie-badges-item-first"
+            ]
+        },
+        "children": [
+            "image#category-badge",
+            "link#category-title"
+        ]
+    },
+    "flex-layout.col#category-2": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-item",
+                "categorie-badges-item-second"
+            ]
+        },
+        "children": [
+            "image#category-badge",
+            "link#category-title"
+        ]
+    },
+    "flex-layout.col#category-3": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-item",
+                "categorie-badges-item-third"
+            ]
+        },
+        "children": [
+            "image#category-badge",
+            "link#category-title"
+        ]
+    },
+    "flex-layout.col#category-4": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-item",
+                "categorie-badges-item-fourth"
+            ]
+        },
+        "children": [
+            "image#category-badge",
+            "link#category-title"
+        ]
+    },
+    "flex-layout.col#category-5": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-item",
+                "categorie-badges-item-fifth"
+            ]
+        },
+        "children": [
+            "image#category-badge",
+            "link#category-title"
+        ]
+    },
+    "flex-layout.col#category-6": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-item",
+                "categorie-badges-item-sixth"
+            ]
+        },
+        "children": [
+            "image#category-badge",
+            "link#category-title"
+        ]
+    },
+    "flex-layout.col#category-7": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-item",
+                "categorie-badges-item-seventh"
+            ]
+        },
+        "children": [
+            "image#category-badge",
+            "link#category-title"
+        ]
+    },
+    "flex-layout.col#category-8": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-item",
+                "categorie-badges-item-last",
+                "categorie-badges-item-eighth"
+            ]
+        },
+        "children": [
+            "image#category-badge",
+            "link#category-title"
+        ]
+    },
+    "flex-layout.col#category-9": {
+        "props": {
+            "blockClass": [
+                "categorie-badges-item",
+                "categorie-badges-item-last",
+                "categorie-badges-item-ninth"
+            ]
+        },
+        "children": [
+            "image#category-badge",
+            "link#category-title"
+        ]
+    },
+    "image#category-badge": {
+        "props": {
+            "src": "https://tfcvih.vteximg.com.br/arquivos/icon-moveis.png",
+            "link": "/",
+            "title": "titulo da imagem",
+            "alt": "texto alternativo "
+        }
+    },
+    "link#category-title": {
+        "props": {
+            "href": "/",
+            "label": "More details >",
+            "blockClass":"category-link"
+        }
+    }
+}

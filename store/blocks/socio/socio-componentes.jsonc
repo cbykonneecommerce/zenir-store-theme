@@ -1,0 +1,44 @@
+{
+  "store.custom#socio-components": {
+    "parent": {
+      "challenge": "socio-torcedor-provider"
+    },
+    "children": [
+      // deve exibir o modal de acorodo com o login
+      // caso o cliente j;a seja socio ele nao deve ser exibido
+      // deve ser exibido para cliente nao logados e sem clube associado no cadastro do cliente
+      "socio-torcedor-condition-children#modal"
+    ]
+  },
+  "socio-torcedor-condition-children#modal": {
+    "children": ["modal-trigger#socio-torcedor"]
+  },
+  "modal-trigger#socio-torcedor": {
+    "props": {
+      // sempre abrir o modal quando usuário entrar na pagina
+      "trigger": "load",
+      "customPixelEventId": "socio",
+      "customPixelEventName": "socio"
+    },
+    "children": ["modal-layout#socio-torcedor"]
+  },
+  "modal-layout#socio-torcedor": {
+    "props": {
+      "blockClass": ["torcedor"],
+      "backdrop": "none",
+      "disableEscapeKeyDown": true
+    },
+    "children": ["socio-form#default"]
+  },
+  "socio-form#default": {
+    "blocks": ["login-content#socio"],
+    "props": {
+      "clube": "fortaleza"
+    }
+  },
+  "login-content#socio": {
+    "props": {
+      "optionsTitle": "Para ver seus pedidos e ter uma experiência\npersonalizada, acesse sua conta :)"
+    }
+  }
+}

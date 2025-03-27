@@ -1,0 +1,246 @@
+{
+  "store.custom#lancamento-aplicativo": {
+    "children": [
+      "responsive-layout.desktop#banner-principal-desktop",
+      "responsive-layout.mobile#banner-principal-mobile",
+      "responsive-layout.mobile#info-card-celular-mobile",
+      "responsive-layout.mobile#ofertas-app",
+      "responsive-layout.desktop#image-and-ofertas-app",
+      "custom-button-to-link-app"
+    ],
+    "props": {
+      "blockClass": "lancamento-aplicativo"
+    }
+  },
+  "responsive-layout.desktop#banner-principal-desktop": {
+    "title": "Banner principal desktop",
+    "children": [
+      "image#banner-principal-desktop"
+    ]
+  },
+  "responsive-layout.mobile#banner-principal-mobile": {
+    "title": "Banner principal mobile",
+    "children": [
+      "image#banner-principal-mobile"
+    ]
+  },
+  "image#banner-principal-desktop": {
+    "props": {
+      "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/2956ed07-120d-4a93-bab5-9dc3adb77945___d3e032d4f6e2a7e66b77113ceb72561d.png",
+      "width": "100%",
+      "blockClass": "banner-principal"
+    }
+  },
+  "image#banner-principal-mobile": {
+    "props": {
+      "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/97220640-a510-45ab-91dd-29f8c663b2fc___3b28caa2d962defe4a00da2e31d342dd.png",
+      "width": "100%",
+      "blockClass": "banner-principal"
+    }
+  },
+  "responsive-layout.mobile#info-card-celular-mobile": {
+    "title": "Imagem com titulo de ofertas",
+    "children": [
+      "flex-layout.row#section-info-card-celular"
+    ]
+  },
+  "flex-layout.row#section-info-card-celular": {
+    "title": "primeiro info card travesseiro",
+    "children": [
+      "info-card#celular"
+    ],
+    "props": {
+      "blockClass": "celular-info-card"
+    }
+  },
+  "info-card#celular": {
+    "title": "box celular com titulo mobile sobre o app",
+    "props": {
+      "id": "info-card-celular-mobile",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/9d0ef6c2-1e72-4672-b366-c37e3a4fb2d2___4b862ee87a5dfb9cc569d2f732f16079.png",
+      "headline": "OFERTAS EXCLUSIVAS SÓ NO APP ZENIR!",
+      "blockClass": "info-card-celular-mobile",
+      "textAlignment": "left"
+    }
+  },
+  "responsive-layout.desktop#image-and-ofertas-app": {
+    "children": [
+      "flex-layout.row#ofertas-app-container"
+    ]
+  },
+  "responsive-layout.mobile#ofertas-app": {
+    "title": "Carrosel de ofertas do app no mobile",
+    "children": [
+      "slider-layout#ofertas-app-mobile"
+    ]
+  },
+
+  "slider-layout#ofertas-app-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "phone": 2.3
+      },
+      "infinite": false,
+      "usePagination": false,
+      "showNavigationArrows": "desktopOnly"
+    },
+    "children": ["flex-layout.row#options-ofertas-app"]
+  },
+
+  "flex-layout.row#ofertas-app-container": {
+    "title": "Seção das ofertas do app",
+    "props": {
+      "blockClass": [
+        "ofertas-app"
+      ],
+      "title": "box de marcas"
+    },
+    "children": [
+      "image#celular-desktop",
+      "flex-layout.col#ofertas-app"
+    ]
+  },
+  "image#celular-desktop": {
+    "props": {
+      "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/94b5d154-d597-497c-9fe5-1662559015ab___7932cd738b6dca821a34d1893201c78e.png"
+    }
+  },
+  "flex-layout.col#ofertas-app": {
+    "props": {},
+    "children": [
+      "rich-text#ofertas-app-title",
+      "flex-layout.row#options-ofertas-app"
+    ]
+  },
+  "rich-text#ofertas-app-title": {
+    "props": {
+      "blockClass": [
+        "shelf-title-ofertas-app"
+      ],
+      "text": "Ofertas Exclusivas só no App Zenir!"
+    }
+  },
+  "flex-layout.row#options-ofertas-app": {
+    "props": {
+      "blockClass": [
+        "categorie-badges-list",
+        "options-offers-app"
+      ]
+    },
+    "children": [
+      "flex-layout.col#ofertas-app-1",
+      "flex-layout.col#ofertas-app-2",
+      "flex-layout.col#ofertas-app-3"
+    ]
+  },
+  "flex-layout.col#ofertas-app-1": {
+    "props": {
+      "blockClass": [
+        "ofertas-app-shelf",
+        "comodity"
+      ]
+    },
+    "children": [
+      "image#ofertas-app-comodidade",
+      "rich-text#ofertas-app-comodidade-title",
+      "rich-text#ofertas-app-comodidade-text"
+    ]
+  },
+  "flex-layout.col#ofertas-app-2": {
+    "props": {
+      "blockClass": [
+        "ofertas-app-shelf",
+        "fire"
+      ]
+    },
+    "children": [
+      "image#ofertas-app-ofertas",
+      "rich-text#ofertas-app-ofertas-title",
+      "rich-text#ofertas-app-ofertas-text"
+    ]
+  },
+  "flex-layout.col#ofertas-app-3": {
+    "props": {
+      "blockClass": [
+        "ofertas-app-shelf",
+        "fast-buy"
+      ]
+    },
+    "children": [
+      "image#ofertas-app-compra-rapida",
+      "rich-text#ofertas-app-compra-rapida-title",
+      "rich-text#ofertas-app-compra-rapida-text"
+    ]
+  },
+  "image#ofertas-app-comodidade": {
+    "props": {
+      "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/b780daad-58db-48a0-8b53-6d724d21e8f1___ca2bc196e0ba89db24be29ea95dbeda2.png",
+      "link": "/",
+      "alt": "texto alternativo "
+    }
+  },
+  "rich-text#ofertas-app-comodidade-title": {
+    "props": {
+      "blockClass": [
+        "texto-da-shelf-title"
+      ],
+      "text": "COMODIDADE"
+    }
+  },
+  "rich-text#ofertas-app-comodidade-text": {
+    "props": {
+      "blockClass": [
+        "texto-da-shelf-texto"
+      ],
+      "text": "Comodidade para comprar de onde estiver."
+    }
+  },
+  "image#ofertas-app-ofertas": {
+    "props": {
+      "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/339030f1-afeb-4095-a01a-8d379bed69fc___bf7c07cf1fa7a3bc5c55b3579098398b.png",
+      "title": "titulo da imagem",
+      "alt": "texto alternativo "
+    }
+  },
+  "rich-text#ofertas-app-ofertas-title": {
+    "props": {
+      "blockClass": [
+        "texto-da-shelf-title"
+      ],
+      "text": "OFERTAS"
+    }
+  },
+  "rich-text#ofertas-app-ofertas-text": {
+    "props": {
+      "blockClass": [
+        "texto-da-shelf-texto"
+      ],
+      "text": "Ofertas exclusivas só no app."
+    }
+  },
+  "image#ofertas-app-compra-rapida": {
+    "props": {
+      "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/5e01d38c-7e57-4bbf-861f-d1a2d4e6d49f___ed13094f39f029701b284267f22e72af.png",
+      "title": "titulo da imagem",
+      "alt": "texto alternativo "
+    }
+  },
+  "rich-text#ofertas-app-compra-rapida-title": {
+    "props": {
+      "blockClass": [
+        "texto-da-shelf-title"
+      ],
+      "text": "COMPRA RÁPIDA"
+    }
+  },
+  "rich-text#ofertas-app-compra-rapida-text": {
+    "props": {
+      "blockClass": [
+        "texto-da-shelf-texto"
+      ],
+      "text": "Experiência de compra rápida e segura."
+    }
+  }
+}

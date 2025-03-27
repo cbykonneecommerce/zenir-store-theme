@@ -1,0 +1,136 @@
+:global(.newsletterTitle) {
+  font-family: 'Futura Medium', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+}
+
+:global(div[data-hydration-id='store.home/custom-newsletter']
+    .vtex-store-newsletter-1-x-newsletterForm--newsletter-main) {
+  position: relative;
+  z-index: 2;
+}
+
+:global(div[data-hydration-id='store.home/custom-newsletter']
+    .newsletterSection) {
+  background: linear-gradient(135.14deg, #022d8a 0%, #1a56b0 100.09%);
+  position: relative;
+  margin: 0 auto;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout .newsletterSection.footer-home) {
+  display: none;
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1550px) {
+  :global(div[data-hydration-id='store.home/custom-newsletter']) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: block !important;
+  }
+}
+:global(.vtex-rich-text-0-x-paragraph--newsletter-text strong) {
+  color: #ffb71c;
+}
+
+:global(.newsletterSection) {
+  padding: 0px 1.5rem;
+  width: 100%;
+  background-color: #001d7e;
+  display: flex;
+  align-items: center;
+}
+
+:global(.newsletterForm) {
+  width: 100%;
+  margin: 0 auto;
+}
+
+:global(.newsletterButton) {
+  max-width: 200px;
+  width: 100vw;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-family: 'Futura Medium', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  background-color: #ffb71c;
+  border-radius: 5px;
+  border-color: #ffb71c;
+  cursor: pointer;
+}
+
+:global(.newsletterInput) {
+  min-width: 250px;
+  min-height: 40px;
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  :global(div[data-hydration-id='store.home/custom-newsletter']
+      .newsletterSection:before) {
+    content: '';
+    width: 360px;
+    height: 220px;
+    background-image: url('https://tfcvih.vtexassets.com/arquivos/email-mask.png');
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  :global(div[data-hydration-id='store.home/custom-newsletter']
+      .newsletterSection) {
+    max-width: 96rem;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0px 1.5rem;
+    background: linear-gradient(135.14deg, #022d8a 0%, #1a56b0 100.09%);
+    position: relative;
+    min-height: 250px;
+  }
+}
+@media screen and (min-width: 1025px) {
+}
+/* mobile */
+@media screen and (max-width: 1024px) {
+  :global(div[data-hydration-id='store.home/custom-newsletter']
+      .newsletterSection) {
+    border-radius: 5px;
+  }
+  :global(.newsletterForm) {
+    background: linear-gradient(135.14deg, #022d8a 0%, #1a56b0 100.09%);
+    border-radius: 0;
+    padding: 20px 24px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  :global(.newsletterSection) {
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+  }
+
+  :global(div[data-hydration-id='store.home/custom-newsletter']) {
+    padding: 0px 0.5rem;
+    display: block !important;
+  }
+
+  :global(.newsletterButton) {
+    max-width: 100%;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}

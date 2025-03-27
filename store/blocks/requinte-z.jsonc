@@ -1,0 +1,39 @@
+{
+    "store.custom#requinte-z": {
+        "blocks": [
+            "search-result-layout.customQuery#collection"
+        ]
+    },
+    "search-result-layout.customQuery#collection": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "253",
+                "mapField": "productClusterIds"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#requinte",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#requinte": {
+        "children": [
+            "flex-layout.row#banner-slider-requinte",
+            "flex-layout.row#product-cards-list",
+            "flex-layout.row#result",
+            "flex-layout.row#newsletter-requinte",
+            "flex-layout.row#box-content-requinte",
+            "flex-layout.row#brands-badges"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": true,
+            "defaultGalleryLayout": "grid",
+            "showFacetQuantity": true
+        }
+    }
+
+}

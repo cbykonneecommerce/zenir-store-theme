@@ -1,0 +1,87 @@
+:global(.vtex-slider-layout-0-x-sliderTrack--shelf-cama-mesa-banho-principal) {
+  margin-top: 4rem;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+:global(.vtex-product-summary-2-x-containerNormal) {
+  background: #F0E0DB !important;
+}
+
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+:global(.vtex-product-summary-2-x-containerNormal)
+:global(.vtex-store-components-3-x-discountContainer) {
+  margin-top: -3rem;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+:global(.vtex-product-summary-2-x-containerNormal)
+:global(.vtex-product-price-1-x-sellingPrice--summary) {
+  font-size: 1.9rem;
+  color: #141414;
+  border: 3px solid #C4B7A5;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 5px;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+:global(.vtex-product-summary-2-x-containerNormal)
+:global(.vtex-product-price-1-x-installments--summary) {
+  color: #141414;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+:global(.vtex-product-summary-2-x-imageWrapper) {
+  margin-bottom: 3.5rem;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+:global(.vtex-product-summary-2-x-hoverEffect) {
+  width: 11rem;
+  position: fixed;
+  top: 2.5rem;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+:global(.vtex-product-summary-2-x-image) {
+  height: 8.3rem !important;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+:global(.vtex-store-components-3-x-discountInsideContainer) {
+  display: none !important;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+:global(.vtex-product-identifier-0-x-product-identifier) {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+  :global(.vtex-product-summary-2-x-containerNormal)
+  :global(.vtex-product-price-1-x-sellingPrice--summary) {
+    font-size: 1.3rem;
+  }
+
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+  :global(.vtex-product-summary-2-x-imageStackContainer) {
+    width: 7rem;
+    position: fixed;
+    top: 2.2rem;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-cama-mesa-banho-principal)
+  :global(.vtex-product-summary-2-x-image) {
+    height: 7.5rem !important;
+  }
+}

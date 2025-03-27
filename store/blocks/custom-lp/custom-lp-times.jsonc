@@ -1,0 +1,16 @@
+{
+    "store.custom#custom-lps-times": {
+        "blocks": [
+            "custom-lp-times"
+        ],
+        "parent": {
+            "challenge": "socio-torcedor-provider"
+          },
+        "props": {
+            "blockClass": "fotaleza"
+        },
+        "children": [
+            "socio-torcedor-condition-children#modal"
+          ]
+    }
+}

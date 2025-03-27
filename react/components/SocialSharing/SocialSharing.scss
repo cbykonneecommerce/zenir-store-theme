@@ -1,0 +1,135 @@
+.socialSharing {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background: linear-gradient(113.96deg, #4988e2 0%, #0e429d 100%), #ffffff;
+  border-radius: 4px;
+  padding: 40px;
+  width: 100%;
+  max-width: 560px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.modalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+.modalClose svg {
+  pointer-events: none;
+}
+
+.modalContent p {
+  color: #ffffff;
+}
+.modalWrapper p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.modalWrapper input,
+.modalWrapper button {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  height: 35px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+}
+
+.modalWrapper input {
+  padding: 0 10px;
+}
+.modalWrapper input:active {
+  border: none;
+  outline: none;
+}
+
+.modalWrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.modalWrapper button:disabled {
+  opacity: 0.7;
+  cursor: auto;
+}
+.modalWrapper i {
+  margin-left: 10px;
+}
+
+.modalWrapper :global(.whatsAppButton) {
+  background-color: #00a884;
+}
+.modalWrapper :global(.copyButton) {
+  background-color: #2e3192;
+}
+
+.modalTitle {
+  text-align: center;
+  font-size: 28px;
+}
+
+/* only desktop */
+@media screen and (min-width: 1024px) {
+  .socialSharing {
+    margin-left: 10px;
+  }
+
+  .socialSharing::before {
+    content: "";
+    width: 1px;
+    height: 35px;
+    background-color: #727273;
+    position: absolute;
+    left: 0;
+  }
+}
+
+/* only mobile */
+@media screen and (max-width: 1024px) {
+  .modalContent {
+    width: 90% !important;
+  }
+}

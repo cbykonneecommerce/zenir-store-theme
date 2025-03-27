@@ -1,0 +1,23 @@
+.summaryTotalReviews {
+  display: none;
+}
+
+.summaryContainer {
+
+  display:none;
+}
+
+.star--fill,
+.star--empty {
+  color: #bf0811;
+}
+
+.container {
+  max-width: unset;
+}
+
+@media screen and (max-width: 767px) {
+  .summaryContainer {
+    margin-bottom: 0px;
+  }
+}

@@ -1,0 +1,43 @@
+.listContainer--list-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.listItem--tab-pdp {
+  width: 100% !important;
+  margin: 0px;
+  border-bottom: 2px solid #808080;
+}
+
+.listContainer--list-info :global(.vtex-button) {
+  background: #fff;
+  border: none;
+  width: 100%;
+}
+
+.listContainer--list-info :global(.vtex-button__label) {
+  font-family: "Futura Hv BT", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.listItemActive--tab-pdp :global(.vtex-button__label) {
+  color: #001D7E;
+}
+
+.listItemActive--tab-pdp {
+  border-color: #001D7E;
+  border-width: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .listContainer--list-info :global(.vtex-button__label) {
+    font-size: 16px;
+  }
+}

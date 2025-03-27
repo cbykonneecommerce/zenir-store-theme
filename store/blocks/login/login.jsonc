@@ -1,0 +1,61 @@
+{
+  "store.login": {
+    "blocks": ["flex-layout.row#login"]
+  },
+
+  "flex-layout.row#login": {
+    "title": "Login",
+    "props": {
+      "blockClass": ["login", "container"]
+    },
+    "children": ["flex-layout.col#login"]
+  },
+
+  "flex-layout.col#login": {
+    "title": "Login",
+    "props": {
+      "blockClass": ["login", "container"]
+    },
+    "children": [
+      "responsive-layout.phone#login-link-cadastro",
+      "login-content#default",
+      "responsive-layout.desktop#login-link-cadastro",
+      "responsive-layout.tablet#login-link-cadastro"
+    ]
+  },
+
+  "responsive-layout.desktop#login-link-cadastro": {
+    "children": ["link#cadastre-se"]
+  },
+
+  "responsive-layout.tablet#login-link-cadastro": {
+    "children": ["link#cadastre-se"]
+  },
+
+  "responsive-layout.phone#login-link-cadastro": {
+    "children": ["link#cadastre-se"]
+  },
+
+  "link#cadastre-se": {
+    "title": "Link de cadastre-se",
+    "props": {
+      "blockClass": ["cadastre-se"],
+      "label": "Não tem conta? Cadastre-se",
+      "href": "/cadastre-se"
+    }
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "accessCodeTitle": "Receber código de acesso por e-mail",
+      "emailPlaceholder": "exemplo@email.com",
+      "passwordPlaceholder": "Digite sua senha",
+      "emailAndPasswordTitle": "Entrar com e-mail e senha",
+      "optionsTitle": "Para ver seus pedidos e ter uma experiência personalizada, acesse sua conta :)",
+      "logInButtonBehavior": "link",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  }
+}

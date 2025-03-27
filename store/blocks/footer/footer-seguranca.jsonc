@@ -1,0 +1,55 @@
+{
+    "image#safe1": {
+        "props": {
+            "blockClass": [
+                "image-seguranca"
+            ],
+            "src": "https://tfcvih.vteximg.com.br/arquivos/safe1png.png"
+        }
+    },
+    "image#safe2": {
+        "props": {
+            "blockClass": [
+                "image-seguranca"
+            ],
+            "width": 150,
+            "src": "https://tfcvih.vteximg.com.br/arquivos/safe2.png"
+        }
+    },
+    "flex-layout.col#isntitucional-menu-footer-seguranca": {
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "menu-institucional--footer"
+            ]
+        },
+        "children": [
+            "rich-text#menu-footer-institucional-seguranca-title",
+            "flex-layout.row#seguranca-images"
+        ]
+    },
+    "rich-text#menu-footer-institucional-seguranca-title": {
+        "props": {
+            "blockClass": [
+                "menu-institucional--footer"
+            ],
+            "text": "SEGURANÇA"
+        }
+    },
+    "flex-layout.row#seguranca-images": {
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "images"
+            ]
+        },
+        "children": [
+            "image#safe1",
+            "image#safe2"
+        ]
+    }
+}

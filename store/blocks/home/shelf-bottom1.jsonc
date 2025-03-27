@@ -1,0 +1,252 @@
+{
+    "flex-layout.row#shelf-bottom-1": {
+        "title":"prateleira 2",
+        "props": {
+            "blockClass": [
+                "container",
+                "shelf-default",
+                "section-home"
+            ]
+        },
+        "children": [
+            "responsive-layout.desktop#shelf-bottom-1",
+            "responsive-layout.phone#shelf-mobile-1"
+        ]
+    },
+    "responsive-layout.desktop#shelf-bottom-1": {
+        "props": {
+            "blockClass": "shelf-desktop"
+        },
+        "children": [
+            "flex-layout.col#shelf-bottom-1"
+        ]
+    },
+    "flex-layout.col#shelf-bottom-1": {
+        "props": {},
+        "children": [
+            "rich-text#shelf-bottom-title",
+            "list-context.product-list#shelf-bottom-1"
+        ]
+    },
+    "rich-text#shelf-bottom-title": {
+        "props": {
+            "text": "PARA SUA COZINHA",
+            "blockClass": [
+                "shelf-title"
+            ]
+        }
+    },
+    "list-context.product-list#shelf-bottom-1": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#default-shelf"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "slider-layout#default-shelf": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 2,
+                "phone": 2.5
+            },
+            "infinite": false,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "always",
+            "blockClass": "shelf-default"
+        }
+    },
+    //firstShelf mobile
+    "responsive-layout.phone#shelf-mobile-1": {
+        "props": {
+            "blockClass": "shelf-mobile"
+        },
+        "children": [
+            "rich-text#shelf-mobile-title",
+            "list-context.product-list#shelf-mobile-1"
+        ]
+    },
+    "rich-text#shelf-mobile-title": {
+        "props": {
+            "text": "PARA SUA COZINHA",
+            "blockClass": [
+                "shelf-title"
+            ]
+        }
+    },
+    "list-context.product-list#shelf-mobile-1": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "list-context.product-list#shelf-mobile"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "list-context.product-list#shelf-mobile": {
+        "children": [
+            "list-context-renderer#shelf-mobile"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "list-context-renderer#shelf-mobile": {
+        "title": "prateleira 1",
+        "props": {
+            "blockClass": [
+                "shelf-mobile-list"
+            ],
+            "listElement": "ul",
+            "itemElement": "li"
+        }
+    },
+    //second shelf
+    "flex-layout.row#shelf-bottom-2": {
+        "props": {
+            "blockClass": [
+                "container",
+                "shelf-default",
+                "section-home"
+            ]
+        },
+        "children": [
+            "responsive-layout.desktop#shelf-bottom-2",
+            "responsive-layout.phone#shelf-mobile-2"
+        ]
+    },
+    "responsive-layout.desktop#shelf-bottom-2": {
+        "props": {},
+        "children": [
+            "rich-text#shelf-bottom-title",
+            "list-context.product-list#shelf-bottom-2"
+        ]
+    },
+    "list-context.product-list#shelf-bottom-2": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#default-shelf"
+        ],
+        "props": {
+            "orderBy": "OrderByBestDiscountDESC"
+        }
+    },
+    //secondShelf mobile
+    "responsive-layout.phone#shelf-mobile-2": {
+        "title":"prateleira 2",
+        "props": {
+            "blockClass": "shelf-mobile"
+        },
+        "children": [
+            "rich-text#shelf-mobile-title-2",
+            "list-context.product-list#shelf-mobile-2"
+        ]
+    },
+    "list-context.product-list#shelf-mobile-2": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "list-context.product-list#shelf-mobile-list-2"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "rich-text#shelf-mobile-title-2": {
+        "props": {
+            "text": "EM PROMOÇÃO",
+            "blockClass": [
+                "shelf-title"
+            ]
+        }
+    },
+    "list-context.product-list#shelf-mobile-list-2": {
+
+        "children": [
+            "list-context-renderer#shelf-mobile"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    //third shelf
+    "flex-layout.row#shelf-bottom-3": {
+        "title":"prateleira 3",
+        "props": {
+            "blockClass": [
+                "container",
+                "shelf-default",
+                "section-home"
+            ]
+        },
+        "children": [
+            "responsive-layout.desktop#shelf-bottom-3",
+            "responsive-layout.phone#shelf-mobile-3"
+        ]
+    },
+    "responsive-layout.desktop#shelf-bottom-3": {
+        "props": {},
+        "children": [
+            "rich-text#shelf-bottom-title",
+            "list-context.product-list#shelf-bottom-3"
+        ]
+    },
+    "list-context.product-list#shelf-bottom-3": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#default-shelf"
+        ],
+        "props": {
+            "orderBy": "OrderByBestDiscountDESC"
+        }
+    },
+    //thirdShelf mobile
+    "responsive-layout.phone#shelf-mobile-3": {
+        "props": {
+            "blockClass": "shelf-mobile"
+        },
+        "children": [
+            "rich-text#shelf-mobile-title-3",
+            "list-context.product-list#shelf-mobile-3"
+        ]
+    },
+    "list-context.product-list#shelf-mobile-3": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "list-context.product-list#shelf-mobile-list-3"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "rich-text#shelf-mobile-title-3": {
+        "props": {
+            "text": "EM PROMOÇÃO",
+            "blockClass": [
+                "shelf-title"
+            ]
+        }
+    },
+    "list-context.product-list#shelf-mobile-list-3": {
+        "title":"prateleira 3",
+        "children": [
+            "list-context-renderer#shelf-mobile"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    }
+}

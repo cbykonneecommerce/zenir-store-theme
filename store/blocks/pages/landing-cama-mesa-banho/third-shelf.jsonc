@@ -1,0 +1,48 @@
+{
+  "flex-layout.row#shelf-third": {
+    "title": "Terceira prateleira",
+    "props": {
+        "blockClass": [
+          "container",
+          "shelf-default",
+          "shelf-cama-mesa-banho",
+          "shelf-third"
+        ]
+    },
+    "children": [
+      "flex-layout.col#shelf-third"
+    ]
+  },
+  "flex-layout.col#shelf-third": {
+    "props": {
+        "blockClass": [
+          "shelf-third" 
+        ]
+    },
+    "children": [
+        "list-context.product-list#third-shelf"
+    ]
+  },
+  "list-context.product-list#third-shelf": {
+    "blocks": [
+        "product-summary.shelf"
+    ],
+    "children": [
+        "slider-layout#third-shelf"
+    ]
+  },
+  "slider-layout#third-shelf": {
+    "props": {
+        "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2.5
+        },
+        "infinite": false,
+        "showNavigationArrows": "desktopOnly",
+        "showPaginationDots": "never",
+        "blockClass": ["shelf-default", "shelf-cama-mesa-banho-principal"],
+        "scroll":"ONE_BY_ONE"
+    }
+  }
+}

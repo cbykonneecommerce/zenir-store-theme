@@ -1,0 +1,76 @@
+
+
+{
+    "flex-layout.row#banner-mosaic": {
+        "title":"Mosaico de banners retangular",
+        "props": {
+            "blockClass": [
+                "container",
+                "section-home",
+                "mosaic-rectangular"
+            ],
+            "title": "box de categorias"
+        },
+        "children": [
+            "flex-layout.col#mosaic-banners"
+        ]
+    },
+    "flex-layout.col#mosaic-banners":{
+        "children": [
+            "flex-layout.row#mosaic-box-1",
+            "flex-layout.row#mosaic-box-2"
+        ]
+    },
+    "flex-layout.row#mosaic-box-1": {
+        "props": {
+            "blockClass": [
+                "mosaic-banners-list"
+            ]
+        },
+        "children": [
+            "flex-layout.col#banner-1",
+            "flex-layout.col#banner-2"
+        ]
+    },
+    "flex-layout.row#mosaic-box-2": {
+        "props": {
+            "blockClass": [
+                "mosaic-banners-list"
+            ]
+        },
+        "children": [
+            "flex-layout.col#banner-1",
+            "flex-layout.col#banner-2"
+        ]
+    },
+    "flex-layout.col#banner-1": {
+        "props": {
+            "blockClass": [
+                "mosaic-banners-item",
+                "mosaic-banners-item-left"
+            ]
+        },
+        "children": [
+            "image#mosaic-img"
+        ]
+    },
+    "flex-layout.col#banner-2": {
+        "props": {
+            "blockClass": [
+                "mosaic-banners-item",
+                "mosaic-banners-item-right"
+            ]
+        },
+        "children": [
+            "image#mosaic-img"
+        ]
+    },
+    "image#mosaic-img": {
+        "props": {
+            "src": "https://tfcvih.vteximg.com.br/arquivos/banner-test.png",
+            "link": "/",
+            "title": "titulo da imagem",
+            "alt": "texto alternativo "
+        }
+    }
+}

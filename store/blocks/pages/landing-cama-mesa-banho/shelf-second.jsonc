@@ -1,0 +1,48 @@
+{
+  "flex-layout.row#shelf-second": {
+    "title": "Segunda prateleira",
+    "props": {
+        "blockClass": [
+          "container",
+          "shelf-default",
+          "shelf-cama-mesa-banho",
+          "shelf-second"
+        ]
+    },
+    "children": [
+      "flex-layout.col#shelf-second"
+    ]
+  },
+  "flex-layout.col#shelf-second": {
+    "props": {
+        "blockClass": [
+          "shelf-second" 
+        ]
+    },
+    "children": [
+        "list-context.product-list#second-shelf"
+    ]
+  },
+  "list-context.product-list#second-shelf": {
+    "blocks": [
+        "product-summary.shelf"
+    ],
+    "children": [
+        "slider-layout#second-shelf"
+    ]
+  },
+  "slider-layout#second-shelf": {
+    "props": {
+        "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2.5
+        },
+        "infinite": false,
+        "showNavigationArrows": "desktopOnly",
+        "showPaginationDots": "never",
+        "blockClass": ["shelf-default", "shelf-cama-mesa-banho-principal"],
+        "scroll":"ONE_BY_ONE"
+    }
+  }
+}

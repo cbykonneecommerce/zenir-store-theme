@@ -1,0 +1,48 @@
+{
+  "flex-layout.row#shelf-first": {
+    "title": "Primeira prateleira",
+    "props": {
+        "blockClass": [
+            "container",
+            "shelf-default",
+            "section-home",
+            "shelf-first"
+        ]
+    },
+    "children": [
+      "flex-layout.col#shelf-first"
+    ]
+  },
+  "flex-layout.col#shelf-first": {
+    "props": {
+        "blockClass": [
+            "shelf-first" 
+        ]
+    },
+    "children": [
+        "list-context.product-list#first-shelf"
+    ]
+  },
+  "list-context.product-list#first-shelf": {
+    "blocks": [
+        "product-summary.shelf"
+    ],
+    "children": [
+        "slider-layout#first-shelf"
+    ]
+  },
+  "slider-layout#first-shelf": {
+    "props": {
+        "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2.5
+        },
+        "infinite": false,
+        "showNavigationArrows": "desktopOnly",
+        "showPaginationDots": "never",
+        "blockClass": ["shelf-default", "shelf-cama-mesa-banho-principal"],
+        "scroll":"ONE_BY_ONE"
+    }
+  }
+}

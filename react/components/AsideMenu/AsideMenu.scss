@@ -1,0 +1,131 @@
+:global(.vtex-store-drawer-0-x-menuLink) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+:global(.vtex-store-drawer-0-x-menuLink.dn) {
+  display: none !important;
+}
+
+
+:global(.Áudio)::before {
+  content: "";
+  background: url(/arquivos/icone-tv.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Celulares)::before {
+  content: "";
+  background: url(/arquivos/icone-celular.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Móveis)::before {
+  content: "";
+  background: url(/arquivos/icone-moveis.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Eletrodomésticos)::before {
+  content: "";
+  background: url(/arquivos/icone-eletro.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Eletroportáteis)::before {
+  content: "";
+  background: url(/arquivos/icone-eletroportateis.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Bicicletas)::before {
+  content: "";
+  background: url(/arquivos/icone-bicicleta.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Informática)::before {
+  content: "";
+  background: url(/arquivos/icone-informatica.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Utilidade)::before {
+  content: "";
+  background: url(/arquivos/icone-utilidade.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Cama)::before {
+  content: "";
+  background: url(/arquivos/icone-cama.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Banho)::before {
+  content: "";
+  background: url(/arquivos/icone-banho.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Decoração)::before {
+  content: "";
+  background: url(/arquivos/icone-decoracao.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+:global(.Telefone)::before {
+  content: "";
+  background: url(/arquivos/icon-telefone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+

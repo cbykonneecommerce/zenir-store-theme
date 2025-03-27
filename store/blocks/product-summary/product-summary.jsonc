@@ -1,0 +1,147 @@
+{
+    "product-summary.shelf": {
+        "children": [
+            "responsive-layout.desktop#summary-image",
+            "responsive-layout.tablet#summary-image",
+            "responsive-layout.phone#summary-image",
+            "stack-layout#prodsum",
+            "custom-flag-product",
+            "product-identifier.product#ref",
+            "product-summary-name#summary",
+            "custom-product-installment#sumary",
+            "product-timer",
+            "flex-layout.row#availability-search"
+        ]
+    },
+    "responsive-layout.desktop#summary-image": {
+        "children": [
+            "product-summary-image#shelf"
+        ]
+    },
+    "responsive-layout.tablet#summary-image": {
+        "children": [
+            "product-summary-image#shelf"
+        ]
+    },
+    "responsive-layout.phone#summary-image": {
+        "children": [
+            "product-summary-image#shelf-mobile"
+        ]
+    },
+    "product-identifier.product#ref": {
+        "props": {
+            "label": "custom", //'default' | 'custom' | 'hide'
+            "customLabel": "cód.", // text if label is custom
+            "idField": "productReference" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
+        }
+    },
+    "stack-layout#prodsum": {
+        "props": {
+            "blockClass": "summary-highlights"
+        },
+        "children": [
+            "vtex.product-highlights@2.x:product-highlights#collection"
+        ]
+    },
+    "product-summary-image#shelf": {
+        "props": {
+            "showBadge": true,
+            "aspectRatio": "1:1",
+            "maxHeight": 200,
+            "width": 240,
+            "height": 240
+        }
+    },
+    "product-summary-image#shelf-mobile": {
+        "props": {
+            "showBadge": true,
+            "maxHeight": 200,
+            "width": 132,
+            "height": 132
+        }
+    },
+    "vtex.product-highlights@2.x:product-highlights#collection": {
+        "props": {
+            "type": "collection"
+        },
+        "children": [
+            "product-highlight-wrapper"
+        ]
+    },
+    "product-highlight-wrapper": {
+        "props": {
+            "blockClass": "collection"
+        },
+        "children": [
+            "product-highlight-text"
+        ]
+    },
+    "product-highlight-text": {
+        "props": {
+            "message": "{highlightName}"
+        }
+    },
+    "product-list-price#summary": {
+        "props": {
+            "blockClass": "summary"
+        }
+    },
+    "flex-layout.row#price": {
+        "props": {
+            // "colGap": 2,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            // "showListPrice": true,
+            "showLabels": true,
+            "showListPriceRange": true,
+            "blockClass": [
+                "default-shelf-price"
+            ]
+            // "marginBottom": 4
+        },
+        "children": [
+            "product-list-price#summary",
+            "product-selling-price#summary"
+        ]
+    },
+    "flex-layout.row#selling-price-savings": {
+        "props": {
+            "colGap": 2,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "marginBottom": 4
+        },
+        "children": [
+            "product-selling-price#summary",
+            "product-price-savings#summary"
+        ]
+    },
+    "custom-product-installment#sumary": {
+        "title": "Parcelamento",
+        "props": {
+            "message": "Ou {installmentsTotalValue} em até {installmentsNumber}",
+            "blockClass": [
+                "pdp-installments"
+            ]
+        }
+    },
+    "product-selling-price#summary": {
+        "props": {
+            "blockClass": "summary"
+        }
+    },
+    "product-price-savings#summary": {
+        "props": {
+            "markers": [
+                "discount"
+            ],
+            "blockClass": "summary"
+        }
+    },
+    "flex-layout.row#availability-search": {
+        "props": {
+          "blockClass": "message-availability-search"
+        },
+        "children": ["availability-subscriber"]
+    }
+}

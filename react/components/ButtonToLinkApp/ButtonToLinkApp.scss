@@ -1,0 +1,30 @@
+.buttonToAppLink {
+  background: #01f80e;
+  border-radius: 0.5rem;
+  border: none;
+  color: #2e3192;
+  font-weight: 800;
+  font-size: 1.1rem;
+  width: 13.81rem;
+  height: 3.25rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 65%;
+  margin-top: -3rem;
+  margin-bottom: 6rem;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buttonToAppLink {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

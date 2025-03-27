@@ -1,0 +1,20 @@
+{
+    "social-networks": {
+        "props": {
+            "socialNetworks": [
+                {
+                    "url": "https://facebook.com/zenirmoveiseeletros",
+                    "name": "Facebook"
+                },
+                {
+                    "url": "https://twitter.com/zenirmoveis",
+                    "name": "Twitter"
+                },
+                {
+                    "url": "https://www.instagram.com/zenirmoveis/",
+                    "name": "Instagram"
+                }
+            ]
+        }
+    }
+}

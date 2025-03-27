@@ -1,0 +1,26 @@
+query dataProduct($sku: ID! ) {
+
+  product(identifier:{field:sku value:$sku})
+  @context(provider: "vtex.search-graphql"){
+	items{
+    nameComplete
+    itemId
+      sellers{
+        commertialOffer{
+          ListPrice
+          Price
+          AvailableQuantity
+          Installments{ 
+          	Value
+            InterestRate
+            TotalValuePlusInterestRate
+            NumberOfInstallments
+            PaymentSystemName
+            PaymentSystemGroupName
+            Name
+          }
+        }
+      }
+    }
+  }
+}
