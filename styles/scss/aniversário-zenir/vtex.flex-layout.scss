@@ -1,0 +1,141 @@
+.flexRow--section-home,
+.flexRow--shelf-default,
+.flexRow--beneficios-container {
+  background-color: #000c62 !important;
+  background: #000c62 !important;
+}
+
+.flexRow--ofertas-do-dia,
+.flexRow--mega-menu-row,
+.flexRowContent--beneficios-item {
+  background: #149dff !important;
+  background-color: #149dff !important;
+}
+
+.flexRowContent--drawer-header {
+  background: #51c1ff !important;
+}
+
+.flexCol--menu-texts {
+  background-color: #51c1ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 16px 48px 16px;
+  padding: 24px;
+  width: auto;
+  gap: 12px;
+
+  .flexColChild--menu-texts {
+    width: 100%;
+  }
+
+  :global(.vtex-store-link-0-x-link) {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100% !important;
+    background-color: #0231d3;
+  }
+
+  :global(.vtex-store-link-0-x-link--link-telefone) {
+    background-color: #ed1c24 !important;
+  }
+}
+
+.flexRow--ofertas-do-dia {
+  background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/01e50445-5efb-4feb-ae28-1974c380c842___7618fcc94c7865a4f97c17c06d715a36.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  @media (min-width: 641px) {
+    background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/c0ff67e3-9c85-423b-8b9d-bd6a7f7a1391___518849cae08bec52ed366b7a15c621e2.png") !important;
+    background-size: 1528px !important;
+  }
+}
+
+.flexRow--categorie-badges {
+  background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/ca7a1821-cc5c-4501-b64b-da05ca331542___8ebd1bb464d23e8eb8eae76331d7ad41.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  // @media (min-width: 641px) and (max-width: 1024px) {
+  //   background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/7a33e95b-0667-4c9e-be35-be09e1ac80cc___2ccb8f55ef30f868994ec241bfa2c403.png") !important;
+  //   background-size: 1024px !important;
+  // }
+
+  @media (min-width: 641px) {
+    background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/f8ef45bd-1dce-41f5-ae2e-9dc7e1c4371c___417c881c6086d09e1dcbd171cf201c2b.png") !important;
+    background-size: 1536px !important;
+  }
+}
+
+.flexRow--mosaic-rectangular {
+  background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/2ed08d09-8e2e-4333-874b-bea98a0779c7___79f3219fe56191b93ba5380ab509476e.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  @media (min-width: 641px) {
+    background-size: 1536px !important;
+    background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/898d22e8-ddf6-4f09-90fa-d660704db78f___8db7962b1f7e3d48058a580c4ea551dd.png") !important;
+  }
+}
+
+.flexRow--shelf-bottom-1 {
+  background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/52c122c6-cd37-42ff-950c-a7938012e23b___66e3f01470a66d0d921a3fe1445ae3b2.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  @media (min-width: 641px) {
+    background-size: 1536px !important;
+    background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/88eed631-6bce-4e1e-aea8-26ba296e5b0b___260625013643055bbb7464dab1e800ec.png") !important;
+  }
+}
+.flexRow--shelf-bottom-2 {
+  background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/88eed631-6bce-4e1e-aea8-26ba296e5b0b___260625013643055bbb7464dab1e800ec.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  @media (min-width: 641px) {
+    background-size: 1536px !important;
+    background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/d3d7eb5e-fa23-4260-b846-2bb47516395b___f34d351650f037a12722d37cba18dcde.png") !important;
+  }
+
+  :global(.vtex-rich-text-0-x-paragraph--shelf-title) {
+    padding-top: 5px;
+  }
+}
+.flexRow--shelf-bottom-3 {
+  background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/a8efd1f0-39d2-496b-8692-af2e188914b2___35665da53a61744bb43efe64d58275b8.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  @media (min-width: 641px) {
+    background-size: 1536px !important;
+    background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/092ef387-73c1-4dc7-b599-01f4d0937a83___1ab7f6684990cbf643fd1e901f9d5e38.png") !important;
+  }
+}
+
+.flexRow--mosaic-square {
+  background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/e7155731-4cf4-4502-9a0a-79a097f1df6e___a8bee0f8b1ac1ccf13532616a37ef05f.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  margin-bottom: -7px;
+
+  @media (min-width: 641px) {
+    background-size: 1536px !important;
+    background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/ea34ac0c-3559-4ca3-900a-aa3395960c25___a9437e0399fc74de9234c76eaf15de4e.png") !important;
+  }
+}
+
+.flexRow--brand-badges {
+  background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/c51e3f6f-fddf-413f-b54d-cc76411ef147___7be9bbdfdee5a97ae7b9c35b831f5a63.png") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  @media (min-width: 641px) {
+    background-size: 1536px !important;
+    background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/cd755419-7b5c-40ad-95a4-329edf9a468c___2442c6f1ad3ec63d5c90e7baa968e854.png") !important;
+  }
+}

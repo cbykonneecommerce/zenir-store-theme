@@ -1,0 +1,15 @@
+.buttonLink {
+  :global(.vtex-button) {
+    background-color: #0d9aff !important;
+    .label {
+      &::before {
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12.4863 10.1053C15.2768 10.1053 17.539 7.84312 17.539 5.05263C17.539 2.26214 15.2768 0 12.4863 0C9.69586 0 7.43372 2.26214 7.43372 5.05263C7.43372 7.84312 9.69586 10.1053 12.4863 10.1053Z' fill='white'/%3E%3Cpath d='M21.9474 19.6011V23.3684C21.9474 23.7189 21.6663 24 21.3158 24H3.63158C3.28105 24 3 23.7189 3 23.3684V19.6011C3 16.3863 4.81895 12.6316 9.94737 12.6316H15C20.1284 12.6316 21.9474 16.3863 21.9474 19.6011Z' fill='white'/%3E%3C/svg%3E") !important;
+      }
+
+      &::after {
+        color: #fff !important;
+      }
+    }
+  }
+}

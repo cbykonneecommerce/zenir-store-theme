@@ -23,25 +23,26 @@
     },
     "menu-item#categorias": {
         "props": {
-          "id": "menu-item-categorias",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": true,
-            "tagTitle": "Todas as Categorias",
-            "text": "Todas as Categorias"
-          },
-          "blockClass": [
-            "menu-item", "all-categories"
-          ]
+            "id": "menu-item-categorias",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Todas as Categorias",
+                "text": "Todas as Categorias"
+            },
+            "blockClass": [
+                "menu-item",
+                "all-categories"
+            ]
         },
         "blocks": [
-          "vtex.menu@2.x:submenu#submenu-categorias"
+            "vtex.menu@2.x:submenu#submenu-categorias"
         ]
-      },
+    },
     "drawer#mega-menu": {
         "title": "Slide Mega menu",
         "children": [
@@ -50,12 +51,8 @@
             "aside-menu",
             "image#menu-lateral",
             "image#menu-lateral-2",
-            "rich-text#mega-menu-devider",
-            "link#atendimento",
-            "link#regulamentos",
-            "link#politicas-privacidade",
-            "link#telefone",
-            "rich-text#horario-de-atendimento"
+            // "rich-text#mega-menu-devider",
+            "flex-layout.col#menu-texts"
         ],
         "props": {
             "blockClass": [
@@ -65,6 +62,27 @@
         "blocks": [
             "drawer-header#my-drawer"
         ]
+    },
+    "flex-layout.col#menu-texts": {
+        "props": {
+            "blockClass": "menu-texts"
+        },
+        "children": [
+            "rich-text#atentimento-text",
+            "link#atendimento",
+            "link#regulamentos",
+            "link#politicas-privacidade",
+            "link#telefone"
+            // "rich-text#horario-de-atendimento"
+        ]
+    },
+    "rich-text#atentimento-text": {
+        "props": {
+            "blockClass": [
+                "atendimento-text"
+            ],
+            "text": "Atendimento"
+        }
     },
     "rich-text#mega-menu-header": {
         "title": "Header mega menu - titulo",
@@ -87,7 +105,9 @@
         }
     },
     "responsive-layout.mobile#favorites": {
-        "children": ["link#wishlist-mobile"]
+        "children": [
+            "link#wishlist-mobile"
+        ]
     },
     "link#wishlist-mobile": {
         "title": "Link my account - Menu lateral",
@@ -95,7 +115,6 @@
             "blockClass": [
                 "link-drawer",
                 "link-favorites"
-                
             ],
             "label": "Favoritos",
             "href": "/wishlist"

@@ -1,0 +1,35 @@
+.menuIcon--mega-menu {
+  overflow: visible !important;
+}
+
+.childrenContainer--mega-menu {
+  background-color: #0087d2;
+}
+
+.submenuLink,
+.menuLink {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.submenuLink {
+  margin: 0;
+  gap: 10px;
+}
+
+.menuItem {
+  margin: 0 16px;
+}
+
+.submenuItem {
+  border-radius: 8px;
+  background: #51c1ff;
+  border: none;
+  margin-bottom: 24px;
+  margin-left: 0 !important;
+  border-top: none;
+}

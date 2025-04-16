@@ -11,7 +11,7 @@ import { Spinner } from "vtex.styleguide";
 import searchResult from "../../graphql/search-result.graphql";
 import { Wrapper } from "./BuyButtomCustom/Wrapper";
 import Header from "./Header";
-import "./fonts/stylesheet.css";
+// import "./fonts/stylesheet.css";
 import "./global.css";
 import type { Product } from "./interface";
 

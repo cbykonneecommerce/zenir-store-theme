@@ -62,8 +62,8 @@
   },
 
   "custom-lp-times": {
-   "component": "CustomLp",
-   "render": "client"
+    "component": "CustomLp",
+    "render": "client"
   },
   "iframe-light-widget": {
     "component": "IframeLightWidget",

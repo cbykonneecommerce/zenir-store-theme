@@ -1,0 +1,29 @@
+.searchBarInnerContainer {
+  :global(.vtex-styleguide-9-x-input) {
+    background-color: #0d9aff !important;
+    border: none !important;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  :global(.vtex-input-prefix__group) {
+    border: 1px solid #fff;
+  }
+
+  :global(.vtex-input__suffix) {
+    background-color: #0d9aff !important;
+  }
+}
+
+.searchBarIcon {
+  background-color: #0d9aff !important;
+  border: none !important;
+  border-left: 2px solid #fff;
+
+  &::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_1_199)'%3E%3Cpath d='M23.7216 23.7184C23.5296 23.9104 23.2863 24 23.0431 24C22.7999 24 22.5566 23.9104 22.3646 23.7184L16.7703 18.1248C17.2695 17.7152 17.7176 17.2672 18.1272 16.768L23.7216 22.3616C24.0928 22.7328 24.0928 23.3472 23.7216 23.7184Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.4827 10.24C20.4827 15.8954 15.8975 20.48 10.2414 20.48C4.58522 20.48 0 15.8954 0 10.24C0 4.5846 4.58522 0 10.2414 0C15.8975 0 20.4827 4.5846 20.4827 10.24ZM17.9224 10.24C17.9224 14.4815 14.4834 17.92 10.2413 17.92C5.99921 17.92 2.5603 14.4815 2.5603 10.24C2.5603 5.99845 5.99921 2.56 10.2413 2.56C14.4834 2.56 17.9224 5.99845 17.9224 10.24Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_199'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat;
+  }
+}
