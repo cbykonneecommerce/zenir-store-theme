@@ -3,12 +3,35 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
     "sass": "concurrently \"sass --watch --no-source-map styles/scss:styles/css --style compressed\" \"sass --watch --no-source-map react:react --style compressed\" \"sass --watch --no-source-map styles/configs:styles/configs --style compressed\""
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,graphql,gql}": [
+      "prettier --write"
+    ]
+  },
   "devDependencies": {
+    "@vtex/prettier-config": "0.1.4",
     "concurrently": "^8.2.2",
+    "eslint": "7.12.1",
+    "eslint-config-vtex": "12.3.2",
+    "eslint-config-vtex-react": "6.3.2",
+    "husky": "4.2.3",
+    "lint-staged": "10.1.1",
+    "prettier": "2.0.2",
     "sass": "^1.71.1",
-    "typescript": "^3.8.3"
+    "typescript": "3.8.3"
   },
   "dependencies": {
     "@types/react": "^18.0.25",
