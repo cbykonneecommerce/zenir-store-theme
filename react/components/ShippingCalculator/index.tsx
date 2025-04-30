@@ -131,7 +131,7 @@ const ShippingCalculator = () => {
     } catch (err) {
       setIsLoading(false)
       setInputError(true)
-      console.log(err.message)
+      console.error(err.message)
     }
   }
 
