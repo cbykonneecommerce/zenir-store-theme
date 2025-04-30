@@ -3,6 +3,7 @@ import InputMask from "react-input-mask";
 import ClipLoader from "react-spinners/ClipLoader";
 import { useCssHandles } from "vtex.css-handles";
 import { useProduct } from "vtex.product-context";
+
 import { cepMask } from "./utils/cepMask";
 import { formatPrice } from "./utils/formatPrice";
 
@@ -75,6 +76,7 @@ const ShippingCalculator = () => {
     "containerImagelogisticItemPickup",
     "inputShippingCalculatorError",
   ];
+
   const { handles } = useCssHandles(CSS_HANDLES);
 
   React.useEffect(() => {
@@ -127,7 +129,7 @@ const ShippingCalculator = () => {
     } catch (err) {
       setIsLoading(false);
       setInputError(true);
-      console.log(err.message);
+      console.error(err.message);
     }
   };
 
@@ -247,7 +249,9 @@ const ShippingCalculator = () => {
                           price === 0 ? handles.logisticItemPriceZero : null
                         }`}
                       >
-                        {price === 0 ? "Frete Grátis" : formatPrice(price / 100)}
+                        {price === 0
+                          ? "Frete Grátis"
+                          : formatPrice(price / 100)}
                       </span>
                     </div>
                   );
@@ -276,7 +280,7 @@ const ShippingCalculator = () => {
                       >
                         <div
                           className={`${handles.containerImagelogisticItemPickup}`}
-                        ></div>
+                        />
                         <div
                           className={`${handles.containerlogisticItemPickup}`}
                         >
@@ -305,15 +309,17 @@ const ShippingCalculator = () => {
                         >
                           <span>{`${
                             pickupDistance >= 1
-                              ? pickupDistance.toFixed(0) + "km"
-                              : (pickupDistance * 1000).toFixed(3) + "m"
+                              ? `${pickupDistance.toFixed(0)}km`
+                              : `${(pickupDistance * 1000).toFixed(3)}m`
                           }`}</span>
                           <span
                             className={`${handles.logisticItemPrice} ${
                               price === 0 ? handles.logisticItemPriceZero : null
                             }`}
                           >
-                            {price === 0 ? "Frete Grátis" : formatPrice(price / 100)}
+                            {price === 0
+                              ? "Frete Grátis"
+                              : formatPrice(price / 100)}
                           </span>
                         </div>
                       </div>

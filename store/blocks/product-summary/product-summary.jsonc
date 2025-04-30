@@ -140,8 +140,10 @@
     },
     "flex-layout.row#availability-search": {
         "props": {
-          "blockClass": "message-availability-search"
+            "blockClass": "message-availability-search"
         },
-        "children": ["availability-subscriber"]
+        "children": [
+            "availability-subscriber"
+        ]
     }
 }

@@ -3,6 +3,7 @@ import { useMutation } from "react-apollo";
 import InputMask from "react-input-mask";
 import { useCssHandles } from "vtex.css-handles";
 import { Button, withToast } from "vtex.styleguide";
+
 import SEND_FALE_CONOSCO from "./graphql/sendFaleConosco.gql";
 
 import "./FaleConosco.css";
@@ -11,7 +12,7 @@ const CSS_HANDLES = [
   "formFaleConosco",
   "faleConoscoSuccessContainer",
   "formBox",
-  "inputArea"
+  "inputArea",
 ];
 
 export interface CustomFormProps {
@@ -50,8 +51,6 @@ function FaleConosco({ showToast }: CustomFormProps) {
     assunto: "",
     messagem: "",
   });
-
-  console.log(user);
 
   const handleChangeUser = (input: React.ChangeEvent<HTMLInputElement>) =>
     setUser({ ...user, [input.target.name]: input.target.value });
@@ -101,7 +100,9 @@ function FaleConosco({ showToast }: CustomFormProps) {
         <Fragment>
           <div className={handles.formBox}>
             <div className={handles.inputArea}>
-              <label>Nome completo <span>*</span></label>
+              <label>
+                Nome completo <span>*</span>
+              </label>
               <input
                 name="nome"
                 onChange={handleChangeUser}
@@ -113,7 +114,9 @@ function FaleConosco({ showToast }: CustomFormProps) {
             </div>
 
             <div className={handles.inputArea}>
-              <label>CPF <span>*</span></label>
+              <label>
+                CPF <span>*</span>
+              </label>
               <InputMask
                 mask="999.999.999-99"
                 onChange={handleChangeUser}
@@ -127,7 +130,9 @@ function FaleConosco({ showToast }: CustomFormProps) {
           </div>
           <div>
             <div className={handles.inputArea}>
-              <label>E-Mail <span>*</span></label>
+              <label>
+                E-Mail <span>*</span>
+              </label>
               <input
                 onChange={handleChangeUser}
                 required
@@ -141,7 +146,9 @@ function FaleConosco({ showToast }: CustomFormProps) {
           </div>
           <div className={handles.formBox}>
             <div className={handles.inputArea}>
-              <label>Telefone <span>*</span></label>
+              <label>
+                Telefone <span>*</span>
+              </label>
               <InputMask
                 onChange={handleChangeUser}
                 value={user.telefone}
@@ -154,7 +161,9 @@ function FaleConosco({ showToast }: CustomFormProps) {
             </div>
 
             <div className={handles.inputArea}>
-              <label>Assunto <span>*</span></label>
+              <label>
+                Assunto <span>*</span>
+              </label>
               <input
                 onChange={handleChangeUser}
                 required
@@ -165,7 +174,9 @@ function FaleConosco({ showToast }: CustomFormProps) {
             </div>
           </div>
           <div>
-            <label>Mensagem <span>*</span></label>
+            <label>
+              Mensagem <span>*</span>
+            </label>
             <textarea
               onChange={handleChangeUserTextArea}
               required

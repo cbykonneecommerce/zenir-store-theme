@@ -1,70 +1,64 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { useCssHandles } from "vtex.css-handles";
 import { useProduct } from "vtex.product-context";
-import type { ProductContextState } from 'vtex.product-context/react/ProductContextProvider'
-import type { Seller } from 'vtex.product-context/react/ProductTypes'
-import { useCssHandles } from 'vtex.css-handles';
+import type { ProductContextState } from "vtex.product-context/react/ProductContextProvider";
+import type { Seller } from "vtex.product-context/react/ProductTypes";
 
-import './ProductPromotion.css';
+import "./ProductPromotion.css";
 
-const CSS_HANDLES = [
-  'promotionPix',
-
-] as const;
+const CSS_HANDLES = ["promotionPix"] as const;
 
 const ProductPromotion = () => {
   const { handles } = useCssHandles(CSS_HANDLES);
-  const { selectedItem } = useProduct() as ProductContextState
-  const [{ commertialOffer }] = selectedItem?.sellers as Seller[]
+  const { selectedItem } = useProduct() as ProductContextState;
+  const [{ commertialOffer }] = selectedItem?.sellers as Seller[];
 
-  const [promotion, setPromotion] = useState<any | null>(null)
+  const [promotion, setPromotion] = useState<any | null>(null);
   const [loading, setLoading] = useState(true);
-
 
   useEffect(() => {
     const fetchPromotion = async () => {
       try {
         setLoading(true);
 
-        const response = await fetch('/api/dataentities/NP/search?_fields=namePromotion')
+        const response = await fetch(
+          "/api/dataentities/NP/search?_fields=namePromotion"
+        );
 
         if (!response.ok) {
-          throw new Error('Erro na requisição');
+          throw new Error("Erro na requisição");
         }
 
         const dadosPromotion = await response.json();
 
         setPromotion(dadosPromotion[0]);
       } catch (err) {
-        console.log('Erro na requisição', err);
+        console.error("Erro na requisição", err);
       } finally {
         setLoading(false);
       }
-    }
+    };
 
-    fetchPromotion()
-  }, [])
+    fetchPromotion();
+  }, []);
 
-  const namePromotion = promotion?.namePromotion
-  const descountPix = commertialOffer.teasers.map(item => item.name)
-  const descountPixFormated = descountPix.toString()
+  const namePromotion = promotion?.namePromotion;
+  const descountPix = commertialOffer.teasers.map((item) => item.name);
+  const descountPixFormated = descountPix.toString();
 
-  if(descountPixFormated === namePromotion) {
+  if (descountPixFormated === namePromotion) {
     return (
       <div>
         {loading ? (
           <p>Carregando...</p>
         ) : (
-          <p className={`${handles.promotionPix}`}>
-            {namePromotion}
-          </p>
+          <p className={`${handles.promotionPix}`}>{namePromotion}</p>
         )}
       </div>
-    ) 
+    );
   }
 
-  return (
-    <div></div>
-  )
-}
+  return <div />;
+};
 
-export default ProductPromotion
+export default ProductPromotion;

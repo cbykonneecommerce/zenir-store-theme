@@ -1,49 +1,59 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
   "store.search#brand": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 10,
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
   "store.search#category": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
   "store.search#subcategory": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
@@ -74,7 +84,10 @@
     }
   },
   "just-a-div#searchbannermobile": {
-    "children": ["image#searchMobile", "flex-layout.row#searchtitleMobile"],
+    "children": [
+      "image#searchMobile",
+      "flex-layout.row#searchtitleMobile"
+    ],
     "props": {
       "blockClass": "category-banner-mobile"
     }
@@ -97,44 +110,57 @@
       "colJustify": "around"
     }
   },
-
   "experimental__visibility-layout#search-title-mobile": {
     "title": "Ocultar titulo de busca no mobile?",
-    "children": ["search-title.v2"],
+    "children": [
+      "search-title.v2"
+    ],
     "props": {
       "visible": true
     }
   },
-
   "flex-layout.row#searchtitleMobile": {
-    "children": ["experimental__visibility-layout#search-title-mobile"],
+    "children": [
+      "experimental__visibility-layout#search-title-mobile"
+    ],
     "props": {
       "blockClass": "category-banner-text-mobile"
     }
   },
   "flex-layout.col#orderByMobile": {
-    "children": ["order-by.v2"],
+    "children": [
+      "order-by.v2"
+    ],
     "props": {
       "blockClass": "orderByMobileCol"
     }
   },
   "flex-layout.row#productCountMobile": {
-    "children": ["total-products.v2"],
+    "children": [
+      "total-products.v2"
+    ],
     "props": {
       "blockClass": "productCountMobileRow"
     }
   },
   "flex-layout.col#filterMobile": {
-    "children": ["filter-navigator.v3"],
+    "children": [
+      "filter-navigator.v3"
+    ],
     "props": {
       "blockClass": "search-filter-navigator-mobile-col"
     }
   },
   "search-not-found-layout": {
-    "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#notfound"
+    ]
   },
   "flex-layout.row#notfound": {
-    "children": ["not-found"],
+    "children": [
+      "not-found"
+    ],
     "props": {
       "fullWidth": true
     }
@@ -161,10 +187,14 @@
     }
   },
   "responsive-layout.desktop#textOptionGrid": {
-    "children": ["rich-text#option-grid"]
+    "children": [
+      "rich-text#option-grid"
+    ]
   },
   "responsive-layout.desktop#textOptionList": {
-    "children": ["rich-text#option-list"]
+    "children": [
+      "rich-text#option-list"
+    ]
   },
   "rich-text#option-grid": {
     "props": {
@@ -186,12 +216,14 @@
       "showClearByFilter": true,
       "totalProductsOnMobile": "show"
     },
-    "blocks": ["sidebar-close-button"]
+    "blocks": [
+      "sidebar-close-button"
+    ]
   },
   "store.not-found#product": {
     "blocks": [
-      "custom-page-not-found", 
-      "flex-layout.row#category-badges", 
+      "custom-page-not-found",
+      "flex-layout.row#category-badges",
       "flex-layout.row#shelf-bottom-1"
     ]
   },
@@ -203,5 +235,4 @@
       "font": "t-heading-1"
     }
   }
-  
 }
