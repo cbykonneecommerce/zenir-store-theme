@@ -2454,9 +2454,9 @@ tabbable@^3.1.0:
   version "0.1.0"
   resolved "http://tfcvih.vtexassets.com/_v/public/typings/v1/tfcvih.register-form@0.1.0/public/@types/tfcvih.register-form#b8f56c1b9ba51cc48d2aae8ee0ee89f9d0ce4469"
 
-"tfcvih.weonne-zenir-io@https://aniversario--tfcvih.myvtex.com/_v/private/typings/linked/v1/tfcvih.weonne-zenir-io@4.26.96+build1744825750/public/@types/tfcvih.weonne-zenir-io":
+"tfcvih.weonne-zenir-io@https://aniversario--tfcvih.myvtex.com/_v/private/typings/linked/v1/tfcvih.weonne-zenir-io@4.26.96+build1746022185/public/@types/tfcvih.weonne-zenir-io":
   version "4.26.96"
-  resolved "https://aniversario--tfcvih.myvtex.com/_v/private/typings/linked/v1/tfcvih.weonne-zenir-io@4.26.96+build1744825750/public/@types/tfcvih.weonne-zenir-io#3c2a5f490822ca5cf04d5eb853c77b99b1d1bb92"
+  resolved "https://aniversario--tfcvih.myvtex.com/_v/private/typings/linked/v1/tfcvih.weonne-zenir-io@4.26.96+build1746022185/public/@types/tfcvih.weonne-zenir-io#04b426cf79bb00575f8c14c0a9fcf631e0827ee7"
 
 tinycolor2@^1.4.1:
   version "1.6.0"
@@ -2745,9 +2745,9 @@ vtex-tachyons@^3.2.0:
   version "0.12.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.12.0/public/@types/vtex.product-summary-context#423c6d700447d0a443ca64a5374dc97928727ff0"
 
-"vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.3/public/@types/vtex.product-summary":
-  version "2.90.3"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.3/public/@types/vtex.product-summary#019e2eb9123d750e73c313defb6d02254d652755"
+"vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.4/public/@types/vtex.product-summary":
+  version "2.90.4"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.4/public/@types/vtex.product-summary#fd8e1c455dc9363d86cfa957503d511d43458178"
 
 "vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.1/public/@types/vtex.render-runtime":
   version "8.136.1"

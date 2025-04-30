@@ -1,43 +1,45 @@
-import type { FormEvent } from "react";
-import React, { useMemo, useState } from "react";
-import ReactInputMask from "react-input-mask";
-import { applyModifiers, useCssHandles } from "vtex.css-handles";
-import { ExtensionPoint } from "vtex.render-runtime";
+import type { FormEvent } from 'react'
+import React, { useMemo, useState } from 'react'
+import ReactInputMask from 'react-input-mask'
+import { applyModifiers, useCssHandles } from 'vtex.css-handles'
+import { ExtensionPoint } from 'vtex.render-runtime'
+import { Alert, Spinner } from 'vtex.styleguide'
 
-import { useSocioContext } from "../../CustomSocioTorcedorProvider";
-import validarCPF from "./validators";
+import { useSocioContext } from '../../CustomSocioTorcedorProvider'
+import validarCPF from './validators'
 
-import { Alert, Spinner } from "vtex.styleguide";
-import "./socio.css";
+import './socio.css'
 
 const CSS_HANDLES = [
-  "socioForm",
-  "socioFormInputContainer",
-  "socioFormInputDisclaimer",
-  "invalidDocument",
-  "socioDocumentInput",
-  "loginlpcustom",
-  "loginlpcustomtitle",
-  "socioformcontainer",
-  "socioFormContainerWrapper",
-  "socioFormContainerWrapperDescriptionAndLogo",
-  "formDescription",
-  "extraImage",
-];
+  'socioForm',
+  'socioFormInputContainer',
+  'socioFormInputDisclaimer',
+  'invalidDocument',
+  'socioDocumentInput',
+  'loginlpcustom',
+  'loginlpcustomtitle',
+  'socioformcontainer',
+  'socioFormContainerWrapper',
+  'socioFormContainerWrapperDescriptionAndLogo',
+  'formDescription',
+  'extraImage',
+]
 
 interface SocioFormProps {
-  clube: string;
-  textModal: string;
-  descriptionText: string;
-  logoForm: string;
-  logoZenirClube: string;
-  bgColor: string;
-  inputLabel: string;
-  btnColor: string;
-  extraImage: string;
-  colorTitle: string;
-  colorCastrese: string;
+  clube: string
+  textModal: string
+  descriptionText: string
+  logoForm: string
+  logoZenirClube: string
+  bgColor: string
+  inputLabel: string
+  btnColor: string
+  extraImage: string
+  colorTitle: string
+  colorCastrese: string
 }
+
+const CustomReactInputMask = ReactInputMask as any
 
 const SocioForm: StorefrontFunctionComponent<SocioFormProps> = ({
   clube,
@@ -51,17 +53,17 @@ const SocioForm: StorefrontFunctionComponent<SocioFormProps> = ({
   colorTitle,
   colorCastrese,
 }: SocioFormProps) => {
-  const { loading, profile } = useSocioContext();
-  const { handles } = useCssHandles(CSS_HANDLES);
-  const [document, setDocument] = useState("");
-  const [localLoading, setLocalLoading] = useState(false);
-  const [erro, setError] = useState("");
-  const [sucess, setSuccess] = useState(false);
+  const { loading, profile } = useSocioContext()
+  const { handles } = useCssHandles(CSS_HANDLES)
+  const [document, setDocument] = useState('')
+  const [localLoading, setLocalLoading] = useState(false)
+  const [erro, setError] = useState('')
+  const [sucess, setSuccess] = useState(false)
 
-  const isCpfValid = useMemo(() => validarCPF(document), [document]);
+  const isCpfValid = useMemo(() => validarCPF(document), [document])
 
   if (loading) {
-    return <span>Carregando...</span>;
+    return <span>Carregando...</span>
   }
 
   if (!profile) {
@@ -87,47 +89,45 @@ const SocioForm: StorefrontFunctionComponent<SocioFormProps> = ({
           </a>
         </div>
       </>
-    );
+    )
   }
 
   const handleSubmit = async (event: FormEvent) => {
-    setLocalLoading(true);
-    event.preventDefault();
-    event.stopPropagation();
-    setError("");
+    setLocalLoading(true)
+    event.preventDefault()
+    event.stopPropagation()
+    setError('')
 
     const data = await fetch(`/v1/api/socio-torcedor/consultar`, {
-      method: "POST",
+      method: 'POST',
       body: JSON.stringify({
-        cpf: document.replace(/[^\d]+/g, ""),
+        cpf: document.replace(/[^\d]+/g, ''),
       }),
       headers: {
         clube,
       },
-    });
+    })
 
-    setLocalLoading(false);
+    setLocalLoading(false)
 
     if (data.status === 400) {
-      return setError("Houve algum problema ao tentar consultar seus dados");
+      return setError('Houve algum problema ao tentar consultar seus dados')
     }
 
     if (data.status === 404) {
-      return setError(
-        `Sócio torcedor com cpf: ${document} não foi encontrado!`
-      );
+      return setError(`Sócio torcedor com cpf: ${document} não foi encontrado!`)
     }
 
     if (data.status === 500) {
-      return setError("Não foi possível consultar seus dados no momento!");
+      return setError('Não foi possível consultar seus dados no momento!')
     }
 
-    setSuccess(true);
+    setSuccess(true)
 
     setTimeout(() => {
-      window.location.reload();
-    }, 1500);
-  };
+      window.location.reload()
+    }, 1500)
+  }
 
   return (
     <div
@@ -140,8 +140,8 @@ const SocioForm: StorefrontFunctionComponent<SocioFormProps> = ({
         <img src={logoForm} title="Formulário de sócio torcedor" />
         <div
           className={handles.formDescription}
-          dangerouslySetInnerHTML={{ __html: descriptionText ?? "<p></p>" }}
-        ></div>
+          dangerouslySetInnerHTML={{ __html: descriptionText ?? '<p></p>' }}
+        />
       </div>
       <form className={handles.socioForm} onSubmit={handleSubmit}>
         <div className={handles.socioFormInputContainer}>
@@ -150,7 +150,7 @@ const SocioForm: StorefrontFunctionComponent<SocioFormProps> = ({
             className={handles.socioFormInputDisclaimer}
             dangerouslySetInnerHTML={{ __html: inputLabel }}
           />
-          <ReactInputMask
+          <CustomReactInputMask
             placeholder="cpf"
             value={document}
             mask="999.999.999-99"
@@ -158,12 +158,12 @@ const SocioForm: StorefrontFunctionComponent<SocioFormProps> = ({
             autoFocus
             type="phone"
             disabled={localLoading}
-            onChange={(event) => setDocument(event.target.value)}
+            onChange={(event: any) => setDocument(event.target.value)}
             className={applyModifiers(
               handles.socioDocumentInput,
-              !isCpfValid && document.replace(/[^\d]+/g, "").length
-                ? "invalid"
-                : "valid"
+              !isCpfValid && document.replace(/[^\d]+/g, '').length
+                ? 'invalid'
+                : 'valid'
             )}
           />
           {erro ? (
@@ -184,7 +184,7 @@ const SocioForm: StorefrontFunctionComponent<SocioFormProps> = ({
             type="submit"
             disabled={!isCpfValid}
           >
-            {localLoading ? <Spinner color="#fff" size={20} /> : "Entrar"}
+            {localLoading ? <Spinner color="#fff" size={20} /> : 'Entrar'}
           </button>
         </div>
       </form>
@@ -198,81 +198,81 @@ const SocioForm: StorefrontFunctionComponent<SocioFormProps> = ({
         <span />
       )}
     </div>
-  );
-};
+  )
+}
 
 SocioForm.schema = {
-  title: "Formulário de sócio torcedor",
-  description: "Landing Pages dos times",
-  type: "object",
+  title: 'Formulário de sócio torcedor',
+  description: 'Landing Pages dos times',
+  type: 'object',
   properties: {
     clube: {
-      title: "Clube desse formulário",
-      description: "Valores: fortaleza ou ceara",
-      type: "string",
+      title: 'Clube desse formulário',
+      description: 'Valores: fortaleza ou ceara',
+      type: 'string',
       require: true,
     },
     colorCastrese: {
-      title: "Cor do cadastre-se",
-      default: "#000",
-      type: "string",
+      title: 'Cor do cadastre-se',
+      default: '#000',
+      type: 'string',
     },
     colorTitle: {
-      title: "Cor do titulo do formulário de login",
-      default: "#000",
-      type: "string",
+      title: 'Cor do titulo do formulário de login',
+      default: '#000',
+      type: 'string',
     },
     bgColor: {
-      title: "Cor de fundo do formuário",
-      description: "",
-      default: "#052D7B",
-      type: "string",
+      title: 'Cor de fundo do formuário',
+      description: '',
+      default: '#052D7B',
+      type: 'string',
     },
     descriptionText: {
-      title: "Texo de descrição HTML",
-      type: "string",
+      title: 'Texo de descrição HTML',
+      type: 'string',
       widget: {
-        "ui:widget": "textarea",
+        'ui:widget': 'textarea',
       },
     },
     logoForm: {
-      title: "Logo do formulário",
-      type: "string",
-      default: "",
+      title: 'Logo do formulário',
+      type: 'string',
+      default: '',
       widget: {
-        "ui:widget": "image-uploader",
+        'ui:widget': 'image-uploader',
       },
     },
     logoZenirClube: {
-      title: "Logo da zenir junto com o clube formulário",
-      type: "string",
-      default: "",
+      title: 'Logo da zenir junto com o clube formulário',
+      type: 'string',
+      default: '',
       widget: {
-        "ui:widget": "image-uploader",
+        'ui:widget': 'image-uploader',
       },
     },
     inputLabel: {
-      title: "Label sob o input de CPF - HTML",
-      default: "Primeiro vamos confirmar seu sócio-torcedor.",
-      type: "string",
+      title: 'Label sob o input de CPF - HTML',
+      default: 'Primeiro vamos confirmar seu sócio-torcedor.',
+      type: 'string',
       widget: {
-        "ui:widget": "textarea",
+        'ui:widget': 'textarea',
       },
     },
     btnColor: {
-      title: "Cor do botão de confirmação",
-      default: "#E12026",
-      type: "string",
+      title: 'Cor do botão de confirmação',
+      default: '#E12026',
+      type: 'string',
     },
     extraImage: {
-      title: "Imagem extra - Footer",
-      type: "string",
-      default: "",
+      title: 'Imagem extra - Footer',
+      type: 'string',
+      default: '',
       widget: {
-        "ui:widget": "image-uploader",
+        'ui:widget': 'image-uploader',
       },
     },
   },
-};
+}
 
-export default SocioForm;
+export default SocioForm

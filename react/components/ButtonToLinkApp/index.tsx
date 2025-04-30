@@ -1,18 +1,20 @@
 import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 import { Helmet, canUseDOM } from 'vtex.render-runtime'
-import { isSafari, isWebView } from '../SmartBanner/utils/device'
-
-import { SMART_BANNER_DEFAULT_PROPS, schemaSmartBanner } from '../SmartBanner/schema'
-import type { SmartBannerProps } from '../SmartBanner/typings'
 import { Image } from 'vtex.store-image'
+
+import {
+  SMART_BANNER_DEFAULT_PROPS,
+  schemaSmartBanner,
+} from '../SmartBanner/schema'
+import type { SmartBannerProps } from '../SmartBanner/typings'
+import { isSafari, isWebView } from '../SmartBanner/utils/device'
 
 import './ButtonToLinkApp.css'
 
-const CSS_HANDLES = [
-  'buttonToAppLinkContainer',
-  'buttonToAppLink'
-] as const
+const CSS_HANDLES = ['buttonToAppLinkContainer', 'buttonToAppLink'] as const
+
+const CustomHelmet = Helmet as any
 
 const ButtonToLinkApp: StorefrontFunctionComponent<SmartBannerProps> = ({
   iOSAppID,
@@ -30,13 +32,13 @@ const ButtonToLinkApp: StorefrontFunctionComponent<SmartBannerProps> = ({
     return null
   }
 
-  const { isWebView: platform } = isWebView();
+  const { isWebView: platform } = isWebView()
 
   if (platform === 'IOS') {
     return (
-      <Helmet>
+      <CustomHelmet>
         <meta name="apple-itunes-app" content={`app-id=${iOSAppID}`} />
-      </Helmet>
+      </CustomHelmet>
     )
   }
 
@@ -47,9 +49,9 @@ const ButtonToLinkApp: StorefrontFunctionComponent<SmartBannerProps> = ({
         onClick={handleCallToActionButtonClick}
       >
         BAIXAR O APP!
-        <Image 
-          src={'https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/74e9e8c2-dca2-4dc5-9cbf-f8c463ac4a1f___906c2161206215869179a44ff54fec80.svg'} 
-          alt="Icone de voltar do botão" 
+        <Image
+          src="https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/74e9e8c2-dca2-4dc5-9cbf-f8c463ac4a1f___906c2161206215869179a44ff54fec80.svg"
+          alt="Icone de voltar do botão"
         />
       </button>
     </section>

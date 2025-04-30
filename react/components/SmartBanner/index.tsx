@@ -1,27 +1,29 @@
-import React, { useState } from "react";
-import "./SmartBanner.css";
-import { useCssHandles } from "vtex.css-handles";
-import { Helmet, canUseDOM } from "vtex.render-runtime";
-import { Image } from "vtex.store-image";
+import React, { useState } from 'react'
+import { useCssHandles } from 'vtex.css-handles'
+import { useDevice } from 'vtex.device-detector'
+import { Helmet, canUseDOM } from 'vtex.render-runtime'
+import { Image } from 'vtex.store-image'
+import './SmartBanner.css'
 
-import { isSafari, isWebView } from "./utils/device";
-import { getCookie, setCookie } from "./utils/cookies";
-import { SMART_BANNER_DEFAULT_PROPS, schemaSmartBanner } from "./schema";
-import type { SmartBannerProps } from "./typings";
-import { useDevice } from "vtex.device-detector";
+import { SMART_BANNER_DEFAULT_PROPS, schemaSmartBanner } from './schema'
+import type { SmartBannerProps } from './typings'
+import { getCookie, setCookie } from './utils/cookies'
+import { isSafari, isWebView } from './utils/device'
 
 const CSS_HANDLES = [
-  "smartBanner__infoPromotion",
-  "smartBanner__infoDescountRedMobile",
-  "smartBanner",
-  "smartBanner__closeButton",
-  "smartBanner__image",
-  "smartBanner__textContent",
-  "smartBanner__title",
-  "smartBanner__subtitle",
-  "smartBanner__callToActionButton",
-  "smartBanner__infoDescountRed",
-] as const;
+  'smartBanner__infoPromotion',
+  'smartBanner__infoDescountRedMobile',
+  'smartBanner',
+  'smartBanner__closeButton',
+  'smartBanner__image',
+  'smartBanner__textContent',
+  'smartBanner__title',
+  'smartBanner__subtitle',
+  'smartBanner__callToActionButton',
+  'smartBanner__infoDescountRed',
+] as const
+
+const CustomHelmet = Helmet as any
 
 const SmartBanner: StorefrontFunctionComponent<SmartBannerProps> = ({
   iOSAppID,
@@ -32,52 +34,52 @@ const SmartBanner: StorefrontFunctionComponent<SmartBannerProps> = ({
   subtitle,
   callToActionButtonText,
 }) => {
-  const { handles } = useCssHandles(CSS_HANDLES);
-  const smartBannerCookieName = "smart-banner";
-  const hasSmartBannerCookie = Boolean(getCookie(smartBannerCookieName));
-  const [isClosed, setIsClosed] = useState(hasSmartBannerCookie);
-  const { isMobile } = useDevice();
+  const { handles } = useCssHandles(CSS_HANDLES)
+  const smartBannerCookieName = 'smart-banner'
+  const hasSmartBannerCookie = Boolean(getCookie(smartBannerCookieName))
+  const [isClosed, setIsClosed] = useState(hasSmartBannerCookie)
+  const { isMobile } = useDevice()
 
   const handleCloseButtonClick = () => {
-    setIsClosed(true);
+    setIsClosed(true)
 
     setCookie({
       name: smartBannerCookieName,
-      value: "closed",
+      value: 'closed',
       expires: { seconds: 30 },
-    });
-  };
-
-  const handleCallToActionButtonClick = () => {
-    const url = isSafari() ? iOSAppUrl : androidAppUrl;
-
-    window?.open(url, "_blank");
-
-    setIsClosed(true);
-
-    setCookie({
-      name: smartBannerCookieName,
-      value: "closed",
-      expires: { seconds: 30 },
-    });
-  };
-
-  if (!canUseDOM) {
-    return null;
+    })
   }
 
-  const { isWebView: platform } = isWebView();
+  const handleCallToActionButtonClick = () => {
+    const url = isSafari() ? iOSAppUrl : androidAppUrl
 
-  if (platform === "IOS") {
+    window?.open(url, '_blank')
+
+    setIsClosed(true)
+
+    setCookie({
+      name: smartBannerCookieName,
+      value: 'closed',
+      expires: { seconds: 30 },
+    })
+  }
+
+  if (!canUseDOM) {
+    return null
+  }
+
+  const { isWebView: platform } = isWebView()
+
+  if (platform === 'IOS') {
     return (
-      <Helmet>
+      <CustomHelmet>
         <meta name="apple-itunes-app" content={`app-id=${iOSAppID}`} />
-      </Helmet>
-    );
+      </CustomHelmet>
+    )
   }
 
   if (hasSmartBannerCookie || isClosed) {
-    return null;
+    return null
   }
 
   return (
@@ -144,22 +146,20 @@ const SmartBanner: StorefrontFunctionComponent<SmartBannerProps> = ({
             <p>{callToActionButtonText}</p>
           ) : (
             <p>
-              Baixe agora e aproveite!{" "}
+              Baixe agora e aproveite!{' '}
               <img
-                src={
-                  "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/d89e55c0-4d5b-42ea-ab72-0611e96cc569___e6fda868700a3836c81d6d8b4be6d793.svg"
-                }
+                src="https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/d89e55c0-4d5b-42ea-ab72-0611e96cc569___e6fda868700a3836c81d6d8b4be6d793.svg"
                 alt="Icone do botão de baixar o app"
-              />{" "}
+              />{' '}
             </p>
           )}
         </button>
       </section>
     </>
-  );
-};
+  )
+}
 
-SmartBanner.defaultProps = SMART_BANNER_DEFAULT_PROPS;
-SmartBanner.schema = schemaSmartBanner;
+SmartBanner.defaultProps = SMART_BANNER_DEFAULT_PROPS
+SmartBanner.schema = schemaSmartBanner
 
-export default SmartBanner;
+export default SmartBanner

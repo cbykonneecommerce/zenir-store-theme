@@ -1,11 +1,13 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from 'react'
+import { Helmet } from 'react-helmet'
+
+const CustomHelmet = Helmet as any
 
 const StampReclameAqui: any = () => {
   return (
     <>
       <div id="reputation-ra" className="flex justify-center">
-        <Helmet>
+        <CustomHelmet>
           <script
             type="text/javascript"
             id="ra-embed-reputation"
@@ -13,11 +15,11 @@ const StampReclameAqui: any = () => {
             data-id="Nzg3NzE6emVuaXItbW92ZWlzLWUtZWxldHJv"
             data-target="reputation-ra"
             data-model="2"
-          ></script>
-        </Helmet>
+          />
+        </CustomHelmet>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default StampReclameAqui;
+export default StampReclameAqui

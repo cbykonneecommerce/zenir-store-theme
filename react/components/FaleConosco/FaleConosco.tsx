@@ -1,72 +1,75 @@
-import React, { Fragment, useState } from "react";
-import { useMutation } from "react-apollo";
-import InputMask from "react-input-mask";
-import { useCssHandles } from "vtex.css-handles";
-import { Button, withToast } from "vtex.styleguide";
-import SEND_FALE_CONOSCO from "./graphql/sendFaleConosco.gql";
+import React, { Fragment, useState } from 'react'
+import { useMutation } from 'react-apollo'
+import InputMask from 'react-input-mask'
+import { useCssHandles } from 'vtex.css-handles'
+import { Button, withToast } from 'vtex.styleguide'
 
-import "./FaleConosco.css";
+import SEND_FALE_CONOSCO from './graphql/sendFaleConosco.gql'
+
+import './FaleConosco.css'
 
 const CSS_HANDLES = [
-  "formFaleConosco",
-  "faleConoscoSuccessContainer",
-  "formBox",
-  "inputArea"
-];
+  'formFaleConosco',
+  'faleConoscoSuccessContainer',
+  'formBox',
+  'inputArea',
+]
+
+const CustomInputMask = InputMask as any
 
 export interface CustomFormProps {
-  showToast: (params: { message: string; action: any }) => any;
+  showToast: (params: { message: string; action: any }) => any
 }
 
 interface UserInput {
-  nome: string;
-  cpf: string;
-  email: string;
-  minuta: string;
-  telefone: string;
-  assunto: string;
-  messagem: string;
+  nome: string
+  cpf: string
+  email: string
+  minuta: string
+  telefone: string
+  assunto: string
+  messagem: string
 }
 
 interface UserDocumentInputFaleConosco {
-  key: string;
-  value: string | any;
+  key: string
+  value: string | any
 }
 
 function FaleConosco({ showToast }: CustomFormProps) {
-  const { handles } = useCssHandles(CSS_HANDLES);
-  const [success, setSuccess] = useState<boolean>(false);
+  const { handles } = useCssHandles(CSS_HANDLES)
+  const [success, setSuccess] = useState<boolean>(false)
   const [sendDocument, { loading }] = useMutation<
     any,
     { input: { fields: UserDocumentInputFaleConosco[] } }
-  >(SEND_FALE_CONOSCO);
+  >(SEND_FALE_CONOSCO)
 
   const [user, setUser] = useState<any | UserInput>({
-    nome: "",
-    cpf: "",
-    email: "",
-    minuta: "",
-    telefone: "",
-    assunto: "",
-    messagem: "",
-  });
+    nome: '',
+    cpf: '',
+    email: '',
+    minuta: '',
+    telefone: '',
+    assunto: '',
+    messagem: '',
+  })
 
-  console.log(user);
+  console.log(user)
 
   const handleChangeUser = (input: React.ChangeEvent<HTMLInputElement>) =>
-    setUser({ ...user, [input.target.name]: input.target.value });
+    setUser({ ...user, [input.target.name]: input.target.value })
 
   const handleChangeUserTextArea = (
     input: React.ChangeEvent<HTMLTextAreaElement>
-  ) => setUser({ ...user, [input.target.name]: input.target.value });
+  ) => setUser({ ...user, [input.target.name]: input.target.value })
 
   const handlesSubmit = async (event: React.SyntheticEvent) => {
-    event.preventDefault();
+    event.preventDefault()
 
     const fields = Object.keys(user).map((field: string) => ({
       key: field,
       value: user[field],
-    }));
+    }))
 
     try {
       await sendDocument({
@@ -75,21 +78,21 @@ function FaleConosco({ showToast }: CustomFormProps) {
             fields,
           },
         },
-      });
+      })
 
       showToast({
         action: null,
-        message: "Dados enviados com sucesso!",
-      });
+        message: 'Dados enviados com sucesso!',
+      })
 
-      setSuccess(true);
+      setSuccess(true)
     } catch (error) {
       showToast({
         action: null,
-        message: "Não foi possível enviar os dados no momento!",
-      });
+        message: 'Não foi possível enviar os dados no momento!',
+      })
     }
-  };
+  }
 
   return (
     <form onSubmit={handlesSubmit} className={handles.formFaleConosco}>
@@ -101,7 +104,9 @@ function FaleConosco({ showToast }: CustomFormProps) {
         <Fragment>
           <div className={handles.formBox}>
             <div className={handles.inputArea}>
-              <label>Nome completo <span>*</span></label>
+              <label>
+                Nome completo <span>*</span>
+              </label>
               <input
                 name="nome"
                 onChange={handleChangeUser}
@@ -113,8 +118,10 @@ function FaleConosco({ showToast }: CustomFormProps) {
             </div>
 
             <div className={handles.inputArea}>
-              <label>CPF <span>*</span></label>
-              <InputMask
+              <label>
+                CPF <span>*</span>
+              </label>
+              <CustomInputMask
                 mask="999.999.999-99"
                 onChange={handleChangeUser}
                 value={user.cpf}
@@ -127,7 +134,9 @@ function FaleConosco({ showToast }: CustomFormProps) {
           </div>
           <div>
             <div className={handles.inputArea}>
-              <label>E-Mail <span>*</span></label>
+              <label>
+                E-Mail <span>*</span>
+              </label>
               <input
                 onChange={handleChangeUser}
                 required
@@ -141,8 +150,10 @@ function FaleConosco({ showToast }: CustomFormProps) {
           </div>
           <div className={handles.formBox}>
             <div className={handles.inputArea}>
-              <label>Telefone <span>*</span></label>
-              <InputMask
+              <label>
+                Telefone <span>*</span>
+              </label>
+              <CustomInputMask
                 onChange={handleChangeUser}
                 value={user.telefone}
                 required
@@ -154,7 +165,9 @@ function FaleConosco({ showToast }: CustomFormProps) {
             </div>
 
             <div className={handles.inputArea}>
-              <label>Assunto <span>*</span></label>
+              <label>
+                Assunto <span>*</span>
+              </label>
               <input
                 onChange={handleChangeUser}
                 required
@@ -165,7 +178,9 @@ function FaleConosco({ showToast }: CustomFormProps) {
             </div>
           </div>
           <div>
-            <label>Mensagem <span>*</span></label>
+            <label>
+              Mensagem <span>*</span>
+            </label>
             <textarea
               onChange={handleChangeUserTextArea}
               required
@@ -184,7 +199,7 @@ function FaleConosco({ showToast }: CustomFormProps) {
         </Fragment>
       )}
     </form>
-  );
+  )
 }
 
-export default withToast(FaleConosco);
+export default withToast(FaleConosco)
