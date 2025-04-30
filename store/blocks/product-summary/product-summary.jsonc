@@ -13,6 +13,19 @@
             "flex-layout.row#availability-search"
         ]
     },
+    "product-summary.shelf#autocomplete": {
+        "children": [
+            "responsive-layout.desktop#summary-image",
+            "responsive-layout.tablet#summary-image",
+            "responsive-layout.phone#summary-image",
+            "custom-flag-product",
+            "product-identifier.product#ref",
+            "product-summary-name#summary",
+            "custom-product-installment#sumary",
+            "product-timer",
+            "flex-layout.row#availability-search"
+        ]
+    },
     "responsive-layout.desktop#summary-image": {
         "children": [
             "product-summary-image#shelf"
@@ -140,8 +153,10 @@
     },
     "flex-layout.row#availability-search": {
         "props": {
-          "blockClass": "message-availability-search"
+            "blockClass": "message-availability-search"
         },
-        "children": ["availability-subscriber"]
+        "children": [
+            "availability-subscriber"
+        ]
     }
 }

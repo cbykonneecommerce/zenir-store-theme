@@ -1,0 +1,14 @@
+.menuItem {
+  margin: 4px 0;
+}
+.menuItem:hover {
+  background-color: #bf0811;
+}
+
+.menuItem--all-categories:hover {
+  background-color: transparent !important;
+}
+
+.styledLinkContent:hover {
+  border: none !important;
+}
