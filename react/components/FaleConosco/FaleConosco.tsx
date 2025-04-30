@@ -54,8 +54,6 @@ function FaleConosco({ showToast }: CustomFormProps) {
     messagem: '',
   })
 
-  console.log(user)
-
   const handleChangeUser = (input: React.ChangeEvent<HTMLInputElement>) =>
     setUser({ ...user, [input.target.name]: input.target.value })
 

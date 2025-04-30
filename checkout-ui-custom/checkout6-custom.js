@@ -71,7 +71,6 @@ function getUrlParameter(name, url) {
 }
 
 async function setVendorInOrder(vendor = { codevendor: "", namevendor: "" }) {
-  console.log(vendor, "vendor");
   try {
     const { UTMI_CAMPAIGN, UTMI_EMPTY, SESSION_STORAGE_KEY } = constants;
 
@@ -232,7 +231,6 @@ function eventBindingVendor(name) {
   const bemClass = mountBEMClass("discount-code-inputs");
   $("body").on("submit", `.${bemClass()}-form.form-${name}`, (event) => {
     event.preventDefault();
-    console.log(event, "event");
     sendVendor($(".discount-code-inputs__value").val());
     $(".totalizers.summary-totalizers.cart-totalizers").addClass("is-loading");
   });
@@ -281,9 +279,7 @@ async function renderInput(data) {
     valueCodeComponent === null ? "" : valueCodeComponent;
 
   if (validationValueCodeComponent) {
-    const sellerInfo = await getVendorByCode(
-      validationValueCodeComponent
-    );
+    const sellerInfo = await getVendorByCode(validationValueCodeComponent);
 
     if (sellerInfo) {
       if (!vtexjs?.checkout?.orderForm?.openTextField?.value) {
@@ -296,15 +292,15 @@ async function renderInput(data) {
         ".summary-totalizers .totalizers.summary-totalizers.cart-totalizers"
       ).removeClass("is-loading");
 
-
       setTimeout(() => {
-        const exists = $(
-          "form.discount-code-inputs-form.form-cod-vendedora"
-        ).length;
+        const exists = $("form.discount-code-inputs-form.form-cod-vendedora")
+          .length;
 
         if (!exists) {
           $(".forms.coupon-column.summary-coupon-wrap.text-center").prepend(`
-            <form class="${bemClass()}-form form-${data.name}" autocomplete="off">
+            <form class="${bemClass()}-form form-${
+            data.name
+          }" autocomplete="off">
               <div class="${bemClass()} ${empty} input-${data.name}">
                 <label class="${bemClass("name")}">${data.label}</label>
                 <div class="remove" style="display: flex">
@@ -325,7 +321,7 @@ async function renderInput(data) {
             `${sellerInfo.codevendor} - ${sellerInfo.namevendor}`
           );
         }
-      }, 1500)
+      }, 1500);
 
       return;
     }
@@ -456,7 +452,7 @@ function sendDocumentOrderForm() {
       requestOptions
     )
       .then((response) => response.text())
-      .catch((error) => console.log("error", error));
+      .catch((error) => console.error("error", error));
   } else {
     $("#cpf").parent().find(".error").html("<p>Documento invalido</p>");
   }
@@ -478,6 +474,14 @@ $(window).on("ready hashchange", function () {
     if ($("#btn-go-to-payment").hasClass("custom-event")) {
       return clearInterval(stopExecution);
     }
+  }
+});
+
+$(window).on("ready hashchange", function () {
+  const hash = window.location.hash.replace("#/", "");
+
+  if (hash === "shipping") {
+    $(".vtex-omnishipping-1-x-btn.shp-pickup-receiver__btn").trigger("click");
   }
 });
 

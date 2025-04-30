@@ -8,7 +8,7 @@
 }
 
 .galleryTitle--layout {
-  font-family: "Futura Medium";
+  font-family: 'Futura Medium';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -31,7 +31,7 @@
   }
 
   .filter__container--title {
-    font-family: "Futura Medium";
+    font-family: 'Futura Medium';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -97,7 +97,7 @@
   }
 
   .galleryTitle--layout {
-    font-family: "Futura Medium";
+    font-family: 'Futura Medium';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -126,7 +126,7 @@
 
   :global(.vtex-flex-layout-0-x-flexColChild--productCountCol)
     .totalProducts--layout {
-    font-family: "Futura Medium";
+    font-family: 'Futura Medium';
     opacity: 0.6;
     font-weight: 700;
     font-style: normal;
@@ -140,19 +140,19 @@
   :global(.vtex-flex-layout-0-x-flexColChild--productCountCol)
     .totalProducts--layout
     .totalProductsMessage {
-    font-family: "Futura Light BT";
+    font-family: 'Futura Light BT';
     font-weight: 400;
     color: #000000;
   }
   :global(.vtex-flex-layout-0-x-flexColChild--productCountCol)
     .totalProducts--layout::before {
-    font-family: "Futura Light BT";
-    content: "MOSTRANDO: ";
+    font-family: 'Futura Light BT';
+    content: 'MOSTRANDO: ';
     font-weight: 400;
   }
   :global(.vtex-flex-layout-0-x-flexColChild--productCountColPaginaBusca)
     .totalProducts--layout {
-    font-family: "Futura Medium";
+    font-family: 'Futura Medium';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -187,7 +187,7 @@
     display: flex;
   }
   .orderByDropdown::before {
-    content: "ORDENAR POR:";
+    content: 'ORDENAR POR:';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -212,7 +212,7 @@
   }
 
   .filterBreadcrumbsContent::before {
-    content: "";
+    content: '';
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='25' viewBox='0 0 22 25' fill='none'%3E%3Cpath d='M2 2.45166L20 23.3549' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M2 23.355L20 2.45176' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
     height: 25px;
     width: 22px;
@@ -268,7 +268,7 @@
   background-color: #ed1b34;
 }
 .filterItem :global(.vtex-checkbox__label) {
-  font-family: "Futura Light BT";
+  font-family: 'Futura Light BT';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
