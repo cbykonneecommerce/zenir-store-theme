@@ -2454,9 +2454,9 @@ tabbable@^3.1.0:
   version "0.1.0"
   resolved "http://tfcvih.vtexassets.com/_v/public/typings/v1/tfcvih.register-form@0.1.0/public/@types/tfcvih.register-form#b8f56c1b9ba51cc48d2aae8ee0ee89f9d0ce4469"
 
-"tfcvih.weonne-zenir-io@https://aniversario--tfcvih.myvtex.com/_v/private/typings/linked/v1/tfcvih.weonne-zenir-io@4.26.96+build1746022185/public/@types/tfcvih.weonne-zenir-io":
+"tfcvih.weonne-zenir-io@http://tfcvih.vtexassets.com/_v/public/typings/v1/tfcvih.weonne-zenir-io@4.26.96/public/@types/tfcvih.weonne-zenir-io":
   version "4.26.96"
-  resolved "https://aniversario--tfcvih.myvtex.com/_v/private/typings/linked/v1/tfcvih.weonne-zenir-io@4.26.96+build1746022185/public/@types/tfcvih.weonne-zenir-io#04b426cf79bb00575f8c14c0a9fcf631e0827ee7"
+  resolved "http://tfcvih.vtexassets.com/_v/public/typings/v1/tfcvih.weonne-zenir-io@4.26.96/public/@types/tfcvih.weonne-zenir-io#c067602776381fc9fe5a4fdd576719040e2fb86a"
 
 tinycolor2@^1.4.1:
   version "1.6.0"

@@ -474,7 +474,6 @@ $(window).on('ready hashchange', function () {
 })
 
 $(window).on('orderFormUpdated.vtex', async (_, orderForm) => {
-  console.log('🚀 ~ $ ~ orderForm:', orderForm)
   const hash = window.location.hash.replace('#/', '')
 
   if (hash === 'shipping') {

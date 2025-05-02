@@ -8,6 +8,10 @@
   background-color: #bf0811;
   padding: 8px 16px;
   white-space: nowrap;
+
+  @media (max-width: 640px) {
+    font-size: 11px !important;
+  }
 }
 
 .paragraph--shelf-title {

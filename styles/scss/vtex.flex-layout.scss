@@ -37,7 +37,7 @@
   flex-direction: row-reverse;
   background: #2fb44c;
   border-radius: 10px;
-  font-family: "Futura-Bold", sans-serif;
+  font-family: 'Futura-Bold', sans-serif;
   font-size: 23px;
   font-weight: bold;
   line-height: 26px;
@@ -56,8 +56,8 @@
 }
 
 .flexRowContent--pdp-button-add-container :global(.vtex-button)::after {
-  content: "";
-  background-image: url("data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMzciIGhlaWdodD0iMzkiIHZpZXdCb3g9IjAgMCAzNyAzOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zMS4xNTQ4IDMwLjgwODZDMzAuNDg0OCAzMC44MDg2IDI5LjkyNjQgMzEuMDMzOSAyOS4zNjgxIDMxLjU5NzFDMjguOTIxNCAzMi4wNDc2IDI4LjU4NjQgMzIuNzIzNSAyOC41ODY0IDMzLjM5OTNDMjguNTg2NCAzNC4wNzUyIDI4LjgwOTggMzQuNjM4NCAyOS4zNjgxIDM1LjIwMTZDMjkuODE0OCAzNS42NTIxIDMwLjQ4NDggMzUuOTkwMSAzMS4xNTQ4IDM1Ljk5MDFDMzEuODI0OCAzNS45OTAxIDMyLjM4MzEgMzUuNzY0OCAzMi45NDE1IDM1LjIwMTZDMzMuMzg4MiAzNC43NTEgMzMuNzIzMSAzNC4wNzUyIDMzLjcyMzEgMzMuMzk5M0MzMy43MjMxIDMyLjcyMzUgMzMuNDk5OCAzMi4xNjAzIDMyLjk0MTUgMzEuNTk3MUMzMi4zODMxIDMxLjAzMzkgMzEuODI0OCAzMC44MDg2IDMxLjE1NDggMzAuODA4NlYzMC44MDg2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS4wNzUgMzAuODA4NkMxNC40MDUgMzAuODA4NiAxMy44NDY3IDMxLjAzMzkgMTMuMjg4NCAzMS41OTcxQzEyLjg0MTcgMzIuMDQ3NiAxMi41MDY3IDMyLjcyMzUgMTIuNTA2NyAzMy4zOTkzQzEyLjUwNjcgMzQuMDc1MiAxMi43MyAzNC42Mzg0IDEzLjI4ODQgMzUuMjAxNkMxMy43MzUgMzUuNjUyMSAxNC40MDUgMzUuOTkwMSAxNS4wNzUgMzUuOTkwMUMxNS43NDUgMzUuOTkwMSAxNi4zMDMzIDM1Ljc2NDggMTYuODYxNyAzNS4yMDE2QzE3LjMwODMgMzQuNzUxIDE3LjY0MzMgMzQuMDc1MiAxNy42NDMzIDMzLjM5OTNDMTcuNjQzMyAzMi43MjM1IDE3LjQyIDMyLjE2MDMgMTYuODYxNyAzMS41OTcxQzE2LjMwMzMgMzEuMDMzOSAxNS43NDUgMzAuODA4NiAxNS4wNzUgMzAuODA4NloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMzUuMDYzNCA5LjQwNjc0SDEwLjA1QzEwLjA1IDkuMjk0MSA5LjI2ODMyIDYuMjUyODEgOS4yNjgzMiA2LjAyNzUyQzkuMjY4MzIgNS44MDIyNCA5LjE1NjY0IDUuNTc2OTYgOS4xNTY2NCA1LjQ2NDMyQzkuMTU2NjQgNS4zNTE2OCA5LjA0NDk1IDUuMTI2NCA5LjA0NDk1IDQuOTAxMTJDOC45MzMyOSA0LjY3NTg0IDguODIxNjkgNC41NjMyIDguNzEwMDMgNC40NTA1Nkw4LjM3NDk4IDQuMTEyNjRDOC4xNTE2NSA0IDguMDQwMDIgNCA3LjgxNjY5IDRIMFY2LjQ3ODA5SDYuODExNjdMMTEuMjc4NCAyNS42MjdMMTIuMjgzMyAyOS41Njk0SDM0LjM5MzNWMjcuMDkxM0gxNC42Mjg0TDEzLjk1ODMgMjQuNTAwNkwzMy45NDY3IDIyLjAyMjVDMzQuMjgxNyAyMi4wMjI1IDM0LjUwNSAyMS43OTcyIDM0LjcyODMgMjEuNTcxOUMzNC45NTE2IDIxLjM0NjYgMzUuMDYzNCAyMS4wMDg3IDM1LjA2MzQgMjAuNzgzNFY5LjQwNjc0VjkuNDA2NzRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K");
+  content: '';
+  background-image: url('data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMzciIGhlaWdodD0iMzkiIHZpZXdCb3g9IjAgMCAzNyAzOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zMS4xNTQ4IDMwLjgwODZDMzAuNDg0OCAzMC44MDg2IDI5LjkyNjQgMzEuMDMzOSAyOS4zNjgxIDMxLjU5NzFDMjguOTIxNCAzMi4wNDc2IDI4LjU4NjQgMzIuNzIzNSAyOC41ODY0IDMzLjM5OTNDMjguNTg2NCAzNC4wNzUyIDI4LjgwOTggMzQuNjM4NCAyOS4zNjgxIDM1LjIwMTZDMjkuODE0OCAzNS42NTIxIDMwLjQ4NDggMzUuOTkwMSAzMS4xNTQ4IDM1Ljk5MDFDMzEuODI0OCAzNS45OTAxIDMyLjM4MzEgMzUuNzY0OCAzMi45NDE1IDM1LjIwMTZDMzMuMzg4MiAzNC43NTEgMzMuNzIzMSAzNC4wNzUyIDMzLjcyMzEgMzMuMzk5M0MzMy43MjMxIDMyLjcyMzUgMzMuNDk5OCAzMi4xNjAzIDMyLjk0MTUgMzEuNTk3MUMzMi4zODMxIDMxLjAzMzkgMzEuODI0OCAzMC44MDg2IDMxLjE1NDggMzAuODA4NlYzMC44MDg2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS4wNzUgMzAuODA4NkMxNC40MDUgMzAuODA4NiAxMy44NDY3IDMxLjAzMzkgMTMuMjg4NCAzMS41OTcxQzEyLjg0MTcgMzIuMDQ3NiAxMi41MDY3IDMyLjcyMzUgMTIuNTA2NyAzMy4zOTkzQzEyLjUwNjcgMzQuMDc1MiAxMi43MyAzNC42Mzg0IDEzLjI4ODQgMzUuMjAxNkMxMy43MzUgMzUuNjUyMSAxNC40MDUgMzUuOTkwMSAxNS4wNzUgMzUuOTkwMUMxNS43NDUgMzUuOTkwMSAxNi4zMDMzIDM1Ljc2NDggMTYuODYxNyAzNS4yMDE2QzE3LjMwODMgMzQuNzUxIDE3LjY0MzMgMzQuMDc1MiAxNy42NDMzIDMzLjM5OTNDMTcuNjQzMyAzMi43MjM1IDE3LjQyIDMyLjE2MDMgMTYuODYxNyAzMS41OTcxQzE2LjMwMzMgMzEuMDMzOSAxNS43NDUgMzAuODA4NiAxNS4wNzUgMzAuODA4NloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMzUuMDYzNCA5LjQwNjc0SDEwLjA1QzEwLjA1IDkuMjk0MSA5LjI2ODMyIDYuMjUyODEgOS4yNjgzMiA2LjAyNzUyQzkuMjY4MzIgNS44MDIyNCA5LjE1NjY0IDUuNTc2OTYgOS4xNTY2NCA1LjQ2NDMyQzkuMTU2NjQgNS4zNTE2OCA5LjA0NDk1IDUuMTI2NCA5LjA0NDk1IDQuOTAxMTJDOC45MzMyOSA0LjY3NTg0IDguODIxNjkgNC41NjMyIDguNzEwMDMgNC40NTA1Nkw4LjM3NDk4IDQuMTEyNjRDOC4xNTE2NSA0IDguMDQwMDIgNCA3LjgxNjY5IDRIMFY2LjQ3ODA5SDYuODExNjdMMTEuMjc4NCAyNS42MjdMMTIuMjgzMyAyOS41Njk0SDM0LjM5MzNWMjcuMDkxM0gxNC42Mjg0TDEzLjk1ODMgMjQuNTAwNkwzMy45NDY3IDIyLjAyMjVDMzQuMjgxNyAyMi4wMjI1IDM0LjUwNSAyMS43OTcyIDM0LjcyODMgMjEuNTcxOUMzNC45NTE2IDIxLjM0NjYgMzUuMDYzNCAyMS4wMDg3IDM1LjA2MzQgMjAuNzgzNFY5LjQwNjc0VjkuNDA2NzRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K');
   display: block;
   width: 39px;
   height: 39px;
@@ -204,7 +204,7 @@
 }
 
 .flexRow--campeoes-de-venda::before {
-  content: "";
+  content: '';
   background-color: #001d7e;
   height: 242px;
   position: absolute;
@@ -363,7 +363,7 @@
 .flexRow--searchTitle :global(.vtex-search-result-3-x-galleryTitle--layout) {
   margin: 0;
 
-  font-family: "Futura Medium";
+  font-family: 'Futura Medium';
   font-style: normal;
   font-weight: 400;
   font-size: 27px;
@@ -393,7 +393,14 @@
   justify-content: flex-start;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 641px) {
+  .flexColChild--brand-badges-item
+    :global(.vtex-store-components-3-x-imageElement) {
+    min-width: 145px;
+  }
+}
+
+@media (max-width: 1025px) {
   .flexRowContent--main-header-mobile {
     align-items: center;
     justify-content: space-between;
@@ -405,11 +412,6 @@
   .flexRowContent--main-header-mobile-top {
     align-items: center;
     padding-top: 0.5rem;
-  }
-
-  .flexColChild--brand-badges-item
-    :global(.vtex-store-components-3-x-imageElement) {
-    min-width: 145px;
   }
   .flexRowContent--ofertas-do-dia
     :global(.vtex-product-summary-2-x-containerNormal) {
@@ -535,7 +537,7 @@
   padding-bottom: 0;
 }
 .flexRow--breadcrumbsPdp :global(.vtex-breadcrumb-1-x-homeLink)::after {
-  content: "Você está em:";
+  content: 'Você está em:';
   color: #515151;
   font-weight: bold;
   font-size: 14px;
@@ -604,7 +606,7 @@
   border: none;
   color: #fff;
   border-radius: 0px;
-  font-family: "Futura Bk BT", sans-serif;
+  font-family: 'Futura Bk BT', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

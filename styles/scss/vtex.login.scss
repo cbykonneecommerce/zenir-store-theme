@@ -11,7 +11,7 @@
 
 .formTitle {
   text-align: left;
-  font-family: "Futura Md BT";
+  font-family: 'Futura Md BT';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -20,7 +20,7 @@
 }
 
 .button :global(.vtex-button) {
-  font-family: "Futura Md BT", sans-serif;
+  font-family: 'Futura Md BT', sans-serif;
   background-color: #fff;
   border: 1px solid #001d7e;
   border-radius: 6px;
@@ -32,7 +32,7 @@
 }
 
 .contentInitialScreen::before {
-  content: "";
+  content: '';
   position: fixed;
   width: 100%;
   height: 100%;
@@ -51,7 +51,7 @@
 
 .label::before,
 .profile::before {
-  content: "";
+  content: '';
   display: inline-block;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='33' viewBox='0 0 27 33' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.3159 7.37145C20.3159 11.2676 17.1504 14.4451 13.2688 14.4451C9.3872 14.4451 6.22168 11.2676 6.22168 7.37145C6.22168 3.4753 9.3872 0.297852 13.2688 0.297852C17.1504 0.297852 20.3159 3.4753 20.3159 7.37145Z' fill='%23001D7E'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M26.383 29.3868C26.383 33.5477 0.154297 33.5477 0.154297 29.3868C0.154297 23.1453 6.03314 18.417 13.2686 18.417C20.5418 18.417 26.383 23.1453 26.383 29.3868Z' fill='%23001D7E'/%3E%3C/svg%3E");
   background-size: contain;
@@ -64,7 +64,6 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
 
 .profile {
   margin: 0;
@@ -80,7 +79,7 @@
 }
 
 .label {
-  font-family: "Futura Hv BT", sans-serif;
+  font-family: 'Futura Hv BT', sans-serif;
   text-transform: initial;
   font-size: 12px;
   font-style: normal;
@@ -152,10 +151,10 @@
   display: none;
 }
 .googleOptionBtn :global(.vtex-login-2-x-oauthLabel)::before {
-  content: "";
+  content: '';
   width: 34px;
   height: 20px;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAzNiAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS40NTQ1IDkuODE4MThWMTMuNzQ1NUgxNy45MTgyQzE3LjY3MjcgMTUuNDYzNiAxNS45NTQ1IDE4LjY1NDUgMTEuNDU0NSAxOC42NTQ1QzcuNTI3MjcgMTguNjU0NSA0LjMzNjM2IDE1LjM4MTggNC4zMzYzNiAxMS40NTQ1QzQuMzM2MzYgNy41MjcyNyA3LjUyNzI3IDQuMjU0NTUgMTEuNDU0NSA0LjI1NDU1QzEzLjY2MzYgNC4yNTQ1NSAxNS4xMzY0IDUuMjM2MzYgMTYuMDM2NCA2LjA1NDU0TDE5LjE0NTUgMy4wMjcyN0MxNy4xIDEuMTQ1NDUgMTQuNTYzNiAwIDExLjQ1NDUgMEM1LjE1NDU1IDAgMCA1LjE1NDU0IDAgMTEuNDU0NUMwIDE3Ljc1NDUgNS4xNTQ1NSAyMi45MDkxIDExLjQ1NDUgMjIuOTA5MUMxOC4wODE4IDIyLjkwOTEgMjIuNDE4MiAxOC4yNDU1IDIyLjQxODIgMTEuN0MyMi40MTgyIDEwLjk2MzYgMjIuMzM2NCAxMC4zOTA5IDIyLjI1NDUgOS44MTgxOEgxMS40NTQ1Wk0zNiA5LjgxODE4SDMyLjcyNzNWNi41NDU0NUgyOS40NTQ1VjkuODE4MThIMjYuMTgxOFYxMy4wOTA5SDI5LjQ1NDVWMTYuMzYzNkgzMi43MjczVjEzLjA5MDlIMzZWOS44MTgxOFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=");
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAzNiAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS40NTQ1IDkuODE4MThWMTMuNzQ1NUgxNy45MTgyQzE3LjY3MjcgMTUuNDYzNiAxNS45NTQ1IDE4LjY1NDUgMTEuNDU0NSAxOC42NTQ1QzcuNTI3MjcgMTguNjU0NSA0LjMzNjM2IDE1LjM4MTggNC4zMzYzNiAxMS40NTQ1QzQuMzM2MzYgNy41MjcyNyA3LjUyNzI3IDQuMjU0NTUgMTEuNDU0NSA0LjI1NDU1QzEzLjY2MzYgNC4yNTQ1NSAxNS4xMzY0IDUuMjM2MzYgMTYuMDM2NCA2LjA1NDU0TDE5LjE0NTUgMy4wMjcyN0MxNy4xIDEuMTQ1NDUgMTQuNTYzNiAwIDExLjQ1NDUgMEM1LjE1NDU1IDAgMCA1LjE1NDU0IDAgMTEuNDU0NUMwIDE3Ljc1NDUgNS4xNTQ1NSAyMi45MDkxIDExLjQ1NDUgMjIuOTA5MUMxOC4wODE4IDIyLjkwOTEgMjIuNDE4MiAxOC4yNDU1IDIyLjQxODIgMTEuN0MyMi40MTgyIDEwLjk2MzYgMjIuMzM2NCAxMC4zOTA5IDIyLjI1NDUgOS44MTgxOEgxMS40NTQ1Wk0zNiA5LjgxODE4SDMyLjcyNzNWNi41NDU0NUgyOS40NTQ1VjkuODE4MThIMjYuMTgxOFYxMy4wOTA5SDI5LjQ1NDVWMTYuMzYzNkgzMi43MjczVjEzLjA5MDlIMzZWOS44MTgxOFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=');
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -174,7 +173,7 @@
 }
 
 .forgotPasswordLink {
-  font-family: "Futura Md BT";
+  font-family: 'Futura Md BT';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -223,7 +222,7 @@
 
 .inputContainer :global(.vtex-styleguide-9-x-input),
 .inputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
-  font-family: "Futura Bk BT";
+  font-family: 'Futura Bk BT';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -252,7 +251,7 @@
 
 .sendButton :global(.vtex-button) {
   padding: 0.5rem;
-  font-family: "Futura Md BT";
+  font-family: 'Futura Md BT';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -279,8 +278,8 @@
 }
 
 .label::after {
-  content: "Olá, faça o login ou cadastre-se!";
-  font-family: "Futura Hv BT", sans-serif;
+  content: 'Olá, faça o login ou cadastre-se!';
+  font-family: 'Futura Hv BT', sans-serif;
   text-transform: none;
   font-size: 0.675rem;
   font-style: normal;
@@ -313,4 +312,9 @@
   .loginOptionsContainer .formTitle {
     margin-top: 1rem;
   }
+}
+
+:global(#discounts-price.vtex-checkout-summary-0-x-summaryItemPrice
+    .vtex-checkout-summary-0-x-price) {
+  color: #bf0811;
 }

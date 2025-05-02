@@ -13,6 +13,10 @@
   height: auto;
   display: flex;
 }
+:global(.vtex-search-2-x-biggy-autocomplete) .clearLink {
+  margin: -7px -8px -7px -9px !important;
+  padding: 40px 8px 19px !important;
+}
 
 .brandName--summary {
   text-align: left;
@@ -67,8 +71,6 @@
   width: 100%;
 }
 
-
-
 .imageNormal {
   max-height: 15rem;
   min-height: 15rem;
@@ -106,11 +108,12 @@
   padding: 0px;
 }
 
-.imageWrapper--principal :global(.vtex-store-components-3-x-discountInsideContainer) {
+.imageWrapper--principal
+  :global(.vtex-store-components-3-x-discountInsideContainer) {
   background-color: #bf0811;
   border-radius: 30px;
   padding: 0.5rem 1rem;
-  font-family: "Futura Medium", sans-serif;
+  font-family: 'Futura Medium', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -128,15 +131,14 @@
   height: 100%;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
-  ;
 }
 
-.containerNormal--principal-summary :global(.vtex-product-price-1-x-installments--summary) {
+.containerNormal--principal-summary
+  :global(.vtex-product-price-1-x-installments--summary) {
   font-size: 23px;
   display: block;
   margin-top: 30px;
 }
-
 
 .containerNormal--campeoes-de-venda .imageNormal {
   min-height: unset !important;
@@ -171,24 +173,22 @@
 }
 /* Desktop */
 @media screen and (min-width: 1024px) {
-  .containerNormal{
+  .containerNormal {
     margin: 0 15px;
   }
-  .imageNormal{
+  .imageNormal {
     max-height: 198px !important;
     min-height: initial !important;
   }
 }
 @media screen and (min-width: 1500px) {
-  .containerNormal{
+  .containerNormal {
     max-width: initial !important;
   }
 }
 
-
 /* mobile */
 @media screen and (max-width: 1024px) {
-
   .containerNormal--campeoes-de-venda .imageNormal {
     max-width: 90%;
   }
@@ -199,7 +199,7 @@
   .containerNormal--campeoes-de-venda .productNameContainer {
     height: 70px;
   }
-  .element{
+  .element {
     padding-top: 10px;
   }
   .imageNormal {
@@ -228,7 +228,8 @@
     padding: 0px;
   }
 
-  .imageWrapper--principal :global(.vtex-store-components-3-x-discountInsideContainer) {
+  .imageWrapper--principal
+    :global(.vtex-store-components-3-x-discountInsideContainer) {
     right: 0px !important;
   }
 
@@ -243,7 +244,7 @@
   .nameWrapper--summary {
     height: 54px;
   }
-  .nameContainer--summary{
+  .nameContainer--summary {
     margin-bottom: 10px;
   }
 
@@ -251,9 +252,9 @@
   .brandName--principal {
     font-size: 35px;
   }
-  .containerNormal--principal-summary :global(.vtex-product-price-1-x-installments--summary) {
+  .containerNormal--principal-summary
+    :global(.vtex-product-price-1-x-installments--summary) {
     font-size: 15px;
     margin-top: 10px;
   }
-  
 }
