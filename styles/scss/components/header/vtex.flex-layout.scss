@@ -1,0 +1,11 @@
+.flexRow--header-row-container {
+  background-color: var(--Cores-Azul, #001d7e);
+}
+
+.flexRowContent--main-header-mobile-top {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  padding-bottom: 0.5rem;
+}

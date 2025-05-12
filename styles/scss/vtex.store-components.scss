@@ -2,7 +2,7 @@
 
 .productBrand--pdp {
   display: block;
-  font-family: 'Futura Md BT', sans-serif;
+  font-family: "Futura Md BT", sans-serif;
   font-weight: 400;
   font-size: 23px;
   line-height: 28px;
@@ -18,7 +18,7 @@
 }
 
 .productDescriptionContainer .content {
-  font-family: 'Futura Light', sans-serif;
+  font-family: "Futura Light", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
@@ -51,8 +51,8 @@
 }
 
 .productDescriptionText {
-  color: #4F4F4F;
-  font-family: 'Futura Lt BT', sans-serif;
+  color: #4f4f4f;
+  font-family: "Futura Lt BT", sans-serif;
   font-weight: 400;
   font-size: 25px;
   line-height: 1;
@@ -60,16 +60,16 @@
   padding-top: 20px;
 }
 
-.shippingContainer :global(.vtex-address-form__postalCode-forgottenURL){
+.shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) {
   font-size: 0;
 }
 
-.shippingContainer :global(.vtex__icon-external-link){
-display: none;
+.shippingContainer :global(.vtex__icon-external-link) {
+  display: none;
 }
 
 .shippingContainer :global(.vtex-address-form__postalCode)::before {
-  content: 'Informe seu CEP para consultar as opções de envio e retirada.';
+  content: "Informe seu CEP para consultar as opções de envio e retirada.";
   position: absolute;
   bottom: 0;
   color: #515151;
@@ -77,7 +77,7 @@ display: none;
   line-height: 18px;
 }
 .shippingContainer :global(.vtex-input-prefix__group)::before {
-  content: url('data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCAyMiAyNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjc5MzYgMEM4LjAwMzEyIDAuMDAzMTAxNjQgNS4zMjc4IDEuMDkwNTkgMy4zNTQ2MSAzLjAyMzg5QzEuMzgxNDEgNC45NTcxOCAwLjI3MTQ3NiA3LjU3ODQxIDAuMjY4MzExIDEwLjMxMjVDMC4yNjgzMTEgMTkuMTM2NyA5LjgzNjc5IDI1LjgwNDcgMTAuMjQzNSAyNi4wODU5QzEwLjQwNjQgMjYuMTkyMyAxMC41OTc4IDI2LjI0OSAxMC43OTM2IDI2LjI0OUMxMC45ODk0IDI2LjI0OSAxMS4xODA5IDI2LjE5MjMgMTEuMzQzOCAyNi4wODU5QzExLjc1MDUgMjUuODA0NyAyMS4zMTkgMTkuMTM2NyAyMS4zMTkgMTAuMzEyNUMyMS4zMTU4IDcuNTc4NDEgMjAuMjA1OSA0Ljk1NzE4IDE4LjIzMjcgMy4wMjM4OUMxNi4yNTk1IDEuMDkwNTkgMTMuNTg0MiAwLjAwMzEwMTY0IDEwLjc5MzYgMFpNMTAuNzkzNiA2LjU2MjVDMTEuNTUwNiA2LjU2MjUgMTIuMjkwNiA2Ljc4MjQzIDEyLjkyIDcuMTk0NDlDMTMuNTQ5NCA3LjYwNjU0IDE0LjA0IDguMTkyMjEgMTQuMzI5NyA4Ljg3NzQ0QzE0LjYxOTQgOS41NjI2NiAxNC42OTUyIDEwLjMxNjcgMTQuNTQ3NSAxMS4wNDQxQzE0LjM5OTggMTEuNzcxNSAxNC4wMzUzIDEyLjQzOTcgMTMuNSAxMi45NjQxQzEyLjk2NDcgMTMuNDg4NiAxMi4yODI4IDEzLjg0NTcgMTEuNTQwMyAxMy45OTA0QzEwLjc5NzkgMTQuMTM1MSAxMC4wMjgzIDE0LjA2MDkgOS4zMjg5NiAxMy43NzdDOC42Mjk2IDEzLjQ5MzIgOC4wMzE4NCAxMy4wMTI2IDcuNjExMjggMTIuMzk1OUM3LjE5MDcyIDExLjc3OTIgNi45NjYyNSAxMS4wNTQyIDYuOTY2MjUgMTAuMzEyNUM2Ljk2NjI1IDkuMzE3OTQgNy4zNjk0OSA4LjM2NDExIDguMDg3MjYgNy42NjA4NUM4LjgwNTA0IDYuOTU3NTkgOS43Nzg1NSA2LjU2MjUgMTAuNzkzNiA2LjU2MjVaIiBmaWxsPSIjMDAxRDdFIi8+Cjwvc3ZnPgo=');
+  content: url("data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCAyMiAyNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjc5MzYgMEM4LjAwMzEyIDAuMDAzMTAxNjQgNS4zMjc4IDEuMDkwNTkgMy4zNTQ2MSAzLjAyMzg5QzEuMzgxNDEgNC45NTcxOCAwLjI3MTQ3NiA3LjU3ODQxIDAuMjY4MzExIDEwLjMxMjVDMC4yNjgzMTEgMTkuMTM2NyA5LjgzNjc5IDI1LjgwNDcgMTAuMjQzNSAyNi4wODU5QzEwLjQwNjQgMjYuMTkyMyAxMC41OTc4IDI2LjI0OSAxMC43OTM2IDI2LjI0OUMxMC45ODk0IDI2LjI0OSAxMS4xODA5IDI2LjE5MjMgMTEuMzQzOCAyNi4wODU5QzExLjc1MDUgMjUuODA0NyAyMS4zMTkgMTkuMTM2NyAyMS4zMTkgMTAuMzEyNUMyMS4zMTU4IDcuNTc4NDEgMjAuMjA1OSA0Ljk1NzE4IDE4LjIzMjcgMy4wMjM4OUMxNi4yNTk1IDEuMDkwNTkgMTMuNTg0MiAwLjAwMzEwMTY0IDEwLjc5MzYgMFpNMTAuNzkzNiA2LjU2MjVDMTEuNTUwNiA2LjU2MjUgMTIuMjkwNiA2Ljc4MjQzIDEyLjkyIDcuMTk0NDlDMTMuNTQ5NCA3LjYwNjU0IDE0LjA0IDguMTkyMjEgMTQuMzI5NyA4Ljg3NzQ0QzE0LjYxOTQgOS41NjI2NiAxNC42OTUyIDEwLjMxNjcgMTQuNTQ3NSAxMS4wNDQxQzE0LjM5OTggMTEuNzcxNSAxNC4wMzUzIDEyLjQzOTcgMTMuNSAxMi45NjQxQzEyLjk2NDcgMTMuNDg4NiAxMi4yODI4IDEzLjg0NTcgMTEuNTQwMyAxMy45OTA0QzEwLjc5NzkgMTQuMTM1MSAxMC4wMjgzIDE0LjA2MDkgOS4zMjg5NiAxMy43NzdDOC42Mjk2IDEzLjQ5MzIgOC4wMzE4NCAxMy4wMTI2IDcuNjExMjggMTIuMzk1OUM3LjE5MDcyIDExLjc3OTIgNi45NjYyNSAxMS4wNTQyIDYuOTY2MjUgMTAuMzEyNUM2Ljk2NjI1IDkuMzE3OTQgNy4zNjk0OSA4LjM2NDExIDguMDg3MjYgNy42NjA4NUM4LjgwNTA0IDYuOTU3NTkgOS43Nzg1NSA2LjU2MjUgMTAuNzkzNiA2LjU2MjVaIiBmaWxsPSIjMDAxRDdFIi8+Cjwvc3ZnPgo=");
   position: absolute;
   left: 5px;
   top: 50%;
@@ -104,8 +104,8 @@ display: none;
   left: 230px;
 }
 .shippingContainer :global(.vtex-button)::after {
-  content: 'OK';
-  font-family: 'Futura Md BT', sans-serif;
+  content: "OK";
+  font-family: "Futura Md BT", sans-serif;
   color: #fff;
   font-size: 15px;
   line-height: 18px;
@@ -144,7 +144,7 @@ display: none;
 }
 
 .subscriberContainer .form :global(.vtex-styleguide-9-x-input) {
-  font-family: 'Futura Medium', sans-serif;
+  font-family: "Futura Medium", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 17px;
@@ -162,7 +162,7 @@ display: none;
 }
 
 .subscriberContainer .submit :global(.vtex-button) {
-  font-family: 'Futura Medium', sans-serif;
+  font-family: "Futura Medium", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 17px;
@@ -209,15 +209,6 @@ display: none;
 @media screen and (min-width: 1025px) {
   .sizeDesktop {
     padding: 0;
-  }
-
-  .logoLink,
-  .logoContainer {
-    display: flex;
-    height: 132px;
-    max-width: unset;
-    max-height: unset;
-    align-items: center;
   }
 
   .logoImage {
@@ -328,7 +319,7 @@ display: none;
 }
 
 :global(.vtex-minicart-2-x-minicartTitle)::after {
-  content: 'Minha Sacola';
+  content: "Minha Sacola";
   font-family: Futura Md BT, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -346,14 +337,6 @@ display: none;
     max-height: initial;
     padding: 0;
   }
-
-  .logoLink {
-    max-width: 150px;
-    position: absolute;
-    top: 5px;
-    left: 47%;
-    transform: translateX(-50%);
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -362,60 +345,8 @@ display: none;
   }
 }
 
-.searchBarContainer :global(.vtex-input-prefix__group) {
-  /* background: #e7e7e7; */
-  border-radius: 6px;
-  border: none;
-  width: 100%;
-  height: 45px;
-  margin-right: 73px;
-}
-
-.searchBarContainer
-  :global(.vtex-input-prefix__group)
-  :global(.vtex-styleguide-9-x-input) {
-  font-family: 'Futura Lt BT';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #979899;
-  border: 1px solid #DCDCDC;
-  background: #E7E7E7;
-  // background: #1E1E1E;
-  // border: 1px solid #D47474;
-  // background: #C00903;
-}
-
-.searchBarContainer
-  :global(.vtex-input-prefix__group)
-  :global(.vtex-input__suffix) {
-    background: #E7E7E7;
-    // background: #C00903;
-    // border: 1px solid #D47474;
-
-  // background: #1E1E1E;
-}
-
 .searchIcon {
   display: none;
-}
-
-.searchBarIcon--external-search::after {
-  content: '';
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='25' viewBox='0 0 26 25' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.54768 0.124023C14.796 0.124023 19.0512 4.22192 19.0512 9.27591C19.0512 14.3299 14.796 18.4276 9.54768 18.4276C4.29936 18.4276 0.0439453 14.3299 0.0439453 9.27591C0.0439453 4.22192 4.29936 0.124023 9.54768 0.124023ZM2.41988 9.27596C2.41988 13.0609 5.61706 16.1396 9.54757 16.1396C13.478 16.1396 16.6755 13.0609 16.6755 9.27596C16.6755 5.49097 13.478 2.41211 9.54757 2.41211C5.61706 2.41211 2.41988 5.49097 2.41988 9.27596Z' fill='%23515151'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24.6909 20.6237L18.8768 15.0244C18.0105 16.3218 16.8639 17.4253 15.5166 18.2596L21.3313 23.8589C22.2596 24.7526 23.7647 24.7526 24.6909 23.8589C25.6192 22.9667 25.6192 21.5174 24.6909 20.6237Z' fill='%23515151'/%3E%3C/svg%3E");
-  display: block;
-  width: 26px;
-  height: 25px;
-  // filter: invert(1);
-}
-
-.searchBarIcon--external-search {
-  background: #F8F8F8;
-  // background: #C00903;
-  // background: #1E1E1E;
-  border: 1px solid #DCDCDC;
-  // border: 1px solid #D47474;
 }
 
 .imageElement--mega-menu {
@@ -444,23 +375,7 @@ display: none;
   transform: scale(0.9);
 }
 
-.searchBarContainer {
-  max-width: unset !important;
-  margin: 0 20px;
-}
-
-@media (max-width: 768px) {
-  .searchBarContainer :global(.vtex-input-prefix__group) {
-    width: 92vw;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-
-  .searchBarContainer {
-    max-width: unset !important;
-    margin: 0px !important;
-  }
-
+@media (max-width: 641px) {
   .imageElementLink--btn-whats {
     bottom: 30px;
     right: 10px;
@@ -470,11 +385,6 @@ display: none;
   .infoCardTextContainer--box-content {
     padding: 0;
     margin-bottom: 10px;
-  }
-
-  .logoImage {
-    width: 120px;
-    height: 50px;
   }
 }
 
@@ -533,7 +443,7 @@ display: none;
   border-bottom-right-radius: 5px;
 }
 .discountInsideContainer::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -552,19 +462,15 @@ display: none;
   z-index: 1;
 }
 
-.shareLabel{
-  font-family: 'Futura Medium',sans-serif;
+.shareLabel {
+  font-family: "Futura Medium", sans-serif;
   font-weight: 700;
-  color:#2f393b;
+  color: #2f393b;
 }
 
 @media screen and (max-width: 768px) {
   .sizeDesktop {
     padding: 0px;
-  }
-
-  .searchBarContainer {
-    margin-top: 0.75rem;
   }
 
   .discountInsideContainer {
@@ -580,12 +486,8 @@ display: none;
   }
 }
 
-
 /* desktop only */
 @media screen and (min-width: 1024px) {
-  .searchBarContainer {
-    max-width: 720px !important;
-  }
   .thumbImg {
     width: 100%;
     object-fit: contain;
@@ -631,32 +533,32 @@ display: none;
   }
 
   .carouselGaleryCursor {
-    width:calc(100% - 90px) !important;
-    margin-left: 0 !important; 
+    width: calc(100% - 90px) !important;
+    margin-left: 0 !important;
     padding-left: 0;
     padding-right: 20px;
   }
 }
 
-@media screen and (max-width:1024px){
-  .carouselContainer :global(.vtex-store-components-3-x-swiper-pagination){
+@media screen and (max-width: 1024px) {
+  .carouselContainer :global(.vtex-store-components-3-x-swiper-pagination) {
     position: relative;
     bottom: 0;
     padding-top: 5px;
   }
-  .carouselContainer :global(.vtex-store-components-3-x-swiperBullet){
+  .carouselContainer :global(.vtex-store-components-3-x-swiperBullet) {
     margin: 0 10px !important;
   }
 
-  .productNameContainer--pdp{
+  .productNameContainer--pdp {
     position: absolute;
     top: 10px;
   }
 
-  .imageElement--banner-pdp-one{
+  .imageElement--banner-pdp-one {
     margin-bottom: 5px;
   }
-  .imageElement--banner-pdp-two{
+  .imageElement--banner-pdp-two {
     margin-top: 5px;
   }
 }
@@ -668,4 +570,3 @@ display: none;
   top: 0px;
   transform: none;
 }
-

@@ -1,123 +1,48 @@
 @font-face {
-  font-family: 'Futura BdCn BT';
-  src: url('/arquivos/FuturaBT-BoldCondensed.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-BoldCondensed.woff.css') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura Md BT';
-  src: url('/arquivos/FuturaBT-MediumItalic.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-MediumItalic.woff.css') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura MdCn BT';
-  src: url('/arquivos/FuturaBT-MediumCondensed.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-MediumCondensed.woff.css') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura LtCn BT';
-  src: url('/arquivos/FuturaBT-LightCondensed.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-LightCondensed.woff.css') format('woff');
+  font-family: "Jost Light";
+  src: url("/assets/fonts/Jost-Light");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Futura Lt BT';
-  src: url('/arquivos/FuturaBT-Light.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-Light.woff.css') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura Lt BT';
-  src: url('/arquivos/FuturaBT-LightItalic.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-LightItalic.woff.css') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura Md BT';
-  src: url('/arquivos/FuturaBT-Medium.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-Medium.woff.css') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura Bk BT';
-  src: url('/arquivos/FuturaBT-BookItalic.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-BookItalic.woff.css') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura Bk BT';
-  src: url('/arquivos/FuturaBT-Book.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-Book.woff.css') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura Hv BT';
-  src: url('/arquivos/FuturaBT-Heavy.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-Heavy.woff.css') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura Hv BT';
-  src: url('/arquivos/FuturaBT-HeavyItalic.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-HeavyItalic.woff.css') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura';
-  src: url('/arquivos/Futura-CondensedLight.woff2.css') format('woff2'),
-      url('/arquivos/Futura-CondensedLight.woff.css') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura XBlk BT';
-  src: url('/arquivos/FuturaBT-ExtraBlack.woff2.css') format('woff2'),
-      url('/arquivos/FuturaBT-ExtraBlack.woff.css') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url(assets/fonts/Roboto-Medium.ttf);
+  font-family: "Jost";
+  src: url("/assets/fonts/Jost-Regular.ttf");
   font-weight: 400;
-  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost Medium";
+  src: url("/assets/fonts/Jost-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost SemiBold";
+  src: url("/assets/fonts/Jost-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost Bold";
+  src: url("/assets/fonts/Jost-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost ExtraBold";
+  src: url("/assets/fonts/Jost-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost Black";
+  src: url("/assets/fonts/Jost-ExtraBold.ttf");
+  font-weight: 900;
+  font-style: normal;
 }

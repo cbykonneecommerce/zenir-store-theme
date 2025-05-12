@@ -1,0 +1,44 @@
+.flexRow--flex,
+.flexRowContent--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexRowContent--container {
+  @media (min-width: 1025px) and (max-width: 1439px) {
+    max-width: 1200px;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1441px;
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .flexRow--margin {
+    // margin: 24px !important;
+  }
+}
+
+.flexRow--container {
+  :global(.vtex-store-components-3-x-container) {
+    padding: 0px;
+  }
+
+  :global(.vtex-store-components-3-x-container) {
+    max-width: 100% !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .flexRowContent--container {
+      // padding: 0px 0.5rem !important;
+    }
+  }
+}
