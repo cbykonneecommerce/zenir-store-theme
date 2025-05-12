@@ -1,5 +1,5 @@
 .paragraph--shipping-title {
-  font-family: "Futura Md BT", sans-serif;
+  font-family: 'Futura Md BT', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   padding-bottom: 20px;
-  margin:0;
+  margin: 0;
 }
 .paragraph--shipping-title::before {
   content: url('data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMzMiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAzMyAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI1LjI1IDIxLjk3ODhDMjQuNjY5OCAyMS45Nzg4IDI0LjExMzQgMjEuNzQ4NCAyMy43MDMyIDIxLjMzODFDMjMuMjkyOSAyMC45Mjc5IDIzLjA2MjUgMjAuMzcxNSAyMy4wNjI1IDE5Ljc5MTNDMjMuMDYyNSAxOS4yMTEyIDIzLjI5MjkgMTguNjU0OCAyMy43MDMyIDE4LjI0NDVDMjQuMTEzNCAxNy44MzQzIDI0LjY2OTggMTcuNjAzOCAyNS4yNSAxNy42MDM4QzI1LjgzMDEgMTcuNjAzOCAyNi4zODY1IDE3LjgzNDMgMjYuNzk2OCAxOC4yNDQ1QzI3LjIwNyAxOC42NTQ4IDI3LjQzNzUgMTkuMjExMiAyNy40Mzc1IDE5Ljc5MTNDMjcuNDM3NSAyMC4zNzE1IDI3LjIwNyAyMC45Mjc5IDI2Ljc5NjggMjEuMzM4MUMyNi4zODY1IDIxLjc0ODQgMjUuODMwMSAyMS45Nzg4IDI1LjI1IDIxLjk3ODhaTTI3LjQzNzUgOC44NTM4NEwzMC4yOTU4IDEyLjQ5OTdIMjMuNzkxNlY4Ljg1Mzg0TTcuNzQ5OTggMjEuOTc4OEM3LjE2OTgyIDIxLjk3ODggNi42MTM0MiAyMS43NDg0IDYuMjAzMTggMjEuMzM4MUM1Ljc5Mjk1IDIwLjkyNzkgNS41NjI0OCAyMC4zNzE1IDUuNTYyNDggMTkuNzkxM0M1LjU2MjQ4IDE5LjIxMTIgNS43OTI5NSAxOC42NTQ4IDYuMjAzMTggMTguMjQ0NUM2LjYxMzQyIDE3LjgzNDMgNy4xNjk4MiAxNy42MDM4IDcuNzQ5OTggMTcuNjAzOEM4LjMzMDE0IDE3LjYwMzggOC44ODY1NCAxNy44MzQzIDkuMjk2NzggMTguMjQ0NUM5LjcwNzAxIDE4LjY1NDggOS45Mzc0OCAxOS4yMTEyIDkuOTM3NDggMTkuNzkxM0M5LjkzNzQ4IDIwLjM3MTUgOS43MDcwMSAyMC45Mjc5IDkuMjk2NzggMjEuMzM4MUM4Ljg4NjU0IDIxLjc0ODQgOC4zMzAxNCAyMS45Nzg4IDcuNzQ5OTggMjEuOTc4OFpNMjguMTY2NiA2LjY2NjM0SDIzLjc5MTZWMC44MzMwMDhIMy4zNzQ5OEMxLjc1NjIzIDAuODMzMDA4IDAuNDU4MzEzIDIuMTMwOTIgMC40NTgzMTMgMy43NDk2N1YxOS43OTEzSDMuMzc0OThDMy4zNzQ5OCAyMC45NTE3IDMuODM1OTIgMjIuMDY0NSA0LjY1NjM5IDIyLjg4NDlDNS40NzY4NiAyMy43MDU0IDYuNTg5NjYgMjQuMTY2MyA3Ljc0OTk4IDI0LjE2NjNDOC45MTAzIDI0LjE2NjMgMTAuMDIzMSAyMy43MDU0IDEwLjg0MzYgMjIuODg0OUMxMS42NjQgMjIuMDY0NSAxMi4xMjUgMjAuOTUxNyAxMi4xMjUgMTkuNzkxM0gyMC44NzVDMjAuODc1IDIwLjk1MTcgMjEuMzM1OSAyMi4wNjQ1IDIyLjE1NjQgMjIuODg0OUMyMi45NzY5IDIzLjcwNTQgMjQuMDg5NyAyNC4xNjYzIDI1LjI1IDI0LjE2NjNDMjYuNDEwMyAyNC4xNjYzIDI3LjUyMzEgMjMuNzA1NCAyOC4zNDM2IDIyLjg4NDlDMjkuMTY0IDIyLjA2NDUgMjkuNjI1IDIwLjk1MTcgMjkuNjI1IDE5Ljc5MTNIMzIuNTQxNlYxMi40OTk3TDI4LjE2NjYgNi42NjYzNFoiIGZpbGw9IiM0RjRGNEYiLz4KPC9zdmc+Cg==');
@@ -24,7 +24,7 @@
 }
 
 .paragraph--pdp-description-title {
-  font-family: "Futura Medium", sans-serif;
+  font-family: 'Futura Medium', sans-serif;
   font-size: 27px;
   line-height: 32px;
   letter-spacing: 0em;
@@ -33,7 +33,7 @@
 }
 
 .paragraph--institucional-title {
-  font-family: "Futura Medium", sans-serif;
+  font-family: 'Futura Medium', sans-serif;
   font-size: 27px;
   font-weight: 700;
   line-height: 64px;
@@ -50,7 +50,7 @@
 .listItem--institucional-conteudo,
 .paragraph--institucional-conteudo {
   padding-left: 2rem;
-  font-family: "Futura Light BT", sans-serif;
+  font-family: 'Futura Light BT', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
@@ -61,12 +61,12 @@
 
 .paragraph--fale-conosco-title,
 .paragraph--fale-conosco-title {
-  font-family: "Futura Md BT", sans-serif;
+  font-family: 'Futura Md BT', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2rem;
   text-align: left;
-  color: #4F4F4F;
+  color: #4f4f4f;
   max-width: 722px;
   margin: auto;
 }
@@ -77,7 +77,7 @@
   font-weight: 400;
   line-height: 1.1rem;
   text-align: left;
-  color: #4F4F4F;
+  color: #4f4f4f;
   max-width: 722px;
   margin: auto;
 }
@@ -88,7 +88,6 @@
   margin-top: 5rem;
   margin-bottom: 1rem;
 }
-
 
 .wrapper--fale-conosco-text-informartion {
   margin: auto;
@@ -105,11 +104,11 @@
 }
 
 .heading--institucional-conteudo {
-  font-family: "Futura Medium", sans-serif;
+  font-family: 'Futura Medium', sans-serif;
 }
 
 .headingLevel4--quem-somos-conteudo {
-  font-family: "Futura Medium", sans-serif;
+  font-family: 'Futura Medium', sans-serif;
   color: #000;
 }
 
@@ -137,7 +136,7 @@
   background-color: #fff;
   margin: 0px;
   border-radius: 5px;
-  font-family: "Futura Medium", sans-serif;
+  font-family: 'Futura Medium', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -149,7 +148,7 @@
 
 .paragraph--sac {
   margin: 0px;
-  font-family: "Futura Light BT", sans-serif;
+  font-family: 'Futura Light BT', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -172,7 +171,7 @@
 }
 
 .paragraph--newsletter-text {
-  font-family: "Futura Medium", sans-serif;
+  font-family: 'Futura Medium', sans-serif;
   font-size: 33px;
   font-weight: 400;
   line-height: 28px;
@@ -181,7 +180,7 @@
   color: #fff;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .paragraph--newsletter-text {
     max-width: 470px;
   }
@@ -189,7 +188,7 @@
 
 .paragraph--menu-institucional--footer {
   margin-top: 0px;
-  font-family: "Futura Medium", sans-serif;
+  font-family: 'Futura Medium', sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -200,7 +199,7 @@
 
 .container--formas-pagamento-title {
   align-items: center;
-  font-family: "Futura Medium", sans-serif;
+  font-family: 'Futura Medium', sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -212,7 +211,7 @@
 }
 
 .paragraph--footer-bottom-text {
-  font-family: "Futura Light BT";
+  font-family: 'Futura Light BT';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -220,7 +219,7 @@
   color: #6f6f6f;
 }
 .paragraph--footer-message-text {
-  font-family: "Futura Light BT";
+  font-family: 'Futura Light BT';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -270,7 +269,7 @@
 }
 
 .paragraph--campeoes-de-venda {
-  font-family: "";
+  font-family: '';
   font-size: 23px;
   font-weight: 400;
   line-height: 28px;
@@ -280,14 +279,14 @@
 
 .paragraph--shelf-title,
 .paragraph--beneficios-text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 32px;
   color: #515151;
   margin-left: 1rem;
 }
-.wrapper--beneficios-text{
+.wrapper--beneficios-text {
   margin: 10px 0;
   padding: 0 20px;
   position: relative;
@@ -307,19 +306,19 @@
   }
 } */
 
-@media screen and (min-width:1500px){
-  .container--beneficios-text::after{
+@media screen and (min-width: 1500px) {
+  .container--beneficios-text::after {
     right: -30%;
   }
 }
 
-.container--beneficios-text{
+.container--beneficios-text {
   position: relative;
 }
 
 .paragraph--beneficios-text {
   font-size: 1.1rem;
-  color: #EF2A31;
+  color: #ef2a31;
   // color: #FFFFFF;
   line-height: 19px;
   font-weight: bold;
@@ -327,10 +326,10 @@
   gap: 0.2rem;
 }
 
-.paragraph--beneficios-sub{
+.paragraph--beneficios-sub {
   // color: #E3E3E3;
   color: #434343;
-  font-family: "Roboto", sans-serif !important; 
+  font-family: 'Roboto', sans-serif !important;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: normal;
@@ -339,7 +338,7 @@
 
 .strong--campeoes-de-venda,
 .paragraph--campeoes-de-venda {
-  font-family: "Futura Medium", sans-serif;
+  font-family: 'Futura Medium', sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 32px;
@@ -354,7 +353,7 @@
 }
 
 .strong--campeoes-de-venda {
-  font-family: "Futura XBlk BT", sans-serif;
+  font-family: 'Futura XBlk BT', sans-serif;
   margin: 0px;
   font-size: 40px;
   display: block;
@@ -392,18 +391,18 @@
   display: flex;
   width: 4.76rem;
   height: 4.76rem;
-  background: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/7f132b37-0196-4416-ab5f-9dd68e4b2f73___283f91376ab1a3658c84db1b0e58bc9e.svg");
+  background: url('https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/7f132b37-0196-4416-ab5f-9dd68e4b2f73___283f91376ab1a3658c84db1b0e58bc9e.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 @media screen and (max-width: 767px) {
-  .wrapper--beneficios-text{
+  .wrapper--beneficios-text {
     padding: 0 10px;
     border: none;
   }
 
-  .paragraph--beneficios-text{
+  .paragraph--beneficios-text {
     margin: 0;
     display: grid;
   }
@@ -468,18 +467,16 @@
     margin-top: 0.25rem;
   }
 
-
-
   .paragraph--campeoes-de-venda {
     white-space: nowrap;
   }
 
   .paragraph--shelf-title {
-    font-family:'Futura Md BT',sans-serif;
+    font-family: 'Futura Md BT', sans-serif;
     font-weight: bold;
     font-size: 1.1rem;
     margin-top: 0;
-    margin-bottom:15px ;
+    margin-bottom: 15px;
   }
   .paragraph--shelf-title-ofertas {
     font-weight: bold;
@@ -491,15 +488,15 @@
   .paragraph--beneficios-text {
     font-size: 1rem;
   }
-  
-  .paragraph--beneficios-sub{
+
+  .paragraph--beneficios-sub {
     font-size: 0.8rem;
   }
 }
 
 .paragraph--menu-institucional--footer {
   background-color: #fff;
-  font-family: "Futura Light BT",sans-serif;
+  font-family: 'Futura Light BT', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -517,11 +514,11 @@
   line-height: 26px;
   color: #515151;
 }
-.footerMessage{
+.footerMessage {
   font-size: 10px;
 }
 
-.wrapper--lp-banner-text{
+.wrapper--lp-banner-text {
   position: absolute;
   top: 50%;
   left: 20%;
@@ -534,7 +531,7 @@
 }
 
 .container--register-header--text::before {
-  content: "";
+  content: '';
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='33' viewBox='0 0 27 33' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.1616 7.0736C20.1616 10.9698 16.9961 14.1472 13.1145 14.1472C9.23291 14.1472 6.06738 10.9698 6.06738 7.0736C6.06738 3.17744 9.23291 0 13.1145 0C16.9961 0 20.1616 3.17744 20.1616 7.0736Z' fill='%23001D7E'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M26.2287 29.0888C26.2287 33.2497 0 33.2497 0 29.0888C0 22.8474 5.87884 18.119 13.1143 18.119C20.3875 18.119 26.2287 22.8474 26.2287 29.0888Z' fill='%23001D7E'/%3E%3C/svg%3E");
   width: 25px;
   height: 30px;
@@ -550,5 +547,5 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  color: #8D8C8C;
+  color: #8d8c8c;
 }

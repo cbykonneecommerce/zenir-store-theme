@@ -127,10 +127,6 @@
   background-position: center !important;
   background-repeat: no-repeat !important;
 
-  @media (max-width: 640px) {
-    max-height: 130px !important;
-  }
-
   @media (min-width: 641px) {
     background-image: url('https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/a935f018-c37f-42fa-a1aa-31ca7ea8025a___22a6a954ad349a95ff63202274c52a9d.png') !important;
   }

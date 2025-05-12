@@ -1,4 +1,4 @@
-.paginationDotsContainer{
+.paginationDotsContainer {
   bottom: -20px;
 }
 
@@ -6,12 +6,12 @@
   width: 16px !important;
   height: 4px !important;
   padding: 2px;
-  background: #E3E4E6;
+  background: #e3e4e6;
   border-radius: 4px;
 }
 
 .paginationDot--isActive {
-  background-color: #ED1C24;
+  background-color: #ed1c24;
 }
 
 .slide--banners {
@@ -32,7 +32,6 @@
   background-color: #ececec !important;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='19' viewBox='0 0 16 19' fill='none'%3E%3Cpath d='M0.662109 9.57642L15.6934 0.897344L15.6934 18.2555L0.662109 9.57642Z' fill='%23BF0811'/%3E%3C/svg%3E") !important;
   background-repeat: no-repeat !important;
-
 }
 
 .sliderRightArrow--marcas {
@@ -70,9 +69,9 @@
   right: -15px;
 }
 
-.sliderArrows--shelf-default:disabled{
+.sliderArrows--shelf-default:disabled {
   opacity: 0.5;
-  cursor:not-allowed;
+  cursor: not-allowed;
 }
 
 .sliderLeftArrow--shelf-default {
@@ -85,7 +84,7 @@
   display: none;
 }
 
-.paginationDotsContainer--carousel{
+.paginationDotsContainer--carousel {
   bottom: 15px;
 }
 
@@ -104,9 +103,9 @@
 
   .sliderLayoutContainer--beneficios {
     padding: 1rem;
-    background: #ECECEC;
+    background: #ececec;
   }
-  .paginationDotsContainer{
+  .paginationDotsContainer {
     bottom: -15px;
   }
 
@@ -118,7 +117,7 @@
   }
 }
 
-.sliderTrack--shelf-default{
+.sliderTrack--shelf-default {
   align-items: flex-start;
 }
 
@@ -127,3 +126,10 @@
   align-items: flex-start;
 }
 
+.sliderTrack--carousel-brands-images {
+  gap: 2rem;
+
+  @media (max-width: 1025px) {
+    gap: 1rem;
+  }
+}
