@@ -1,7 +1,8 @@
 {
     "vtex.menu@2.x:menu#websites": {
         "props": {
-            "experimentalOptimizeRendering": true
+            "experimentalOptimizeRendering": true,
+            "blockClass": "header-menu-titles-container"
         },
         "children": [
             "menu-item#moveis",
@@ -18,6 +19,7 @@
     },
     "menu-item#moveis": {
         "props": {
+            "blockClass": "item-menu-title",
             "id": "menu-item-moveis",
             "type": "custom",
             "highlight": false,
@@ -29,10 +31,13 @@
                 "text": "Móveis"
             }
         },
-        "blocks": ["vtex.menu@2.x:submenu#submenu-moveis"]
+        "blocks": [
+            "vtex.menu@2.x:submenu#submenu-moveis"
+        ]
     },
     "menu-item#eletrodomesticos": {
         "props": {
+            "blockClass": "item-menu-title",
             "id": "menu-item-eletrodomesticos",
             "type": "custom",
             "highlight": false,
@@ -44,10 +49,13 @@
                 "text": "Eletrodomésticos"
             }
         },
-        "blocks": ["vtex.menu@2.x:submenu#submenu-eletrodomesticos"]
+        "blocks": [
+            "vtex.menu@2.x:submenu#submenu-eletrodomesticos"
+        ]
     },
     "menu-item#tv-audio": {
         "props": {
+            "blockClass": "item-menu-title",
             "id": "menu-item-tv-audio",
             "type": "custom",
             "highlight": false,
@@ -59,10 +67,13 @@
                 "text": "TV's e Áudio"
             }
         },
-        "blocks": ["vtex.menu@2.x:submenu#submenu-tv-audio"]
+        "blocks": [
+            "vtex.menu@2.x:submenu#submenu-tv-audio"
+        ]
     },
     "menu-item#smartphones": {
         "props": {
+            "blockClass": "item-menu-title",
             "id": "menu-item-tv-audio",
             "type": "custom",
             "highlight": false,
@@ -74,10 +85,13 @@
                 "text": "Smartphones"
             }
         },
-        "blocks": ["vtex.menu@2.x:submenu#submenu-smartphones"]
+        "blocks": [
+            "vtex.menu@2.x:submenu#submenu-smartphones"
+        ]
     },
     "menu-item#eletroportateis": {
         "props": {
+            "blockClass": "item-menu-title",
             "id": "menu-item-eletroportateis",
             "type": "custom",
             "highlight": false,
@@ -89,10 +103,13 @@
                 "text": "Eletroportáteis"
             }
         },
-        "blocks": ["vtex.menu@2.x:submenu#submenu-eletroportateis"]
+        "blocks": [
+            "vtex.menu@2.x:submenu#submenu-eletroportateis"
+        ]
     },
     "menu-item#informatica": {
         "props": {
+            "blockClass": "item-menu-title",
             "id": "menu-item-informatica",
             "type": "custom",
             "highlight": false,
@@ -104,10 +121,13 @@
                 "text": "Informática"
             }
         },
-        "blocks": ["vtex.menu@2.x:submenu#submenu-informatica"]
+        "blocks": [
+            "vtex.menu@2.x:submenu#submenu-informatica"
+        ]
     },
     "menu-item#bicicleta": {
         "props": {
+            "blockClass": "item-menu-title",
             "id": "menu-item-bicicleta",
             "type": "custom",
             "highlight": false,
@@ -119,10 +139,13 @@
                 "text": "Bicicletas"
             }
         },
-        "blocks": ["vtex.menu@2.x:submenu#submenu-bicicleta"]
+        "blocks": [
+            "vtex.menu@2.x:submenu#submenu-bicicleta"
+        ]
     },
     "menu-item#cama-mesa": {
         "props": {
+            "blockClass": "item-menu-title",
             "id": "menu-item-cama-mesa",
             "type": "custom",
             "highlight": false,
@@ -130,14 +153,17 @@
                 "type": "internal",
                 "href": "#",
                 "noFollow": true,
-                "tagTitle": "Cama, Mesa",
-                "text": "Cama, Mesa"
+                "tagTitle": "Cama e Mesa",
+                "text": "Cama e Mesa"
             }
         },
-        "blocks": ["vtex.menu@2.x:submenu#submenu-cama-mesa"]
+        "blocks": [
+            "vtex.menu@2.x:submenu#submenu-cama-mesa"
+        ]
     },
     "menu-item#banho": {
         "props": {
+            "blockClass": "item-menu-title",
             "id": "menu-item-banho",
             "type": "custom",
             "highlight": false,
@@ -149,10 +175,13 @@
                 "text": "Banho"
             }
         },
-        "blocks": ["vtex.menu@2.x:submenu#submenu-banho"]
+        "blocks": [
+            "vtex.menu@2.x:submenu#submenu-banho"
+        ]
     },
     "menu-item#utilidades": {
         "props": {
+            "blockClass": "item-menu-title",
             "id": "utilidades",
             "type": "custom",
             "highlight": false,
@@ -164,6 +193,8 @@
                 "text": "Utilidades"
             }
         },
-        "blocks": ["vtex.menu@2.x:submenu#submenu-utilidades"]
+        "blocks": [
+            "vtex.menu@2.x:submenu#submenu-utilidades"
+        ]
     }
 }

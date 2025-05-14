@@ -1,13 +1,33 @@
 {
     "flex-layout.col#sac": {
         "children": [
-            "rich-text#sac-footer",
-            "rich-text#sac-footer-whatsap"
+            "rich-text#sac-footer-title",
+            "custom-div#sac",
+            "custom-div#footer-redes-sociais"
         ],
         "props": {
             "blockClass": [
                 "sac-footer-container"
             ]
+        }
+    },
+    "custom-div#sac": {
+        "props": {
+            "flexDirection": "column",
+            "gap": "6px"
+        },
+        "children": [
+            "rich-text#sac-footer",
+            "rich-text#sac-footer-whatsap"
+        ]
+    },
+    "rich-text#sac-footer-title": {
+        "props": {
+            "blockClass": [
+                "sac-footer",
+                "sac-title"
+            ],
+            "text": "Contato"
         }
     },
     "rich-text#sac-footer": {
@@ -16,7 +36,7 @@
                 "sac-footer",
                 "sac"
             ],
-            "text": "SAC \n **(99) 9999-9999**"
+            "text": "SAC: 0800 275 5700"
         }
     },
     "rich-text#sac-footer-whatsap": {
@@ -25,7 +45,7 @@
                 "sac-footer",
                 "sac"
             ],
-            "text": "FALE PELO WHATSAPP \n **(99) 9999-9999**"
+            "text": "Fale pelo WhatsApp: (88) 9 8821-7000"
         }
     }
 }

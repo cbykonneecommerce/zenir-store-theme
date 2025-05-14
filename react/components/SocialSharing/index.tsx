@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({ onClick }) => (
   >
     <img
       alt="Social sharing"
-      src="https://tfcvih.vteximg.com.br/arquivos/icon-social-sharing.png"
+      src="https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/712f4e8d-20c0-40ca-b688-299bc70104ab___37ee4e40b820eae94588a7f4c4f0966c.png"
     />
   </button>
 );

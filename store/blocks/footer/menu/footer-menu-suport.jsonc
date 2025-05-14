@@ -1,0 +1,98 @@
+{
+    "menu-item#institucional-accordion-mobile-suport": {
+        "props": {
+            "id": "menu-item-institucional-acorddion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Suporte",
+                "text": "Suporte"
+            },
+            "blockClass": [
+                "menu-accordion--footer-container-mobile"
+            ]
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#institucional-suport"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#institucional-suport": {
+        "props": {
+            "blockClass": [
+                "menu-accordion--mobile"
+            ]
+        },
+        "children": [
+            "vtex.menu@2.x:menu#institucional-menu-footer-suport"
+        ]
+    },
+    "flex-layout.col#institucional-menu-footer-suport": {
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "menu-institucional--footer"
+            ]
+        },
+        "children": [
+            "rich-text#menu-footer-institucional-suport-title",
+            "vtex.menu@2.x:menu#institucional-menu-footer-suport"
+        ]
+    },
+    "rich-text#menu-footer-institucional-suport-title": {
+        "props": {
+            "blockClass": [
+                "menu-institucional--footer"
+            ],
+            "text": "Suporte"
+        }
+    },
+    "vtex.menu@2.x:menu#institucional-menu-footer-suport": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": [
+                "menu-institucional-footer"
+            ],
+            "items": [
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/institucional/perguntas-frequentes",
+                        "noFollow": false,
+                        "tagTitle": "Perguntas Frequentes",
+                        "text": "Perguntas Frequentes"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/institucional/entrega-e-montagem",
+                        "noFollow": false,
+                        "tagTitle": "Entrega e Montagem",
+                        "text": "Entrega e Montagem"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/institucional/privacidade",
+                        "noFollow": false,
+                        "tagTitle": "Garantia Estendida",
+                        "text": "Garantia Estendida"
+                    }
+                }
+            ]
+        }
+    }
+}

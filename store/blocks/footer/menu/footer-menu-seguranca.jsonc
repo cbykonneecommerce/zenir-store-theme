@@ -9,11 +9,11 @@
                 "type": "internal",
                 "href": "#",
                 "noFollow": true,
-                "tagTitle": "SEGURANÇA",
-                "text": "SEGURANÇA"
+                "tagTitle": "Segurança",
+                "text": "Segurança"
             },
             "blockClass": [
-                "menu-accordion--container-mobile"
+                "menu-accordion--footer-container-mobile"
             ]
         },
         "blocks": [
@@ -27,7 +27,7 @@
             ]
         },
         "children": [
-            "flex-layout.row#seguranca-images"
+            "custom-div#seguranca-images"
         ]
     }
 }

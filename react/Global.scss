@@ -96,7 +96,7 @@
   text-align: left;
   position: absolute;
   bottom: -20px;
-  font-family: 'Futura Bk BT', sans-serif;
+  font-family: "Futura Bk BT", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -107,4 +107,19 @@
 
 .checkout-steps .active span.step-label {
   color: #4f4f4f;
+}
+
+@media (max-width: 1025px) {
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--redes-sociais) {
+    padding-bottom: 24px !important;
+  }
+
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--images-security) {
+    justify-content: flex-start !important;
+    gap: 0 !important;
+  }
+
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--mobile-footer-wrapper) {
+    padding: 0 16px !important;
+  }
 }

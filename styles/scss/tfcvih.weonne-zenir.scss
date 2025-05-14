@@ -1,7 +1,11 @@
 .activeStoreCustomWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divContainer--sticky-header-desktop {
+  position: fixed;
 }
 
 input[type="color"],
@@ -20,6 +24,5 @@ input[type="url"],
 input[type="week"],
 select:focus,
 textarea {
-    font-size: 16px;
+  font-size: 16px;
 }
-

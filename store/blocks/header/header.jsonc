@@ -17,7 +17,8 @@
       "custom-smart-banner-mobile",
       "custom-head",
       "flex-layout.row#nav-desktop-top",
-      "sticky-layout#desktop"
+      "sticky-layout#desktop",
+      "flex-layout.row#mega-menu"
     ],
     "props": {
       "blockClass": "header-layout-desktop"
@@ -37,8 +38,7 @@
       "blockClass": "sticky-header-desktop"
     },
     "children": [
-      "flex-layout.row#desktopContainer",
-      "flex-layout.row#mega-menu"
+      "flex-layout.row#desktopContainer"
     ]
   },
   "flex-layout.row#desktopContainer": {

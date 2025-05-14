@@ -7,10 +7,10 @@
   display: flex;
   align-items: center;
   padding-bottom: 20px;
-  margin:0;
+  margin: 0;
 }
 .paragraph--shipping-title::before {
-  content: url('data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMzMiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAzMyAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI1LjI1IDIxLjk3ODhDMjQuNjY5OCAyMS45Nzg4IDI0LjExMzQgMjEuNzQ4NCAyMy43MDMyIDIxLjMzODFDMjMuMjkyOSAyMC45Mjc5IDIzLjA2MjUgMjAuMzcxNSAyMy4wNjI1IDE5Ljc5MTNDMjMuMDYyNSAxOS4yMTEyIDIzLjI5MjkgMTguNjU0OCAyMy43MDMyIDE4LjI0NDVDMjQuMTEzNCAxNy44MzQzIDI0LjY2OTggMTcuNjAzOCAyNS4yNSAxNy42MDM4QzI1LjgzMDEgMTcuNjAzOCAyNi4zODY1IDE3LjgzNDMgMjYuNzk2OCAxOC4yNDQ1QzI3LjIwNyAxOC42NTQ4IDI3LjQzNzUgMTkuMjExMiAyNy40Mzc1IDE5Ljc5MTNDMjcuNDM3NSAyMC4zNzE1IDI3LjIwNyAyMC45Mjc5IDI2Ljc5NjggMjEuMzM4MUMyNi4zODY1IDIxLjc0ODQgMjUuODMwMSAyMS45Nzg4IDI1LjI1IDIxLjk3ODhaTTI3LjQzNzUgOC44NTM4NEwzMC4yOTU4IDEyLjQ5OTdIMjMuNzkxNlY4Ljg1Mzg0TTcuNzQ5OTggMjEuOTc4OEM3LjE2OTgyIDIxLjk3ODggNi42MTM0MiAyMS43NDg0IDYuMjAzMTggMjEuMzM4MUM1Ljc5Mjk1IDIwLjkyNzkgNS41NjI0OCAyMC4zNzE1IDUuNTYyNDggMTkuNzkxM0M1LjU2MjQ4IDE5LjIxMTIgNS43OTI5NSAxOC42NTQ4IDYuMjAzMTggMTguMjQ0NUM2LjYxMzQyIDE3LjgzNDMgNy4xNjk4MiAxNy42MDM4IDcuNzQ5OTggMTcuNjAzOEM4LjMzMDE0IDE3LjYwMzggOC44ODY1NCAxNy44MzQzIDkuMjk2NzggMTguMjQ0NUM5LjcwNzAxIDE4LjY1NDggOS45Mzc0OCAxOS4yMTEyIDkuOTM3NDggMTkuNzkxM0M5LjkzNzQ4IDIwLjM3MTUgOS43MDcwMSAyMC45Mjc5IDkuMjk2NzggMjEuMzM4MUM4Ljg4NjU0IDIxLjc0ODQgOC4zMzAxNCAyMS45Nzg4IDcuNzQ5OTggMjEuOTc4OFpNMjguMTY2NiA2LjY2NjM0SDIzLjc5MTZWMC44MzMwMDhIMy4zNzQ5OEMxLjc1NjIzIDAuODMzMDA4IDAuNDU4MzEzIDIuMTMwOTIgMC40NTgzMTMgMy43NDk2N1YxOS43OTEzSDMuMzc0OThDMy4zNzQ5OCAyMC45NTE3IDMuODM1OTIgMjIuMDY0NSA0LjY1NjM5IDIyLjg4NDlDNS40NzY4NiAyMy43MDU0IDYuNTg5NjYgMjQuMTY2MyA3Ljc0OTk4IDI0LjE2NjNDOC45MTAzIDI0LjE2NjMgMTAuMDIzMSAyMy43MDU0IDEwLjg0MzYgMjIuODg0OUMxMS42NjQgMjIuMDY0NSAxMi4xMjUgMjAuOTUxNyAxMi4xMjUgMTkuNzkxM0gyMC44NzVDMjAuODc1IDIwLjk1MTcgMjEuMzM1OSAyMi4wNjQ1IDIyLjE1NjQgMjIuODg0OUMyMi45NzY5IDIzLjcwNTQgMjQuMDg5NyAyNC4xNjYzIDI1LjI1IDI0LjE2NjNDMjYuNDEwMyAyNC4xNjYzIDI3LjUyMzEgMjMuNzA1NCAyOC4zNDM2IDIyLjg4NDlDMjkuMTY0IDIyLjA2NDUgMjkuNjI1IDIwLjk1MTcgMjkuNjI1IDE5Ljc5MTNIMzIuNTQxNlYxMi40OTk3TDI4LjE2NjYgNi42NjYzNFoiIGZpbGw9IiM0RjRGNEYiLz4KPC9zdmc+Cg==');
+  content: url("data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMzMiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAzMyAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI1LjI1IDIxLjk3ODhDMjQuNjY5OCAyMS45Nzg4IDI0LjExMzQgMjEuNzQ4NCAyMy43MDMyIDIxLjMzODFDMjMuMjkyOSAyMC45Mjc5IDIzLjA2MjUgMjAuMzcxNSAyMy4wNjI1IDE5Ljc5MTNDMjMuMDYyNSAxOS4yMTEyIDIzLjI5MjkgMTguNjU0OCAyMy43MDMyIDE4LjI0NDVDMjQuMTEzNCAxNy44MzQzIDI0LjY2OTggMTcuNjAzOCAyNS4yNSAxNy42MDM4QzI1LjgzMDEgMTcuNjAzOCAyNi4zODY1IDE3LjgzNDMgMjYuNzk2OCAxOC4yNDQ1QzI3LjIwNyAxOC42NTQ4IDI3LjQzNzUgMTkuMjExMiAyNy40Mzc1IDE5Ljc5MTNDMjcuNDM3NSAyMC4zNzE1IDI3LjIwNyAyMC45Mjc5IDI2Ljc5NjggMjEuMzM4MUMyNi4zODY1IDIxLjc0ODQgMjUuODMwMSAyMS45Nzg4IDI1LjI1IDIxLjk3ODhaTTI3LjQzNzUgOC44NTM4NEwzMC4yOTU4IDEyLjQ5OTdIMjMuNzkxNlY4Ljg1Mzg0TTcuNzQ5OTggMjEuOTc4OEM3LjE2OTgyIDIxLjk3ODggNi42MTM0MiAyMS43NDg0IDYuMjAzMTggMjEuMzM4MUM1Ljc5Mjk1IDIwLjkyNzkgNS41NjI0OCAyMC4zNzE1IDUuNTYyNDggMTkuNzkxM0M1LjU2MjQ4IDE5LjIxMTIgNS43OTI5NSAxOC42NTQ4IDYuMjAzMTggMTguMjQ0NUM2LjYxMzQyIDE3LjgzNDMgNy4xNjk4MiAxNy42MDM4IDcuNzQ5OTggMTcuNjAzOEM4LjMzMDE0IDE3LjYwMzggOC44ODY1NCAxNy44MzQzIDkuMjk2NzggMTguMjQ0NUM5LjcwNzAxIDE4LjY1NDggOS45Mzc0OCAxOS4yMTEyIDkuOTM3NDggMTkuNzkxM0M5LjkzNzQ4IDIwLjM3MTUgOS43MDcwMSAyMC45Mjc5IDkuMjk2NzggMjEuMzM4MUM4Ljg4NjU0IDIxLjc0ODQgOC4zMzAxNCAyMS45Nzg4IDcuNzQ5OTggMjEuOTc4OFpNMjguMTY2NiA2LjY2NjM0SDIzLjc5MTZWMC44MzMwMDhIMy4zNzQ5OEMxLjc1NjIzIDAuODMzMDA4IDAuNDU4MzEzIDIuMTMwOTIgMC40NTgzMTMgMy43NDk2N1YxOS43OTEzSDMuMzc0OThDMy4zNzQ5OCAyMC45NTE3IDMuODM1OTIgMjIuMDY0NSA0LjY1NjM5IDIyLjg4NDlDNS40NzY4NiAyMy43MDU0IDYuNTg5NjYgMjQuMTY2MyA3Ljc0OTk4IDI0LjE2NjNDOC45MTAzIDI0LjE2NjMgMTAuMDIzMSAyMy43MDU0IDEwLjg0MzYgMjIuODg0OUMxMS42NjQgMjIuMDY0NSAxMi4xMjUgMjAuOTUxNyAxMi4xMjUgMTkuNzkxM0gyMC44NzVDMjAuODc1IDIwLjk1MTcgMjEuMzM1OSAyMi4wNjQ1IDIyLjE1NjQgMjIuODg0OUMyMi45NzY5IDIzLjcwNTQgMjQuMDg5NyAyNC4xNjYzIDI1LjI1IDI0LjE2NjNDMjYuNDEwMyAyNC4xNjYzIDI3LjUyMzEgMjMuNzA1NCAyOC4zNDM2IDIyLjg4NDlDMjkuMTY0IDIyLjA2NDUgMjkuNjI1IDIwLjk1MTcgMjkuNjI1IDE5Ljc5MTNIMzIuNTQxNlYxMi40OTk3TDI4LjE2NjYgNi42NjYzNFoiIGZpbGw9IiM0RjRGNEYiLz4KPC9zdmc+Cg==");
   display: block;
   width: 32px;
   height: 24px;
@@ -66,18 +66,18 @@
   font-weight: 400;
   line-height: 2rem;
   text-align: left;
-  color: #4F4F4F;
+  color: #4f4f4f;
   max-width: 722px;
   margin: auto;
 }
 
 .paragraph--fale-conosco-text-informartion {
-  font-family: 'Futura Lt BT', sans-serif;
+  font-family: "Futura Lt BT", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.1rem;
   text-align: left;
-  color: #4F4F4F;
+  color: #4f4f4f;
   max-width: 722px;
   margin: auto;
 }
@@ -88,7 +88,6 @@
   margin-top: 5rem;
   margin-bottom: 1rem;
 }
-
 
 .wrapper--fale-conosco-text-informartion {
   margin: auto;
@@ -147,26 +146,6 @@
   color: #b4b4b4;
 }
 
-.paragraph--sac {
-  margin: 0px;
-  font-family: "Futura Light BT", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-  color: #4f4f4f;
-}
-
-.wrapper--sac {
-  min-width: 313px;
-  background: #f5f5f5;
-  border: 1px solid #c4c4c4;
-  backdrop-filter: blur(4px);
-  border-radius: 10px;
-  padding: 20px 32px 15px;
-  margin-bottom: 1rem;
-}
-
 .container--newsletter-text {
   min-width: 300px;
 }
@@ -181,34 +160,10 @@
   color: #fff;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .paragraph--newsletter-text {
     max-width: 470px;
   }
-}
-
-.paragraph--menu-institucional--footer {
-  margin-top: 0px;
-  font-family: "Futura Medium", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #4f4f4f;
-}
-
-.container--formas-pagamento-title {
-  align-items: center;
-  font-family: "Futura Medium", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0em;
-  color: #4f4f4f;
-  white-space: nowrap;
-  text-align: left;
-  margin-right: 2rem;
 }
 
 .paragraph--footer-bottom-text {
@@ -287,7 +242,7 @@
   color: #515151;
   margin-left: 1rem;
 }
-.wrapper--beneficios-text{
+.wrapper--beneficios-text {
   margin: 10px 0;
   padding: 0 20px;
   position: relative;
@@ -307,19 +262,19 @@
   }
 } */
 
-@media screen and (min-width:1500px){
-  .container--beneficios-text::after{
+@media screen and (min-width: 1500px) {
+  .container--beneficios-text::after {
     right: -30%;
   }
 }
 
-.container--beneficios-text{
+.container--beneficios-text {
   position: relative;
 }
 
 .paragraph--beneficios-text {
   font-size: 1.1rem;
-  color: #EF2A31;
+  color: #ef2a31;
   // color: #FFFFFF;
   line-height: 19px;
   font-weight: bold;
@@ -327,10 +282,10 @@
   gap: 0.2rem;
 }
 
-.paragraph--beneficios-sub{
+.paragraph--beneficios-sub {
   // color: #E3E3E3;
   color: #434343;
-  font-family: "Roboto", sans-serif !important; 
+  font-family: "Roboto", sans-serif !important;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: normal;
@@ -362,7 +317,7 @@
 }
 
 .paragraph--shelf-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 34px;
   font-style: normal;
   font-weight: 600;
@@ -388,7 +343,7 @@
 }
 
 .paragraph--shelf-title-ofertas::before {
-  content: '';
+  content: "";
   display: flex;
   width: 4.76rem;
   height: 4.76rem;
@@ -398,12 +353,12 @@
 }
 
 @media screen and (max-width: 767px) {
-  .wrapper--beneficios-text{
+  .wrapper--beneficios-text {
     padding: 0 10px;
     border: none;
   }
 
-  .paragraph--beneficios-text{
+  .paragraph--beneficios-text {
     margin: 0;
     display: grid;
   }
@@ -428,10 +383,6 @@
     margin-bottom: 0px;
   }
 
-  .container--sac-footer {
-    display: none;
-  }
-
   .paragraph--newsletter-text {
     font-size: 28px;
     line-height: 34px;
@@ -454,11 +405,6 @@
     text-align: center;
   }
 
-  .paragraph--formas-pagamento-title {
-    font-size: 20px;
-    margin-bottom: 0px;
-  }
-
   .container--campeoes-de-venda,
   .paragraph--campeoes-de-venda {
     margin: 0px;
@@ -468,18 +414,16 @@
     margin-top: 0.25rem;
   }
 
-
-
   .paragraph--campeoes-de-venda {
     white-space: nowrap;
   }
 
   .paragraph--shelf-title {
-    font-family:'Futura Md BT',sans-serif;
+    font-family: "Futura Md BT", sans-serif;
     font-weight: bold;
     font-size: 1.1rem;
     margin-top: 0;
-    margin-bottom:15px ;
+    margin-bottom: 15px;
   }
   .paragraph--shelf-title-ofertas {
     font-weight: bold;
@@ -491,37 +435,26 @@
   .paragraph--beneficios-text {
     font-size: 1rem;
   }
-  
-  .paragraph--beneficios-sub{
+
+  .paragraph--beneficios-sub {
     font-size: 0.8rem;
   }
 }
 
-.paragraph--menu-institucional--footer {
-  background-color: #fff;
-  font-family: "Futura Light BT",sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #4f4f4f;
-}
-
 .wrapper--title-details .paragraph {
   margin: 0 0 30px;
-  font-family: 'Futura Hv BT';
+  font-family: "Futura Hv BT";
   font-style: normal;
   font-weight: 400;
   font-size: 21.9944px;
   line-height: 26px;
   color: #515151;
 }
-.footerMessage{
+.footerMessage {
   font-size: 10px;
 }
 
-.wrapper--lp-banner-text{
+.wrapper--lp-banner-text {
   position: absolute;
   top: 50%;
   left: 20%;
@@ -545,10 +478,10 @@
 }
 
 .paragraph--register-header--text {
-  font-family: 'Futura Hv BT', sans-serif;
+  font-family: "Futura Hv BT", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  color: #8D8C8C;
+  color: #8d8c8c;
 }

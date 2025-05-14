@@ -1,9 +1,12 @@
 .container--sticky-header-desktop {
   background: var(--Cores-Azul, #001d7e);
-  overflow: hidden;
 }
 
 .container--header-mobile {
   padding: 0px 1.5rem;
   background: var(--Cores-Azul, #001d7e);
+}
+
+.container--header-mobile {
+  padding: 0px 1rem;
 }
