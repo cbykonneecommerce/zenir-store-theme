@@ -2,7 +2,6 @@
   padding-left: 0;
   gap: 24px;
   margin-top: 46px;
-  margin-left: 24px;
 }
 .galleryItem--normal {
   border-radius: 8px;
@@ -10,6 +9,44 @@
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05), 0px 0px 14px 0px #0000001a;
   max-width: 22% !important;
   padding: 0 !important;
+}
+
+.galleryTitle--layout {
+  color: var(--Cores-Azul, #001d7e);
+  font-family: "Barlow Semi Condensed Bold";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.totalProducts--layout {
+  padding: 0;
+
+  color: var(--Cinzas-Cinza-2, #bdbdbd);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+
+.totalProductsMessage {
+  font-size: 0;
+
+  &::before {
+    content: "Produtos encontrados";
+    color: var(--Cinzas-Cinza-2, #bdbdbd);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-transform: none;
+  }
 }
 
 @media (max-width: 640px) {

@@ -109,6 +109,60 @@
   color: #4f4f4f;
 }
 
+.customOrderByContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .customOrderByButton {
+    color: #6f6f6f;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+
+    border-radius: 6px;
+    border: 1px solid var(--Estilos-Stroke, #dcdcdc);
+    background: #fff;
+
+    display: flex;
+    height: 32px;
+    padding: 4px 10px;
+    align-items: center;
+    cursor: pointer;
+
+    &--is-active {
+      border: 1px solid #001d7e;
+      color: #001d7e;
+    }
+  }
+
+  @media (max-width: 1025px) {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
+    padding: 8px 0;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    .customOrderByButton {
+      scroll-snap-align: start;
+      flex: 0 0 auto;
+      min-width: max-content;
+      white-space: nowrap;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
 @media (max-width: 1025px) {
   :global(.tfcvih-weonne-zenir-io-4-x-divContainer--redes-sociais) {
     padding-bottom: 24px !important;

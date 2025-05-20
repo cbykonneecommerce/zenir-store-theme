@@ -102,6 +102,11 @@
     }
   },
   "flex-layout.row#searchinfo": {
+    "props": {
+      "blockClass": "search-info",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
     "children": [
       "search-title.v2",
       "total-products.v2"
