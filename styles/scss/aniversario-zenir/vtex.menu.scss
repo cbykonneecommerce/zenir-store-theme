@@ -2,7 +2,9 @@
   margin: 4px 0;
 }
 .menuItem:hover {
-  background-color: #bf0811;
+  @media (min-width: 1025px) {
+    background-color: #bf0811;
+  }
 }
 
 .menuItem--all-categories:hover {
