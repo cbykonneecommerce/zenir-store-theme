@@ -130,5 +130,8 @@
   "custom-div": {
     "component": "Div",
     "composition": "children"
+  },
+  "custom-orderby-options": {
+    "component": "CustomOrderbyOptions"
   }
 }

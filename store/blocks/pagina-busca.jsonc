@@ -42,14 +42,11 @@
     "flex-layout.row#searchinfopaginabusca": {
         "children": [
             "flex-layout.row#searchtitlepaginabusca"
-            // "flex-layout.col#productCount",
-            // "flex-layout.row#orderByAndSwitcher"
         ]
     },
     "flex-layout.row#searchinfopaginabusca2": {
         "children": [
-            "flex-layout.col#productCountPaginaBusca",
-            "flex-layout.row#orderByAndSwitcher"
+            "flex-layout.col#productCountPaginaBusca"
         ]
     },
     "flex-layout.col#productCountPaginaBusca": {

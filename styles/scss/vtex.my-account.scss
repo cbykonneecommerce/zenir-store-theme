@@ -8,13 +8,12 @@
   overflow-x: hidden;
 }
 
-:global(.vtex-product-summary-2-x-containerNormal.border-active) {
+:global(.vtex-search-result-3-x-galleryItem--normal.border-active) {
   border-color: transparent;
-  background-color: #ed1b34;
-  padding: 1px;
+  border: 1px solid #ed1b34;
+  padding: 0;
 }
 :global(.border-active .vtex-product-summary-2-x-clearLink) {
-  padding: 40px 19px 19px;
   border-radius: 10px;
   background-color: white;
   margin-bottom: 50px;

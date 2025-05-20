@@ -1,8 +1,8 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { useCssHandles } from 'vtex.css-handles';
-import { useProduct } from 'vtex.product-context';
+import React, { useEffect, useMemo, useState } from "react";
+import { useCssHandles } from "vtex.css-handles";
+import { useProduct } from "vtex.product-context";
 
-import './ProductTimer.css';
+import "./ProductTimer.css";
 
 // interface ProductClusters {
 //   id: string;
@@ -15,39 +15,42 @@ const MINUTE = SECOND * 60;
 const HOUR = MINUTE * 60;
 
 const CSS_HANDLES = [
-  'timerContainer',
-  'timerBox',
-  'timerBoxTitle',
-  'timerNumber',
-  'timerSeparator',
-  'space',
+  "timerContainer",
+  "timerBox",
+  "timerBoxTitle",
+  "timerNumber",
+  "timerSeparator",
+  "space",
 ] as const;
 
 const ProductTimer: React.FC = () => {
   const { handles } = useCssHandles(CSS_HANDLES);
-  const  productCtx  = useProduct();
+  const productCtx = useProduct();
   const productClusters = productCtx?.product?.productClusters?.filter(
     (item: any) => item
-  )
+  );
 
-  const promoDate = productClusters ? productClusters
-    .find((cluster: any) => /^clock-/.test(cluster.name))
-    ?.name.split('clock-')[1] : null
+  const promoDate = productClusters
+    ? productClusters
+        .find((cluster: any) => /^clock-/.test(cluster.name))
+        ?.name.split("clock-")[1]
+    : null;
 
   if (!promoDate) {
     return null;
   }
 
-  const [day, month, year] = promoDate.split('-');
+  const [day, month, year] = promoDate.split("-");
   const deadline: Date = new Date(Number(year), Number(month) - 1, Number(day));
 
   if (deadline.getTime() < Date.now()) {
     return null;
   }
-  
+
   const parsedDeadline = useMemo(() => Date.parse(deadline.toString()), [
     deadline,
   ]);
+
   const [time, setTime] = useState<number>(parsedDeadline - Date.now());
 
   useEffect(() => {
@@ -55,13 +58,18 @@ const ProductTimer: React.FC = () => {
       () => setTime(parsedDeadline - Date.now()),
       1000
     );
+
     return () => clearInterval(interval);
   }, [parsedDeadline]);
 
   const handleTimerBoxRef = (ref: HTMLDivElement) => {
-    if (ref && ref.parentElement?.parentElement?.parentElement?.parentElement) {
-      ref.parentElement.parentElement.parentElement.parentElement.classList.add(
-        'border-active'
+    if (
+      ref &&
+      ref.parentElement?.parentElement?.parentElement?.parentElement
+        ?.parentElement
+    ) {
+      ref.parentElement.parentElement.parentElement.parentElement.parentElement.classList.add(
+        "border-active"
       );
     }
   };
@@ -74,18 +82,20 @@ const ProductTimer: React.FC = () => {
         ref={handleTimerBoxRef}
       >
         <div className={handles.timerNumber}>
-          <span>{`${Math.floor((time / HOUR) % 24)}`.padStart(2, '0') + 'h'}</span>
-        </div>
-        <span className={handles.timerSeparator}>:</span>
-        <div className={handles.timerNumber}>
           <span>
-            {`${Math.floor((time / MINUTE) % 60)}`.padStart(2, '0') + 'm'}
+            {`${`${Math.floor((time / HOUR) % 24)}`.padStart(2, "0")}h`}
           </span>
         </div>
         <span className={handles.timerSeparator}>:</span>
         <div className={handles.timerNumber}>
           <span>
-            {`${Math.floor((time / SECOND) % 60)}`.padStart(2, '0') + 's'}
+            {`${`${Math.floor((time / MINUTE) % 60)}`.padStart(2, "0")}m`}
+          </span>
+        </div>
+        <span className={handles.timerSeparator}>:</span>
+        <div className={handles.timerNumber}>
+          <span>
+            {`${`${Math.floor((time / SECOND) % 60)}`.padStart(2, "0")}s`}
           </span>
         </div>
       </div>

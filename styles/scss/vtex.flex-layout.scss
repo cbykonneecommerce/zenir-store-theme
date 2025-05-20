@@ -106,6 +106,7 @@
   margin: 0 auto;
   align-items: center;
   height: 100px;
+  margin-bottom: 70px;
 }
 
 .flexRow--blank-spacer {
@@ -283,7 +284,8 @@
 }
 
 .flexCol--search-filter-navigator-col {
-  width: calc(293px + 4rem);
+  max-width: 289px;
+  width: 289px;
 }
 .flexRow--category-banner-text {
   position: absolute;
@@ -377,6 +379,13 @@
 
 .flexRowContent--main-desktop {
   justify-content: center;
+
+  // .stretchChildrenWidth:first-child {
+  //   max-width: 289px;
+  // }
+  // .stretchChildrenWidth:last-child {
+  //   width: 100% !important;
+  // }
 }
 
 .flexRowContent--nav-linksUteis {

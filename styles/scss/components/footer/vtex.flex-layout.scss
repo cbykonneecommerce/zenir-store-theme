@@ -31,8 +31,12 @@
   align-items: center;
   display: flex;
   background-color: #fff;
-  margin-top: 60px;
   padding: 8px 0;
+  margin-bottom: -16px;
+
+  @media (min-width: 1025px) {
+    margin-top: 60px;
+  }
 }
 
 .flexRowContent--footer-bottom-text {

@@ -1,0 +1,67 @@
+.containerNormal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.nameContainer {
+  padding-top: 0;
+  padding-bottom: 16px;
+}
+
+.productBrand {
+  color: #292b33;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-align: left;
+  height: 52px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Número de linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.element {
+  padding-bottom: 0;
+  :global(.vtex-button) {
+    border-radius: 8px;
+    background: var(--Cores-Verde_comprar, #1ba122);
+    display: flex;
+    height: 32px;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border: none;
+  }
+
+  :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    font-size: 0;
+    &::before {
+      content: "Comprar";
+      color: #fff;
+      text-align: center;
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.28px;
+    }
+  }
+}
+
+@media (max-width: 641px) {
+  .containerNormal {
+    align-items: inherit !important;
+  }
+}

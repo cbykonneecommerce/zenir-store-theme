@@ -10,7 +10,8 @@
             "product-summary-name#summary",
             "custom-product-installment#sumary",
             "product-timer",
-            "flex-layout.row#availability-search"
+            "flex-layout.row#availability-search",
+            "add-to-cart-button"
         ]
     },
     "responsive-layout.desktop#summary-image": {
@@ -140,8 +141,10 @@
     },
     "flex-layout.row#availability-search": {
         "props": {
-          "blockClass": "message-availability-search"
+            "blockClass": "message-availability-search"
         },
-        "children": ["availability-subscriber"]
+        "children": [
+            "availability-subscriber"
+        ]
     }
 }
