@@ -3,7 +3,7 @@
         "children": [
             "flex-layout.row#searchbread",
             "flex-layout.row#productCountMobile",
-            "flex-layout.row#searchinfomobile",
+            "filter-navigator.v3#mobile",
             "custom-orderby-options",
             "flex-layout.row#products",
             "flex-layout.row#fetchmore"
@@ -31,16 +31,6 @@
             "src": "https://tfcvih.vtexassets.com/arquivos/banner-eletrodomesticos-mob.jpg",
             "alt": "Banner categoria",
             "blockClass": "category-banner-mobile"
-        }
-    },
-    "flex-layout.row#searchinfomobile": {
-        "children": [
-            "filter-navigator.v3"
-        ],
-        "props": {
-            "preserveLayoutOnMobile": true,
-            "colSizing": "auto",
-            "colJustify": "around"
         }
     },
     "experimental__visibility-layout#search-title-mobile": {
@@ -126,9 +116,8 @@
             "blockClass": "layout-option"
         }
     },
-    "filter-navigator.v3": {
+    "filter-navigator.v3#mobile": {
         "props": {
-            "truncateFilters": false,
             "showClearByFilter": true,
             "fullWidthOnMobile": true,
             "navigationTypeOnMobile": "collapsible",
@@ -136,7 +125,7 @@
             "totalProductsOnMobile": "hide",
             "updateOnFilterSelectionOnMobile": true,
             "priceRangeLayout": "inputAndSlider",
-            "initiallyCollapsed": true,
+            "initiallyCollapsed": false,
             "padding": 0
         },
         "blocks": [

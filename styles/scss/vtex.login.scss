@@ -282,6 +282,24 @@
   color: #000;
 }
 
+:global(.vtex-search-result-3-x-filterTitleSpan) span button {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.52px;
+
+  display: flex;
+  height: 19.25px;
+  padding: 4px 10.5px;
+  align-items: center;
+
+  border-radius: 37.5px;
+  background: var(--Cores-Azul, #001d7e);
+}
+
 @media screen and (max-width: 768px) {
   .loginOptionsContainer,
   .contentForm {

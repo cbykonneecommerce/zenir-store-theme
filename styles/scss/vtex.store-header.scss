@@ -1,7 +1,7 @@
 :global(.vtex-toast) {
-  background-color: #001D7E;
+  background: var(--Cores-Azul, #001d7e);
   color: #fff;
-  font-family: "Futura Medium", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0em;

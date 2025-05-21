@@ -49,6 +49,200 @@
   }
 }
 
+.filterMessage {
+  color: #3a4550;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.filterTitleSpan {
+  color: var(--Shark-800, #3a4550);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  text-transform: none;
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filtersWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.filter__container {
+  border-radius: 6px;
+  border: 1px solid var(--Estilos-Stroke, #dcdcdc);
+  padding: 0 14px;
+
+  &:first-child {
+    border: none;
+    padding: 0;
+    margin-bottom: -16px;
+  }
+}
+
+.filterTemplateOverflow {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #001d7e #f6f6f6;
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #d9d9d9;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #001d7e;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+    height: 0;
+    background: transparent;
+  }
+}
+
+.filterTemplateOverflow::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+}
+
+.filter__container--priceRange {
+  .filterTemplateOverflow {
+    overflow: hidden;
+  }
+
+  :global(.vtex-slider-container) {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+}
+
+.filterIcon {
+  padding: 0;
+  .caretIcon {
+    display: none;
+  }
+}
+
+.filterAvailable {
+  &.filterIsOpen {
+    .filterIcon {
+      &::before {
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5.25 11.25C4.83579 11.25 4.5 11.5858 4.5 12C4.5 12.4142 4.83579 12.75 5.25 12.75H19.25C19.6642 12.75 20 12.4142 20 12C20 11.5858 19.6642 11.25 19.25 11.25H5.25Z' fill='%23001D7E'/%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        height: 24px;
+        width: 24px;
+        display: flex;
+      }
+    }
+  }
+
+  .filterIcon {
+    &::before {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0313 4.25C12.4455 4.25054 12.7809 4.58677 12.7803 5.00098L12.762 19.001C12.7614 19.4152 12.4252 19.7505 12.011 19.75C11.5968 19.7495 11.2614 19.4132 11.262 18.999L11.2803 4.99902C11.2809 4.5848 11.6171 4.24946 12.0313 4.25Z' fill='%23001D7E'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.25 12C4.25 11.5858 4.58579 11.25 5 11.25H19C19.4142 11.25 19.75 11.5858 19.75 12C19.75 12.4142 19.4142 12.75 19 12.75H5C4.58579 12.75 4.25 12.4142 4.25 12Z' fill='%23001D7E'/%3E%3C/svg%3E");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 24px;
+      height: 24px;
+      width: 24px;
+      display: flex;
+    }
+  }
+}
+
+.seeMoreButton {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.52px;
+}
+
+.buttonShowMore {
+  :global(.vtex-button) {
+    background-color: #001d7e;
+    top: 30px;
+
+    :global(.vtex-button__label) {
+      color: #fff;
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 100% */
+      text-transform: none;
+    }
+  }
+}
+
+.priceRangeInput {
+  :global(.vtex-styleguide-9-x-input),
+  :global(.vtex-input__prefix) {
+    padding: 0;
+  }
+}
+
+.priceRangeInputWrapper {
+  :global(.vtex-button) {
+    background: var(--Cores-Azul, #001d7e);
+
+    :global(.vtex-button__label) {
+      padding: 6px;
+    }
+  }
+}
+
+.filterContent {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  .filterItem {
+    :global(.vtex-checkbox__label) {
+      color: var(--Shark-900, #333946);
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.56px;
+
+      text-transform: capitalize;
+    }
+  }
+}
+
 @media (max-width: 640px) {
   .galleryItem--normal {
     max-width: 46% !important;
@@ -64,5 +258,177 @@
 @media (max-width: 1025px) {
   .gallery--grid {
     margin-left: 0;
+  }
+
+  .totalProducts--layout {
+    padding-top: 8px;
+    justify-content: flex-start;
+    display: flex;
+  }
+
+  .filters--layout {
+    border-radius: 8px;
+    border: 1px solid var(--Estilos-Stroke, #dcdcdc);
+    margin-top: 32px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    .filterPopupButton {
+      padding: 4px 16px;
+      height: 40px;
+      display: flex;
+
+      .filterPopupTitle {
+        order: 2;
+        color: #3a4550;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: none;
+      }
+
+      .filterPopupArrowIcon {
+        order: 1;
+        margin-right: 6px;
+        padding: 0;
+
+        &::before {
+          content: "";
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M16.4375 9.00001H7.17125M3.9005 9.00001H2.5625M3.9005 9.00001C3.9005 8.56638 4.07276 8.15051 4.37938 7.84389C4.686 7.53727 5.10187 7.36501 5.5355 7.36501C5.96913 7.36501 6.385 7.53727 6.69162 7.84389C6.99824 8.15051 7.1705 8.56638 7.1705 9.00001C7.1705 9.43364 6.99824 9.84951 6.69162 10.1561C6.385 10.4628 5.96913 10.635 5.5355 10.635C5.10187 10.635 4.686 10.4628 4.37938 10.1561C4.07276 9.84951 3.9005 9.43364 3.9005 9.00001ZM16.4375 13.9553H12.1265M12.1265 13.9553C12.1265 14.389 11.9538 14.8053 11.6471 15.112C11.3404 15.4187 10.9245 15.591 10.4908 15.591C10.0571 15.591 9.64125 15.418 9.33463 15.1114C9.02801 14.8048 8.85575 14.3889 8.85575 13.9553M12.1265 13.9553C12.1265 13.5215 11.9538 13.1059 11.6471 12.7992C11.3404 12.4926 10.9245 12.3203 10.4908 12.3203C10.0571 12.3203 9.64125 12.4925 9.33463 12.7991C9.02801 13.1058 8.85575 13.5216 8.85575 13.9553M8.85575 13.9553H2.5625M16.4375 4.04476H14.1088M10.838 4.04476H2.5625M10.838 4.04476C10.838 3.61113 11.0103 3.19526 11.3169 2.88864C11.6235 2.58202 12.0394 2.40976 12.473 2.40976C12.6877 2.40976 12.9003 2.45205 13.0987 2.53422C13.2971 2.61638 13.4773 2.73682 13.6291 2.88864C13.7809 3.04046 13.9014 3.2207 13.9835 3.41907C14.0657 3.61744 14.108 3.83005 14.108 4.04476C14.108 4.25947 14.0657 4.47208 13.9835 4.67045C13.9014 4.86881 13.7809 5.04906 13.6291 5.20088C13.4773 5.3527 13.2971 5.47314 13.0987 5.5553C12.9003 5.63747 12.6877 5.67976 12.473 5.67976C12.0394 5.67976 11.6235 5.5075 11.3169 5.20088C11.0103 4.89426 10.838 4.47839 10.838 4.04476Z' stroke='%233A4550' stroke-width='1.125' stroke-miterlimit='10' stroke-linecap='round'/%3E%3C/svg%3E");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 19px;
+          width: 19px;
+          height: 19px;
+          display: flex;
+        }
+
+        .filterIcon {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .accordionFilter {
+    padding-bottom: 130px;
+  }
+
+  .accordionFilterContainer {
+    padding: 0;
+    border: 1px solid #dcdcdc;
+    margin: 0px 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 0 14px;
+    margin-top: 16px;
+    height: auto;
+
+    .accordionFilterItem {
+      border: none;
+      padding: 0;
+    }
+
+    .accordionFilterItemTitle {
+      color: var(--Shark-800, #3a4550);
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.56px;
+    }
+  }
+  .filterAccordionItemBox {
+    min-height: 2rem;
+    border: none;
+
+    :global(.vtex-checkbox__label) {
+      color: var(--Shark-900, #333946);
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.56px;
+    }
+  }
+
+  .filterAccordionBreadcrumbs {
+    background: #f5f6f6;
+  }
+
+  .accordionFilterItemIcon {
+    .caretIcon {
+      overflow: visible;
+      height: 18px;
+      width: 16px;
+    }
+  }
+
+  .filterButtonsBox {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 16px;
+
+    .filterClearButtonWrapper {
+      width: 100%;
+      padding: 0;
+      order: 2;
+
+      :global(.vtex-button) {
+        border-radius: 8px;
+        border: 1px solid var(--Shark-200, #c9d3d8);
+        background: var(--Shark-50, #f5f6f6);
+
+        :global(.vtex-button__label) {
+          color: var(--Cores-principais-Flag_535C74, #535c74);
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: none;
+          letter-spacing: 1.08px;
+        }
+      }
+    }
+
+    .filterApplyButtonWrapper {
+      order: 1;
+      width: 100%;
+      padding: 0;
+
+      :global(.vtex-button) {
+        border-radius: 8px;
+        background: var(--Cores-Azul, #001d7e);
+        height: 17px;
+
+        :global(.vtex-button__label) {
+          color: #fff;
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          text-transform: none;
+          line-height: 16.706px; /* 92.812% */
+        }
+      }
+    }
+  }
+
+  .filter__container--priceRange {
+    .filterTitleSpan {
+      display: none;
+    }
   }
 }
