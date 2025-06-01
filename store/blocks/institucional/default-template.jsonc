@@ -44,7 +44,7 @@
             ]
         },
         "children": [
-            "responsive-layout.phone#institucional-mobile",
+            "responsive-layout.mobile#institucional-mobile",
             "responsive-layout.desktop#institucional-menu"
         ]
     },
@@ -53,7 +53,7 @@
             "vtex.menu@2.x:menu#institucional-menu"
         ]
     },
-    "responsive-layout.phone#institucional-mobile": {
+    "responsive-layout.mobile#institucional-mobile": {
         "children": [
             "menu-item#institucional-menu-mobile"
         ]
