@@ -131,14 +131,6 @@
   padding-top: 70px;
 }
 
-.flexRow--beneficios-container {
-  // background: #C00903;
-  background: #fff;
-  // background: linear-gradient(90deg, #00348C 0%, #000A62 100%);
-  position: relative;
-  top: 10px;
-}
-
 .flexRowContent--campeoes-de-venda {
   align-items: center;
   justify-content: space-between;
@@ -368,12 +360,6 @@
 
   .flexRow--container {
     position: relative;
-  }
-}
-
-@media screen and (max-width: 428px) and (min-width: 391px) {
-  .flexRow--beneficios-container {
-    top: 8px;
   }
 }
 
@@ -695,10 +681,6 @@
 
   .flexRowContent--categorie-badges-list {
     display: flex;
-  }
-  .flexRow--beneficios-container {
-    min-height: 62px;
-    top: 0;
   }
   .flexRow--campeoes-de-venda {
     padding-top: 30px;
