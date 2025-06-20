@@ -164,6 +164,43 @@
   }
 }
 
+.categoryContainerWrapper {
+  .categoryLinkWrapper {
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    .categoryContainer {
+      min-width: 128px;
+      text-decoration: none;
+    }
+  }
+
+  .categoryContainerTitle {
+    color: var(--Cinzas-Cinza-escuro, #4f4f4f);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.24px;
+  }
+  @media (max-width: 1025px) {
+    padding-left: 24px;
+
+    .categoryLinkWrapper {
+      padding-right: 24px;
+    }
+  }
+}
+
+:global(.tfcvih-weonne-zenir-io-4-x-divContainer--beneficios-item) {
+  flex-direction: row !important;
+  min-width: 250px;
+}
+
 @media (max-width: 1025px) {
   :global(.tfcvih-weonne-zenir-io-4-x-divContainer--redes-sociais) {
     padding-bottom: 24px !important;
@@ -182,5 +219,14 @@
     margin-bottom: 36px !important;
     padding-bottom: 16px !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--beneficios-container) {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 640px) {
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--shelf-title-wrapper) {
+    margin-left: 0 !important;
   }
 }

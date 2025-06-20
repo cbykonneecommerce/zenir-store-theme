@@ -1,165 +1,147 @@
 {
-    "flex-layout.row#beneficios": {
-        "title": "Faixa de beneficios",
+    "custom-div#benefits-wrapper": {
+        "title": "Faixa de benefícios",
         "props": {
-            "preventVerticalStretch": true,
-            "preventHorizontalStretch": true,
-            "preserveLayoutOnMobile": false,
+            "justifyContent": "space-around",
+            "flexDirectionMobile": "row",
             "blockClass": [
                 "container",
                 "beneficios-container"
             ]
         },
         "children": [
-            "flex-layout.row#beneficio1",
-            "flex-layout.row#beneficio2",
-            "flex-layout.row#beneficio3",
-            "flex-layout.row#beneficio4"
+            "custom-div#benefit-free-shipping",
+            "custom-div#benefit-free-assembly",
+            "custom-div#benefit-installments-3x",
+            "custom-div#benefit-installments-12x"
         ]
     },
-    "flex-layout.row#beneficio1": {
-        "title": "Beneficios Item 1",
+    "custom-div#benefit-free-shipping": {
+        "title": "Benefício - Frete Grátis",
         "props": {
-            "preventVerticalStretch": true,
-            "preventHorizontalStretch": true,
-            "preserveLayoutOnMobile": false,
-            "blockClass": [
-                "beneficios-item"
-            ]
+            "flexDirection": "row",
+            "alignItems": "center",
+            "className": "beneficios-item"
         },
         "children": [
-            "image#beneficio-11",
-            "rich-text#beneficio-11"
+            "image#benefit-free-shipping-icon",
+            "rich-text#benefit-free-shipping-text"
         ]
     },
-    "rich-text#beneficio-11": {
-        "title": "Beneficios Item 1 - texto",
+    "image#benefit-free-shipping-icon": {
+        "title": "Imagem - Frete Grátis",
         "props": {
-            "text": "Frete Grátis <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'> consulte o regulamento </a>",
-            "href": "/tv-s-e-audio",
-            "blockClass": [
-                "beneficios-text"
-            ]
-            
-        }
-    },
-    "image#beneficio-11": {
-        "title": "Beneficios Item 1 - imagem",
-        "props": {
-            "src": "/arquivos/trucker-benefits.png",
+            "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/50a8b328-2930-4c47-80a3-f2508b2638e0___7903360519e118544b521bfba97f3c47.svg",
             "blockClass": [
                 "beneficios-imagem"
             ]
         }
     },
-    "flex-layout.row#beneficio2": {
-        "title": "Beneficios Item 2",
+    "rich-text#benefit-free-shipping-text": {
+        "title": "Texto - Frete Grátis",
         "props": {
-            "preventVerticalStretch": true,
-            "preventHorizontalStretch": true,
-            "preserveLayoutOnMobile": false,
-            "blockClass": [
-                "beneficios-item"
-            ]
-        },
-        "children": [
-            "image#beneficio-2",
-            "rich-text#beneficio-2"
-        ]
-    },
-    "rich-text#beneficio-2": {
-        "title": "Beneficios Item 2 - texto",
-        "props": {
-            "text": "Montagem Grátis <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'> Consultar o Regulamento </a>",
+            "text": "Frete Grátis pra Você! <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'> Consulte o regulamento </a>",
             "blockClass": [
                 "beneficios-text"
             ]
         }
     },
-    "image#beneficio-2": {
-        "title": "Beneficios Item 3 - imagem",
+    "custom-div#benefit-free-assembly": {
+        "title": "Benefício - Montagem Gratuita",
         "props": {
-            "src": "/arquivos/hammer-benefits.png",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "className": "beneficios-item"
+        },
+        "children": [
+            "image#benefit-free-assembly-icon",
+            "rich-text#benefit-free-assembly-text"
+        ]
+    },
+    "image#benefit-free-assembly-icon": {
+        "title": "Imagem - Montagem Gratuita",
+        "props": {
+            "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/66a0fb8e-d181-4e6a-b683-58d8d8c2df99___9deee055785abc18484d7c4416da6dfd.svg",
             "blockClass": [
                 "beneficios-imagem"
             ]
         }
     },
-    "link#beneficio-2-link":{
-        "title": "Link Beneficios Item 1 - texto",
+    "rich-text#benefit-free-assembly-text": {
+        "title": "Texto - Montagem Gratuita",
+        "props": {
+            "text": "Montagem Sem Custo! <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'>Verifique as condições.</a>",
+            "blockClass": [
+                "beneficios-text"
+            ]
+        }
+    },
+    "link#benefit-free-assembly-link": {
+        "title": "Link - Montagem Gratuita",
         "props": {
             "label": "Consultar o regulamento",
-            "href": "/tv-s-e-audio",
             "blockClass": [
                 "beneficios-link"
             ]
-            
         }
     },
-    "flex-layout.row#beneficio3": {
-        "title": "Beneficios Item 3",
+    "custom-div#benefit-installments-3x": {
+        "title": "Benefício - 3x Sem Juros",
         "props": {
-            "preventVerticalStretch": true,
-            "preventHorizontalStretch": true,
-            "preserveLayoutOnMobile": false,
-            "blockClass": [
-                "beneficios-item"
-            ]
+            "flexDirection": "row",
+            "alignItems": "center",
+            "className": "beneficios-item"
         },
         "children": [
-            "image#beneficio-3",
-            "rich-text#beneficio-66"
+            "image#benefit-installments-3x-icon",
+            "rich-text#benefit-installments-3x-text"
         ]
     },
-    "rich-text#beneficio-66": {
-        "title": "Beneficios Item 3 - texto",
+    "image#benefit-installments-3x-icon": {
+        "title": "Imagem - 3x Sem Juros",
         "props": {
-            "text": "10x sem juros <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'> No cartão de crédito</a>   ",
-            "blockClass": [
-                "beneficios-text"
-            ]
-        }
-    },
-    "image#beneficio-3": {
-        "title": "Beneficios Item 2 - imagem",
-        "props": {
-            "src": "/arquivos/icon-card.png",
+            "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/1e4afa07-ffd0-4f6f-9a7f-68c1d62f9e1a___4fda56cb9e87d55b9cecaf9c456eef9c.svg",
             "blockClass": [
                 "beneficios-imagem"
             ]
         }
     },
-
-    "flex-layout.row#beneficio4": {
-        "title": "Beneficios Item 4",
+    "rich-text#benefit-installments-3x-text": {
+        "title": "Texto - 3x Sem Juros",
         "props": {
-            "preventVerticalStretch": true,
-            "preventHorizontalStretch": true,
-            "preserveLayoutOnMobile": false,
-            "blockClass": [
-                "beneficios-item"
-            ]
-        },
-        "children": [
-            "image#beneficio-44",
-            "rich-text#beneficio-44"
-        ]
-    },
-    "rich-text#beneficio-44": {
-        "title": "Beneficios Item 4 - texto",
-        "props": {
-            "text": "Parcele em até 12x <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'> No cartão de crédito</a>",
+            "text": "3x Sem Juros no Cartão! <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'>Consulte as regras.</a>",
             "blockClass": [
                 "beneficios-text"
             ]
         }
     },
-    "image#beneficio-44": {
-        "title": "Beneficios Item 2 - imagem",
+    "custom-div#benefit-installments-12x": {
+        "title": "Benefício - 12x Parcelado",
         "props": {
-            "src": "/arquivos/icon-card.png",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "className": "beneficios-item"
+        },
+        "children": [
+            "image#benefit-installments-12x-icon",
+            "rich-text#benefit-installments-12x-text"
+        ]
+    },
+    "image#benefit-installments-12x-icon": {
+        "title": "Imagem - 12x Parcelado",
+        "props": {
+            "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/ef54d4bc-2c49-4e95-be62-7983f695342a___de9f035ccece5f5f8e18a9889387e67c.svg",
             "blockClass": [
                 "beneficios-imagem"
+            ]
+        }
+    },
+    "rich-text#benefit-installments-12x-text": {
+        "title": "Texto - 12x Parcelado",
+        "props": {
+            "text": "Parcele em até 12x <a href='/institucional/entrega-e-montagem' class='vtex-rich-text-0-x-paragraph--beneficios-sub'>Sujeito a condições do cartão</a>",
+            "blockClass": [
+                "beneficios-text"
             ]
         }
     }

@@ -1,174 +1,57 @@
 {
     "flex-layout.row#category-badges": {
-        "title":"Seção de Categorias",
+        "title": "Carousel - categorias",
         "props": {
             "blockClass": [
-                "container",
-                "categorie-badges",
-                "section-home"
-            ],
-            "title": "box de categorias"
-        },
-        "children": [
-            "flex-layout.col#category-badges"
-        ]
-    },
-    "flex-layout.col#category-badges": {
-        "props": {},
-        "children": [
-            "rich-text#category-badges-title",
-            "flex-layout.row#categories"
-        ]
-    },
-    "rich-text#category-badges-title": {
-        "props": {
-            "blockClass": [
-                "shelf-title"
-            ],
-            "text": "Navegue por categorias"
-        }
-    },
-    "flex-layout.row#categories": {
-        "props": {
-            "blockClass": [
-                "categorie-badges-list"
+                "categories",
+                "container"
             ]
         },
         "children": [
-            "flex-layout.col#category-1",
-            "flex-layout.col#category-2",
-            "flex-layout.col#category-3",
-            "flex-layout.col#category-4",
-            "flex-layout.col#category-5",
-            "flex-layout.col#category-6",
-            "flex-layout.col#category-7",
-            "flex-layout.col#category-8",
-            "flex-layout.col#category-9"
+            "custom-categories#home"
         ]
     },
-    "flex-layout.col#category-1": {
+    "custom-categories#home": {
         "props": {
-            "blockClass": [
-                "categorie-badges-item",
-                "categorie-badges-item-first"
+            "title": "Navegue por categorias",
+            "categories": [
+                {
+                    "__editorItemTitle": "Móveis",
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/03142960-739f-4184-aad4-5a705da8d926___54f860de1e84035b8481f2156b80e698.png"
+                },
+                {
+                    "__editorItemTitle": "Eletrodomésticos",
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/cf7bb169-1e6c-42ec-b9c2-c910a7ba90b5___6c5810092a68466b3ca20557f0d533e6.png"
+                },
+                {
+                    "__editorItemTitle": "Tv's e Audio",
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/4268a6a6-98f4-4a15-9cee-2dc2c2d7874a___53caa8255c1fdffe85856e308a0ed8d2.png"
+                },
+                {
+                    "__editorItemTitle": "Smartphones",
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/e61e8b7a-ebe9-4801-b3b4-3d4970f5287d___981b6bb3c3845bb6e899a965e169f352.png"
+                },
+                {
+                    "__editorItemTitle": "Eletroportáteis",
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/23ce56a6-fab5-49db-b1d1-c64807590b6d___b3f30e1918b75fb20759f5f2c8cb5837.png"
+                },
+                {
+                    "__editorItemTitle": "Informática",
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/102cdc51-e7c3-4b3b-8b54-6c045b4fd2e9___7d470b1f74cfbba93234cddfdb38c5ea.png"
+                },
+                {
+                    "__editorItemTitle": "Bicicletas",
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/bc44eb9a-5bbf-404b-bf78-dd53363a2acd___e81f736a0413d022b681f5270a99468d.png"
+                },
+                {
+                    "__editorItemTitle": "Utilidades do lar",
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/9b3c117c-42eb-4f91-97e3-ae44d9b11dbc___87c89b61912a8ae545576231c1dbe27b.png"
+                },
+                {
+                    "__editorItemTitle": "Bebedouros",
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/a7a26457-445c-4fbf-8991-b68ba4fc70e7___05f68f5efdd2016980b395bd067dafab.png"
+                }
             ]
-        },
-        "children": [
-            "image#category-badge",
-            "link#category-title"
-        ]
-    },
-    "flex-layout.col#category-2": {
-        "props": {
-            "blockClass": [
-                "categorie-badges-item",
-                "categorie-badges-item-second"
-            ]
-        },
-        "children": [
-            "image#category-badge",
-            "link#category-title"
-        ]
-    },
-    "flex-layout.col#category-3": {
-        "props": {
-            "blockClass": [
-                "categorie-badges-item",
-                "categorie-badges-item-third"
-            ]
-        },
-        "children": [
-            "image#category-badge",
-            "link#category-title"
-        ]
-    },
-    "flex-layout.col#category-4": {
-        "props": {
-            "blockClass": [
-                "categorie-badges-item",
-                "categorie-badges-item-fourth"
-            ]
-        },
-        "children": [
-            "image#category-badge",
-            "link#category-title"
-        ]
-    },
-    "flex-layout.col#category-5": {
-        "props": {
-            "blockClass": [
-                "categorie-badges-item",
-                "categorie-badges-item-fifth"
-            ]
-        },
-        "children": [
-            "image#category-badge",
-            "link#category-title"
-        ]
-    },
-    "flex-layout.col#category-6": {
-        "props": {
-            "blockClass": [
-                "categorie-badges-item",
-                "categorie-badges-item-sixth"
-            ]
-        },
-        "children": [
-            "image#category-badge",
-            "link#category-title"
-        ]
-    },
-    "flex-layout.col#category-7": {
-        "props": {
-            "blockClass": [
-                "categorie-badges-item",
-                "categorie-badges-item-seventh"
-            ]
-        },
-        "children": [
-            "image#category-badge",
-            "link#category-title"
-        ]
-    },
-    "flex-layout.col#category-8": {
-        "props": {
-            "blockClass": [
-                "categorie-badges-item",
-                "categorie-badges-item-last",
-                "categorie-badges-item-eighth"
-            ]
-        },
-        "children": [
-            "image#category-badge",
-            "link#category-title"
-        ]
-    },
-    "flex-layout.col#category-9": {
-        "props": {
-            "blockClass": [
-                "categorie-badges-item",
-                "categorie-badges-item-last",
-                "categorie-badges-item-ninth"
-            ]
-        },
-        "children": [
-            "image#category-badge",
-            "link#category-title"
-        ]
-    },
-    "image#category-badge": {
-        "props": {
-            "src": "https://tfcvih.vteximg.com.br/arquivos/icon-moveis.png",
-            "link": "/",
-            "title": "titulo da imagem",
-            "alt": "texto alternativo "
-        }
-    },
-    "link#category-title": {
-        "props": {
-            "href": "/",
-            "label": "More details >",
-            "blockClass":"category-link"
         }
     }
 }

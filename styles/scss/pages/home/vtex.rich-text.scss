@@ -1,0 +1,45 @@
+.paragraph--beneficios-text {
+  color: var(--Cores-Vermelho-Zenir, #ed1b34);
+  font-family: "Barlow Semi Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.paragraph--beneficios-sub {
+  color: var(--Cinzas-Cinza-51, #515151);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.paragraph--shelf-title {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  line-height: 22px;
+}
+.paragraph--shelf-subtitle {
+  color: #fff;
+  font-family: "Barlow Semi Condensed Bold", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin: 0;
+
+  @media (max-width: 640px) {
+    font-size: 26px;
+  }
+}

@@ -1,6 +1,6 @@
 {
     "flex-layout.row#brands-badges": {
-        "title":"Seção de marcas",
+        "title": "Seção de marcas",
         "props": {
             "blockClass": [
                 "container",
@@ -35,93 +35,48 @@
             ]
         },
         "children": [
-            "flex-layout.col#brands-1",
-            "flex-layout.col#brands-2",
-            "flex-layout.col#brands-3",
-            "flex-layout.col#brands-4",
-            "flex-layout.col#brands-5",
-            "flex-layout.col#brands-6"
+            "list-context.image-list#brand-images"
         ]
     },
-    "flex-layout.col#brands-1": {
-        "props": {
-            "blockClass": [
-                "brand-badges-item-first",
-                "brand-badges-item",
-                "brand-badges-item-zeflex"
-            ]
-        },
+    "list-context.image-list#brand-images": {
         "children": [
-            "image#brands-badge"
-            
-        ]
-    },
-    "flex-layout.col#brands-2": {
+            "slider-layout#brands-images"
+        ],
         "props": {
-            "blockClass": [
-                "brand-badges-item",
-                "brand-badges-item-consul"
+            "preload": true,
+            "images": [
+                {
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/567ed857-f6b0-4025-9bbb-324e1d0c337c___ecb567c6770494ce4006a33c581c8a72.png"
+                },
+                {
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/aae2fb71-5770-4599-bd5a-dca1316cb8f5___55e80ae0f071545c5b22749f08a60ab2.png"
+                },
+                {
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/64c3ab46-f38f-499b-bea4-994dd4359bd2___6329dc247bdc516927f39343e548a2cd.png"
+                },
+                {
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/ca45f5e4-27f4-4d69-b54c-3e3ad05a7dc8___ed83bf98ec635e5ebb944ed63cfa105f.png"
+                },
+                {
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/63ff7e51-c559-4999-aa8c-0818558353ae___12fd7a0aed042098053f964ecd679afd.png"
+                },
+                {
+                    "image": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/034077d6-1a61-455b-8f8d-3d11054ab9ba___2e86419bdc0451fd9d755d0ed2c3f441.png"
+                }
             ]
-        },
-        "children": [
-            "image#brands-badge"
-            
-        ]
+        }
     },
-    "flex-layout.col#brands-3": {
+    "slider-layout#brands-images": {
         "props": {
-            "blockClass": [
-                "brand-badges-item",
-                "brand-badges-item-brastemp"
-            ]
-        },
-        "children": [
-            "image#brands-badge"
-            
-        ]
-    },
-    "flex-layout.col#brands-4": {
-        "props": {
-            "blockClass": [
-                "brand-badges-item",
-                "brand-badges-item-tramontina"  
-            ]
-        },
-        "children": [
-            "image#brands-badge"
-            
-        ]
-    },
-    "flex-layout.col#brands-5": {
-        "props": {
-            "blockClass": [
-                "brand-badges-item",
-                "brand-badges-item-mondial"
-            ]
-        },
-        "children": [
-            "image#brands-badge"
-            
-        ]
-    },
-    "flex-layout.col#brands-6": {
-        "props": {
-            "blockClass": [
-                "brand-badges-item",
-                "brand-badges-item-lg"
-            ]
-        },
-        "children": [
-            "image#brands-badge"
-            
-        ]
-    },
-    "image#brands-badge": {
-        "props": {
-            "src": "https://tfcvih.vteximg.com.br/arquivos/badge-mondial.png",
-            "link": "/",
-            "title": "titulo da imagem",
-            "alt": "texto alternativo "
+            "itemsPerPage": {
+                "desktop": 6,
+                "tablet": 4,
+                "phone": 2
+            },
+            "infinite": false,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass": "carousel-brands-images"
         }
     }
 }

@@ -1,0 +1,195 @@
+{
+    "flex-layout.row#shelf-highlight": {
+        "title": "Prateleira",
+        "props": {
+            "blockClass": [
+                "container",
+                "shelf",
+                "shelf-1"
+            ]
+        },
+        "children": [
+            "custom-div#shelf-title-wrapper",
+            "tab-layout#shelf"
+        ]
+    },
+    "custom-div#shelf-title-wrapper": {
+        "props": {
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start",
+            "padding": "0 0 6px 0",
+            "width": "100%",
+            "gap": "8px",
+            "className": "shelf-title-wrapper"
+        },
+        "children": [
+            "rich-text#shelf-title",
+            "rich-text#shelf-subtitle"
+        ]
+    },
+    "rich-text#shelf-title": {
+        "title": "Título da vitrine",
+        "props": {
+            "blockClass": "shelf-title",
+            "text": "Descontos especiais para"
+        }
+    },
+    "rich-text#shelf-subtitle": {
+        "title": "Título da vitrine",
+        "props": {
+            "blockClass": "shelf-subtitle",
+            "text": "Você Aproveitar este Mês Inteiro!!"
+        }
+    },
+    "tab-layout#shelf": {
+        "title": "Prateleira TABS",
+        "children": [
+            "tab-list#home",
+            "tab-content#shelf"
+        ],
+        "props": {
+            "blockClass": "shelf",
+            "defaultActiveTabId": "novidades"
+        }
+    },
+    "tab-list#home": {
+        "props": {
+            "blockClass": "shelf"
+        },
+        "title": "Prateleira TABS",
+        "children": [
+            "tab-list.item#novidades",
+            "tab-list.item#promocao",
+            "tab-list.item#destaques"
+        ]
+    },
+    "tab-list.item#novidades": {
+        "title": "",
+        "props": {
+            "blockClass": "shelf",
+            "tabId": "novidades",
+            "label": "Novidades",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#promocao": {
+        "title": "Promocao",
+        "props": {
+            "blockClass": "shelf",
+            "tabId": "promocao",
+            "label": "Promoção"
+        }
+    },
+    "tab-list.item#destaques": {
+        "title": "Destaques",
+        "props": {
+            "blockClass": "shelf",
+            "tabId": "destaques",
+            "label": "Destaques",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-content#shelf": {
+        "title": "Destaques",
+        "props": {
+            "blockClass": "shelf"
+        },
+        "children": [
+            "tab-content.item#novidades",
+            "tab-content.item#promocao",
+            "tab-content.item#destaques"
+        ]
+    },
+    "tab-content.item#novidades": {
+        "children": [
+            "list-context.product-list#novidades"
+        ],
+        "props": {
+            "blockClass": "shelf",
+            "tabId": "novidades"
+        }
+    },
+    "tab-content.item#promocao": {
+        "children": [
+            "list-context.product-list#promocao"
+        ],
+        "props": {
+            "blockClass": "shelf",
+            "tabId": "promocao"
+        }
+    },
+    "tab-content.item#destaques": {
+        "children": [
+            "list-context.product-list#destaques"
+        ],
+        "props": {
+            "blockClass": "shelf",
+            "tabId": "destaques"
+        }
+    },
+    "list-context.product-list#novidades": {
+        "title": "Prateleira 1",
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelf-default"
+        ],
+        "props": {
+            "blockClass": "shelf",
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "list-context.product-list#destaques": {
+        "title": "Prateleira 3",
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelf-default"
+        ],
+        "props": {
+            "blockClass": "shelf",
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "list-context.product-list#promocao": {
+        "title": "Prateleira 2",
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelf-default"
+        ],
+        "props": {
+            "blockClass": "shelf",
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "slider-layout#shelf-default": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 2,
+                "phone": 1
+            },
+            "centerModeSlidesGap": 1,
+            "centerMode": {
+                "desktop": "disabled",
+                "tablet": "disabled",
+                "phone": "to-the-left"
+            },
+            "showNavigationArrows": "desktopOnly",
+            "infinite": false,
+            "fullWidth": false,
+            "blockClass": [
+                "shelf"
+            ],
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+            }
+        }
+    }
+}

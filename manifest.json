@@ -76,7 +76,6 @@
     "vtex.order-items": "0.x",
     "vtex.checkout-resources": "0.x",
     "vtex.toggle-layout": "0.x",
-    "vtex.abandoned-cart-service": "0.x",
     "vtex.product-summary-context": "0.x"
   },
   "peerDependencies": {

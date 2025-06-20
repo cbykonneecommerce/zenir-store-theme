@@ -233,20 +233,13 @@
   text-align: left;
 }
 
-.paragraph--shelf-title,
-.paragraph--beneficios-text {
+.paragraph--shelf-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 32px;
   color: #515151;
   margin-left: 1rem;
-}
-.wrapper--beneficios-text {
-  margin: 10px 0;
-  padding: 0 20px;
-  position: relative;
-  z-index: 1;
 }
 
 /* @media screen and (min-width:1024px){
@@ -270,26 +263,6 @@
 
 .container--beneficios-text {
   position: relative;
-}
-
-.paragraph--beneficios-text {
-  font-size: 1.1rem;
-  color: #ef2a31;
-  // color: #FFFFFF;
-  line-height: 19px;
-  font-weight: bold;
-  display: grid;
-  gap: 0.2rem;
-}
-
-.paragraph--beneficios-sub {
-  // color: #E3E3E3;
-  color: #434343;
-  font-family: "Roboto", sans-serif !important;
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration-line: underline;
 }
 
 .strong--campeoes-de-venda,
@@ -356,11 +329,6 @@
   .wrapper--beneficios-text {
     padding: 0 10px;
     border: none;
-  }
-
-  .paragraph--beneficios-text {
-    margin: 0;
-    display: grid;
   }
 
   .paragraph--pdp-description-title {
@@ -430,10 +398,6 @@
     font-style: normal;
     margin-bottom: 15px;
     font-size: 1.5rem;
-  }
-
-  .paragraph--beneficios-text {
-    font-size: 1rem;
   }
 
   .paragraph--beneficios-sub {

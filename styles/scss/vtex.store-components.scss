@@ -414,36 +414,6 @@
   box-sizing: border-box;
   outline: none;
 }
-.discountInsideContainer {
-  top: 0;
-  right: 20px;
-  background: #bf0811;
-  width: 44px;
-  height: 34px;
-  font-weight: bold;
-  padding: 0;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.discountInsideContainer::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -11px;
-  width: 0;
-  height: 0;
-  border-left: 23px solid transparent;
-  border-right: 23px solid transparent;
-  border-top: 13px solid #bf0811;
-  font-size: 0;
-  line-height: 0;
-  z-index: -1;
-}
 .imageElement--beneficios-imagem {
   position: relative;
   z-index: 1;
@@ -464,12 +434,6 @@
     right: 10px;
     width: 34px;
     height: 24px;
-  }
-  .discountInsideContainer::after {
-    bottom: -9px;
-    border-left: 17px solid transparent;
-    border-right: 17px solid transparent;
-    border-top: 11px solid #bf0811;
   }
 }
 

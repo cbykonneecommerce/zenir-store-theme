@@ -133,5 +133,8 @@
   },
   "custom-orderby-options": {
     "component": "CustomOrderbyOptions"
+  },
+  "custom-categories": {
+    "component": "CustomCategories"
   }
 }

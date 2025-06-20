@@ -160,25 +160,6 @@
   transform: translateX(-50%);
 }
 
-.flexRowContent--beneficios-item {
-  align-items: center;
-  // background: #185216;
-  background: #f2f2f2;
-  // background: #1E1E1E;
-  width: 19.5rem;
-  height: 6rem;
-  border-radius: 8px;
-  justify-content: center;
-  display: flex;
-}
-
-.flexRowContent--beneficios-container {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  padding: 1.5rem;
-}
-
 // .flexRow--categorie-badges {
 //   // background: #121212 !important;
 //   background: #C00903 !important;
@@ -635,11 +616,6 @@
   .flexRow--newletter-form {
     padding-bottom: 2rem;
   }
-
-  .flexRowContent--beneficios-item {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .flexRowContent--message-availability-search {
@@ -786,22 +762,5 @@
   .flexRow--login {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .flexRowContent--beneficios-item {
-    width: 10.75rem;
-    height: 6.25rem;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .flexRowContent--beneficios-container {
-    gap: 0.5rem;
-    padding: 1rem;
-    display: flex;
-    overflow-x: scroll;
-    padding-left: 22.3rem;
   }
 }

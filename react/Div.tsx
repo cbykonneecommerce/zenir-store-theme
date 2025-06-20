@@ -18,6 +18,8 @@ interface DivProps {
   paddingMobile: string;
   flexDirectionMobile: string;
   position?: React.CSSProperties["position"];
+  margin?: string;
+  height?: string;
 }
 
 const CSS_HANDLES = ["divContainer"] as const;
@@ -36,6 +38,8 @@ const Div: StorefrontFunctionComponent<DivProps> = ({
   paddingMobile = "",
   flexDirectionMobile = "column",
   position = "initial",
+  margin = "0px",
+  height = "auto",
 }) => {
   const { handles } = useCssHandles(CSS_HANDLES);
   const { isMobile } = useDevice();
@@ -50,6 +54,8 @@ const Div: StorefrontFunctionComponent<DivProps> = ({
     justifyContent,
     padding,
     position,
+    margin,
+    height,
   };
 
   if (!preserveMobileLayout && isMobile) {
@@ -132,6 +138,14 @@ Div.schema = {
       type: "string",
       default: "initial",
       enum: ["initial", "relative", "fixed", "absolute"],
+    },
+    margin: {
+      type: "string",
+      default: "0px",
+    },
+    height: {
+      type: "string",
+      default: "auto",
     },
   },
 };

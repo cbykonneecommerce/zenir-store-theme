@@ -197,7 +197,7 @@
 
     :global(.vtex-button__label) {
       color: #fff;
-      font-family: "Jost", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -243,21 +243,38 @@
   }
 }
 
+.container--layout {
+  :global(.vtex-store-components-3-x-container) {
+    padding: 0 !important;
+  }
+}
+
+.accordionFilterOpen {
+  overflow-x: hidden;
+}
+
+.sidebar {
+  width: 100% !important;
+  max-width: 32rem !important;
+}
+
 @media (max-width: 640px) {
   .galleryItem--normal {
-    max-width: 46% !important;
+    max-width: 48% !important;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1025px) {
   .galleryItem--normal {
-    max-width: 30% !important;
+    max-width: 32% !important;
   }
 }
 
 @media (max-width: 1025px) {
   .gallery--grid {
     margin-left: 0;
+    gap: 0.5rem 0.2rem;
+    margin-top: 24px;
   }
 
   .totalProducts--layout {
