@@ -1,0 +1,62 @@
+.listContainer--shelf {
+  justify-content: flex-start;
+  margin-bottom: 24px;
+  gap: 8px;
+
+  .listItem--shelf {
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    :global(.vtex-button) {
+      border-radius: 8px;
+      height: 27px;
+      min-height: 27px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #fff;
+
+        :global(.vtex-button__label) {
+          color: #001d7e;
+        }
+      }
+
+      :global(.vtex-button__label) {
+        color: #fff;
+        text-align: center;
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 0 1rem;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        text-transform: none;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    margin-left: 0;
+
+    .listItem--shelf {
+      margin-top: 20px;
+    }
+  }
+
+  .listItemActive--shelf {
+    :global(.vtex-button) {
+      background-color: #fff;
+      border: 1px solid transparent;
+      background: #fff;
+
+      :global(.vtex-button__label) {
+        color: var(--Cores-Azul, #001d7e);
+      }
+    }
+  }
+}

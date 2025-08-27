@@ -1,0 +1,48 @@
+.flexRow--beneficios-container {
+  background: #fff;
+}
+
+.flexRowContent--beneficios-item {
+  align-items: center;
+  // background: #185216;
+  background: #fff;
+  // background: #1E1E1E;
+  width: 19.5rem;
+  border-radius: 8px;
+  justify-content: center;
+  display: flex;
+}
+
+.flexRowContent--beneficios-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0 1.5rem !important;
+}
+
+.flexRow--shelf {
+  padding: 40px;
+}
+
+.flexRow--shelf-1 {
+  background: var(
+    --Degrade-Degrade,
+    linear-gradient(135deg, #022d8a 0%, #1a56b0 100.09%)
+  );
+}
+
+.flexRowContent--shelf {
+  display: flex;
+  flex-direction: column;
+
+  .stretchChildrenWidth {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .flexRow--shelf {
+    padding: 40px 16px;
+    padding-right: 0 !important;
+  }
+}

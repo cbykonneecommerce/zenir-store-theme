@@ -1,0 +1,40 @@
+.stackContainer--summary-highlights {
+  position: initial;
+}
+
+.productHighlightWrapper {
+  width: 100%;
+  background-color: #001d7e;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 21px;
+}
+
+@media screen and (max-width: 767px) {
+  .productHighlightWrapper {
+    top: 5px;
+    left: 5px;
+  }
+}
+
+.productHighlightWrapper:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.productHighlightWrapper[data-highlight-name="Lançamento"],
+.productHighlightWrapper[data-highlight-name="LANÇAMENTO"] {
+  background-color: #001d7e;
+}
+
+.productHighlightText {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px; /* 100% */
+  letter-spacing: 0.22px;
+}

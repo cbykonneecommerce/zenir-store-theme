@@ -7,42 +7,33 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "custom-newsletter",
       "iframe-light-widget",
-      "flex-layout.row#footer-menus",
-      "flex-layout.row#footer-pagamentos-e-social",
-      "flex-layout.row#footer-bottom-area",
-      "flex-layout.row#footer-bottom-text",
-      "image#btn-whats"
+      "custom-div#footer-container"
     ]
   },
-  "flex-layout.row#footer-bottom-text": {
+  "custom-div#footer-container": {
     "props": {
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": false,
-      "blockClass": [
-        "container",
-        "footer-bottom-text"
-      ]
+      "background": "linear-gradient(135deg, #022D8A 0%, #1A56B0 100.09%)",
+      "flexDirection": "column"
     },
     "children": [
-      "rich-text#footer-bootom-text",
+      "custom-newsletter",
+      "flex-layout.row#footer-menus",
+      "custom-div#footer-bottom-area",
       "flex-layout.row#footer-poweredby"
     ]
   },
-  "flex-layout.row#footer-bottom-area": {
+  "custom-div#footer-bottom-area": {
     "props": {
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": false,
-      "blockClass": [
-        "container",
-        "footer-bottom-area"
-      ]
+      "flexDirection": "column",
+      "className": "container",
+      "gap": "1rem",
+      "alignItems": "center",
+      "justify-content": "center"
     },
     "children": [
-      "rich-text#footer-message"
+      "rich-text#footer-message",
+      "rich-text#footer-bootom-text"
     ]
   },
   "rich-text#footer-message": {
@@ -50,7 +41,7 @@
       "blockClass": [
         "footer-message-text"
       ],
-      "text": "TODOS OS PREÇOS E CONDIÇÕES COMERCIAIS QUE SÃO DIVULGADAS EM NOSSO SITE E APP SÃO VÁLIDAS EXCLUSIVAMENTE PARA AS COMPRAS REALIZADAS PELA INTERNET. AS CONDIÇÕES PARA AS COMPRAS REALIZADAS NAS LOJAS FÍSICAS PODEM VARIAR DAQUELAS QUE SÃO DISPONIBILIZADAS PELO SITE E APP. TODAS AS PROMOÇÕES, CUPONS, PARCERIAS E DESCONTOS CONTIDOS OU APLICÁVEIS EM NOSSO SITE E APP NÃO SÃO CUMULATIVOS. HAVENDO MAIS DE UMA CONDIÇÃO ESPECIAL, O USUÁRIO DEVERÁ OPTAR POR APENAS UMA DELAS NA HORA DE CONCLUIR O PEDIDO. CASO OS PRODUTOS APRESENTEM DIVERGÊNCIAS DE VALORES, O PREÇO VÁLIDO É O DA SACOLA DE COMPRAS."
+      "text": "Todos os preços e condições comerciais que são divulgadas em nosso site e app são válidas exclusivamente para as compras realizadas pela internet. As condições para as compras realizadas nas lojas físicas podem variar daquelas que são disponibilizadas pelo site e app. Todas as promoções, cupons, parcerias e descontos contidos ou aplicáveis em nosso site e app não são cumulativos. Havendo mais de uma condição especial, o usuário deverá optar por apenas uma delas na hora de concluir o pedido. Caso os produtos apresentem divergências de valores, o preço válido é o da sacola de compras."
     }
   },
   "flex-layout.row#footer-poweredby": {
@@ -68,54 +59,12 @@
       "rich-text#powered-by-vtex"
     ]
   },
-  "flex-layout.row#footer-pagamentos-e-social": {
-    "props": {
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": false,
-      "blockClass": [
-        "footer-2",
-        "container"
-      ]
-    },
-    "children": [
-      "flex-layout.row#footer-pagamentos",
-      // "flex-layout.row#reclame-aqui",
-      "flex-layout.row#footer-seders-sociais"
-    ]
-  },
-  "flex-layout.row#footer-pagamentos": {
-    "props": {
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": false,
-      "blockClass": [
-        "pagamentos"
-      ]
-    },
-    "children": [
-      "rich-text#formas-pagamentos",
-      "image#pagamentos"
-    ]
-  },
-  // "flex-layout.row#reclame-aqui": {
-  //   "props": {
-  //     "horizontalAlign": "center",
-  //     "fullWidth": true,
-  //     "blockClass": [
-  //       "redes-sociais"
-  //     ]
-  //   },
-  //   "children": [
-  //     "reclame-aqui"
-  //   ]
-  // },
   "image#pagamentos": {
     "props": {
       "blockClass": [
         "pagamentos-imagem"
       ],
-      "src": "https://tfcvih.vteximg.com.br/arquivos/pagament.png"
+      "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/fc660119-53cb-45c5-ab97-f52bb9750597___eb793a85dce34ca8facfc559f9f4d637.png"
     }
   },
   "rich-text#formas-pagamentos": {
@@ -126,14 +75,23 @@
       ]
     }
   },
-  "flex-layout.row#footer-seders-sociais": {
+  "custom-div#footer-redes-sociais": {
     "props": {
-      "blockClass": [
-        "redes-sociais"
-      ]
+      "flexDirection": "column",
+      "className": "redes-sociais"
     },
     "children": [
       "rich-text#redes-sociais-title",
+      "custom-div#redes-sociais"
+    ]
+  },
+  "custom-div#redes-sociais": {
+    "props": {
+      "flexDirectionMobile": "row",
+      "alignItems": "center",
+      "justifyContent": "center"
+    },
+    "children": [
       "social-networks",
       "social-sharing"
     ]
@@ -141,25 +99,41 @@
   "rich-text#redes-sociais-title": {
     "props": {
       "blockClass": [
-        "formas-pagamento-title"
+        "redes-sociais-title"
       ],
       "text": "Redes Sociais"
     }
   },
   "footer-layout.mobile": {
     "children": [
-      "custom-newsletter",
       "iframe-light-widget",
-      "flex-layout.row#blank-spacer",
+      "custom-newsletter",
+      "custom-newsletter",
+      "custom-div#mobile-footer-wrapper",
+      "flex-layout.row#footer-poweredby"
+    ]
+  },
+  "custom-div#mobile-footer-wrapper": {
+    "props": {
+      "flexDirection": "column",
+      "background": "linear-gradient(315deg, #022D8A -0.09%, #1A56B0 100%)",
+      "blockClass": "mobile-footer-wrapper"
+    },
+    "children": [
+      "custom-div#footer-redes-sociais",
+      "menu-item#contato-accordion-mobile",
       "menu-item#institucional-accordion-mobile",
-      "flex-layout.row#blank-spacer",
-      "menu-item#institucional-accordion-mobile-duvidas",
-      "flex-layout.row#blank-spacer",
-      "menu-item#institucional-accordion-mobile-seguranca",
-      "flex-layout.row#footer-pagamentos-e-social",
-      "flex-layout.row#footer-bottom-area",
-      "flex-layout.row#footer-poweredby",
-      "image#btn-whats"
+      "menu-item#institucional-accordion-mobile-politicas",
+      "menu-item#institucional-accordion-mobile-suport",
+      "custom-div#segurança-mobile",
+      "custom-div#footer-pagamentos",
+      "custom-div#footer-bottom-area"
+    ]
+  },
+  "custom-div#segurança-mobile": {
+    "children": [
+      "rich-text#menu-footer-institucional-seguranca-title",
+      "custom-div#seguranca-images"
     ]
   },
   "flex-layout.row#blank-spacer": {
@@ -171,9 +145,6 @@
   },
   "flex-layout.row#footer-menus": {
     "props": {
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": false,
       "blockClass": [
         "container",
         "main-footer-desktop"
@@ -181,22 +152,10 @@
     },
     "children": [
       "flex-layout.col#sac",
-      "flex-layout.col#isntitucional-menu-footer",
-      "flex-layout.col#isntitucional-menu-footer-duvidas",
-      "flex-layout.col#isntitucional-menu-footer-seguranca"
+      "flex-layout.col#institucional-menu-footer",
+      "flex-layout.col#institucional-menu-footer-politicas",
+      "flex-layout.col#institucional-menu-footer-suport",
+      "flex-layout.col#institucional-menu-footer-seguranca"
     ]
-  },
-  "image#btn-whats": {
-    "title": "Whatsapp Link",
-    "props": {
-      "blockClass": "btn-whats",
-      "src": "/arquivos/bt-whatsapp.svg",
-      "alt": "Link Whatsapp",
-      "link": {
-        "url": "https://api.whatsapp.com/send?phone=5543996601113&text=Converse%20com%20Serall%C3%AA%20Cal%C3%A7ados",
-        "newTab": true,
-        "title": "WhatsApp Zenir"
-      }
-    }
   }
 }

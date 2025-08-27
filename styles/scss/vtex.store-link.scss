@@ -1,6 +1,6 @@
 .link--link-header-top {
   text-decoration: none;
-  font-family: 'Futura Md BT';
+  font-family: "Futura Md BT";
   font-style: normal;
   font-weight: 400;
   font-size: 14.1996px;
@@ -14,16 +14,8 @@
   text-align: right;
 }
 
-.link--wishlist-btn-header {
-  font-size: 0;
-  height: 50px !important;
-  display: flex;
-  align-items: center;
-  padding: 2px;
-}
-
 .label--cadastre-se {
-  font-family: 'Futura Hv BT';
+  font-family: "Futura Hv BT";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -34,17 +26,6 @@
 
 .link--cadastre-se {
   text-decoration: none;
-}
-
-.link--wishlist-btn-header::before {
-  content: '';
-  background-image: url('https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/a4a64626-8f57-4751-bc23-cc534f3ad40a___119ee47a0e8fd2dce3fae3660e91a949.svg');
-  // background-image: url('https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/c0f6aa1a-b53f-41d4-8cb0-7e7b376ad1ff___ea0c6b924b6e95eae86c32610a138a11.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 25px;
-  height: 25px;
-  display: block;
 }
 
 .link--link-drawer,
@@ -71,7 +52,7 @@
 }
 
 .link--link-home::before {
-  content: '';
+  content: "";
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='26' fill='none'%3E%3Cpath d='M23.6 14.22a.84.84 0 00-.84.841v8.53H5.697v-8.53a.84.84 0 10-1.682 0v9.371c0 .465.377.841.84.841H23.6a.84.84 0 00.84-.84V15.06a.84.84 0 00-.84-.84z' fill='%23000'/%3E%3Cpath d='M28.075 14.467L14.822 1.215a.84.84 0 00-1.19 0L.382 14.467a.84.84 0 101.189 1.189L14.227 2.998l12.66 12.658a.84.84 0 001.188-1.19z' fill='%23000'/%3E%3C/svg%3E");
   width: 29px;
   height: 26px;
@@ -80,7 +61,7 @@
 }
 
 .link--link-account::before {
-  content: '';
+  content: "";
   background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/cf62d1a4-fa37-4710-80ad-2de727aa1231___7655d575c76dbb10f0fece9383711706.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -92,7 +73,7 @@
 }
 
 .link--link-favorites::before {
-  content: '';
+  content: "";
   background-image: url("https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/a4a64626-8f57-4751-bc23-cc534f3ad40a___119ee47a0e8fd2dce3fae3660e91a949.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -103,7 +84,7 @@
   margin-left: 4px;
 }
 
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
   .link--link-favorites {
     display: none;
   }

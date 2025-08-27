@@ -62,8 +62,8 @@
   },
 
   "custom-lp-times": {
-   "component": "CustomLp",
-   "render": "client"
+    "component": "CustomLp",
+    "render": "client"
   },
   "iframe-light-widget": {
     "component": "IframeLightWidget",
@@ -126,5 +126,15 @@
   },
   "flag-for-page-product": {
     "component": "FlagForPageProduct"
+  },
+  "custom-div": {
+    "component": "Div",
+    "composition": "children"
+  },
+  "custom-orderby-options": {
+    "component": "CustomOrderbyOptions"
+  },
+  "custom-categories": {
+    "component": "CustomCategories"
   }
 }

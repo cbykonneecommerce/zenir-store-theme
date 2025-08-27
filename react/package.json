@@ -101,6 +101,7 @@
     "react-graphql": "^0.0.3",
     "react-helmet": "^6.1.0",
     "react-input-mask": "^2.0.4",
+    "react-intl": "^7.1.11",
     "react-loading": "^2.0.3",
     "react-spinners": "^0.13.8",
     "react-tabs": "^6.0.0",

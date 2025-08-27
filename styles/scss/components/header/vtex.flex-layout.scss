@@ -1,0 +1,31 @@
+.flexRow--header-row-container {
+  background-color: var(--Cores-Azul, #001d7e);
+  width: 100%;
+}
+
+.flexRowContent--main-header-mobile-top {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  padding-bottom: 0.5rem;
+}
+
+.flexRow--mega-menu-row {
+  background: var(--Cores-Azul, #001d7e);
+  padding-bottom: 12px;
+  position: fixed;
+  top: 100px;
+  z-index: 444;
+  width: 100%;
+}
+
+.flexRowContent--mega-menu-row {
+  .stretchChildrenWidth:first-child {
+    width: 20% !important;
+  }
+
+  .stretchChildrenWidth:last-child {
+    width: 90% !important;
+  }
+}

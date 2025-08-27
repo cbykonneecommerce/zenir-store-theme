@@ -1,6 +1,6 @@
 :global(.render-route-store-home)
-:global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
-:global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
   bottom: -18px !important;
   // background: linear-gradient(90deg, #00348C 0%, #000A62 100%);
   background: line;
@@ -8,154 +8,120 @@
   align-items: center;
 }
 
-// :global(.render-route-store-custom-cama-mesa-banho) 
-// :global(.vtex-sticky-layout-0-x-container--sticky-header-desktop) {
-//   background: #EDD0B8;
-// }
-
-// :global(.render-route-store-custom-cama-mesa-banho) 
-// :global(.vtex-flex-layout-0-x-flexRow--mega-menu-row) {
-//   background: #C29E7F;
-//   border: none;
-// }
-
-// :global(.render-route-store-custom-cama-mesa-banho) 
-// :global(.vtex-category-menu-2-x-container) {
-//   background: #C29E7F;
-//   border: none;
-// }
-
-// :global(.render-route-store-custom-cama-mesa-banho)
-// :global(.vtex-sticky-layout-0-x-container--header-mobile) {
-//   background: #EDD0B8;
-// }
-
 :global(.render-route-store-custom-cama-mesa-banho) iframe {
   display: none !important;
 }
 
-:global(.render-route-store-custom-cama-mesa-banho) 
-:global(.newsletterSection) {
+:global(.render-route-store-custom-cama-mesa-banho)
+  :global(.newsletterSection) {
   display: none !important;
 }
 
-:global(.render-route-store-custom-cama-mesa-banho) 
-:global(.vtex-store-footer-2-x-footerLayout) {
-  background: #C29E7F;
-  border-top: 4px solid #513C2B;
+:global(.render-route-store-custom-cama-mesa-banho)
+  :global(.vtex-store-footer-2-x-footerLayout) {
+  background: #c29e7f;
+  border-top: 4px solid #513c2b;
 }
 
-:global(.render-route-store-custom-cama-mesa-banho) 
-:global(.vtex-rich-text-0-x-wrapper--sac) {
-  background: #513C2B;
-  border: none;
-  color: #FFFFFF;
-}
-
-:global(.render-route-store-custom-cama-mesa-banho) 
-:global(.vtex-rich-text-0-x-wrapper--sac) p {
-  color: #FFFFFF;
-}
-
-:global(.render-route-store-custom-cama-mesa-banho) 
-:global(.vtex-rich-text-0-x-paragraph--menu-institucional--footer) {
-  background: #C29E7F;
+:global(.render-route-store-custom-cama-mesa-banho)
+  :global(.vtex-rich-text-0-x-paragraph--menu-institucional--footer) {
+  background: #c29e7f;
   color: #fff;
 }
 
 :global(.render-route-store-custom-cama-mesa-banho)
-:global(.vtex-menu-2-x-menuContainerNav--menu-institucional-footer) {
-  background: #C29E7F;
+  :global(.vtex-menu-2-x-menuContainerNav--menu-institucional-footer) {
+  background: #c29e7f;
   color: #fff;
 }
 
 :global(.render-route-store-custom-cama-mesa-banho)
-:global(.vtex-menu-2-x-styledLinkContent--menu-institucional-footer) {
-  background: #C29E7F;
+  :global(.vtex-menu-2-x-styledLinkContent--menu-institucional-footer) {
+  background: #c29e7f;
   color: #fff;
 }
 
 :global(.render-route-store-custom-cama-mesa-banho)
-:global(.vtex-flex-layout-0-x-flexRow--blank-spacer) {
-  background: #C29E7F;
+  :global(.vtex-flex-layout-0-x-flexRow--blank-spacer) {
+  background: #c29e7f;
   color: #fff;
 }
 
 :global(.render-route-store-custom-cama-mesa-banho)
-:global(.vtex-menu-2-x-menuItem--menu-accordion--container-mobile) {
-  background: #513C2B;
+  :global(.vtex-menu-2-x-menuItem--menu-accordion--container-mobile) {
+  background: #513c2b;
   width: 90%;
   margin: auto;
   border-radius: 0.5rem;
 }
 
 :global(.render-route-store-custom-cama-mesa-banho)
-:global(.vtex-menu-2-x-styledLinkContent--menu-accordion--container-mobile) {
+  :global(.vtex-menu-2-x-styledLinkContent--menu-accordion--container-mobile) {
   color: #fff;
 }
 
 :global(.render-route-store-custom-cama-mesa-banho)
-:global(.vtex-menu-2-x-menuItem--menu-accordion--container-mobile) {
+  :global(.vtex-menu-2-x-menuItem--menu-accordion--container-mobile) {
   padding: 1.5rem 0;
 }
 
 :global(.render-route-store-custom-cama-mesa-banho)
-:global(.vtex-rich-text-0-x-paragraph--footer-message-text) {
+  :global(.vtex-rich-text-0-x-paragraph--footer-message-text) {
   color: #fff;
 }
 
 :global(.render-route-store-custom-cama-mesa-banho)
-:global(.vtex-rich-text-0-x-paragraph--footer-bottom-text) {
+  :global(.vtex-rich-text-0-x-paragraph--footer-bottom-text) {
   color: #fff;
 }
 
 :global(.render-route-store-custom-cama-mesa-banho)
-:global(.vtex-rich-text-0-x-paragraph--formas-pagamento-title) {
+  :global(.vtex-rich-text-0-x-paragraph--formas-pagamento-title) {
   color: #fff;
 }
 
 @media screen and (max-width: 414px) and (min-width: 391px) {
   :global(.render-route-store-home)
-  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
-  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+    :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+    :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
     bottom: -10px !important;
   }
 }
 
 @media screen and (max-width: 430px) {
   :global(.render-route-store-home)
-  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
-  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+    :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+    :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
     bottom: -7px !important;
   }
 }
 
 @media screen and (max-width: 390px) {
   :global(.render-route-store-home)
-  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
-  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+    :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+    :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
     bottom: 0 !important;
   }
 }
 
 @media screen and (max-width: 375px) {
   :global(.render-route-store-home)
-  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
-  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel) {
+    :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+    :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel) {
     height: 360px;
   }
 
   :global(.render-route-store-home)
-  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
-  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+    :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+    :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
     bottom: 0 !important;
   }
 }
 
 @media screen and (max-width: 360px) {
   :global(.render-route-store-home)
-  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
-  :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel) {
+    :global(.vtex-slider-layout-0-x-sliderLayoutContainer--banner-dots)
+    :global(.vtex-slider-layout-0-x-sliderTrackContainer--carousel) {
     height: 350px;
   }
 }
@@ -164,7 +130,6 @@
   position: absolute;
   right: 3%;
 }
-
 
 :global(#menu-item-tvs)::before {
   content: "";

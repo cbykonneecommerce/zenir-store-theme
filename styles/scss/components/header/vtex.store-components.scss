@@ -1,0 +1,99 @@
+.searchBarContainer {
+  max-width: unset !important;
+  margin: 0 20px;
+
+  :global(.vtex-input-prefix__group) {
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    height: 45px;
+    margin-right: 73px;
+  }
+
+  :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #979899;
+    background: #fff;
+    color: #727272;
+
+    &::placeholder {
+      color: #727272;
+    }
+  }
+
+  :global(.vtex-input-prefix__group) :global(.vtex-input__suffix) {
+    background: #fff;
+  }
+}
+
+.searchBarIcon--external-search::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M21 21L15.803 15.803M15.803 15.803C17.2096 14.3964 17.9998 12.4887 17.9998 10.4995C17.9998 8.51031 17.2096 6.60258 15.803 5.196C14.3964 3.78943 12.4887 2.99922 10.4995 2.99922C8.51029 2.99922 6.60256 3.78943 5.19599 5.196C3.78941 6.60258 2.99921 8.51031 2.99921 10.4995C2.99921 12.4887 3.78941 14.3964 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z' stroke='%23001D7E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.searchBarIcon--external-search {
+  background: #fff;
+}
+
+.externalSearchButtonWrapper {
+  border: none;
+}
+
+.logoLink {
+  margin-right: 2rem;
+  width: 204px !important;
+  height: 44px;
+
+  @media (max-width: 1025px) {
+    width: auto !important;
+    margin-right: 0;
+    height: auto;
+  }
+
+  .logoContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+}
+
+.sizeMobile,
+.sizeDesktop {
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+@media (max-width: 641px) {
+  .searchBarContainer :global(.vtex-input-prefix__group) {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .searchBarContainer {
+    max-width: unset !important;
+    margin: 0px !important;
+    margin-top: 0.75rem;
+  }
+
+  .logoImage {
+    width: 148px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .searchBarContainer {
+    padding-bottom: 24px;
+  }
+}

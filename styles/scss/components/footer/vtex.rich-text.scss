@@ -1,0 +1,77 @@
+.paragraph--redes-sociais-title,
+.paragraph--sac-title,
+.paragraph--menu-institucional--footer,
+.paragraph--formas-pagamento-title {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.paragraph--redes-sociais-title {
+  margin-bottom: 1.5rem;
+}
+
+.paragraph--formas-pagamento-title {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+.paragraph--footer-bottom-text,
+.paragraph--footer-message-text,
+.paragraph--sac {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  text-transform: none;
+}
+
+.paragraph--footer-bottom-text {
+  font-weight: 600;
+}
+
+.paragraph--footer-bottom-text,
+.paragraph--footer-message-text {
+  text-align: center;
+}
+
+@media (max-width: 1025px) {
+  .paragraph--redes-sociais-title {
+    margin-bottom: 1rem;
+  }
+  .wrapper--formas-pagamento-title,
+  .wrapper--menu-institucional--footer,
+  .wrapper--redes-sociais-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .paragraph {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M7.76465 10.9108L11.4397 14.79C11.7414 15.1084 12.2507 15.1011 12.5431 14.7743L15.9999 10.9108' stroke='white' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-position: center;
+      background-size: 24;
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      display: block;
+      transform: rotate(180deg);
+    }
+  }
+
+  .paragraph--footer-bottom-text {
+    padding-bottom: 32px;
+  }
+}

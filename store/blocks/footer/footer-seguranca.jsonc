@@ -12,11 +12,11 @@
             "blockClass": [
                 "image-seguranca"
             ],
-            "width": 150,
-            "src": "https://tfcvih.vteximg.com.br/arquivos/safe2.png"
+            "height": "50px",
+            "src": "https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/17bae550-c2d6-4845-ab85-acd269989b9d___5be0282b9787225882c7d9cc82b206a6.png"
         }
     },
-    "flex-layout.col#isntitucional-menu-footer-seguranca": {
+    "flex-layout.col#institucional-menu-footer-seguranca": {
         "props": {
             "preventVerticalStretch": true,
             "preventHorizontalStretch": true,
@@ -27,7 +27,20 @@
         },
         "children": [
             "rich-text#menu-footer-institucional-seguranca-title",
-            "flex-layout.row#seguranca-images"
+            "custom-div#seguranca-images",
+            "custom-div#footer-pagamentos"
+        ]
+    },
+    "custom-div#footer-pagamentos": {
+        "props": {
+            "flexDirection": "column",
+            "blockClass": [
+                "pagamentos"
+            ]
+        },
+        "children": [
+            "rich-text#formas-pagamentos",
+            "image#pagamentos"
         ]
     },
     "rich-text#menu-footer-institucional-seguranca-title": {
@@ -35,16 +48,17 @@
             "blockClass": [
                 "menu-institucional--footer"
             ],
-            "text": "SEGURANÇA"
+            "text": "Segurança"
         }
     },
-    "flex-layout.row#seguranca-images": {
+    "custom-div#seguranca-images": {
         "props": {
-            "preventVerticalStretch": true,
-            "preventHorizontalStretch": true,
-            "preserveLayoutOnMobile": false,
+            "alignItems": "center",
+            "justifyContent": "center",
+            "flexDirectionMobile": "row",
+            "gap": "12px",
             "blockClass": [
-                "images"
+                "images-security"
             ]
         },
         "children": [

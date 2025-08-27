@@ -1,0 +1,36 @@
+.sliderArrows {
+  width: 32px;
+  height: 32px;
+  background-color: #ededed !important;
+  border-radius: 50%;
+
+  .caretIcon {
+    width: 15px;
+    height: 15px;
+    color: #001d7e;
+  }
+}
+
+.sliderRightArrow {
+  right: 2.25rem;
+}
+
+.sliderLeftArrow {
+  left: 2.25rem;
+}
+
+.sliderLayoutContainer--shelf {
+  padding: 0 !important;
+}
+
+.sliderTrack--shelf {
+  @media (max-width: 640px) {
+    gap: 5px;
+  }
+}
+
+.slide--shelf {
+  :global(.vtex-product-summary-2-x-containerNormal) {
+    max-width: none !important;
+  }
+}

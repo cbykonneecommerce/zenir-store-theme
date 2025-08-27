@@ -1,5 +1,5 @@
 {
-    "menu-item#institucional-accordion-mobile-duvidas": {
+    "menu-item#institucional-accordion-mobile-politicas": {
         "props": {
             "id": "menu-item-institucional-acorddion",
             "type": "custom",
@@ -9,28 +9,28 @@
                 "type": "internal",
                 "href": "#",
                 "noFollow": true,
-                "tagTitle": "DÚVIDAS",
-                "text": "DÚVIDAS"
+                "tagTitle": "Políticas",
+                "text": "Políticas"
             },
             "blockClass": [
-                "menu-accordion--container-mobile"
+                "menu-accordion--footer-container-mobile"
             ]
         },
         "blocks": [
-            "vtex.menu@2.x:submenu.accordion#institucional-duvidas"
+            "vtex.menu@2.x:submenu.accordion#institucional-politicas"
         ]
     },
-    "vtex.menu@2.x:submenu.accordion#institucional-duvidas": {
+    "vtex.menu@2.x:submenu.accordion#institucional-politicas": {
         "props": {
             "blockClass": [
                 "menu-accordion--mobile"
             ]
         },
         "children": [
-            "vtex.menu@2.x:menu#institucional-menu-footer-duvidas"
+            "vtex.menu@2.x:menu#institucional-menu-footer-politicas"
         ]
     },
-    "flex-layout.col#isntitucional-menu-footer-duvidas": {
+    "flex-layout.col#institucional-menu-footer-politicas": {
         "props": {
             "preventVerticalStretch": true,
             "preventHorizontalStretch": true,
@@ -40,19 +40,19 @@
             ]
         },
         "children": [
-            "rich-text#menu-footer-institucional-duvidas-title",
-            "vtex.menu@2.x:menu#institucional-menu-footer-duvidas"
+            "rich-text#menu-footer-institucional-politicas-title",
+            "vtex.menu@2.x:menu#institucional-menu-footer-politicas"
         ]
     },
-    "rich-text#menu-footer-institucional-duvidas-title": {
+    "rich-text#menu-footer-institucional-politicas-title": {
         "props": {
             "blockClass": [
                 "menu-institucional--footer"
             ],
-            "text": "DÚVIDAS"
+            "text": "Políticas"
         }
     },
-    "vtex.menu@2.x:menu#institucional-menu-footer-duvidas": {
+    "vtex.menu@2.x:menu#institucional-menu-footer-politicas": {
         "props": {
             "orientation": "vertical",
             "blockClass": [
@@ -88,19 +88,8 @@
                         "type": "internal",
                         "href": "/institucional",
                         "noFollow": false,
-                        "tagTitle": "Política de Política de Pagamento",
-                        "text": "Política de Política de Pagamento"
-                    }
-                },
-                {
-                    "type": "custom",
-                    "highlight": false,
-                    "itemProps": {
-                        "type": "internal",
-                        "href": "/institucional",
-                        "noFollow": false,
-                        "tagTitle": "Garantia Estendida",
-                        "text": "Garantia Estendida"
+                        "tagTitle": "Política de Pagamento",
+                        "text": "Política de Pagamento"
                     }
                 },
                 {
@@ -112,17 +101,6 @@
                         "noFollow": false,
                         "tagTitle": "Entrega e Montagem",
                         "text": "Entrega e Montagem"
-                    }
-                },
-                {
-                    "type": "custom",
-                    "highlight": false,
-                    "itemProps": {
-                        "type": "internal",
-                        "href": "/institucional",
-                        "noFollow": false,
-                        "tagTitle": "Perguntas Frequentes",
-                        "text": "Perguntas Frequentes"
                     }
                 }
             ]

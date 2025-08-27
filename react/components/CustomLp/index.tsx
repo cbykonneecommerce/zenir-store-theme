@@ -3,15 +3,14 @@
 /* eslint-disable @typescript-eslint/no-shadow */
 import React from "react";
 import { useQuery } from "react-apollo";
-import { SliderLayout, SliderLayoutGroup } from "vtex.slider-layout";
-
 import { useDevice } from "vtex.device-detector";
 import { Helmet } from "vtex.render-runtime";
+import { SliderLayout, SliderLayoutGroup } from "vtex.slider-layout";
 import { Spinner } from "vtex.styleguide";
+
 import searchResult from "../../graphql/search-result.graphql";
 import { Wrapper } from "./BuyButtomCustom/Wrapper";
 import Header from "./Header";
-import "./fonts/stylesheet.css";
 import "./global.css";
 import type { Product } from "./interface";
 
@@ -117,6 +116,7 @@ const CustomLp: StorefrontFunctionComponent<CustomLpProps> = ({
     )
       ? 85
       : 90;
+
     const finalPrice = (Price / 100) * percentage;
 
     const card = (

@@ -12,7 +12,7 @@
 
 /* Menu categoria atendimento desktop */
 :global(.vtex-flex-layout-0-x-flexCol--atendimento-content)
-:global(.vtex-menu-2-x-menuContainer) {
+  :global(.vtex-menu-2-x-menuContainer) {
   flex-direction: column;
 }
 
@@ -66,18 +66,8 @@
   left: -20px;
 }
 
-.flexRowContent--mega-menu-row .stretchChildrenWidth {
-  width: auto !important;
-}
-
-.flexRow--mega-menu-row {
-  // background: #C00903;
-  background: linear-gradient(90deg, #2F3192 0%, #0C0E52 100%);
-  // background: linear-gradient(90deg, #00EBEB 0%, #009BD6 100%);
-}
-
 :global(.vtex-category-menu-2-x-container) {
-  background: #1E1E1E;
+  background: #1e1e1e;
 }
 
 .flexRowContent--pdp-name {
@@ -111,47 +101,12 @@
 .flexColChild--institucional-template-menu-lateral {
   height: auto !important;
 }
-
-.flexRow--newletter-container {
-  background: #001d7e;
-}
-
-.flexRow--main-footer-desktop {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.flexRowContent--main-footer-desktop {
-  justify-content: space-between;
-}
-
-.flexRow--footer-2 {
-  padding-top: 3rem;
-}
-
-.flexRowContent--footer-2,
-.flexRowContent--footer-2 {
-  justify-content: space-between;
-}
-
-.flexRow--powered-by {
-  align-items: center;
-  display: flex;
-}
-
-.flexRowContent--footer-bottom-text {
-  justify-content: space-between;
-}
-
-.flexRowContent--footer-bottom-text {
-  padding-bottom: 4rem;
-}
-
 .flexRowContent--header-row {
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
   height: 100px;
+  margin-bottom: 70px;
 }
 
 .flexRow--blank-spacer {
@@ -172,21 +127,8 @@
   flex-direction: column;
 }
 
-.flexRow--redes-sociais {
-  display: flex;
-  align-items: center;
-}
-
 .flexRow--selecao-especial-middle {
   padding-top: 70px;
-}
-
-.flexRow--beneficios-container {
-  // background: #C00903;
-  background: #FFF;
-  // background: linear-gradient(90deg, #00348C 0%, #000A62 100%);
-  position: relative;
-  top: 10px;
 }
 
 .flexRowContent--campeoes-de-venda {
@@ -218,25 +160,6 @@
   transform: translateX(-50%);
 }
 
-.flexRowContent--beneficios-item {
-  align-items: center;
-  // background: #185216;
-  background: #f2f2f2;
-  // background: #1E1E1E;
-  width: 19.5rem;
-  height: 6rem;
-  border-radius: 8px;
-  justify-content: center;
-  display: flex;
-}
-
-.flexRowContent--beneficios-container {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  padding: 1.5rem;
-}
-
 // .flexRow--categorie-badges {
 //   // background: #121212 !important;
 //   background: #C00903 !important;
@@ -245,7 +168,6 @@
 //     color: #FFFFFF !important;
 //   }
 // }
-
 
 .flexRow--section-home {
   padding-top: 20px;
@@ -258,13 +180,12 @@
 }
 
 .flexRow--ofertas-do-dia {
-  background: linear-gradient(56deg, #001D7E 0.82%, #0043A8 100%);
+  background: linear-gradient(56deg, #001d7e 0.82%, #0043a8 100%);
 
   // background: linear-gradient(0deg, #3D8038 0%, #2A652B 100%);
   // background: linear-gradient(90deg, #FF534A 1%, #FF0000 100%);
   // background: url('https://tfcvih.vtexassets.com/assets/vtex.file-manager-graphql/images/5c06f7b1-9fa2-40f6-9a24-071a59aca0f1___11a707a3a51f587d7f527aca100d9828.png') 100% / cover no-repeat;
 }
-
 
 .flexCol--institucional-template-menu-lateral {
   margin-top: 1.5rem;
@@ -323,19 +244,21 @@
   height: 95%;
 }
 
-.flexColChild--product-card-requinte{
+.flexColChild--product-card-requinte {
   width: 90%;
   max-width: 490px;
-  margin:0 auto;
+  margin: 0 auto;
 }
-.flexColChild--product-card-requinte :global(.vtex-store-components-3-x-imageElement){
+.flexColChild--product-card-requinte
+  :global(.vtex-store-components-3-x-imageElement) {
   width: 100%;
   position: relative;
   bottom: -100px;
 }
 
 .flexCol--search-filter-navigator-col {
-  width: calc(293px + 4rem);
+  max-width: 289px;
+  width: 289px;
 }
 .flexRow--category-banner-text {
   position: absolute;
@@ -383,7 +306,7 @@
 
 .flexRowContent--drawer-header {
   // background: #1E1E1E;
-  background: linear-gradient(91deg, #2F3192 0%, #0C0E52 100%);
+  background: linear-gradient(91deg, #2f3192 0%, #0c0e52 100%);
   justify-content: flex-start;
   width: 100%;
 }
@@ -394,7 +317,7 @@
   justify-content: flex-start;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1025px) {
   .flexRowContent--main-header-mobile {
     align-items: center;
     justify-content: space-between;
@@ -403,11 +326,6 @@
   .flexRowContent--main-header-mobile {
     justify-content: center;
   }
-  .flexRowContent--main-header-mobile-top {
-    align-items: center;
-    padding-top: 0.5rem;
-  }
-
   .flexColChild--brand-badges-item
     :global(.vtex-store-components-3-x-imageElement) {
     min-width: 145px;
@@ -426,19 +344,15 @@
   }
 }
 
-@media screen and (max-width: 428px) and (min-width: 391px) {
-  .flexRow--beneficios-container {
-    top: 8px;
-  }
-}
-
-.flexRowContent--main-header-mobile-top {
-  justify-content: space-between;
-  padding-top: 0.5rem;
-}
-
 .flexRowContent--main-desktop {
   justify-content: center;
+
+  // .stretchChildrenWidth:first-child {
+  //   max-width: 289px;
+  // }
+  // .stretchChildrenWidth:last-child {
+  //   width: 100% !important;
+  // }
 }
 
 .flexRowContent--nav-linksUteis {
@@ -702,11 +616,6 @@
   .flexRow--newletter-form {
     padding-bottom: 2rem;
   }
-
-  .flexRowContent--beneficios-item {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .flexRowContent--message-availability-search {
@@ -719,7 +628,7 @@
 /* end desktop only */
 
 /* mobile */
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {
   .flexRowContent--pdp {
     padding-bottom: 3rem;
   }
@@ -748,10 +657,6 @@
 
   .flexRowContent--categorie-badges-list {
     display: flex;
-  }
-  .flexRow--beneficios-container {
-    min-height: 62px;
-    top: 0;
   }
   .flexRow--campeoes-de-venda {
     padding-top: 30px;
@@ -857,22 +762,5 @@
   .flexRow--login {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .flexRowContent--beneficios-item {
-    width: 10.75rem;
-    height: 6.25rem;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .flexRowContent--beneficios-container {
-    gap: 0.5rem;
-    padding: 1rem;
-    display: flex;
-    overflow-x: scroll;
-    padding-left: 22.3rem;
   }
 }

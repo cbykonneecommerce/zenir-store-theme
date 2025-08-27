@@ -12,39 +12,53 @@
         "tagTitle": "Institucional",
         "text": "Institucional"
       },
-      "blockClass": ["menu-accordion--container-mobile"]
+      "blockClass": [
+        "menu-accordion--footer-container-mobile"
+      ]
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#institucional"]
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#institucional"
+    ]
   },
   "vtex.menu@2.x:submenu.accordion#institucional": {
     "props": {
-      "blockClass": ["menu-accordion--mobile"]
+      "blockClass": [
+        "menu-accordion--mobile"
+      ]
     },
-    "children": ["vtex.menu@2.x:menu#institucional-menu-footer"]
+    "children": [
+      "vtex.menu@2.x:menu#institucional-menu-footer"
+    ]
   },
-  "flex-layout.col#isntitucional-menu-footer": {
+  "flex-layout.col#institucional-menu-footer": {
     "props": {
       "preventVerticalStretch": true,
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": false,
-      "blockClass": ["menu-institucional--footer"]
+      "blockClass": [
+        "menu-institucional--footer"
+      ]
     },
     "children": [
       "rich-text#menu-footer-institucional-title",
-      "vtex.menu@2.x:menu#institucional-menu-footer",
-      "rich-text#institucional-info"
+      "vtex.menu@2.x:menu#institucional-menu-footer"
+      // "rich-text#institucional-info"
     ]
   },
   "rich-text#menu-footer-institucional-title": {
     "props": {
-      "blockClass": ["menu-institucional--footer"],
+      "blockClass": [
+        "menu-institucional--footer"
+      ],
       "text": "Institucional"
     }
   },
   "vtex.menu@2.x:menu#institucional-menu-footer": {
     "props": {
       "orientation": "vertical",
-      "blockClass": ["menu-institucional-footer"],
+      "blockClass": [
+        "menu-institucional-footer"
+      ],
       "items": [
         {
           "type": "custom",
@@ -75,8 +89,30 @@
             "type": "internal",
             "href": "/institucional",
             "noFollow": false,
+            "tagTitle": "Fale Conosco",
+            "text": "Fale Conosco"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional",
+            "noFollow": false,
             "tagTitle": "Trabalhe Conosco",
             "text": "Trabalhe Conosco"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "https://lp.zenirmoveis.com.br/zenir-relatorio-de-transparencia-e-igualdade-salarial?_gl=1*6hrzqp*_gcl_au*NDQxNjI3MDQ2LjE3NDcwNzI2NDA.",
+            "noFollow": false,
+            "tagTitle": "relatório transparencia",
+            "text": "Relatório de Transparência e Igualdade Salarial"
           }
         }
       ]
@@ -84,7 +120,9 @@
   },
   "rich-text#institucional-info": {
     "props": {
-      "blockClass": ["menu-institucional--footer"],
+      "blockClass": [
+        "menu-institucional--footer"
+      ],
       "text": "Segunda a sexta: 08:00h às 23:00h\nSábados e feriados 08:00h às 21:00h\nDomingos 09:00h às 20:00h"
     }
   }

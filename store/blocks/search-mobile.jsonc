@@ -1,0 +1,150 @@
+{
+    "search-result-layout.mobile": {
+        "children": [
+            "flex-layout.row#searchbread",
+            "flex-layout.row#productCountMobile",
+            "filter-navigator.v3#mobile",
+            "custom-orderby-options",
+            "flex-layout.row#products",
+            "flex-layout.row#fetchmore"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            },
+            "defaultGalleryLayout": "grid"
+        }
+    },
+    "just-a-div#searchbannermobile": {
+        "children": [
+            "image#searchMobile",
+            "flex-layout.row#searchtitleMobile"
+        ],
+        "props": {
+            "blockClass": "category-banner-mobile"
+        }
+    },
+    "image#searchMobile": {
+        "props": {
+            "src": "https://tfcvih.vtexassets.com/arquivos/banner-eletrodomesticos-mob.jpg",
+            "alt": "Banner categoria",
+            "blockClass": "category-banner-mobile"
+        }
+    },
+    "experimental__visibility-layout#search-title-mobile": {
+        "title": "Ocultar titulo de busca no mobile?",
+        "children": [],
+        "props": {
+            "visible": true
+        }
+    },
+    "flex-layout.row#searchtitleMobile": {
+        "children": [
+            "experimental__visibility-layout#search-title-mobile"
+        ],
+        "props": {
+            "blockClass": "category-banner-text-mobile"
+        }
+    },
+    "flex-layout.row#productCountMobile": {
+        "children": [
+            "search-title.v2",
+            "total-products.v2"
+        ],
+        "props": {
+            "blockClass": "productCountMobileRow"
+        }
+    },
+    "search-not-found-layout": {
+        "children": [
+            "flex-layout.row#searchbread",
+            "flex-layout.row#notfound"
+        ]
+    },
+    "flex-layout.row#notfound": {
+        "children": [
+            "not-found"
+        ],
+        "props": {
+            "fullWidth": true
+        }
+    },
+    "breadcrumb": {
+        "props": {
+            "showOnMobile": false
+        }
+    },
+    "gallery": {
+        "props": {
+            "layouts": [
+                {
+                    "name": "grid",
+                    "component": "GridSummary",
+                    "itemsPerRow": {
+                        "desktop": 4,
+                        "tablet": 3,
+                        "phone": 2
+                    }
+                }
+            ],
+            "GridSummary": "product-summary.shelf"
+        }
+    },
+    "responsive-layout.desktop#textOptionGrid": {
+        "children": [
+            "rich-text#option-grid"
+        ]
+    },
+    "responsive-layout.desktop#textOptionList": {
+        "children": [
+            "rich-text#option-list"
+        ]
+    },
+    "rich-text#option-grid": {
+        "props": {
+            "text": "Grid",
+            "textColor": "c-auto",
+            "blockClass": "layout-option"
+        }
+    },
+    "rich-text#option-list": {
+        "props": {
+            "text": "List",
+            "textColor": "c-auto",
+            "blockClass": "layout-option"
+        }
+    },
+    "filter-navigator.v3#mobile": {
+        "props": {
+            "showClearByFilter": true,
+            "fullWidthOnMobile": true,
+            "navigationTypeOnMobile": "collapsible",
+            "appliedFiltersOverview": "hide",
+            "totalProductsOnMobile": "hide",
+            "updateOnFilterSelectionOnMobile": true,
+            "priceRangeLayout": "inputAndSlider",
+            "initiallyCollapsed": false,
+            "padding": 0
+        },
+        "blocks": [
+            "sidebar-close-button"
+        ]
+    },
+    "store.not-found#product": {
+        "blocks": [
+            "custom-page-not-found",
+            "flex-layout.row#category-badges",
+            "flex-layout.row#shelf-bottom-1"
+        ]
+    },
+    "rich-text#not-found": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**PAGE NOT FOUND**",
+            "font": "t-heading-1"
+        }
+    }
+}

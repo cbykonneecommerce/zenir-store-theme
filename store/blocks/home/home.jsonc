@@ -3,8 +3,8 @@
     "blocks": [
       "list-context.image-list#carousel",
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#beneficios",
-      "flex-layout.row#shelf-oferta-do-dia",
+      "custom-div#benefits-wrapper",
+      "flex-layout.row#shelf-highlight",
       "__fold__",
       "flex-layout.row#category-badges",
       "flex-layout.row#banner-mosaic",

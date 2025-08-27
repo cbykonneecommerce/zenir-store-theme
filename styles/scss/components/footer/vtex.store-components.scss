@@ -1,0 +1,8 @@
+.imageElement--pagamentos-imagem {
+  min-width: 298px;
+  margin-top: 1rem;
+
+  @media (max-width: 1025px) {
+    max-width: 382px;
+  }
+}

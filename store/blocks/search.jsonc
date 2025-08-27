@@ -1,6 +1,8 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -9,41 +11,49 @@
     }
   },
   "store.search#brand": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 10,
+        "maxItemsPerPage": 40,
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
   "store.search#category": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
   "store.search#subcategory": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
@@ -53,155 +63,5 @@
       "search-result-layout.mobile",
       "search-not-found-layout"
     ]
-  },
-  "search-result-layout.mobile": {
-    "children": [
-      "just-a-div#searchbannermobile",
-      "flex-layout.row#searchinfomobile",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#products",
-      "flex-layout.row#fetchmore"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      },
-      "defaultGalleryLayout": "grid"
-    }
-  },
-  "just-a-div#searchbannermobile": {
-    "children": ["image#searchMobile", "flex-layout.row#searchtitleMobile"],
-    "props": {
-      "blockClass": "category-banner-mobile"
-    }
-  },
-  "image#searchMobile": {
-    "props": {
-      "src": "https://tfcvih.vtexassets.com/arquivos/banner-eletrodomesticos-mob.jpg",
-      "alt": "Banner categoria",
-      "blockClass": "category-banner-mobile"
-    }
-  },
-  "flex-layout.row#searchinfomobile": {
-    "children": [
-      "flex-layout.col#orderByMobile",
-      "flex-layout.col#filterMobile"
-    ],
-    "props": {
-      "preserveLayoutOnMobile": true,
-      "colSizing": "auto",
-      "colJustify": "around"
-    }
-  },
-
-  "experimental__visibility-layout#search-title-mobile": {
-    "title": "Ocultar titulo de busca no mobile?",
-    "children": ["search-title.v2"],
-    "props": {
-      "visible": true
-    }
-  },
-
-  "flex-layout.row#searchtitleMobile": {
-    "children": ["experimental__visibility-layout#search-title-mobile"],
-    "props": {
-      "blockClass": "category-banner-text-mobile"
-    }
-  },
-  "flex-layout.col#orderByMobile": {
-    "children": ["order-by.v2"],
-    "props": {
-      "blockClass": "orderByMobileCol"
-    }
-  },
-  "flex-layout.row#productCountMobile": {
-    "children": ["total-products.v2"],
-    "props": {
-      "blockClass": "productCountMobileRow"
-    }
-  },
-  "flex-layout.col#filterMobile": {
-    "children": ["filter-navigator.v3"],
-    "props": {
-      "blockClass": "search-filter-navigator-mobile-col"
-    }
-  },
-  "search-not-found-layout": {
-    "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
-  },
-  "flex-layout.row#notfound": {
-    "children": ["not-found"],
-    "props": {
-      "fullWidth": true
-    }
-  },
-  "breadcrumb": {
-    "props": {
-      "showOnMobile": false
-    }
-  },
-  "gallery": {
-    "props": {
-      "layouts": [
-        {
-          "name": "grid",
-          "component": "GridSummary",
-          "itemsPerRow": {
-            "desktop": 3,
-            "tablet": 3,
-            "phone": 2
-          }
-        }
-      ],
-      "GridSummary": "product-summary.shelf"
-    }
-  },
-  "responsive-layout.desktop#textOptionGrid": {
-    "children": ["rich-text#option-grid"]
-  },
-  "responsive-layout.desktop#textOptionList": {
-    "children": ["rich-text#option-list"]
-  },
-  "rich-text#option-grid": {
-    "props": {
-      "text": "Grid",
-      "textColor": "c-auto",
-      "blockClass": "layout-option"
-    }
-  },
-  "rich-text#option-list": {
-    "props": {
-      "text": "List",
-      "textColor": "c-auto",
-      "blockClass": "layout-option"
-    }
-  },
-  "filter-navigator.v3": {
-    "props": {
-      "truncateFilters": true,
-      "showClearByFilter": true,
-      "totalProductsOnMobile": "show"
-    },
-    "blocks": ["sidebar-close-button"]
-  },
-  "store.not-found#product": {
-    "blocks": [
-      "custom-page-not-found", 
-      "flex-layout.row#category-badges", 
-      "flex-layout.row#shelf-bottom-1"
-    ]
-  },
-  "rich-text#not-found": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "**PAGE NOT FOUND**",
-      "font": "t-heading-1"
-    }
   }
-  
 }

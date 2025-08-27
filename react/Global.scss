@@ -96,7 +96,7 @@
   text-align: left;
   position: absolute;
   bottom: -20px;
-  font-family: 'Futura Bk BT', sans-serif;
+  font-family: "Futura Bk BT", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -107,4 +107,126 @@
 
 .checkout-steps .active span.step-label {
   color: #4f4f4f;
+}
+
+.customOrderByContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .customOrderByButton {
+    color: #6f6f6f;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+
+    border-radius: 6px;
+    border: 1px solid var(--Estilos-Stroke, #dcdcdc);
+    background: #fff;
+
+    display: flex;
+    height: 32px;
+    padding: 4px 10px;
+    align-items: center;
+    cursor: pointer;
+
+    &--is-active {
+      border: 1px solid #001d7e;
+      color: #001d7e;
+    }
+  }
+
+  @media (max-width: 1025px) {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
+    padding: 8px 0;
+    margin-left: 8px;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    .customOrderByButton {
+      scroll-snap-align: start;
+      flex: 0 0 auto;
+      min-width: max-content;
+      white-space: nowrap;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+.categoryContainerWrapper {
+  .categoryLinkWrapper {
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    .categoryContainer {
+      min-width: 128px;
+      text-decoration: none;
+    }
+  }
+
+  .categoryContainerTitle {
+    color: var(--Cinzas-Cinza-escuro, #4f4f4f);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.24px;
+  }
+  @media (max-width: 1025px) {
+    padding-left: 24px;
+
+    .categoryLinkWrapper {
+      padding-right: 24px;
+    }
+  }
+}
+
+:global(.tfcvih-weonne-zenir-io-4-x-divContainer--beneficios-item) {
+  flex-direction: row !important;
+  min-width: 250px;
+}
+
+@media (max-width: 1025px) {
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--redes-sociais) {
+    padding-bottom: 24px !important;
+  }
+
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--images-security) {
+    justify-content: flex-start !important;
+    gap: 0 !important;
+  }
+
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--mobile-footer-wrapper) {
+    padding: 0 16px !important;
+  }
+
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--pagamentos) {
+    margin-bottom: 36px !important;
+    padding-bottom: 16px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--beneficios-container) {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 640px) {
+  :global(.tfcvih-weonne-zenir-io-4-x-divContainer--shelf-title-wrapper) {
+    margin-left: 0 !important;
+  }
 }

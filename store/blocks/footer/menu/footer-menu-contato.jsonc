@@ -1,0 +1,85 @@
+{
+    "menu-item#contato-accordion-mobile": {
+        "props": {
+            "id": "menu-item-contato-acorddion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Contato",
+                "text": "Contato"
+            },
+            "blockClass": [
+                "menu-accordion--footer-container-mobile"
+            ]
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#contato"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#contato": {
+        "props": {
+            "blockClass": [
+                "menu-accordion--mobile"
+            ]
+        },
+        "children": [
+            "vtex.menu@2.x:menu#contato-menu-footer"
+        ]
+    },
+    "flex-layout.col#institucional-menu-footer": {
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": false,
+            "blockClass": [
+                "menu-institucional--footer"
+            ]
+        },
+        "children": [
+            "rich-text#menu-footer-contato-title",
+            "vtex.menu@2.x:menu#contato-menu-footer"
+        ]
+    },
+    "rich-text#menu-footer-contato-title": {
+        "props": {
+            "blockClass": [
+                "menu-institucional--footer"
+            ],
+            "text": "Contato"
+        }
+    },
+    "vtex.menu@2.x:menu#contato-menu-footer": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": [
+                "menu-institucional-footer"
+            ],
+            "items": [
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "tagTitle": "SAC: 0800 275 5700",
+                        "text": "SAC: 0800 275 5700"
+                    }
+                },
+                {
+                    "type": "custom",
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "noFollow": false,
+                        "tagTitle": "Fale pelo WhatsApp: (88) 9 8821-7000",
+                        "text": "Fale pelo WhatsApp: (88) 9 8821-7000"
+                    }
+                }
+            ]
+        }
+    }
+}

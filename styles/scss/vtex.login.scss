@@ -31,6 +31,12 @@
   transition: 0.3s;
 }
 
+.buttonLink {
+  border-radius: 4px;
+  width: 156px;
+  margin: 30px 0 30px 42px;
+}
+
 .contentInitialScreen::before {
   content: "";
   position: fixed;
@@ -47,24 +53,42 @@
 
 .label {
   font-size: 0;
+  padding: 0;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "Olá, faça o login ou cadastre-se!";
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 120% */
+    min-width: 125px;
+    display: block;
+    text-align: left;
+    text-transform: none;
+    margin-top: 3px;
+  }
 }
 
 .label::before,
 .profile::before {
   content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='30' viewBox='0 0 29 30' fill='none'%3E%3Cpath d='M19.9375 11.375C19.9375 12.8171 19.3646 14.2002 18.3449 15.2199C17.3252 16.2396 15.9421 16.8125 14.5 16.8125C13.0579 16.8125 11.6748 16.2396 10.6551 15.2199C9.63538 14.2002 9.0625 12.8171 9.0625 11.375C9.0625 9.93289 9.63538 8.54984 10.6551 7.53011C11.6748 6.51038 13.0579 5.9375 14.5 5.9375C15.9421 5.9375 17.3252 6.51038 18.3449 7.53011C19.3646 8.54984 19.9375 9.93289 19.9375 11.375Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 15C0 11.1544 1.52767 7.46623 4.24695 4.74695C6.96623 2.02767 10.6544 0.5 14.5 0.5C18.3456 0.5 22.0338 2.02767 24.753 4.74695C27.4723 7.46623 29 11.1544 29 15C29 18.8456 27.4723 22.5338 24.753 25.253C22.0338 27.9723 18.3456 29.5 14.5 29.5C10.6544 29.5 6.96623 27.9723 4.24695 25.253C1.52767 22.5338 0 18.8456 0 15ZM14.5 2.3125C12.1107 2.31263 9.77004 2.98741 7.74735 4.25918C5.72467 5.53094 4.1022 7.34801 3.06668 9.50123C2.03117 11.6544 1.6247 14.0563 1.89406 16.4303C2.16342 18.8044 3.09766 21.0541 4.58925 22.9206C5.87612 20.8471 8.70906 18.625 14.5 18.625C20.2909 18.625 23.1221 20.8453 24.4108 22.9206C25.9023 21.0541 26.8366 18.8044 27.1059 16.4303C27.3753 14.0563 26.9688 11.6544 25.9333 9.50123C24.8978 7.34801 23.2753 5.53094 21.2526 4.25918C19.23 2.98741 16.8893 2.31263 14.5 2.3125Z' fill='white'/%3E%3C/svg%3E");
   display: inline-block;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='33' viewBox='0 0 27 33' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.3159 7.37145C20.3159 11.2676 17.1504 14.4451 13.2688 14.4451C9.3872 14.4451 6.22168 11.2676 6.22168 7.37145C6.22168 3.4753 9.3872 0.297852 13.2688 0.297852C17.1504 0.297852 20.3159 3.4753 20.3159 7.37145Z' fill='%23001D7E'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M26.383 29.3868C26.383 33.5477 0.154297 33.5477 0.154297 29.3868C0.154297 23.1453 6.03314 18.417 13.2686 18.417C20.5418 18.417 26.383 23.1453 26.383 29.3868Z' fill='%23001D7E'/%3E%3C/svg%3E");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   left: -10px;
   top: 50%;
   transform: translateY(-50%);
 }
-
 
 .profile {
   margin: 0;
@@ -76,26 +100,6 @@
   color: #8d8c8c;
   text-transform: capitalize;
   display: flex;
-  align-items: center;
-}
-
-.label {
-  font-family: "Futura Hv BT", sans-serif;
-  text-transform: initial;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  color: #8d8c8c;
-  margin-left: 5px;
-  max-width: 150px;
-  display: block;
-  text-align: left;
-}
-
-.label {
-  display: flex;
-  /* flex-direction: row-reverse; */
-  padding: 0;
   align-items: center;
 }
 
@@ -278,23 +282,22 @@
   color: #000;
 }
 
-.label::after {
-  content: "Olá, faça o login ou cadastre-se!";
-  font-family: "Futura Hv BT", sans-serif;
-  text-transform: none;
-  font-size: 0.675rem;
+:global(.vtex-search-result-3-x-filterTitleSpan) span button {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 400;
-  color: #434343;
-  // color: #ffffff;
-  margin-left: 1.1rem;
-  max-width: 150px;
-  display: block;
-  text-align: left;
-}
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.52px;
 
-.label {
-  font-size: 0px;
+  display: flex;
+  height: 19.25px;
+  padding: 4px 10.5px;
+  align-items: center;
+
+  border-radius: 37.5px;
+  background: var(--Cores-Azul, #001d7e);
 }
 
 @media screen and (max-width: 768px) {
